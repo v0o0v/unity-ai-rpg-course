@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "title": "캐릭터 시트와 공격 효과/소리",
+  "binding_required": true,
+  "dimension": "BIND_2D_OR_3D",
+  "tasks": [
+    {
+      "id": "asset_pipeline_01",
+      "role": "art_director",
+      "kind": "proposal",
+      "depends_on": [],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Docs/ArtDirection"
+      ],
+      "instruction": "캐릭터 시트와 공격 효과/소리. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: ART_BIBLE과 실제 원본 기준으로 스타일/실루엣/가독성 요구를 만든다.",
+      "acceptance": [
+        "실제 원본 파일",
+        "출처/사용조건",
+        "규격/피벗",
+        "모바일 가독성"
+      ]
+    },
+    {
+      "id": "asset_pipeline_02",
+      "role": "asset_artist",
+      "kind": "proposal",
+      "depends_on": [
+        "asset_pipeline_01"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Docs/AssetRequests"
+      ],
+      "instruction": "캐릭터 시트와 공격 효과/소리. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: 승인된 경로로 2D 시트·3D 자산의 제작/검수 사양을 만든다.",
+      "acceptance": [
+        "실제 원본 파일",
+        "출처/사용조건",
+        "규격/피벗",
+        "모바일 가독성"
+      ]
+    },
+    {
+      "id": "asset_pipeline_03",
+      "role": "technical_artist",
+      "kind": "proposal",
+      "depends_on": [
+        "asset_pipeline_02"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Assets/_Game/Scripts/VFX"
+      ],
+      "instruction": "캐릭터 시트와 공격 효과/소리. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: 파티클·셰이더·애니메이션의 표현과 모바일 예산을 관리한다.",
+      "acceptance": [
+        "실제 원본 파일",
+        "출처/사용조건",
+        "규격/피벗",
+        "모바일 가독성"
+      ]
+    },
+    {
+      "id": "asset_pipeline_04",
+      "role": "audio_designer",
+      "kind": "proposal",
+      "depends_on": [
+        "asset_pipeline_03"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Assets/_Game/Scripts/Audio"
+      ],
+      "instruction": "캐릭터 시트와 공격 효과/소리. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: 타격·환경·UI 소리의 재생 규칙, 동시 발음 제한과 접근성 대안을 만든다.",
+      "acceptance": [
+        "실제 원본 파일",
+        "출처/사용조건",
+        "규격/피벗",
+        "모바일 가독성"
+      ]
+    },
+    {
+      "id": "asset_pipeline_05",
+      "role": "unity_integrator",
+      "kind": "proposal",
+      "depends_on": [
+        "asset_pipeline_04"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Assets/_Game/Editor/Integration"
+      ],
+      "instruction": "캐릭터 시트와 공격 효과/소리. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: Editor API로 실제 씬/프리팹/참조를 연결한다. 기본 예제에서는 통합 스크립트 제안만 하고 실행은 승인된 broker가 한다.",
+      "acceptance": [
+        "실제 원본 파일",
+        "출처/사용조건",
+        "규격/피벗",
+        "모바일 가독성"
+      ]
+    },
+    {
+      "id": "asset_pipeline_06",
+      "role": "qa_engineer",
+      "kind": "proposal",
+      "depends_on": [
+        "asset_pipeline_05"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Assets/_Game/Tests"
+      ],
+      "instruction": "캐릭터 시트와 공격 효과/소리. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: 명세에서 독립적인 테스트를 설계하고 누락·중복 피해·저장 손상·경로 반례를 재현한다.",
+      "acceptance": [
+        "실제 원본 파일",
+        "출처/사용조건",
+        "규격/피벗",
+        "모바일 가독성"
+      ]
+    },
+    {
+      "id": "asset_pipeline_07",
+      "role": "critic",
+      "kind": "review",
+      "depends_on": [
+        "asset_pipeline_06"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [],
+      "instruction": "캐릭터 시트와 공격 효과/소리. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: 구현 설명이 아니라 실제 입력·명세·결과물로 검토한다. 코드 검토와 시각/재미 검토의 범위를 분리한다.",
+      "acceptance": [
+        "실제 원본 파일",
+        "출처/사용조건",
+        "규격/피벗",
+        "모바일 가독성"
+      ]
+    }
+  ]
+}

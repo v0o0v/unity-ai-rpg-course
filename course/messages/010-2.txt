@@ -1,0 +1,17 @@
+현재 프로젝트의 실제 파일과 이미 결정한 규칙을 먼저 확인해 줘. 이름이 다른 기존 구현이 있으면 새로 중복 제작하지 말고 그 구현에 연결해 줘.
+
+모바일 조이스틱과 버튼을 UGUI 로 만들고 기존 Gameplay Actions에 연결해 줘.
+왼쪽 아래 이동 스틱, 오른쪽 아래 기본 공격, 주변 스킬 3개, 물약, 상호작용 버튼을 둬 줘.
+OnScreenStick은 <Gamepad>/leftStick, 기본 공격은 buttonSouth,
+스킬1/2/3은 buttonWest/buttonEast/buttonNorth, 물약은 rightShoulder,
+상호작용은 leftShoulder로 연결하고 기존 키보드 바인딩과 함께 동작하게 해 줘.
+PlayerInput의 자동 장치 전환에 의해 가상 장치가 끊기지 않도록 구성하고
+실제로 생성된 장치·Action 연결을 확인해 줘. 중복 Action 인스턴스는 만들지 마.
+움직임과 버튼은 서로 다른 pointerId를 독립 처리해야 해.
+손가락이 버튼 밖으로 나가서 놓여도, focus/pause/cancel이 와도 held 입력을 해제해 줘.
+오른쪽 버튼의 포인터가 월드 클릭이나 조이스틱 포인터로 처리되지 않게 해 줘.
+Screen.safeArea를 반영하고 실제 버튼 터치 영역과 이미지 경계를 따로 점검해 줘.
+아직 없는 전투는 구현하지 말고 입력 상태만 개발용 텍스트에 표시해 줘.
+Editor ForceMobileUI와 Android 실제 UI 활성화 경로를 구분해 줘.
+
+코드·설정·파일 생성·실행은 네가 맡고, 필요한 화면과 결과를 보여 줘. 수행하지 못한 작업과 필요한 승인·도구 연결은 구분해서 알려 줘.

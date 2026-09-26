@@ -1,0 +1,27 @@
+현재 프로젝트의 실제 파일과 이미 결정한 규칙을 먼저 확인해 줘. 이름이 다른 기존 구현이 있으면 새로 중복 제작하지 말고 그 구현에 연결해 줘.
+
+아이템의 공통 설명서 ItemDefinition과 실제로 주운 한 개의 물건 ItemInstance를 분리해 줘.
+Definition에는 고정 definitionId·표시명·장비 슬롯·기본 보너스·아이콘과 외형 참조를 두고, Instance에는 고유 instanceId·definitionId·등급·생성할 때 확정한 옵션을 둬. ScriptableObject 원본에 소유 상태나 랜덤 옵션을 쓰지 마.
+종류는 Weapon/Armor/Trinket, 등급은 Common/Magic/Rare다. 아래 18개 초기 정의를 생성해 줘. 기존 정의가 있으면 ID와 값을 대조하고 중복 생성하지 마.
+
+weapon.rusty_sword · 녹슨 검 · Weapon · 공격 +4
+weapon.iron_sword · 철검 · Weapon · 공격 +6
+weapon.guards_blade · 경비대 검 · Weapon · 공격 +8
+weapon.heavy_axe · 무거운 도끼 · Weapon · 공격 +10
+weapon.runed_mace · 룬 철퇴 · Weapon · 공격 +12
+weapon.castle_blade · 성채의 검 · Weapon · 공격 +14
+armor.worn_tunic · 낡은 튜닉 · Armor · 방어 +2
+armor.leather_vest · 가죽 조끼 · Armor · 방어 +4
+armor.guards_mail · 경비대 사슬갑옷 · Armor · 방어 +6
+armor.iron_mail · 철 사슬갑옷 · Armor · 방어 +8
+armor.runed_plate · 룬 판금갑옷 · Armor · 방어 +10
+armor.castle_plate · 성채 판금갑옷 · Armor · 방어 +12
+trinket.wood_charm · 나무 부적 · Trinket · 최대 HP +10
+trinket.copper_charm · 구리 부적 · Trinket · 최대 HP +15
+trinket.silver_charm · 은 부적 · Trinket · 최대 HP +20
+trinket.warding_charm · 수호 부적 · Trinket · 최대 HP +25
+trinket.runed_charm · 룬 부적 · Trinket · 최대 HP +30
+trinket.castle_charm · 성채 부적 · Trinket · 최대 HP +35
+실제 아이콘이 없으면 기본 도형 아이콘을 생성해 연결해 줘. ID·슬롯·참조 검사를 만들고 같은 원형의 두 물건이 서로와 원본을 바꾸지 않는지 시험해 줘. 이 표를 Docs/GAME_SPEC.md에 저장해 줘.
+
+코드·설정·파일 생성·실행은 네가 맡고, 필요한 화면과 결과를 보여 줘. 수행하지 못한 작업과 필요한 승인·도구 연결은 구분해서 알려 줘.

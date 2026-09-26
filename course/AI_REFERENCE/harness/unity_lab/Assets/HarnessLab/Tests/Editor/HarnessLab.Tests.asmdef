@@ -1,0 +1,1 @@
+{"name":"HarnessLab.Tests","references":["HarnessLab.Runtime"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"]}

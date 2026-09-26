@@ -1,0 +1,263 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "In-page local AI startup guide",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Version and lesson registry",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Current prompt starts sooner than v12 1517px",
+      "ok": true,
+      "detail": 957
+    },
+    {
+      "name": "Large diagram no longer blocks every step",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Previously hidden specification table is readable",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Jump directly to current request",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Project rationale is not a download explanation",
+      "ok": true,
+      "detail": "왜 이렇게 요청하나요?\n2D와 두 대상 플랫폼을 먼저 정하면 템플릿·입력·빌드 모듈을 그 기준으로 준비할 수 있습니다. 여기서는 네트워크 기능이나 던전을 만드는 것이 아니라 별도 새 프로젝트를 만드는 범위만 정합니다."
+    },
+    {
+      "name": "Copy carries current prompt only",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Raw prompt view",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Preserved boundary diagram",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Figure enlargement",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Worked result comparison visible",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Distinct unreachable and budget status",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Reading does not set completion",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Glossary from annotated request",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Return to same step",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Return to original reading scroll",
+      "ok": true,
+      "detail": {
+        "was": 946,
+        "now": 946
+      }
+    },
+    {
+      "name": "Keyboard tab movement and focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Tab keys do not mark completed",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "All steps rendered 1–32",
+      "ok": true,
+      "detail": {
+        "count": 128,
+        "bad": []
+      }
+    },
+    {
+      "name": "All steps rendered 33–64",
+      "ok": true,
+      "detail": {
+        "count": 128,
+        "bad": []
+      }
+    },
+    {
+      "name": "All steps rendered 65–96",
+      "ok": true,
+      "detail": {
+        "count": 128,
+        "bad": []
+      }
+    },
+    {
+      "name": "All steps rendered 97–128",
+      "ok": true,
+      "detail": {
+        "count": 128,
+        "bad": []
+      }
+    },
+    {
+      "name": "All steps rendered 129–160",
+      "ok": true,
+      "detail": {
+        "count": 128,
+        "bad": []
+      }
+    },
+    {
+      "name": "All steps rendered 161–192",
+      "ok": true,
+      "detail": {
+        "count": 128,
+        "bad": []
+      }
+    },
+    {
+      "name": "All steps rendered 193–224",
+      "ok": true,
+      "detail": {
+        "count": 128,
+        "bad": []
+      }
+    },
+    {
+      "name": "All steps rendered 225–256",
+      "ok": true,
+      "detail": {
+        "count": 128,
+        "bad": []
+      }
+    },
+    {
+      "name": "1440/light/L1: no page overflow",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1440/dark/L9: no page overflow",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "390/dark/L194: no page overflow",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "390/light/L125: no page overflow",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1440/dark/L240: no page overflow",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Import version 9",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Import version 10",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Import version 11",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Import version 12",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Import version 13",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Reject malformed progress",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Actual progress JSON download",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Actual old-progress file import preserves notes",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Theme restore from explicit simulated storage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Progress restore from explicit simulated storage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "No uncaught browser errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "v13_1440_light_1_top.png",
+    "v13_1440_light_1_prompt.png",
+    "v13_1440_dark_9_top.png",
+    "v13_1440_dark_9_prompt.png",
+    "v13_390_dark_194_top.png",
+    "v13_390_dark_194_prompt.png",
+    "v13_390_light_125_top.png",
+    "v13_390_light_125_prompt.png",
+    "v13_390_light_125_example.png",
+    "v13_1440_dark_240_top.png",
+    "v13_1440_dark_240_prompt.png",
+    "v13_1440_dark_240_example.png"
+  ],
+  "environment": "Chromium set_content; no user Windows or Unity execution"
+}

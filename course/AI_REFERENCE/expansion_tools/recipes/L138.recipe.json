@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "lesson": 138,
+  "feature": "E03 대장간 경제",
+  "input_aliases": [
+    "game_spec",
+    "inventory",
+    "save_contract",
+    "save_service"
+  ],
+  "output_aliases": [
+    "out_game_designer",
+    "out_architect",
+    "out_gameplay_engineer",
+    "out_uiux_engineer",
+    "out_qa_engineer"
+  ],
+  "plan": {
+    "schema_version": 1,
+    "binding_required": true,
+    "id": "forge-l138-r1",
+    "title": "장비 분해와 재료 지갑: 재화가 복제되지 않는 첫 거래",
+    "tasks": [
+      {
+        "id": "L138_game_designer",
+        "role": "game_designer",
+        "kind": "proposal",
+        "depends_on": [],
+        "read_files": [
+          "@game_spec",
+          "@inventory",
+          "@save_contract",
+          "@save_service"
+        ],
+        "write_prefixes": [
+          "@out_game_designer"
+        ],
+        "outputs": [
+          "@out_game_designer"
+        ],
+        "instruction": "장비 분해와 재료 지갑: 재화가 복제되지 않는 첫 거래 — 담당: 분해 표·금지 조건\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n재료는 장비 24칸을 차지하지 않는 별도 지갑으로 관리한다. 고철·불씨·룬 가루의 세 종류, 종류별 최대 999다. 분해 시 일반 장비는 고철2, 마법은 고철3+가루1, 희귀는 고철4+가루2+불씨1을 주는 초기 표를 사용한다. 장착·즐겨찾기·퀘스트·룬 삽입 장비는 분해할 수 없다.\n\nUI 버튼을 비활성화하는 것만으로 중복 분해를 막을 수 없다. requestId, 기대 inventoryRevision, 아이템 instanceId를 가진 명령을 거래 서비스에 전달한다. 사전 검증과 결과 계산은 복사 상태에서 수행하고, 저장 가능한 완전한 새 상태를 만든 뒤 한 번에 교체한다. 쓰기 실패 시 기존 아이템과 재료를 유지한다.\n\nschema3는 기존 schema2 필드를 유지하고 materialWallet·stash·favoriteIds·socketData·questFlags의 명시적 기본값을 추가한다. 새 원본 저장을 바로 덮어쓰지 않고 사본에서 검사한다. 게임 중 모든 거래 때 저장 여부를 결정한 뒤 강의 전체에서 같은 방식을 유지한다. 본 확장은 마을 영구 거래를 성공 시 내구 저장하는 방식으로 고정한다.\n\n따라 하는 순서:\n기존 저장 DTO·원자 저장·백업 경로를 조사하고 schema3 변환 fixture를 먼저 만든다. 확장 필드 기본값을 명시한다.\n분해 미리보기를 띄우되 미리보기를 열었다는 이유로 장비나 재료를 바꾸지 않는다.\n거래 서비스가 검증→복사 상태 계산→저장→publish 순으로 수행하게 하고 지갑 한도를 먼저 검사한다.\n동일 requestId 연타, 다른 requestId로 같은 아이템 분해, 저장 실패, 지갑 한도 직전의 사례를 검사한다.\n\n구현 계약:\n장비 분해와 세 재료 지갑을 기존 저장·인벤토리에 추가해 줘.\n분해 금지 조건과 보상 표를 이번 명세대로 사용하고 무작위 재료를 새로 추첨하지 마.\nrequestId·expectedInventoryRevision·instanceId를 검증하는 거래 경로를 만들어 줘.\n삭제·보상·revision·처리 영수증이 같은 새 저장 상태에 들어가게 하고 저장 실패 시 전부 원복해 줘.\nschema2→3 이전은 사본으로 검증하고 기존 ID·옵션·골드·퀘스트·스킬을 보존해 줘.\nUI 확인창만으로 중복 방지를 했다고 보고하지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "희귀 장비 1개 분해 후 장비는 1개 줄고 고철4·가루2·불씨1만 증가한다.",
+          "같은 requestId 재전송은 결과 영수증을 반환하고 추가 지급하지 않는다.",
+          "한 재료가999를 넘으면 아이템 삭제와 모든 재료 지급을 함께 거부한다.",
+          "저장 실패를 주입하면 이전 장비·재료·revision이 모두 유지된다."
+        ]
+      },
+      {
+        "id": "L138_architect",
+        "role": "architect",
+        "kind": "proposal",
+        "depends_on": [
+          "L138_game_designer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@inventory",
+          "@save_contract",
+          "@save_service",
+          "@out_game_designer"
+        ],
+        "write_prefixes": [
+          "@out_architect"
+        ],
+        "outputs": [
+          "@out_architect"
+        ],
+        "instruction": "장비 분해와 재료 지갑: 재화가 복제되지 않는 첫 거래 — 담당: 영구 상태와 거래 경계\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n재료는 장비 24칸을 차지하지 않는 별도 지갑으로 관리한다. 고철·불씨·룬 가루의 세 종류, 종류별 최대 999다. 분해 시 일반 장비는 고철2, 마법은 고철3+가루1, 희귀는 고철4+가루2+불씨1을 주는 초기 표를 사용한다. 장착·즐겨찾기·퀘스트·룬 삽입 장비는 분해할 수 없다.\n\nUI 버튼을 비활성화하는 것만으로 중복 분해를 막을 수 없다. requestId, 기대 inventoryRevision, 아이템 instanceId를 가진 명령을 거래 서비스에 전달한다. 사전 검증과 결과 계산은 복사 상태에서 수행하고, 저장 가능한 완전한 새 상태를 만든 뒤 한 번에 교체한다. 쓰기 실패 시 기존 아이템과 재료를 유지한다.\n\nschema3는 기존 schema2 필드를 유지하고 materialWallet·stash·favoriteIds·socketData·questFlags의 명시적 기본값을 추가한다. 새 원본 저장을 바로 덮어쓰지 않고 사본에서 검사한다. 게임 중 모든 거래 때 저장 여부를 결정한 뒤 강의 전체에서 같은 방식을 유지한다. 본 확장은 마을 영구 거래를 성공 시 내구 저장하는 방식으로 고정한다.\n\n따라 하는 순서:\n기존 저장 DTO·원자 저장·백업 경로를 조사하고 schema3 변환 fixture를 먼저 만든다. 확장 필드 기본값을 명시한다.\n분해 미리보기를 띄우되 미리보기를 열었다는 이유로 장비나 재료를 바꾸지 않는다.\n거래 서비스가 검증→복사 상태 계산→저장→publish 순으로 수행하게 하고 지갑 한도를 먼저 검사한다.\n동일 requestId 연타, 다른 requestId로 같은 아이템 분해, 저장 실패, 지갑 한도 직전의 사례를 검사한다.\n\n구현 계약:\n장비 분해와 세 재료 지갑을 기존 저장·인벤토리에 추가해 줘.\n분해 금지 조건과 보상 표를 이번 명세대로 사용하고 무작위 재료를 새로 추첨하지 마.\nrequestId·expectedInventoryRevision·instanceId를 검증하는 거래 경로를 만들어 줘.\n삭제·보상·revision·처리 영수증이 같은 새 저장 상태에 들어가게 하고 저장 실패 시 전부 원복해 줘.\nschema2→3 이전은 사본으로 검증하고 기존 ID·옵션·골드·퀘스트·스킬을 보존해 줘.\nUI 확인창만으로 중복 방지를 했다고 보고하지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "희귀 장비 1개 분해 후 장비는 1개 줄고 고철4·가루2·불씨1만 증가한다.",
+          "같은 requestId 재전송은 결과 영수증을 반환하고 추가 지급하지 않는다.",
+          "한 재료가999를 넘으면 아이템 삭제와 모든 재료 지급을 함께 거부한다.",
+          "저장 실패를 주입하면 이전 장비·재료·revision이 모두 유지된다."
+        ]
+      },
+      {
+        "id": "L138_gameplay_engineer",
+        "role": "gameplay_engineer",
+        "kind": "proposal",
+        "depends_on": [
+          "L138_architect"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@inventory",
+          "@save_contract",
+          "@save_service",
+          "@out_game_designer",
+          "@out_architect"
+        ],
+        "write_prefixes": [
+          "@out_gameplay_engineer"
+        ],
+        "outputs": [
+          "@out_gameplay_engineer"
+        ],
+        "instruction": "장비 분해와 재료 지갑: 재화가 복제되지 않는 첫 거래 — 담당: 분해 트랜잭션\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n재료는 장비 24칸을 차지하지 않는 별도 지갑으로 관리한다. 고철·불씨·룬 가루의 세 종류, 종류별 최대 999다. 분해 시 일반 장비는 고철2, 마법은 고철3+가루1, 희귀는 고철4+가루2+불씨1을 주는 초기 표를 사용한다. 장착·즐겨찾기·퀘스트·룬 삽입 장비는 분해할 수 없다.\n\nUI 버튼을 비활성화하는 것만으로 중복 분해를 막을 수 없다. requestId, 기대 inventoryRevision, 아이템 instanceId를 가진 명령을 거래 서비스에 전달한다. 사전 검증과 결과 계산은 복사 상태에서 수행하고, 저장 가능한 완전한 새 상태를 만든 뒤 한 번에 교체한다. 쓰기 실패 시 기존 아이템과 재료를 유지한다.\n\nschema3는 기존 schema2 필드를 유지하고 materialWallet·stash·favoriteIds·socketData·questFlags의 명시적 기본값을 추가한다. 새 원본 저장을 바로 덮어쓰지 않고 사본에서 검사한다. 게임 중 모든 거래 때 저장 여부를 결정한 뒤 강의 전체에서 같은 방식을 유지한다. 본 확장은 마을 영구 거래를 성공 시 내구 저장하는 방식으로 고정한다.\n\n따라 하는 순서:\n기존 저장 DTO·원자 저장·백업 경로를 조사하고 schema3 변환 fixture를 먼저 만든다. 확장 필드 기본값을 명시한다.\n분해 미리보기를 띄우되 미리보기를 열었다는 이유로 장비나 재료를 바꾸지 않는다.\n거래 서비스가 검증→복사 상태 계산→저장→publish 순으로 수행하게 하고 지갑 한도를 먼저 검사한다.\n동일 requestId 연타, 다른 requestId로 같은 아이템 분해, 저장 실패, 지갑 한도 직전의 사례를 검사한다.\n\n구현 계약:\n장비 분해와 세 재료 지갑을 기존 저장·인벤토리에 추가해 줘.\n분해 금지 조건과 보상 표를 이번 명세대로 사용하고 무작위 재료를 새로 추첨하지 마.\nrequestId·expectedInventoryRevision·instanceId를 검증하는 거래 경로를 만들어 줘.\n삭제·보상·revision·처리 영수증이 같은 새 저장 상태에 들어가게 하고 저장 실패 시 전부 원복해 줘.\nschema2→3 이전은 사본으로 검증하고 기존 ID·옵션·골드·퀘스트·스킬을 보존해 줘.\nUI 확인창만으로 중복 방지를 했다고 보고하지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "희귀 장비 1개 분해 후 장비는 1개 줄고 고철4·가루2·불씨1만 증가한다.",
+          "같은 requestId 재전송은 결과 영수증을 반환하고 추가 지급하지 않는다.",
+          "한 재료가999를 넘으면 아이템 삭제와 모든 재료 지급을 함께 거부한다.",
+          "저장 실패를 주입하면 이전 장비·재료·revision이 모두 유지된다."
+        ]
+      },
+      {
+        "id": "L138_uiux_engineer",
+        "role": "uiux_engineer",
+        "kind": "proposal",
+        "depends_on": [
+          "L138_gameplay_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@inventory",
+          "@save_contract",
+          "@save_service",
+          "@out_game_designer",
+          "@out_architect",
+          "@out_gameplay_engineer"
+        ],
+        "write_prefixes": [
+          "@out_uiux_engineer"
+        ],
+        "outputs": [
+          "@out_uiux_engineer"
+        ],
+        "instruction": "장비 분해와 재료 지갑: 재화가 복제되지 않는 첫 거래 — 담당: 확인 UI\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n재료는 장비 24칸을 차지하지 않는 별도 지갑으로 관리한다. 고철·불씨·룬 가루의 세 종류, 종류별 최대 999다. 분해 시 일반 장비는 고철2, 마법은 고철3+가루1, 희귀는 고철4+가루2+불씨1을 주는 초기 표를 사용한다. 장착·즐겨찾기·퀘스트·룬 삽입 장비는 분해할 수 없다.\n\nUI 버튼을 비활성화하는 것만으로 중복 분해를 막을 수 없다. requestId, 기대 inventoryRevision, 아이템 instanceId를 가진 명령을 거래 서비스에 전달한다. 사전 검증과 결과 계산은 복사 상태에서 수행하고, 저장 가능한 완전한 새 상태를 만든 뒤 한 번에 교체한다. 쓰기 실패 시 기존 아이템과 재료를 유지한다.\n\nschema3는 기존 schema2 필드를 유지하고 materialWallet·stash·favoriteIds·socketData·questFlags의 명시적 기본값을 추가한다. 새 원본 저장을 바로 덮어쓰지 않고 사본에서 검사한다. 게임 중 모든 거래 때 저장 여부를 결정한 뒤 강의 전체에서 같은 방식을 유지한다. 본 확장은 마을 영구 거래를 성공 시 내구 저장하는 방식으로 고정한다.\n\n따라 하는 순서:\n기존 저장 DTO·원자 저장·백업 경로를 조사하고 schema3 변환 fixture를 먼저 만든다. 확장 필드 기본값을 명시한다.\n분해 미리보기를 띄우되 미리보기를 열었다는 이유로 장비나 재료를 바꾸지 않는다.\n거래 서비스가 검증→복사 상태 계산→저장→publish 순으로 수행하게 하고 지갑 한도를 먼저 검사한다.\n동일 requestId 연타, 다른 requestId로 같은 아이템 분해, 저장 실패, 지갑 한도 직전의 사례를 검사한다.\n\n구현 계약:\n장비 분해와 세 재료 지갑을 기존 저장·인벤토리에 추가해 줘.\n분해 금지 조건과 보상 표를 이번 명세대로 사용하고 무작위 재료를 새로 추첨하지 마.\nrequestId·expectedInventoryRevision·instanceId를 검증하는 거래 경로를 만들어 줘.\n삭제·보상·revision·처리 영수증이 같은 새 저장 상태에 들어가게 하고 저장 실패 시 전부 원복해 줘.\nschema2→3 이전은 사본으로 검증하고 기존 ID·옵션·골드·퀘스트·스킬을 보존해 줘.\nUI 확인창만으로 중복 방지를 했다고 보고하지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "희귀 장비 1개 분해 후 장비는 1개 줄고 고철4·가루2·불씨1만 증가한다.",
+          "같은 requestId 재전송은 결과 영수증을 반환하고 추가 지급하지 않는다.",
+          "한 재료가999를 넘으면 아이템 삭제와 모든 재료 지급을 함께 거부한다.",
+          "저장 실패를 주입하면 이전 장비·재료·revision이 모두 유지된다."
+        ]
+      },
+      {
+        "id": "L138_qa_engineer",
+        "role": "qa_engineer",
+        "kind": "proposal",
+        "depends_on": [
+          "L138_uiux_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@inventory",
+          "@save_contract",
+          "@save_service",
+          "@out_game_designer",
+          "@out_architect",
+          "@out_gameplay_engineer",
+          "@out_uiux_engineer"
+        ],
+        "write_prefixes": [
+          "@out_qa_engineer"
+        ],
+        "outputs": [
+          "@out_qa_engineer"
+        ],
+        "instruction": "장비 분해와 재료 지갑: 재화가 복제되지 않는 첫 거래 — 담당: 재시도·용량·보존\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n재료는 장비 24칸을 차지하지 않는 별도 지갑으로 관리한다. 고철·불씨·룬 가루의 세 종류, 종류별 최대 999다. 분해 시 일반 장비는 고철2, 마법은 고철3+가루1, 희귀는 고철4+가루2+불씨1을 주는 초기 표를 사용한다. 장착·즐겨찾기·퀘스트·룬 삽입 장비는 분해할 수 없다.\n\nUI 버튼을 비활성화하는 것만으로 중복 분해를 막을 수 없다. requestId, 기대 inventoryRevision, 아이템 instanceId를 가진 명령을 거래 서비스에 전달한다. 사전 검증과 결과 계산은 복사 상태에서 수행하고, 저장 가능한 완전한 새 상태를 만든 뒤 한 번에 교체한다. 쓰기 실패 시 기존 아이템과 재료를 유지한다.\n\nschema3는 기존 schema2 필드를 유지하고 materialWallet·stash·favoriteIds·socketData·questFlags의 명시적 기본값을 추가한다. 새 원본 저장을 바로 덮어쓰지 않고 사본에서 검사한다. 게임 중 모든 거래 때 저장 여부를 결정한 뒤 강의 전체에서 같은 방식을 유지한다. 본 확장은 마을 영구 거래를 성공 시 내구 저장하는 방식으로 고정한다.\n\n따라 하는 순서:\n기존 저장 DTO·원자 저장·백업 경로를 조사하고 schema3 변환 fixture를 먼저 만든다. 확장 필드 기본값을 명시한다.\n분해 미리보기를 띄우되 미리보기를 열었다는 이유로 장비나 재료를 바꾸지 않는다.\n거래 서비스가 검증→복사 상태 계산→저장→publish 순으로 수행하게 하고 지갑 한도를 먼저 검사한다.\n동일 requestId 연타, 다른 requestId로 같은 아이템 분해, 저장 실패, 지갑 한도 직전의 사례를 검사한다.\n\n구현 계약:\n장비 분해와 세 재료 지갑을 기존 저장·인벤토리에 추가해 줘.\n분해 금지 조건과 보상 표를 이번 명세대로 사용하고 무작위 재료를 새로 추첨하지 마.\nrequestId·expectedInventoryRevision·instanceId를 검증하는 거래 경로를 만들어 줘.\n삭제·보상·revision·처리 영수증이 같은 새 저장 상태에 들어가게 하고 저장 실패 시 전부 원복해 줘.\nschema2→3 이전은 사본으로 검증하고 기존 ID·옵션·골드·퀘스트·스킬을 보존해 줘.\nUI 확인창만으로 중복 방지를 했다고 보고하지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "희귀 장비 1개 분해 후 장비는 1개 줄고 고철4·가루2·불씨1만 증가한다.",
+          "같은 requestId 재전송은 결과 영수증을 반환하고 추가 지급하지 않는다.",
+          "한 재료가999를 넘으면 아이템 삭제와 모든 재료 지급을 함께 거부한다.",
+          "저장 실패를 주입하면 이전 장비·재료·revision이 모두 유지된다."
+        ]
+      },
+      {
+        "id": "L138_critic",
+        "role": "critic",
+        "kind": "review",
+        "depends_on": [
+          "L138_qa_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@inventory",
+          "@save_contract",
+          "@save_service",
+          "@out_game_designer",
+          "@out_architect",
+          "@out_gameplay_engineer",
+          "@out_uiux_engineer",
+          "@out_qa_engineer"
+        ],
+        "write_prefixes": [],
+        "outputs": [],
+        "instruction": "이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n재료는 장비 24칸을 차지하지 않는 별도 지갑으로 관리한다. 고철·불씨·룬 가루의 세 종류, 종류별 최대 999다. 분해 시 일반 장비는 고철2, 마법은 고철3+가루1, 희귀는 고철4+가루2+불씨1을 주는 초기 표를 사용한다. 장착·즐겨찾기·퀘스트·룬 삽입 장비는 분해할 수 없다.\n\nUI 버튼을 비활성화하는 것만으로 중복 분해를 막을 수 없다. requestId, 기대 inventoryRevision, 아이템 instanceId를 가진 명령을 거래 서비스에 전달한다. 사전 검증과 결과 계산은 복사 상태에서 수행하고, 저장 가능한 완전한 새 상태를 만든 뒤 한 번에 교체한다. 쓰기 실패 시 기존 아이템과 재료를 유지한다.\n\nschema3는 기존 schema2 필드를 유지하고 materialWallet·stash·favoriteIds·socketData·questFlags의 명시적 기본값을 추가한다. 새 원본 저장을 바로 덮어쓰지 않고 사본에서 검사한다. 게임 중 모든 거래 때 저장 여부를 결정한 뒤 강의 전체에서 같은 방식을 유지한다. 본 확장은 마을 영구 거래를 성공 시 내구 저장하는 방식으로 고정한다.\n\n따라 하는 순서:\n기존 저장 DTO·원자 저장·백업 경로를 조사하고 schema3 변환 fixture를 먼저 만든다. 확장 필드 기본값을 명시한다.\n분해 미리보기를 띄우되 미리보기를 열었다는 이유로 장비나 재료를 바꾸지 않는다.\n거래 서비스가 검증→복사 상태 계산→저장→publish 순으로 수행하게 하고 지갑 한도를 먼저 검사한다.\n동일 requestId 연타, 다른 requestId로 같은 아이템 분해, 저장 실패, 지갑 한도 직전의 사례를 검사한다.\n\n구현 계약:\n장비 분해와 세 재료 지갑을 기존 저장·인벤토리에 추가해 줘.\n분해 금지 조건과 보상 표를 이번 명세대로 사용하고 무작위 재료를 새로 추첨하지 마.\nrequestId·expectedInventoryRevision·instanceId를 검증하는 거래 경로를 만들어 줘.\n삭제·보상·revision·처리 영수증이 같은 새 저장 상태에 들어가게 하고 저장 실패 시 전부 원복해 줘.\nschema2→3 이전은 사본으로 검증하고 기존 ID·옵션·골드·퀘스트·스킬을 보존해 줘.\nUI 확인창만으로 중복 방지를 했다고 보고하지 마.\n\n원래 요구·실제 인터페이스·모든 제안을 독립적으로 대조하세요. 테스트를 실행한 상태가 아닙니다. 코드와 테스트를 수정하지 마세요. 미해결 결함은 review_fail 또는 blocked이며 시각/기기/재미 검사는 별도입니다.",
+        "acceptance": [
+          "희귀 장비 1개 분해 후 장비는 1개 줄고 고철4·가루2·불씨1만 증가한다.",
+          "같은 requestId 재전송은 결과 영수증을 반환하고 추가 지급하지 않는다.",
+          "한 재료가999를 넘으면 아이템 삭제와 모든 재료 지급을 함께 거부한다.",
+          "저장 실패를 주입하면 이전 장비·재료·revision이 모두 유지된다."
+        ]
+      }
+    ]
+  }
+}

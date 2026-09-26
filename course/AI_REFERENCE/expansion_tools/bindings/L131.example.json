@@ -1,0 +1,23 @@
+{
+  "status": "UNREVIEWED",
+  "mode": "2D",
+  "reviewed_by": "",
+  "inputs": {
+    "game_spec": {
+      "path": "Docs/REPLACE_game_spec.md",
+      "anchor": "실제 파일에서 확인한 선언/제목",
+      "reason": "해당 호출/데이터가 실제 게임에서 사용됨을 확인한 이유"
+    },
+    "loot_model": {
+      "path": "Docs/REPLACE_loot_model.md",
+      "anchor": "실제 파일에서 확인한 선언/제목",
+      "reason": "해당 호출/데이터가 실제 게임에서 사용됨을 확인한 이유"
+    }
+  },
+  "outputs": {
+    "out_game_designer": "Docs/Design/ExpansionL131_game_designer.md",
+    "out_gameplay_engineer": "Assets/_Game/Scripts/Core/ExpansionL131_gameplay_engineer.cs",
+    "out_qa_engineer": "Assets/_Game/Tests/EditMode/ExpansionL131_qa_engineer.cs"
+  },
+  "note": "예시 출력 이름은 권한 예시입니다. 실제 기능 파일/진입점에 맞춰 수정하세요. 기존 파일을 출력으로 쓸 때 입력에도 선언합니다. 필요한 파일이 더 있으면 recipe와 binding 둘 다 새 revision으로 수정합니다."
+}

@@ -1,0 +1,27 @@
+현재 프로젝트의 실제 파일과 이미 결정한 규칙을 먼저 확인해 줘. 이름이 다른 기존 구현이 있으면 새로 중복 제작하지 말고 그 구현에 연결해 줘.
+
+TestArena를 XY24×24,cellSize1의 실제 2D 테스트 공간으로 구성해 줘.
+Floor는 collider 없는 Tilemap, 벽은 blocked 셀에서 생성한 Collider2D로 만들어 줘.
+통로 폭2 이상과 SpawnPoint를 마련하고 Floor/WallArt/Decor를 분리해 줘.
+Player2D는 발 위치 ActorRoot, Kinematic Rigidbody2D, 반경0.35 CircleCollider2D,
+자식 VisualRoot와 발Pivot 스프라이트로 구성해 줘. 그림 크기를 몸체로 자동 적용하지 마.
+카메라는 (player.x,player.y,-10), 회전0,Orthographic size8이며 XY만 추적해 줘.
+Ground/Telegraph/World/Overlay 정렬층과 Environment/Player/Enemy/Interactable 물리층을 별도로 문서화해 줘.
+배우와 큰 장식의 공통 발Y 정렬 함수를 만들고 앞뒤 검사 위치를 준비해 줘.
+3D Rigidbody,CharacterController,NavMeshAgent, 원근 카메라는 추가하지 마.
+씬·프리팹을 저장하고 실제 세 화면 비율과 Collider2D 배치를 확인해 줘.
+
+적용할 세부 규칙:
+테스트 공간은 XY 24×24유닛, 셀 크기1이다. Floor·WallsCollision·WallArt·Decor의 Tilemap 또는 스프라이트 층을 구분한다. Floor는 Collider가 없다. WallsCollision은 벽의 실제 막힌 셀만 담는다.
+
+• 플레이어 구성: ActorRoot / 초기 설정: (0,0,0), 회전 고정, 논리 이동 위치
+• 플레이어 구성: Body / 초기 설정: Kinematic Rigidbody2D + CircleCollider2D, 반경0.35
+• 플레이어 구성: VisualRoot / 초기 설정: 임시 스프라이트, 발 Pivot, 그림 키 약1.8유닛
+• 플레이어 구성: Facing / 초기 설정: 마지막 유효 이동/공격 방향 Vector2, 초기 아래
+• 플레이어 구성: 카메라 / 초기 설정: (0,0,-10), 회전0, Orthographic size8
+
+처음 그림은 64×64를 PPU32로 표시해도 된다. 최종 아트64픽셀 규격과 몸체 크기를 혼동하지 않는다. 타일은64픽셀·PPU64로 1셀이다. 그림의 PPU를 바꿀 때 실제 화면 키를 검수한다.
+
+카메라는 LateUpdate에서 XY만 따라간다. Z=-10을 유지하고 Root 회전이나 바닥 기울기를 만들지 않는다. World 정렬은 sortingOrder = -round(footY * 100)처럼 공통 함수를 사용하고 같은 위치의 안정된 우선순위를 추가한다. 테스트 월드 좌표 범위를 제한해 정렬 정수 범위를 넘지 않게 한다.
+
+코드·설정·파일 생성·실행은 네가 맡고, 필요한 화면과 결과를 보여 줘. 수행하지 못한 작업과 필요한 승인·도구 연결은 구분해서 알려 줘.

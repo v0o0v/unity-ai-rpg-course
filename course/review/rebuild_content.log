@@ -1,0 +1,23 @@
+{
+  "lessons": 256,
+  "worked_cases": 63,
+  "rules_visible": 164,
+  "transfers": 5,
+  "sentence_repairs": 444,
+  "changed_prompts": 13,
+  "changed_lessons": [
+    27,
+    88,
+    94,
+    121,
+    125,
+    129,
+    130,
+    136,
+    141,
+    185,
+    192,
+    240
+  ]
+}
+built 256 lessons, HTML chars 9798721 MD chars 6936555

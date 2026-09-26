@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "scope": "PROPOSED_INITIAL_DESIGN_NOT_EXECUTED",
+  "mode": "2D",
+  "title": "봉인된 대장간",
+  "preserve": {
+    "level_cap": 10,
+    "classes": 1,
+    "inventory_slots": 24,
+    "equipment_slots": 3,
+    "skill_tree_nodes": 9,
+    "old_item_definitions": 18
+  },
+  "loot_filter": {
+    "equipment_modes": [
+      "all",
+      "magic_or_better",
+      "rare_only"
+    ],
+    "always_visible": [
+      "quest",
+      "gold",
+      "material",
+      "unknown"
+    ],
+    "hide": "label_only",
+    "reveal_saved": false
+  },
+  "status_effects": {
+    "burn": {
+      "duration_s": 3,
+      "tick_s": 1,
+      "damage": 2,
+      "reapply": "refresh_expiry_keep_next_tick",
+      "final_tick_before_expiry": true,
+      "damage_is_final": true
+    },
+    "chill": {
+      "duration_s": 2,
+      "speed_multiplier": 0.75
+    },
+    "mark": {
+      "duration_s": 4,
+      "next_direct_multiplier": 1.2,
+      "consume_on_dot": false,
+      "applies_after_current_hit": true
+    }
+  },
+  "damage_order": [
+    "base_skill_equipment_rune_run_modifiers",
+    "mark_if_preexisting",
+    "direction_guard_if_direct",
+    "existing_defense_formula",
+    "integer_round_once_minimum1",
+    "apply_hp_and_death_once",
+    "on_hit_if_alive_direct_only"
+  ],
+  "dash": {
+    "distance": 2.4,
+    "duration_s": 0.18,
+    "cooldown_s": 1.5,
+    "iframe_start_s": 0.04,
+    "iframe_end_exclusive_s": 0.14,
+    "immune_to": [
+      "direct"
+    ],
+    "blocks": [
+      "walls",
+      "closed_doors",
+      "void",
+      "enemy_body"
+    ]
+  },
+  "wallet_cap": 999,
+  "materials": [
+    "iron_scrap",
+    "ember_shard",
+    "rune_dust"
+  ],
+  "salvage": {
+    "normal": {
+      "iron_scrap": 2
+    },
+    "magic": {
+      "iron_scrap": 3,
+      "rune_dust": 1
+    },
+    "rare": {
+      "iron_scrap": 4,
+      "rune_dust": 2,
+      "ember_shard": 1
+    }
+  },
+  "salvage_blocked": [
+    "equipped",
+    "favorite",
+    "quest",
+    "socket_occupied"
+  ],
+  "gear_recipes": [
+    {
+      "id": "forge_blade",
+      "cost": {
+        "iron_scrap": 6,
+        "ember_shard": 2
+      },
+      "bonus": {
+        "attack": 4
+      },
+      "rarity": "normal"
+    },
+    {
+      "id": "forge_vest",
+      "cost": {
+        "iron_scrap": 8,
+        "ember_shard": 1
+      },
+      "bonus": {
+        "defense": 3
+      },
+      "rarity": "normal"
+    },
+    {
+      "id": "forge_charm",
+      "cost": {
+        "iron_scrap": 3,
+        "rune_dust": 3
+      },
+      "bonus": {
+        "max_mana": 5
+      },
+      "rarity": "normal"
+    }
+  ],
+  "stash_slots": 24,
+  "socket_max": 1,
+  "socket_equipment": [
+    "weapon",
+    "armor"
+  ],
+  "socket_excluded": [
+    "accessory"
+  ],
+  "runes": [
+    {
+      "id": "ember",
+      "compatible": [
+        "weapon"
+      ],
+      "effect": "burn_on_direct",
+      "cost": {
+        "ember_shard": 2,
+        "rune_dust": 2
+      }
+    },
+    {
+      "id": "frost",
+      "compatible": [
+        "weapon"
+      ],
+      "effect": "chill_on_direct",
+      "cost": {
+        "ember_shard": 1,
+        "rune_dust": 3
+      }
+    },
+    {
+      "id": "ward",
+      "compatible": [
+        "armor"
+      ],
+      "effect": "max_hp_plus_10",
+      "cost": {
+        "iron_scrap": 3,
+        "rune_dust": 2
+      }
+    }
+  ],
+  "rune_remove_cost": {
+    "iron_scrap": 1
+  },
+  "craft_random_affixes": false,
+  "transactions": {
+    "save_on_success": true,
+    "idempotency": [
+      "request_id",
+      "payload_hash",
+      "expected_inventory_revision"
+    ],
+    "preview_mutates": false
+  },
+  "skill_variants": {
+    "slash": {
+      "range_multiplier": 1.25,
+      "damage_multiplier": 0.85
+    },
+    "bolt": {
+      "applies_after_hit": "mark",
+      "mana_multiplier": 1.2
+    },
+    "whirl": {
+      "reduced_movement_penalty": true,
+      "duration_multiplier": 0.8
+    }
+  },
+  "region": {
+    "id": "sealed_forge",
+    "grid": [
+      64,
+      64
+    ],
+    "rooms": {
+      "entry": 1,
+      "combat": 3,
+      "valve": 1,
+      "rescue": 1,
+      "relic": 1,
+      "boss": 1
+    },
+    "fallback": "forge_specific",
+    "generator_version": 1
+  },
+  "relics": {
+    "offer_count": 3,
+    "pool_count": 6,
+    "one_per_run": true,
+    "saved": false,
+    "offer_cache_key": [
+      "run_id",
+      "room_id"
+    ]
+  },
+  "companion": {
+    "count": 1,
+    "follow_distance": 1.5,
+    "sense_range": 6,
+    "attack_interval_s": 1.2,
+    "damage_multiplier": 0.3,
+    "recovery_distance": 12,
+    "blocks_player": false,
+    "inherits_player_on_hit": false
+  },
+  "boss": {
+    "id": "forge_warden",
+    "phase_hp_thresholds": [
+      0.7,
+      0.35
+    ],
+    "patterns": [
+      "hammer",
+      "fire_line",
+      "floor_sequence"
+    ],
+    "required_companion": false
+  },
+  "save": {
+    "schema": 3,
+    "migrate_from": 2,
+    "resume": "town",
+    "temporary": [
+      "relics",
+      "status_effects",
+      "ground_drops",
+      "companion_position",
+      "open_ui"
+    ]
+  },
+  "remote_pack": {
+    "mode": "2D",
+    "optional": true,
+    "contains_code": false,
+    "default_offline_complete": true
+  }
+}

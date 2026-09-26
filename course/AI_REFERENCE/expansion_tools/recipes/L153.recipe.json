@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "lesson": 153,
+  "feature": "E06 콘텐츠",
+  "input_aliases": [
+    "game_spec",
+    "content_contract",
+    "download_state",
+    "visual_adapter"
+  ],
+  "output_aliases": [
+    "out_build_release_engineer",
+    "out_technical_artist",
+    "out_uiux_engineer",
+    "out_qa_engineer"
+  ],
+  "plan": {
+    "schema_version": 1,
+    "binding_required": true,
+    "id": "forge-l153-r1",
+    "title": "고해상도 대장간 팩 다운로드와 코드·콘텐츠 호환성",
+    "tasks": [
+      {
+        "id": "L153_build_release_engineer",
+        "role": "build_release_engineer",
+        "kind": "proposal",
+        "depends_on": [],
+        "read_files": [
+          "@game_spec",
+          "@content_contract",
+          "@download_state",
+          "@visual_adapter"
+        ],
+        "write_prefixes": [
+          "@out_build_release_engineer"
+        ],
+        "outputs": [
+          "@out_build_release_engineer"
+        ],
+        "instruction": "고해상도 대장간 팩 다운로드와 코드·콘텐츠 호환성 — 담당: 팩·카탈로그·호환 버전\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n기본 대장간 지역·보스·룬·동료의 규칙과 저해상도 외형은 앱에 포함한다. 선택 고해상도 팩은 스프라이트·타일·효과·소리만 교체한다. C# 코드를 Addressables 데이터로 받아 실행하거나 원격 팩이 없으면 필수 퀘스트를 막는 구조는 만들지 않는다.\n\n팩 manifest는 mode=2D, contentVersion, minimumAppContentContract, 아틀라스·셰이더 필요 조건을 기록한다. 앱의 코드 계약과 호환되지 않으면 받지 않고 기본 외형을 유지한다. Addressables 업데이트는 이전 content state 보존과 빌드 그룹 설정에 의존하므로 이전 빌드 상태 파일을 삭제하지 않는다. [P05]\n\n다운로드0바이트는 캐시가 있다는 뜻일 수 있으며 프리팹 로드 성공과 다르다. 취소한 요청의 늦은 완료 콜백이 새 화면을 덮지 않도록 request generation과 소유자를 확인한다. 선택한 외형이 바뀌어도 체력·몸체·사거리·저장 ID는 같아야 한다. 실제 업로드는 별도 승인하고, 로컬 준비물을 만들었다는 이유로 CDN 배포 성공이라 하지 않는다.\n\n따라 하는 순서:\n기본팩/고해상도팩의 자산 목록과 게임 규칙을 분리한다. 필수 콘텐츠가 원격 그룹으로 옮겨가지 않았는지 확인한다.\n두 플랫폼별 원격 빌드 경로·카탈로그·호환 manifest를 등록하고 콘텐츠 상태 파일을 보존한다.\n다운로드 용량→동의→전송→실제 load→입장의 기존 상태기계에 팩 선택을 연결한다.\n최초 완전 오프라인·캐시 있음·캐시 삭제·취소 후 완료·잘못된 앱 버전·rollback을 검사한다.\n\n구현 계약:\n대장간의 선택 고해상도2D 팩을 기존 Addressables 흐름에 연결해 줘.\n새 전투·저장 코드는 앱에 포함하고 원격팩은 외형만 바꾸도록 해 줘.\n팩 mode·contentContract·기본 fallback을 확인하고 미호환 팩을 거부해 줘.\n취소 후 늦은 콜백·0바이트 캐시·실제 load실패·오프라인을 따로 검사해 줘.\n빌드 준비·외부 업로드·기기 다운로드 성공을 구분하고 승인 없이 업로드하지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "설치 직후 네트워크 OFF로 새 퀘스트와 보스를 기본 외형으로 완료한다.",
+          "취소한 다운로드가 늦게 완료되어도 새 화면·새 요청의 상태를 덮지 않는다.",
+          "고해상도 전환 전후 공격 사거리·몸체·아이템 ID와 저장 상태가 같다.",
+          "호환되지 않는 팩과 rollback 뒤 유효한 기본 외형으로 안전하게 진입한다."
+        ]
+      },
+      {
+        "id": "L153_technical_artist",
+        "role": "technical_artist",
+        "kind": "proposal",
+        "depends_on": [
+          "L153_build_release_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@content_contract",
+          "@download_state",
+          "@visual_adapter",
+          "@out_build_release_engineer"
+        ],
+        "write_prefixes": [
+          "@out_technical_artist"
+        ],
+        "outputs": [
+          "@out_technical_artist"
+        ],
+        "instruction": "고해상도 대장간 팩 다운로드와 코드·콘텐츠 호환성 — 담당: 고해상도/기본 외형\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n기본 대장간 지역·보스·룬·동료의 규칙과 저해상도 외형은 앱에 포함한다. 선택 고해상도 팩은 스프라이트·타일·효과·소리만 교체한다. C# 코드를 Addressables 데이터로 받아 실행하거나 원격 팩이 없으면 필수 퀘스트를 막는 구조는 만들지 않는다.\n\n팩 manifest는 mode=2D, contentVersion, minimumAppContentContract, 아틀라스·셰이더 필요 조건을 기록한다. 앱의 코드 계약과 호환되지 않으면 받지 않고 기본 외형을 유지한다. Addressables 업데이트는 이전 content state 보존과 빌드 그룹 설정에 의존하므로 이전 빌드 상태 파일을 삭제하지 않는다. [P05]\n\n다운로드0바이트는 캐시가 있다는 뜻일 수 있으며 프리팹 로드 성공과 다르다. 취소한 요청의 늦은 완료 콜백이 새 화면을 덮지 않도록 request generation과 소유자를 확인한다. 선택한 외형이 바뀌어도 체력·몸체·사거리·저장 ID는 같아야 한다. 실제 업로드는 별도 승인하고, 로컬 준비물을 만들었다는 이유로 CDN 배포 성공이라 하지 않는다.\n\n따라 하는 순서:\n기본팩/고해상도팩의 자산 목록과 게임 규칙을 분리한다. 필수 콘텐츠가 원격 그룹으로 옮겨가지 않았는지 확인한다.\n두 플랫폼별 원격 빌드 경로·카탈로그·호환 manifest를 등록하고 콘텐츠 상태 파일을 보존한다.\n다운로드 용량→동의→전송→실제 load→입장의 기존 상태기계에 팩 선택을 연결한다.\n최초 완전 오프라인·캐시 있음·캐시 삭제·취소 후 완료·잘못된 앱 버전·rollback을 검사한다.\n\n구현 계약:\n대장간의 선택 고해상도2D 팩을 기존 Addressables 흐름에 연결해 줘.\n새 전투·저장 코드는 앱에 포함하고 원격팩은 외형만 바꾸도록 해 줘.\n팩 mode·contentContract·기본 fallback을 확인하고 미호환 팩을 거부해 줘.\n취소 후 늦은 콜백·0바이트 캐시·실제 load실패·오프라인을 따로 검사해 줘.\n빌드 준비·외부 업로드·기기 다운로드 성공을 구분하고 승인 없이 업로드하지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "설치 직후 네트워크 OFF로 새 퀘스트와 보스를 기본 외형으로 완료한다.",
+          "취소한 다운로드가 늦게 완료되어도 새 화면·새 요청의 상태를 덮지 않는다.",
+          "고해상도 전환 전후 공격 사거리·몸체·아이템 ID와 저장 상태가 같다.",
+          "호환되지 않는 팩과 rollback 뒤 유효한 기본 외형으로 안전하게 진입한다."
+        ]
+      },
+      {
+        "id": "L153_uiux_engineer",
+        "role": "uiux_engineer",
+        "kind": "proposal",
+        "depends_on": [
+          "L153_technical_artist"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@content_contract",
+          "@download_state",
+          "@visual_adapter",
+          "@out_build_release_engineer",
+          "@out_technical_artist"
+        ],
+        "write_prefixes": [
+          "@out_uiux_engineer"
+        ],
+        "outputs": [
+          "@out_uiux_engineer"
+        ],
+        "instruction": "고해상도 대장간 팩 다운로드와 코드·콘텐츠 호환성 — 담당: 동의·진행·취소\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n기본 대장간 지역·보스·룬·동료의 규칙과 저해상도 외형은 앱에 포함한다. 선택 고해상도 팩은 스프라이트·타일·효과·소리만 교체한다. C# 코드를 Addressables 데이터로 받아 실행하거나 원격 팩이 없으면 필수 퀘스트를 막는 구조는 만들지 않는다.\n\n팩 manifest는 mode=2D, contentVersion, minimumAppContentContract, 아틀라스·셰이더 필요 조건을 기록한다. 앱의 코드 계약과 호환되지 않으면 받지 않고 기본 외형을 유지한다. Addressables 업데이트는 이전 content state 보존과 빌드 그룹 설정에 의존하므로 이전 빌드 상태 파일을 삭제하지 않는다. [P05]\n\n다운로드0바이트는 캐시가 있다는 뜻일 수 있으며 프리팹 로드 성공과 다르다. 취소한 요청의 늦은 완료 콜백이 새 화면을 덮지 않도록 request generation과 소유자를 확인한다. 선택한 외형이 바뀌어도 체력·몸체·사거리·저장 ID는 같아야 한다. 실제 업로드는 별도 승인하고, 로컬 준비물을 만들었다는 이유로 CDN 배포 성공이라 하지 않는다.\n\n따라 하는 순서:\n기본팩/고해상도팩의 자산 목록과 게임 규칙을 분리한다. 필수 콘텐츠가 원격 그룹으로 옮겨가지 않았는지 확인한다.\n두 플랫폼별 원격 빌드 경로·카탈로그·호환 manifest를 등록하고 콘텐츠 상태 파일을 보존한다.\n다운로드 용량→동의→전송→실제 load→입장의 기존 상태기계에 팩 선택을 연결한다.\n최초 완전 오프라인·캐시 있음·캐시 삭제·취소 후 완료·잘못된 앱 버전·rollback을 검사한다.\n\n구현 계약:\n대장간의 선택 고해상도2D 팩을 기존 Addressables 흐름에 연결해 줘.\n새 전투·저장 코드는 앱에 포함하고 원격팩은 외형만 바꾸도록 해 줘.\n팩 mode·contentContract·기본 fallback을 확인하고 미호환 팩을 거부해 줘.\n취소 후 늦은 콜백·0바이트 캐시·실제 load실패·오프라인을 따로 검사해 줘.\n빌드 준비·외부 업로드·기기 다운로드 성공을 구분하고 승인 없이 업로드하지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "설치 직후 네트워크 OFF로 새 퀘스트와 보스를 기본 외형으로 완료한다.",
+          "취소한 다운로드가 늦게 완료되어도 새 화면·새 요청의 상태를 덮지 않는다.",
+          "고해상도 전환 전후 공격 사거리·몸체·아이템 ID와 저장 상태가 같다.",
+          "호환되지 않는 팩과 rollback 뒤 유효한 기본 외형으로 안전하게 진입한다."
+        ]
+      },
+      {
+        "id": "L153_qa_engineer",
+        "role": "qa_engineer",
+        "kind": "proposal",
+        "depends_on": [
+          "L153_uiux_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@content_contract",
+          "@download_state",
+          "@visual_adapter",
+          "@out_build_release_engineer",
+          "@out_technical_artist",
+          "@out_uiux_engineer"
+        ],
+        "write_prefixes": [
+          "@out_qa_engineer"
+        ],
+        "outputs": [
+          "@out_qa_engineer"
+        ],
+        "instruction": "고해상도 대장간 팩 다운로드와 코드·콘텐츠 호환성 — 담당: 오프라인·캐시·늦은 완료\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n기본 대장간 지역·보스·룬·동료의 규칙과 저해상도 외형은 앱에 포함한다. 선택 고해상도 팩은 스프라이트·타일·효과·소리만 교체한다. C# 코드를 Addressables 데이터로 받아 실행하거나 원격 팩이 없으면 필수 퀘스트를 막는 구조는 만들지 않는다.\n\n팩 manifest는 mode=2D, contentVersion, minimumAppContentContract, 아틀라스·셰이더 필요 조건을 기록한다. 앱의 코드 계약과 호환되지 않으면 받지 않고 기본 외형을 유지한다. Addressables 업데이트는 이전 content state 보존과 빌드 그룹 설정에 의존하므로 이전 빌드 상태 파일을 삭제하지 않는다. [P05]\n\n다운로드0바이트는 캐시가 있다는 뜻일 수 있으며 프리팹 로드 성공과 다르다. 취소한 요청의 늦은 완료 콜백이 새 화면을 덮지 않도록 request generation과 소유자를 확인한다. 선택한 외형이 바뀌어도 체력·몸체·사거리·저장 ID는 같아야 한다. 실제 업로드는 별도 승인하고, 로컬 준비물을 만들었다는 이유로 CDN 배포 성공이라 하지 않는다.\n\n따라 하는 순서:\n기본팩/고해상도팩의 자산 목록과 게임 규칙을 분리한다. 필수 콘텐츠가 원격 그룹으로 옮겨가지 않았는지 확인한다.\n두 플랫폼별 원격 빌드 경로·카탈로그·호환 manifest를 등록하고 콘텐츠 상태 파일을 보존한다.\n다운로드 용량→동의→전송→실제 load→입장의 기존 상태기계에 팩 선택을 연결한다.\n최초 완전 오프라인·캐시 있음·캐시 삭제·취소 후 완료·잘못된 앱 버전·rollback을 검사한다.\n\n구현 계약:\n대장간의 선택 고해상도2D 팩을 기존 Addressables 흐름에 연결해 줘.\n새 전투·저장 코드는 앱에 포함하고 원격팩은 외형만 바꾸도록 해 줘.\n팩 mode·contentContract·기본 fallback을 확인하고 미호환 팩을 거부해 줘.\n취소 후 늦은 콜백·0바이트 캐시·실제 load실패·오프라인을 따로 검사해 줘.\n빌드 준비·외부 업로드·기기 다운로드 성공을 구분하고 승인 없이 업로드하지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "설치 직후 네트워크 OFF로 새 퀘스트와 보스를 기본 외형으로 완료한다.",
+          "취소한 다운로드가 늦게 완료되어도 새 화면·새 요청의 상태를 덮지 않는다.",
+          "고해상도 전환 전후 공격 사거리·몸체·아이템 ID와 저장 상태가 같다.",
+          "호환되지 않는 팩과 rollback 뒤 유효한 기본 외형으로 안전하게 진입한다."
+        ]
+      },
+      {
+        "id": "L153_critic",
+        "role": "critic",
+        "kind": "review",
+        "depends_on": [
+          "L153_qa_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@content_contract",
+          "@download_state",
+          "@visual_adapter",
+          "@out_build_release_engineer",
+          "@out_technical_artist",
+          "@out_uiux_engineer",
+          "@out_qa_engineer"
+        ],
+        "write_prefixes": [],
+        "outputs": [],
+        "instruction": "이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n기본 대장간 지역·보스·룬·동료의 규칙과 저해상도 외형은 앱에 포함한다. 선택 고해상도 팩은 스프라이트·타일·효과·소리만 교체한다. C# 코드를 Addressables 데이터로 받아 실행하거나 원격 팩이 없으면 필수 퀘스트를 막는 구조는 만들지 않는다.\n\n팩 manifest는 mode=2D, contentVersion, minimumAppContentContract, 아틀라스·셰이더 필요 조건을 기록한다. 앱의 코드 계약과 호환되지 않으면 받지 않고 기본 외형을 유지한다. Addressables 업데이트는 이전 content state 보존과 빌드 그룹 설정에 의존하므로 이전 빌드 상태 파일을 삭제하지 않는다. [P05]\n\n다운로드0바이트는 캐시가 있다는 뜻일 수 있으며 프리팹 로드 성공과 다르다. 취소한 요청의 늦은 완료 콜백이 새 화면을 덮지 않도록 request generation과 소유자를 확인한다. 선택한 외형이 바뀌어도 체력·몸체·사거리·저장 ID는 같아야 한다. 실제 업로드는 별도 승인하고, 로컬 준비물을 만들었다는 이유로 CDN 배포 성공이라 하지 않는다.\n\n따라 하는 순서:\n기본팩/고해상도팩의 자산 목록과 게임 규칙을 분리한다. 필수 콘텐츠가 원격 그룹으로 옮겨가지 않았는지 확인한다.\n두 플랫폼별 원격 빌드 경로·카탈로그·호환 manifest를 등록하고 콘텐츠 상태 파일을 보존한다.\n다운로드 용량→동의→전송→실제 load→입장의 기존 상태기계에 팩 선택을 연결한다.\n최초 완전 오프라인·캐시 있음·캐시 삭제·취소 후 완료·잘못된 앱 버전·rollback을 검사한다.\n\n구현 계약:\n대장간의 선택 고해상도2D 팩을 기존 Addressables 흐름에 연결해 줘.\n새 전투·저장 코드는 앱에 포함하고 원격팩은 외형만 바꾸도록 해 줘.\n팩 mode·contentContract·기본 fallback을 확인하고 미호환 팩을 거부해 줘.\n취소 후 늦은 콜백·0바이트 캐시·실제 load실패·오프라인을 따로 검사해 줘.\n빌드 준비·외부 업로드·기기 다운로드 성공을 구분하고 승인 없이 업로드하지 마.\n\n원래 요구·실제 인터페이스·모든 제안을 독립적으로 대조하세요. 테스트를 실행한 상태가 아닙니다. 코드와 테스트를 수정하지 마세요. 미해결 결함은 review_fail 또는 blocked이며 시각/기기/재미 검사는 별도입니다.",
+        "acceptance": [
+          "설치 직후 네트워크 OFF로 새 퀘스트와 보스를 기본 외형으로 완료한다.",
+          "취소한 다운로드가 늦게 완료되어도 새 화면·새 요청의 상태를 덮지 않는다.",
+          "고해상도 전환 전후 공격 사거리·몸체·아이템 ID와 저장 상태가 같다.",
+          "호환되지 않는 팩과 rollback 뒤 유효한 기본 외형으로 안전하게 진입한다."
+        ]
+      }
+    ]
+  }
+}

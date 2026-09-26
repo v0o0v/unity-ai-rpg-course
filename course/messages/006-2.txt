@@ -1,0 +1,17 @@
+현재 프로젝트의 실제 파일과 이미 결정한 규칙을 먼저 확인해 줘. 이름이 다른 기존 구현이 있으면 새로 중복 제작하지 말고 그 구현에 연결해 줘.
+
+아래 폴더 구조로 최소 뼈대를 만들어 줘.
+Assets/_Game 아래 Scripts/Core, Scripts/Runtime, Editor, Tests/EditMode,
+Tests/PlayMode, Data, Prefabs, Scenes, Materials, Art, Audio, UI를 만들어 줘.
+Core는 가능한 Unity 의존 없는 계산·상태 모델, Runtime은 MonoBehaviour와 SO,
+Editor는 제작 도구로 구분하고 assembly definition의 참조를 실제 패키지 기준으로 연결해 줘.
+Test assembly는 테스트 전용으로 설정하고 출시 런타임에서 NUnit/UnityEditor를 참조하지 않게 해 줘.
+Boot, MainMenu, Town, Dungeon01, TestArena 씬을 생성해 줘.
+지금은 MainMenu에 제목과 개발용 TestArena 진입 버튼만 있으면 된다.
+AppRoot와 GameSession의 최소 구조를 만들고 중복 초기화를 막아 줘.
+씬 안의 Player2D는 후속 작업에서 생성·연결할 자리만 준비해 줘.
+기존 AutomationLab2D은 개발 테스트용으로 보존하되 출시 씬에 포함하지 마.
+모든 시스템을 빈 인터페이스 수십 개로 미리 만들지 마.
+Boot→MainMenu→TestArena 전환과 TestArena 직접 실행의 초기화 횟수를 검증해 줘.
+
+코드·설정·파일 생성·실행은 네가 맡고, 필요한 화면과 결과를 보여 줘. 수행하지 못한 작업과 필요한 승인·도구 연결은 구분해서 알려 줘.

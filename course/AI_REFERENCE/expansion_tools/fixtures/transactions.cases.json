@@ -1,0 +1,50 @@
+{
+  "status": "NOT RUN",
+  "cases": [
+    {
+      "id": "salvage_rare",
+      "before": {
+        "inventory": [
+          "item-a"
+        ],
+        "wallet": {
+          "iron_scrap": 0,
+          "rune_dust": 0,
+          "ember_shard": 0
+        }
+      },
+      "expected": {
+        "inventory": [],
+        "wallet": {
+          "iron_scrap": 4,
+          "rune_dust": 2,
+          "ember_shard": 1
+        }
+      }
+    },
+    {
+      "id": "same_request_twice",
+      "expected": "same_receipt_no_extra_reward"
+    },
+    {
+      "id": "same_request_changed_payload",
+      "expected": "reject_no_mutation"
+    },
+    {
+      "id": "wallet_overflow",
+      "expected": "reject_whole_transaction"
+    },
+    {
+      "id": "craft_full_bag",
+      "expected": "reject_no_material_deduction"
+    },
+    {
+      "id": "storage_failure",
+      "expected": "original_inventory_wallet_revision_receipts"
+    },
+    {
+      "id": "socket_swap_100",
+      "expected": "no_accumulation_no_heal"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+
+Reference check: harness / tests
+test_blank_acceptance_rejected (test_audit_v8.AuditTests.test_blank_acceptance_rejected) ... ok
+test_disabled_manual_gate_rejected (test_audit_v8.AuditTests.test_disabled_manual_gate_rejected) ... ok
+test_instruction_must_be_text (test_audit_v8.AuditTests.test_instruction_must_be_text) ... ok
+test_minimum_config_validation (test_audit_v8.AuditTests.test_minimum_config_validation) ... ok
+test_minimum_parser_validation (test_audit_v8.AuditTests.test_minimum_parser_validation) ... ok
+test_nunit_duplicate_fullname_rejected (test_audit_v8.AuditTests.test_nunit_duplicate_fullname_rejected) ... ok
+test_nunit_duplicate_id_rejected (test_audit_v8.AuditTests.test_nunit_duplicate_id_rejected) ... ok
+test_parameter_cases_remain_distinct (test_audit_v8.AuditTests.test_parameter_cases_remain_distinct) ... ok
+test_required_names_validation (test_audit_v8.AuditTests.test_required_names_validation) ... ok
+test_timeout_and_boolean_validation (test_audit_v8.AuditTests.test_timeout_and_boolean_validation) ... ok
+test_unittest_all_skipped_rejected (test_audit_v8.AuditTests.test_unittest_all_skipped_rejected) ... ok
+test_unittest_conflicting_streams (test_audit_v8.AuditTests.test_unittest_conflicting_streams) ... ok
+test_unittest_double_success_ambiguous (test_audit_v8.AuditTests.test_unittest_double_success_ambiguous) ... ok
+test_unittest_skip_counts (test_audit_v8.AuditTests.test_unittest_skip_counts) ... ok
+test_unittest_trailing_fail_not_ignored (test_audit_v8.AuditTests.test_unittest_trailing_fail_not_ignored) ... ok
+test_acceptance_required (test_harness.HarnessTests.test_acceptance_required) ... ok
+test_changed_stage_invalidates_evidence (test_harness.HarnessTests.test_changed_stage_invalidates_evidence) ... ok
+test_config_change_stops_run (test_harness.HarnessTests.test_config_change_stops_run) ... ok
+test_cycle_rejected (test_harness.HarnessTests.test_cycle_rejected) ... ok
+test_dashboard_escapes_html (test_harness.HarnessTests.test_dashboard_escapes_html) ... ok
+test_duplicate_task_id (test_harness.HarnessTests.test_duplicate_task_id) ... ok
+test_external_source_change_stops_run (test_harness.HarnessTests.test_external_source_change_stops_run) ... ok
+test_failed_integration_still_invalidates_seal (test_harness.HarnessTests.test_failed_integration_still_invalidates_seal) ... ok
+test_file_directory_collision_rejected (test_harness.HarnessTests.test_file_directory_collision_rejected) ... ok
+test_gate_must_be_explicit (test_harness.HarnessTests.test_gate_must_be_explicit) ... ok
+test_human_cannot_override_automated_gate (test_harness.HarnessTests.test_human_cannot_override_automated_gate) ... ok
+test_input_digest_checked (test_harness.HarnessTests.test_input_digest_checked) ... ok
+test_integrate_disabled (test_harness.HarnessTests.test_integrate_disabled) ... ok
+test_integrate_requires_optin (test_harness.HarnessTests.test_integrate_requires_optin) ... ok
+test_integration_original_preserved (test_harness.HarnessTests.test_integration_original_preserved) ... ok
+test_integration_runs_but_is_not_game_success (test_harness.HarnessTests.test_integration_runs_but_is_not_game_success) ... ok
+test_invalid_paths (test_harness.HarnessTests.test_invalid_paths) ... ok
+test_lock_exclusion (test_harness.HarnessTests.test_lock_exclusion) ... ok
+test_manual_evidence_labelled (test_harness.HarnessTests.test_manual_evidence_labelled) ... ok
+test_missing_dependency (test_harness.HarnessTests.test_missing_dependency) ... ok
+test_mock_success_is_not_game_pass (test_harness.HarnessTests.test_mock_success_is_not_game_pass) ... ok
+test_modified_evidence_invalidates_pass (test_harness.HarnessTests.test_modified_evidence_invalidates_pass) ... ok
+test_never_overwrite_existing_run (test_harness.HarnessTests.test_never_overwrite_existing_run) ... ok
+test_no_automatic_lock_expiry (test_harness.HarnessTests.test_no_automatic_lock_expiry) ... ok
+test_nonfinite_budget (test_harness.HarnessTests.test_nonfinite_budget) ... ok
+test_nunit_count_mismatch (test_harness.HarnessTests.test_nunit_count_mismatch) ... ok
+test_nunit_entity_rejected (test_harness.HarnessTests.test_nunit_entity_rejected) ... ok
+test_nunit_failure_despite_root_pass (test_harness.HarnessTests.test_nunit_failure_despite_root_pass) ... ok
+test_nunit_missing_test_name (test_harness.HarnessTests.test_nunit_missing_test_name) ... ok
+test_nunit_missing_xml (test_harness.HarnessTests.test_nunit_missing_xml) ... ok
+test_nunit_pass_and_names (test_harness.HarnessTests.test_nunit_pass_and_names) ... ok
+test_nunit_skipped_rejected (test_harness.HarnessTests.test_nunit_skipped_rejected) ... ok
+test_nunit_wrong_required_test (test_harness.HarnessTests.test_nunit_wrong_required_test) ... ok
+test_nunit_zero_rejected (test_harness.HarnessTests.test_nunit_zero_rejected) ... ok
+test_old_file_digest_checked (test_harness.HarnessTests.test_old_file_digest_checked) ... ok
+test_original_unchanged (test_harness.HarnessTests.test_original_unchanged) ... ok
+test_paid_calls_need_optin (test_harness.HarnessTests.test_paid_calls_need_optin) ... ok
+test_real_python_gate_executes (test_harness.HarnessTests.test_real_python_gate_executes) ... ok
+test_rejected_review_prevents_stage (test_harness.HarnessTests.test_rejected_review_prevents_stage) ... ok
+test_required_gate (test_harness.HarnessTests.test_required_gate) ... ok
+test_reseal_invalidates_even_same_hash (test_harness.HarnessTests.test_reseal_invalidates_even_same_hash) ... ok
+test_resume_skips_completed_tasks (test_harness.HarnessTests.test_resume_skips_completed_tasks) ... ok
+test_review_write_forbidden (test_harness.HarnessTests.test_review_write_forbidden) ... ok
+test_reviewer_finding_blocks_pass (test_harness.HarnessTests.test_reviewer_finding_blocks_pass) ... ok
+test_run_outside_source (test_harness.HarnessTests.test_run_outside_source) ... ok
+test_self_review (test_harness.HarnessTests.test_self_review) ... ok
+test_source_case_collision (test_harness.HarnessTests.test_source_case_collision) ... ok
+test_source_secret_name (test_harness.HarnessTests.test_source_secret_name) ... ok
+test_source_symlink (test_harness.HarnessTests.test_source_symlink) ... ok
+test_stage_cannot_be_inside_run (test_harness.HarnessTests.test_stage_cannot_be_inside_run) ... ok
+test_stage_cannot_overwrite_original (test_harness.HarnessTests.test_stage_cannot_overwrite_original) ... ok
+test_stage_requires_exact_candidate (test_harness.HarnessTests.test_stage_requires_exact_candidate) ... ok
+test_staged_run_cannot_resume (test_harness.HarnessTests.test_staged_run_cannot_resume) ... ok
+test_timeout_kills_owned_process (test_harness.HarnessTests.test_timeout_kills_owned_process) ... ok
+test_unbound_template_rejected (test_harness.HarnessTests.test_unbound_template_rejected) ... ok
+test_undefined_role (test_harness.HarnessTests.test_undefined_role) ... ok
+test_unity_yaml_not_applied (test_harness.HarnessTests.test_unity_yaml_not_applied) ... ok
+test_unknown_cost_blocks_retry (test_harness.HarnessTests.test_unknown_cost_blocks_retry) ... ok
+test_unordered_write_conflict (test_harness.HarnessTests.test_unordered_write_conflict) ... ok
+test_valid_plan (test_harness.HarnessTests.test_valid_plan) ... ok
+test_valid_unicode_path (test_harness.HarnessTests.test_valid_unicode_path) ... ok
+test_write_scope_checked (test_harness.HarnessTests.test_write_scope_checked) ... ok
+
+----------------------------------------------------------------------
+Ran 77 tests in 5.992s
+
+OK
+
+Reference check: harness / labs
+test_first_cli (test_L105.StartTests.test_first_cli) ... ok
+test_package_can_be_imported (test_L105.StartTests.test_package_can_be_imported) ... ok
+test_change_changes_hash (test_L106.JsonTests.test_change_changes_hash) ... ok
+test_key_order_is_not_identity (test_L106.JsonTests.test_key_order_is_not_identity) ... ok
+test_nonfinite_refused (test_L106.JsonTests.test_nonfinite_refused) ... ok
+test_save_and_reload (test_L106.JsonTests.test_save_and_reload) ... ok
+test_copy_preserves_hash (test_L107.SnapshotTests.test_copy_preserves_hash) ... ok
+test_escape_refused (test_L107.SnapshotTests.test_escape_refused) ... ok
+test_prefix_is_path_aware (test_L107.SnapshotTests.test_prefix_is_path_aware) ... ok
+test_secret_named_file_refused (test_L107.SnapshotTests.test_secret_named_file_refused) ... ok
+test_event_is_append_only (test_L108.LockTests.test_event_is_append_only) ... ok
+test_role_permissions_are_distinct (test_L108.LockTests.test_role_permissions_are_distinct) ... ok
+test_second_owner_refused (test_L108.LockTests.test_second_owner_refused) ... ok
+test_cycle (test_L109.PlanTests.test_cycle) ... ok
+test_order (test_L109.PlanTests.test_order) ... ok
+test_required_gate (test_L109.PlanTests.test_required_gate) ... ok
+test_role_cannot_expand_permissions (test_L109.PlanTests.test_role_cannot_expand_permissions) ... ok
+test_init_does_not_overwrite (test_L110.InitTests.test_init_does_not_overwrite) ... ok
+test_init_records_waiting_and_snapshot (test_L110.InitTests.test_init_records_waiting_and_snapshot) ... ok
+test_view_contains_only_selected_inputs (test_L110.InitTests.test_view_contains_only_selected_inputs) ... ok
+test_response_is_bound_to_input (test_L111.ResponseTests.test_response_is_bound_to_input) ... ok
+test_reviewer_cannot_patch (test_L111.ResponseTests.test_reviewer_cannot_patch) ... ok
+test_valid_proposal (test_L111.ResponseTests.test_valid_proposal) ... ok
+test_mock_completes_and_does_not_edit_source (test_L112.RunnerTests.test_mock_completes_and_does_not_edit_source) ... ok
+test_paid_path_requires_explicit_choice (test_L112.RunnerTests.test_paid_path_requires_explicit_choice) ... ok
+test_second_run_reuses_done_without_extra_attempt (test_L112.RunnerTests.test_second_run_reuses_done_without_extra_attempt) ... ok
+test_approval_hash_required (test_L113.StageTests.test_approval_hash_required) ... ok
+test_candidate_contains_qa_test (test_L113.StageTests.test_candidate_contains_qa_test) ... ok
+test_failed_review_prevents_stage (test_L113.StageTests.test_failed_review_prevents_stage) ... ok
+test_all_skipped_not_pass (test_L114.ProcessTests.test_all_skipped_not_pass) ... ok
+test_count_and_name_must_match (test_L114.ProcessTests.test_count_and_name_must_match) ... ok
+test_real_python_process (test_L114.ProcessTests.test_real_python_process) ... ok
+test_zero_nunit_is_not_pass (test_L114.ProcessTests.test_zero_nunit_is_not_pass) ... ok
+test_changes_after_seal_refused (test_L115.GateTests.test_changes_after_seal_refused) ... ok
+test_full_mock_and_real_five_tests (test_L115.GateTests.test_full_mock_and_real_five_tests) ... ok
+test_unapproved_execution_refused (test_L115.GateTests.test_unapproved_execution_refused) ... ok
+test_auto_gate_cannot_be_replaced_by_human (test_L116.ReportTests.test_auto_gate_cannot_be_replaced_by_human) ... ok
+test_mock_never_becomes_release (test_L116.ReportTests.test_mock_never_becomes_release) ... ok
+test_missing_approval_refused (test_L117.IntegrationTests.test_missing_approval_refused) ... ok
+test_registered_command_is_executed_but_not_verified (test_L117.IntegrationTests.test_registered_command_is_executed_but_not_verified) ... ok
+test_api_key_missing_refused (test_L118.ProviderTests.test_api_key_missing_refused) ... ok
+test_command_uses_structured_output_and_readonly_tools (test_L118.ProviderTests.test_command_uses_structured_output_and_readonly_tools) ... ok
+test_missing_cli_is_not_fake_success (test_L118.ProviderTests.test_missing_cli_is_not_fake_success) ... ok
+test_budget_unknown_blocks_even_explicit_retry (test_L119.RecoveryTests.test_budget_unknown_blocks_even_explicit_retry) ... ok
+test_running_is_not_automatically_retried (test_L119.RecoveryTests.test_running_is_not_automatically_retried) ... ok
+test_command_injection_into_plan_refused (test_L120.PlannerTests.test_command_injection_into_plan_refused) ... ok
+test_invented_read_file_refused (test_L120.PlannerTests.test_invented_read_file_refused) ... ok
+test_live_is_opt_in (test_L120.PlannerTests.test_live_is_opt_in) ... ok
+test_mock_plan_is_not_executed (test_L120.PlannerTests.test_mock_plan_is_not_executed) ... ok
+test_duplicate_role_refused (test_L121.CustomRoleTests.test_duplicate_role_refused) ... ok
+test_escape_refused (test_L121.CustomRoleTests.test_escape_refused) ... ok
+test_new_role_does_not_change_source_config (test_L121.CustomRoleTests.test_new_role_does_not_change_source_config) ... ok
+test_actual_catalog_gate_uses_sealed_candidate_data (test_L122.JsonGateTests.test_actual_catalog_gate_uses_sealed_candidate_data) ... ok
+test_json_kind_is_registered (test_L122.JsonGateTests.test_json_kind_is_registered) ... ok
+test_new_parser_accepts_named_checks (test_L122.JsonGateTests.test_new_parser_accepts_named_checks) ... ok
+test_summary_cannot_override_case (test_L122.JsonGateTests.test_summary_cannot_override_case) ... ok
+test_unknown_parser_remains_refused (test_L122.JsonGateTests.test_unknown_parser_remains_refused) ... ok
+test_zero_and_duplicate_refused (test_L122.JsonGateTests.test_zero_and_duplicate_refused) ... ok
+test_module_loads_without_unity (test_L123.BindingToolTests.test_module_loads_without_unity) ... ok
+test_new_output_does_not_overwrite (test_L123.BindingToolTests.test_new_output_does_not_overwrite) ... ok
+test_output_inside_project_refused (test_L123.BindingToolTests.test_output_inside_project_refused) ... ok
+test_method_not_shell (test_L124.UnityCommandTests.test_method_not_shell) ... ok
+test_nonexistent_editor_refused (test_L124.UnityCommandTests.test_nonexistent_editor_refused) ... ok
+test_test_process_does_not_use_quit (test_L124.UnityCommandTests.test_test_process_does_not_use_quit) ... ok
+test_assemblies_have_distinct_names (test_L125.UnityLabSourcePackagingTests.test_assemblies_have_distinct_names) ... ok
+test_lab_is_not_a_fabricated_project (test_L125.UnityLabSourcePackagingTests.test_lab_is_not_a_fabricated_project) ... ok
+test_missing_unity_project_is_blocked (test_L126.LabPlanTests.test_missing_unity_project_is_blocked) ... ok
+test_mock_plan_has_no_enabled_unity_command (test_L126.LabPlanTests.test_mock_plan_has_no_enabled_unity_command) ... ok
+test_broken_next_fails (test_L127.NewDomainTests.test_broken_next_fails) ... ok
+test_quest_data_is_actually_checked (test_L127.NewDomainTests.test_quest_data_is_actually_checked) ... ok
+test_same_reward_key_fails (test_L127.NewDomainTests.test_same_reward_key_fails) ... ok
+test_actual_smoke_uses_created_runner (test_L128.GraduationSmokeTests.test_actual_smoke_uses_created_runner) ... ok
+test_existing_output_refused (test_L128.GraduationSmokeTests.test_existing_output_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 73 tests in 3.875s
+
+OK
+
+Reference check: expansion_tools / tests
+test_all_recipes_bind_with_real_file_fixtures (test_workbook.WorkbookTests.test_all_recipes_bind_with_real_file_fixtures) ... ok
+test_campaign_missing_run_blocked (test_workbook.WorkbookTests.test_campaign_missing_run_blocked) ... ok
+test_detects_config_changed (test_workbook.WorkbookTests.test_detects_config_changed) ... ok
+test_detects_new_output_appeared (test_workbook.WorkbookTests.test_detects_new_output_appeared) ... ok
+test_detects_plan_changed (test_workbook.WorkbookTests.test_detects_plan_changed) ... ok
+test_detects_source_changed (test_workbook.WorkbookTests.test_detects_source_changed) ... ok
+test_disabled_gates_stay_visible (test_workbook.WorkbookTests.test_disabled_gates_stay_visible) ... ok
+test_existing_output_also_input_allowed (test_workbook.WorkbookTests.test_existing_output_also_input_allowed) ... ok
+test_inventory_does_not_claim_2d_execution (test_workbook.WorkbookTests.test_inventory_does_not_claim_2d_execution) ... ok
+test_inventory_missing_project (test_workbook.WorkbookTests.test_inventory_missing_project) ... ok
+test_no_mock_success_becomes_unity_pass (test_workbook.WorkbookTests.test_no_mock_success_becomes_unity_pass) ... ok
+test_refuses_3d (test_workbook.WorkbookTests.test_refuses_3d) ... ok
+test_refuses_alias_mismatch (test_workbook.WorkbookTests.test_refuses_alias_mismatch) ... ok
+test_refuses_binary_output (test_workbook.WorkbookTests.test_refuses_binary_output) ... ok
+test_refuses_critic_missing_output (test_workbook.WorkbookTests.test_refuses_critic_missing_output) ... ok
+test_refuses_existing_output_not_read (test_workbook.WorkbookTests.test_refuses_existing_output_not_read) ... ok
+test_refuses_missing_dependency (test_workbook.WorkbookTests.test_refuses_missing_dependency) ... ok
+test_refuses_missing_input (test_workbook.WorkbookTests.test_refuses_missing_input) ... ok
+test_refuses_no_confirmation (test_workbook.WorkbookTests.test_refuses_no_confirmation) ... ok
+test_refuses_output_in_source (test_workbook.WorkbookTests.test_refuses_output_in_source) ... ok
+test_refuses_overwrite_bound (test_workbook.WorkbookTests.test_refuses_overwrite_bound) ... ok
+test_refuses_parent_path (test_workbook.WorkbookTests.test_refuses_parent_path) ... ok
+test_refuses_protected_output (test_workbook.WorkbookTests.test_refuses_protected_output) ... ok
+test_refuses_role_scope_escalation (test_workbook.WorkbookTests.test_refuses_role_scope_escalation) ... ok
+test_refuses_same_alias_in_both (test_workbook.WorkbookTests.test_refuses_same_alias_in_both) ... ok
+test_refuses_unreviewed (test_workbook.WorkbookTests.test_refuses_unreviewed) ... ok
+test_refuses_wrong_anchor (test_workbook.WorkbookTests.test_refuses_wrong_anchor) ... ok
+test_rejects_case_alias (test_workbook.WorkbookTests.test_rejects_case_alias) ... ok
+test_rejects_review_write (test_workbook.WorkbookTests.test_rejects_review_write) ... ok
+test_rejects_symlink (test_workbook.WorkbookTests.test_rejects_symlink) ... ok
+test_valid_binding_no_game_writes (test_workbook.WorkbookTests.test_valid_binding_no_game_writes) ... ok
+test_verify_unchanged (test_workbook.WorkbookTests.test_verify_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.415s
+
+OK
+
+Reference check: game_tools / .
+test_bad_pivot (test_pack_frames.PackFramesTests.test_bad_pivot) ... ok
+test_bad_size_does_not_write (test_pack_frames.PackFramesTests.test_bad_size_does_not_write) ... ok
+test_blank_frame_explicit_opt_in (test_pack_frames.PackFramesTests.test_blank_frame_explicit_opt_in) ... ok
+test_duplicate_warning (test_pack_frames.PackFramesTests.test_duplicate_warning) ... ok
+test_existing_output_protected (test_pack_frames.PackFramesTests.test_existing_output_protected) ... ok
+test_no_frames (test_pack_frames.PackFramesTests.test_no_frames) ... ok
+test_output_cannot_pollute_input (test_pack_frames.PackFramesTests.test_output_cannot_pollute_input) ... ok
+test_pack_order_alpha_pivot_and_source_preservation (test_pack_frames.PackFramesTests.test_pack_order_alpha_pivot_and_source_preservation) ... ok
+test_budget_is_not_unreachable (test_reference_contracts.ReferenceTests.test_budget_is_not_unreachable) ... ok
+test_coordinate_fixture (test_reference_contracts.ReferenceTests.test_coordinate_fixture) ... ok
+test_damage_fixture_and_half_up (test_reference_contracts.ReferenceTests.test_damage_fixture_and_half_up) ... ok
+test_invalid_input (test_reference_contracts.ReferenceTests.test_invalid_input) ... ok
+test_negative_cells_use_floor (test_reference_contracts.ReferenceTests.test_negative_cells_use_floor) ... ok
+test_no_diagonal_corner_cut (test_reference_contracts.ReferenceTests.test_no_diagonal_corner_cut) ... ok
+test_spin_eight_times (test_reference_contracts.ReferenceTests.test_spin_eight_times) ... ok
+test_wall_detour_is_deterministic (test_reference_contracts.ReferenceTests.test_wall_detour_is_deterministic) ... ok
+test_xp_and_cap (test_reference_contracts.ReferenceTests.test_xp_and_cap) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.018s
+
+OK
+Reference checks passed; Unity, live model calls, and device tests were not run.

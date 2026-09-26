@@ -1,0 +1,19 @@
+{
+  "lessons": 160,
+  "chapters": 250,
+  "distinctAliases": 1665,
+  "matchedOccurrencesInAudit": 12263,
+  "minTermsPerLesson": 16,
+  "maxTermsPerLesson": 47,
+  "unmatchedChapters": [
+    "scale-pixel",
+    "deadzone",
+    "mipmap",
+    "texture-compression",
+    "hallucination",
+    "telemetry",
+    "thread",
+    "local-storage"
+  ],
+  "definitionEdges": 1013
+}

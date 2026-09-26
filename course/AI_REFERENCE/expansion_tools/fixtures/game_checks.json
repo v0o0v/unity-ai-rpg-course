@@ -1,0 +1,901 @@
+{
+  "status": "NOT RUN",
+  "checks": [
+    {
+      "id": "L129-01",
+      "lesson": 129,
+      "criterion": "기존 가방 24칸·장비 3슬롯·레벨 1~10·9노드 트리·기본 3스킬의 규격이 기록되어 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L129-02",
+      "lesson": 129,
+      "criterion": "수정 전 실제 테스트 수와 실행 대상이 남아 있고, 0개 실행은 성공으로 적지 않았다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L129-03",
+      "lesson": 129,
+      "criterion": "원본·run·후보·증거 폴더가 서로 분리되어 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L129-04",
+      "lesson": 129,
+      "criterion": "Android 미검증이 Windows 성공에 합쳐지지 않았다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L130-01",
+      "lesson": 130,
+      "criterion": "존재하지 않는 입력 파일·잘못된 anchor·역할 밖 경로를 넣으면 bind가 거부한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L130-02",
+      "lesson": 130,
+      "criterion": "기존 출력 파일을 읽기 입력에서 빼면 거부한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L130-03",
+      "lesson": 130,
+      "criterion": "새로운 출력에 의존하지만 depends_on이 없으면 거부한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L130-04",
+      "lesson": 130,
+      "criterion": "필수 게이트가 미연결이면 gate_readiness에 남고 BOUND_NOT_RUN을 게임 PASS로 해석하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L131-01",
+      "lesson": 131,
+      "criterion": "희귀만 설정에서도 퀘스트·골드·재료가 보인다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L131-02",
+      "lesson": 131,
+      "criterion": "전체 보기 ON은 일반 장비 이름표를 표시하고 OFF에서 이전 정책으로 돌아간다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L131-03",
+      "lesson": 131,
+      "criterion": "정책 평가 100회 전후 instanceId·옵션·수량이 같다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L131-04",
+      "lesson": 131,
+      "criterion": "새 아이템 종류를 모르는 이전 필터는 그 아이템을 숨기지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L132-01",
+      "lesson": 132,
+      "criterion": "일반 아이템의 숨겨진 이름표를 재사용한 퀘스트 아이템은 즉시 보인다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L132-02",
+      "lesson": 132,
+      "criterion": "통합 도구를 두 번 실행해도 버튼 한 개와 구독 한 개만 남는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L132-03",
+      "lesson": 132,
+      "criterion": "필터 버튼 클릭은 캐릭터 이동·공격을 유발하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L132-04",
+      "lesson": 132,
+      "criterion": "Android에서 조이스틱을 유지한 채 토글할 수 있고 숨겨진 이름표의 아이템도 원래 줍기 규칙으로 획득된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L133-01",
+      "lesson": 133,
+      "criterion": "오류가 있는 후보에서 대응 검사가 실제 FAIL이고 수정 후 같은 검사 이름이 PASS다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L133-02",
+      "lesson": 133,
+      "criterion": "작업 DONE·PROPOSALS_REVIEWED·게이트 PASS·사람 승격이 다른 상태로 남는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L133-03",
+      "lesson": 133,
+      "criterion": "실패 응답과 첫 재현 로그를 보존했다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L133-04",
+      "lesson": 133,
+      "criterion": "새 기준 원본에서 필터를 켜고 저장·재실행한 뒤 원래 가방과 장비가 유지된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L134-01",
+      "lesson": 134,
+      "criterion": "화상 최초 적용 후 1·2·3초에만 피해가 발생한다. tick과 만료가 같은 시각이면 마지막 tick 후 만료한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L134-02",
+      "lesson": 134,
+      "criterion": "0.9초에 재적용해도 최초 tick은 1.0초이며 0.9초 즉시 피해가 발생하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L134-03",
+      "lesson": 134,
+      "criterion": "표식은 화상 tick 뒤에도 남고 직접 타격 한 번에만 소모된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L134-04",
+      "lesson": 134,
+      "criterion": "풀에서 되살아난 적은 이전 상태·보상 지급 표시를 물려받지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L135-01",
+      "lesson": 135,
+      "criterion": "대각선 회피가 가로 회피보다 멀리 이동하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L135-02",
+      "lesson": 135,
+      "criterion": "무적 구간 직전·구간 안·구간 끝의 직접 타격 판정이 명세와 같다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L135-03",
+      "lesson": 135,
+      "criterion": "회피 불가 입력은 쿨다운을 소모하지 않고, 벽 앞에서 성공한 짧은 회피는 소모한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L135-04",
+      "lesson": 135,
+      "criterion": "좁은 문과 얇은 벽의 실제 Collider2D를 관통하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L136-01",
+      "lesson": 136,
+      "criterion": "방패 앞·옆·뒤·회복 구간·DoT의 피해가 계약대로 다르다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L136-02",
+      "lesson": 136,
+      "criterion": "같은 투사체가 콜라이더 여러 개에 닿아도 화상이 중복 적용되지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L136-03",
+      "lesson": 136,
+      "criterion": "정예가 죽은 뒤 다른 적이 공격 권한을 계속 받을 수 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L136-04",
+      "lesson": 136,
+      "criterion": "벽 뒤로 숨으면 마지막 목격 정보만 사용하며 실제 새 위치를 즉시 추적하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L137-01",
+      "lesson": 137,
+      "criterion": "통 3개의 연쇄가 유한하게 종료되고 각 통이 한 번만 폭발한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L137-02",
+      "lesson": 137,
+      "criterion": "예고 중에는 피해가 없고 실제 활성 범위와 화면 표시가 일치한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L137-03",
+      "lesson": 137,
+      "criterion": "필수 출구까지 환경 위험을 밟지 않는 연결 경로가 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L137-04",
+      "lesson": 137,
+      "criterion": "밸브 터치가 이동·공격과 섞여 이중 상호작용하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L138-01",
+      "lesson": 138,
+      "criterion": "희귀 장비 1개 분해 후 장비는 1개 줄고 고철4·가루2·불씨1만 증가한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L138-02",
+      "lesson": 138,
+      "criterion": "같은 requestId 재전송은 결과 영수증을 반환하고 추가 지급하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L138-03",
+      "lesson": 138,
+      "criterion": "한 재료가999를 넘으면 아이템 삭제와 모든 재료 지급을 함께 거부한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L138-04",
+      "lesson": 138,
+      "criterion": "저장 실패를 주입하면 이전 장비·재료·revision이 모두 유지된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L139-01",
+      "lesson": 139,
+      "criterion": "미리보기 100회 전후 저장 가능한 게임 상태가 같다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L139-02",
+      "lesson": 139,
+      "criterion": "정상 제작에서 가방에 새 ID 하나, 정확한 재료 차감 하나만 발생한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L139-03",
+      "lesson": 139,
+      "criterion": "같은 요청을 다시 보내도 같은 ID이며 새 장비가 추가되지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L139-04",
+      "lesson": 139,
+      "criterion": "가방 가득 참·재료 부족·request payload 충돌 시 모든 원래 상태가 유지된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L140-01",
+      "lesson": 140,
+      "criterion": "가방↔창고100회 이동 뒤 전체 ID 집합·옵션·룬이 같다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L140-02",
+      "lesson": 140,
+      "criterion": "창고24칸 가득 찬 상태에서 보관 실패해도 원래 가방 아이템이 남는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L140-03",
+      "lesson": 140,
+      "criterion": "즐겨찾기 아이템은 UI를 우회한 분해·판매 명령에서도 거부된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L140-04",
+      "lesson": 140,
+      "criterion": "마을 밖으로 이동하거나 UI를 닫으면 보류 중 선택만 사라지고 이미 커밋한 이동은 유지된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L141-01",
+      "lesson": 141,
+      "criterion": "무기에 수호 룬 또는 갑옷에 불씨 룬을 넣으면 비용 없이 거부한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L141-02",
+      "lesson": 141,
+      "criterion": "현재체력이 낮을 때 수호 룬 착탈100회로 회복하거나 최대체력이 누적되지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L141-03",
+      "lesson": 141,
+      "criterion": "룬이 들어 있는 장비는 분해되지 않고 제거 후에만 가능하다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L141-04",
+      "lesson": 141,
+      "criterion": "같은 타격의 여러 콜라이더·DoT가 룬 효과를 추가 재귀 생성하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L142-01",
+      "lesson": 142,
+      "criterion": "스킬트리 초기화 후 잠긴 스킬과 변형을 실행할 수 없다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L142-02",
+      "lesson": 142,
+      "criterion": "마나가 부족한 상태에서 변형을 바꿔도 마나가 채워지지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L142-03",
+      "lesson": 142,
+      "criterion": "변형 베기의 실제 범위와 화면 예고가 일치한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L142-04",
+      "lesson": 142,
+      "criterion": "기존 schema2 캐릭터는 스킬과 포인트를 보존하며 변형은 기본으로 시작한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L143-01",
+      "lesson": 143,
+      "criterion": "같은 지역·버전·설정·시드는 같은 논리 지형을 만든다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L143-02",
+      "lesson": 143,
+      "criterion": "장식 설정만 바꿔도 방 연결과 전리품 RNG 시작 상태가 같다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L143-03",
+      "lesson": 143,
+      "criterion": "입구·구조방·유물방·보스방까지 실제 몸체가 지나갈 수 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L143-04",
+      "lesson": 143,
+      "criterion": "생성 실패가 명시되고 fallback에서도 새 퀘스트와 보스 흐름을 완료할 수 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L144-01",
+      "lesson": 144,
+      "criterion": "선택 화면10회 재개방에서도 같은3개 후보가 같은 순서로 보인다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L144-02",
+      "lesson": 144,
+      "criterion": "두 버튼 동시 입력에서도 정확히 한 유물만 적용된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L144-03",
+      "lesson": 144,
+      "criterion": "마을 복귀·죽음·재시작 뒤 유물 효과와 구독이 남지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L144-04",
+      "lesson": 144,
+      "criterion": "장비·룬 착탈과 유물 적용 순서가 바뀌어도 공통 계산 계약의 결과가 같다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L145-01",
+      "lesson": 145,
+      "criterion": "포털10회 후 동료 개체와 주요 구독이 각각 하나다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L145-02",
+      "lesson": 145,
+      "criterion": "벽 뒤 적을 즉시 표적으로 삼지 않으며 투사체가 벽을 통과하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L145-03",
+      "lesson": 145,
+      "criterion": "동료가 마지막 타격을 주어도 적 사망 보상이 한 번만 지급된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L145-04",
+      "lesson": 145,
+      "criterion": "좁은 문에서 플레이어를 막지 않고 복귀 위치가 실제 이동 가능한 셀이다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L146-01",
+      "lesson": 146,
+      "criterion": "각 전이의 중복 이벤트100회가 보상·NPC·동료 해금을 중복시키지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L146-02",
+      "lesson": 146,
+      "criterion": "두 대화 분기 모두 필수 진행을 완료할 수 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L146-03",
+      "lesson": 146,
+      "criterion": "구출 직후 저장·재실행하면 마을 NPC 하나와 올바른 해금 상태가 복원된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L146-04",
+      "lesson": 146,
+      "criterion": "기존 퀘스트3개의 완료·미완료 상태와 보상 여부가 바뀌지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L147-01",
+      "lesson": 147,
+      "criterion": "71%에서34%로 내려가는 타격에 두 단계 공격이 동시에 실행되지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L147-02",
+      "lesson": 147,
+      "criterion": "보스 사망 프레임 뒤 예약 공격과 위험 타일이 새 피해를 주지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L147-03",
+      "lesson": 147,
+      "criterion": "DoT·동료·직접 공격의 같은 프레임 사망에서도 보상이 한 번이다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L147-04",
+      "lesson": 147,
+      "criterion": "동료 없음·일반 장비·낮은 효과 설정에서 예고를 읽고 필수 진행을 완료할 수 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L148-01",
+      "lesson": 148,
+      "criterion": "모든 도입 자산의 실제 파일·해시·출처·사용 조건·채택 여부가 기록되어 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L148-02",
+      "lesson": 148,
+      "criterion": "방향별 발 피벗이 같고 이동 애니메이션에서 캐릭터가 튀지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L148-03",
+      "lesson": 148,
+      "criterion": "낮은 화면 밝기와 작은 모바일 화면에서도 적·동료·위험의 실루엣을 구분한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L148-04",
+      "lesson": 148,
+      "criterion": "아트 교체 전후 플레이어 몸체 반경·공격 사거리·논리 지형이 같다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L149-01",
+      "lesson": 149,
+      "criterion": "같은 eventId 두 번 전달 시 보스 예고와 피격 효과가 한 번만 생긴다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L149-02",
+      "lesson": 149,
+      "criterion": "보스 사망과 씬 이동 뒤 actor를 참조하는 효과가 남지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L149-03",
+      "lesson": 149,
+      "criterion": "풀 재사용 때 냉기 색이나 이전 스케일이 다른 효과에 남지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L149-04",
+      "lesson": 149,
+      "criterion": "Low에서도 실제 공격 범위와 위험 종료를 읽을 수 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L150-01",
+      "lesson": 150,
+      "criterion": "Master 음량0에서도 필수 보스 공격과 화상·냉기 상태를 구분할 수 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L150-02",
+      "lesson": 150,
+      "criterion": "앱 홈 복귀10회 뒤 동일 환경음이 중첩 재생되지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L150-03",
+      "lesson": 150,
+      "criterion": "카메라 흔들림 감소가 실제 카메라에 적용되며 전투 규칙은 바뀌지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L150-04",
+      "lesson": 150,
+      "criterion": "음원마다 원본 경로·해시·사용 조건이 남는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L151-01",
+      "lesson": 151,
+      "criterion": "장비 비교100회 뒤 실제 소유 상태·능력치·난수·쿨다운이 같다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L151-02",
+      "lesson": 151,
+      "criterion": "룬 있는 기존 장비를 빼는 비교 수치와 실제 교체 결과가 일치한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L151-03",
+      "lesson": 151,
+      "criterion": "긴 문장·작은 화면에서 확인/취소 버튼을 가리지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L151-04",
+      "lesson": 151,
+      "criterion": "튜토리얼 재실행이 재료·장비·퀘스트 보상을 반복 지급하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L152-01",
+      "lesson": 152,
+      "criterion": "schema2→3 변환에서 기존 ID 집합과 옵션·퀘스트·트리가 보존된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L152-02",
+      "lesson": 152,
+      "criterion": "손상 원본 대신 유효한 백업을 복원하며 둘 다 손상이면 원본을 보존한 채 안내한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L152-03",
+      "lesson": 152,
+      "criterion": "미래 버전 파일을 불러온 이전 앱은 진행을 초기화해 덮어쓰지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L152-04",
+      "lesson": 152,
+      "criterion": "저장 교체 후 UI 전 앱 종료에서도 거래 결과가 복제·분실되지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L153-01",
+      "lesson": 153,
+      "criterion": "설치 직후 네트워크 OFF로 새 퀘스트와 보스를 기본 외형으로 완료한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L153-02",
+      "lesson": 153,
+      "criterion": "취소한 다운로드가 늦게 완료되어도 새 화면·새 요청의 상태를 덮지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L153-03",
+      "lesson": 153,
+      "criterion": "고해상도 전환 전후 공격 사거리·몸체·아이템 ID와 저장 상태가 같다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L153-04",
+      "lesson": 153,
+      "criterion": "호환되지 않는 팩과 rollback 뒤 유효한 기본 외형으로 안전하게 진입한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L154-01",
+      "lesson": 154,
+      "criterion": "전후 측정에 같은 장면·빌드 조건과 변경 diff가 연결된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L154-02",
+      "lesson": 154,
+      "criterion": "최적화 뒤 상태 tick·공격 권한·동료 표적 규칙이 유지된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L154-03",
+      "lesson": 154,
+      "criterion": "반복 입장 뒤 살아 있는 구독·동료·예고 수가 계속 증가하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L154-04",
+      "lesson": 154,
+      "criterion": "Low에서도 필수 공격 예고와 창고/제작 조작을 사용할 수 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L155-01",
+      "lesson": 155,
+      "criterion": "기록OFF에서는 이벤트 파일이 생성·증가하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L155-02",
+      "lesson": 155,
+      "criterion": "제작→분해와 룬 제작→제거의 반복으로 무한 재료·골드가 생기지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L155-03",
+      "lesson": 155,
+      "criterion": "전후 비교는 같은 초기 조건이며 수치 변경 version이 명시된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L155-04",
+      "lesson": 155,
+      "criterion": "분석 결과에 실제 기기식별자·계정·원본 저장 전체가 포함되지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L156-01",
+      "lesson": 156,
+      "criterion": "실패 사례를 동일 seed와 입력으로 재현할 수 있다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L156-02",
+      "lesson": 156,
+      "criterion": "논리100개와 실제 Physics2D 검사 개수가 구분되어 기록된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L156-03",
+      "lesson": 156,
+      "criterion": "퀘스트·창고·룬·유물·동료를 조합해도 소유권과 보상 불변 조건이 유지된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L156-04",
+      "lesson": 156,
+      "criterion": "순서를 바꾼 테스트가 이전 fixture의 static 상태에 의존하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L157-01",
+      "lesson": 157,
+      "criterion": "구현자나 비평가가 허용 밖 파일을 제안하면 거부한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L157-02",
+      "lesson": 157,
+      "criterion": "0개·전부skip·필수이름누락은 테스트 명령 exit0이어도 PASS가 아니다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L157-03",
+      "lesson": 157,
+      "criterion": "seal 뒤 소스 또는 증거 바이트가 바뀌면 이전 결과는 STALE다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L157-04",
+      "lesson": 157,
+      "criterion": "예산 미확인·실행 중인 소유자가 남은 잠금은 무조건 재시도·해제하지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L158-01",
+      "lesson": 158,
+      "criterion": "원인과 수정 위치가 실제 실패 로그로 연결된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L158-02",
+      "lesson": 158,
+      "criterion": "착탈100회 뒤 최대체력은 원래 유효 계산 결과이고 현재체력이 자동 회복되지 않는다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L158-03",
+      "lesson": 158,
+      "criterion": "수정 전 FAIL한 동일 테스트가 수정 후 PASS이며 assertion을 약하게 하지 않았다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L158-04",
+      "lesson": 158,
+      "criterion": "저장 복원과 유물 해제 후에도 장비·룬·창고 ID가 유지된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L159-01",
+      "lesson": 159,
+      "criterion": "Windows 실행 파일과 APK가 실제 생성되어 있으며 빌드·소스·콘텐츠 식별이 연결된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L159-02",
+      "lesson": 159,
+      "criterion": "개발 전용 기능 없이 새 퀘스트를 실제 진행해서 제작과 동료를 해금한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L159-03",
+      "lesson": 159,
+      "criterion": "기존 저장 업그레이드에서 아이템·룬·퀘스트·스킬이 보존된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L159-04",
+      "lesson": 159,
+      "criterion": "실제 미검증 기기·콘텐츠 경로와 외부 미게시 상태가 명시된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L160-01",
+      "lesson": 160,
+      "criterion": "기존 던전·퀘스트와 새 지역·대장간·보스 흐름을 모두 실제로 진행한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L160-02",
+      "lesson": 160,
+      "criterion": "새 게임과 이전 저장에서 소유권·보상·스킬·창고·룬이 일관된다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L160-03",
+      "lesson": 160,
+      "criterion": "최종 각 플랫폼의 실제 빌드와 관찰 기록이 같은 소스·콘텐츠 기준을 가리킨다.",
+      "status": "NOT RUN",
+      "evidence": null
+    },
+    {
+      "id": "L160-04",
+      "lesson": 160,
+      "criterion": "미검증·실패·차단·사람 검토가 숨겨지지 않고 하네스 기록과 최종 보고가 일치한다.",
+      "status": "NOT RUN",
+      "evidence": null
+    }
+  ]
+}

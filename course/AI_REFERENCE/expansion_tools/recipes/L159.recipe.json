@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "lesson": 159,
+  "feature": "E07 출시 준비",
+  "input_aliases": [
+    "game_spec",
+    "build_contract",
+    "content_contract",
+    "save_contract",
+    "tests_index"
+  ],
+  "output_aliases": [
+    "out_build_release_engineer",
+    "out_qa_engineer",
+    "out_unity_integrator",
+    "out_prime"
+  ],
+  "plan": {
+    "schema_version": 1,
+    "binding_required": true,
+    "id": "forge-l159-r1",
+    "title": "Windows·Android 출시 후보와 콘텐츠·저장 호환 표 만들기",
+    "tasks": [
+      {
+        "id": "L159_build_release_engineer",
+        "role": "build_release_engineer",
+        "kind": "proposal",
+        "depends_on": [],
+        "read_files": [
+          "@game_spec",
+          "@build_contract",
+          "@content_contract",
+          "@save_contract",
+          "@tests_index"
+        ],
+        "write_prefixes": [
+          "@out_build_release_engineer"
+        ],
+        "outputs": [
+          "@out_build_release_engineer"
+        ],
+        "instruction": "Windows·Android 출시 후보와 콘텐츠·저장 호환 표 만들기 — 담당: 실제 산출물·버전·호환\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n최종 후보는 서로 다른 run의 성공을 모은 목록이 아니라 하나의 실제 소스·설정·콘텐츠 조합이다. Windows와 Android에 대해 appVersion·saveSchema·contentContract·source seal·build hash·content catalog hash를 기록한다. 서명키와 API키 자체는 보고서에 넣지 않는다.\n\n검사 조합은 신규 설치 오프라인, 기존 schema2 저장 업그레이드, 정상 schema3 재접속, 고해상도팩 있음/없음, 캐시 삭제, 앱 중단 복귀다. 배포용 빌드에서 개발 해금 버튼·테스트 콘솔·무한 재료·로컬 민감 로그가 사라졌는지 확인한다.\n\n하네스의 REVIEW_REQUIRED는 자동 게시가 아니다. 통과한 APK와 Windows 폴더를 준비하고 사용자가 최종 검토한다. CDN 업로드·스토어 제출은 별도 명시 승인 작업이다. 되돌리기는 앱과 저장을 무작정 이전 파일로 덮는 일이 아니다. schema3를 못 읽는 이전 앱으로 돌아가는 경로는 금지하거나 별도 호환 정책을 준비한다.\n\n따라 하는 순서:\n모든 기능을 통합한 최종 원본을 동결하고 전체 게이트를 다시 실행한다. 중간 후보 PASS를 복사하지 않는다.\nWindows 배포 폴더와 Android APK를 만들고 출력 파일이 실제 존재하는지·해시가 무엇인지 확인한다.\n동일 기기에 새 설치·업데이트·오프라인·캐시/팩 조건을 나눠 수행하고 저장과 실기기 관찰을 기록한다.\n미검증·알려진 결함·차단 항목을 릴리스 노트에 남기고 외부 게시 없이 검토 자료를 준비한다.\n\n구현 계약:\n봉인된 대장간 2D 확장판의 최종 Windows/Android 후보를 준비해 줘.\n현재 최종 통합 소스에서 필수 회귀를 다시 실행하고 실제 빌드 파일·source/content/build hash를 기록해 줘.\n신규오프라인·schema2업데이트·schema3재접속·팩/캐시·앱복귀를 구분해 검사해 줘.\n개발용 해금·테스트콘솔·무한재료가 배포에 포함되지 않게 해 줘.\n서명키를 읽어 보고서에 넣거나 승인 없이 게시·업로드하지 마.\n하네스 REVIEW_REQUIRED를 실제 출시 완료라고 부르지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "Windows 실행 파일과 APK가 실제 생성되어 있으며 빌드·소스·콘텐츠 식별이 연결된다.",
+          "개발 전용 기능 없이 새 퀘스트를 실제 진행해서 제작과 동료를 해금한다.",
+          "기존 저장 업그레이드에서 아이템·룬·퀘스트·스킬이 보존된다.",
+          "실제 미검증 기기·콘텐츠 경로와 외부 미게시 상태가 명시된다."
+        ]
+      },
+      {
+        "id": "L159_qa_engineer",
+        "role": "qa_engineer",
+        "kind": "proposal",
+        "depends_on": [
+          "L159_build_release_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@build_contract",
+          "@content_contract",
+          "@save_contract",
+          "@tests_index",
+          "@out_build_release_engineer"
+        ],
+        "write_prefixes": [
+          "@out_qa_engineer"
+        ],
+        "outputs": [
+          "@out_qa_engineer"
+        ],
+        "instruction": "Windows·Android 출시 후보와 콘텐츠·저장 호환 표 만들기 — 담당: 설치·업데이트·완주\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n최종 후보는 서로 다른 run의 성공을 모은 목록이 아니라 하나의 실제 소스·설정·콘텐츠 조합이다. Windows와 Android에 대해 appVersion·saveSchema·contentContract·source seal·build hash·content catalog hash를 기록한다. 서명키와 API키 자체는 보고서에 넣지 않는다.\n\n검사 조합은 신규 설치 오프라인, 기존 schema2 저장 업그레이드, 정상 schema3 재접속, 고해상도팩 있음/없음, 캐시 삭제, 앱 중단 복귀다. 배포용 빌드에서 개발 해금 버튼·테스트 콘솔·무한 재료·로컬 민감 로그가 사라졌는지 확인한다.\n\n하네스의 REVIEW_REQUIRED는 자동 게시가 아니다. 통과한 APK와 Windows 폴더를 준비하고 사용자가 최종 검토한다. CDN 업로드·스토어 제출은 별도 명시 승인 작업이다. 되돌리기는 앱과 저장을 무작정 이전 파일로 덮는 일이 아니다. schema3를 못 읽는 이전 앱으로 돌아가는 경로는 금지하거나 별도 호환 정책을 준비한다.\n\n따라 하는 순서:\n모든 기능을 통합한 최종 원본을 동결하고 전체 게이트를 다시 실행한다. 중간 후보 PASS를 복사하지 않는다.\nWindows 배포 폴더와 Android APK를 만들고 출력 파일이 실제 존재하는지·해시가 무엇인지 확인한다.\n동일 기기에 새 설치·업데이트·오프라인·캐시/팩 조건을 나눠 수행하고 저장과 실기기 관찰을 기록한다.\n미검증·알려진 결함·차단 항목을 릴리스 노트에 남기고 외부 게시 없이 검토 자료를 준비한다.\n\n구현 계약:\n봉인된 대장간 2D 확장판의 최종 Windows/Android 후보를 준비해 줘.\n현재 최종 통합 소스에서 필수 회귀를 다시 실행하고 실제 빌드 파일·source/content/build hash를 기록해 줘.\n신규오프라인·schema2업데이트·schema3재접속·팩/캐시·앱복귀를 구분해 검사해 줘.\n개발용 해금·테스트콘솔·무한재료가 배포에 포함되지 않게 해 줘.\n서명키를 읽어 보고서에 넣거나 승인 없이 게시·업로드하지 마.\n하네스 REVIEW_REQUIRED를 실제 출시 완료라고 부르지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "Windows 실행 파일과 APK가 실제 생성되어 있으며 빌드·소스·콘텐츠 식별이 연결된다.",
+          "개발 전용 기능 없이 새 퀘스트를 실제 진행해서 제작과 동료를 해금한다.",
+          "기존 저장 업그레이드에서 아이템·룬·퀘스트·스킬이 보존된다.",
+          "실제 미검증 기기·콘텐츠 경로와 외부 미게시 상태가 명시된다."
+        ]
+      },
+      {
+        "id": "L159_unity_integrator",
+        "role": "unity_integrator",
+        "kind": "proposal",
+        "depends_on": [
+          "L159_qa_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@build_contract",
+          "@content_contract",
+          "@save_contract",
+          "@tests_index",
+          "@out_build_release_engineer",
+          "@out_qa_engineer"
+        ],
+        "write_prefixes": [
+          "@out_unity_integrator"
+        ],
+        "outputs": [
+          "@out_unity_integrator"
+        ],
+        "instruction": "Windows·Android 출시 후보와 콘텐츠·저장 호환 표 만들기 — 담당: 최종 통합·빌드 경로\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n최종 후보는 서로 다른 run의 성공을 모은 목록이 아니라 하나의 실제 소스·설정·콘텐츠 조합이다. Windows와 Android에 대해 appVersion·saveSchema·contentContract·source seal·build hash·content catalog hash를 기록한다. 서명키와 API키 자체는 보고서에 넣지 않는다.\n\n검사 조합은 신규 설치 오프라인, 기존 schema2 저장 업그레이드, 정상 schema3 재접속, 고해상도팩 있음/없음, 캐시 삭제, 앱 중단 복귀다. 배포용 빌드에서 개발 해금 버튼·테스트 콘솔·무한 재료·로컬 민감 로그가 사라졌는지 확인한다.\n\n하네스의 REVIEW_REQUIRED는 자동 게시가 아니다. 통과한 APK와 Windows 폴더를 준비하고 사용자가 최종 검토한다. CDN 업로드·스토어 제출은 별도 명시 승인 작업이다. 되돌리기는 앱과 저장을 무작정 이전 파일로 덮는 일이 아니다. schema3를 못 읽는 이전 앱으로 돌아가는 경로는 금지하거나 별도 호환 정책을 준비한다.\n\n따라 하는 순서:\n모든 기능을 통합한 최종 원본을 동결하고 전체 게이트를 다시 실행한다. 중간 후보 PASS를 복사하지 않는다.\nWindows 배포 폴더와 Android APK를 만들고 출력 파일이 실제 존재하는지·해시가 무엇인지 확인한다.\n동일 기기에 새 설치·업데이트·오프라인·캐시/팩 조건을 나눠 수행하고 저장과 실기기 관찰을 기록한다.\n미검증·알려진 결함·차단 항목을 릴리스 노트에 남기고 외부 게시 없이 검토 자료를 준비한다.\n\n구현 계약:\n봉인된 대장간 2D 확장판의 최종 Windows/Android 후보를 준비해 줘.\n현재 최종 통합 소스에서 필수 회귀를 다시 실행하고 실제 빌드 파일·source/content/build hash를 기록해 줘.\n신규오프라인·schema2업데이트·schema3재접속·팩/캐시·앱복귀를 구분해 검사해 줘.\n개발용 해금·테스트콘솔·무한재료가 배포에 포함되지 않게 해 줘.\n서명키를 읽어 보고서에 넣거나 승인 없이 게시·업로드하지 마.\n하네스 REVIEW_REQUIRED를 실제 출시 완료라고 부르지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "Windows 실행 파일과 APK가 실제 생성되어 있으며 빌드·소스·콘텐츠 식별이 연결된다.",
+          "개발 전용 기능 없이 새 퀘스트를 실제 진행해서 제작과 동료를 해금한다.",
+          "기존 저장 업그레이드에서 아이템·룬·퀘스트·스킬이 보존된다.",
+          "실제 미검증 기기·콘텐츠 경로와 외부 미게시 상태가 명시된다."
+        ]
+      },
+      {
+        "id": "L159_prime",
+        "role": "prime",
+        "kind": "proposal",
+        "depends_on": [
+          "L159_unity_integrator"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@build_contract",
+          "@content_contract",
+          "@save_contract",
+          "@tests_index",
+          "@out_build_release_engineer",
+          "@out_qa_engineer",
+          "@out_unity_integrator"
+        ],
+        "write_prefixes": [
+          "@out_prime"
+        ],
+        "outputs": [
+          "@out_prime"
+        ],
+        "instruction": "Windows·Android 출시 후보와 콘텐츠·저장 호환 표 만들기 — 담당: 승인 자료\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n최종 후보는 서로 다른 run의 성공을 모은 목록이 아니라 하나의 실제 소스·설정·콘텐츠 조합이다. Windows와 Android에 대해 appVersion·saveSchema·contentContract·source seal·build hash·content catalog hash를 기록한다. 서명키와 API키 자체는 보고서에 넣지 않는다.\n\n검사 조합은 신규 설치 오프라인, 기존 schema2 저장 업그레이드, 정상 schema3 재접속, 고해상도팩 있음/없음, 캐시 삭제, 앱 중단 복귀다. 배포용 빌드에서 개발 해금 버튼·테스트 콘솔·무한 재료·로컬 민감 로그가 사라졌는지 확인한다.\n\n하네스의 REVIEW_REQUIRED는 자동 게시가 아니다. 통과한 APK와 Windows 폴더를 준비하고 사용자가 최종 검토한다. CDN 업로드·스토어 제출은 별도 명시 승인 작업이다. 되돌리기는 앱과 저장을 무작정 이전 파일로 덮는 일이 아니다. schema3를 못 읽는 이전 앱으로 돌아가는 경로는 금지하거나 별도 호환 정책을 준비한다.\n\n따라 하는 순서:\n모든 기능을 통합한 최종 원본을 동결하고 전체 게이트를 다시 실행한다. 중간 후보 PASS를 복사하지 않는다.\nWindows 배포 폴더와 Android APK를 만들고 출력 파일이 실제 존재하는지·해시가 무엇인지 확인한다.\n동일 기기에 새 설치·업데이트·오프라인·캐시/팩 조건을 나눠 수행하고 저장과 실기기 관찰을 기록한다.\n미검증·알려진 결함·차단 항목을 릴리스 노트에 남기고 외부 게시 없이 검토 자료를 준비한다.\n\n구현 계약:\n봉인된 대장간 2D 확장판의 최종 Windows/Android 후보를 준비해 줘.\n현재 최종 통합 소스에서 필수 회귀를 다시 실행하고 실제 빌드 파일·source/content/build hash를 기록해 줘.\n신규오프라인·schema2업데이트·schema3재접속·팩/캐시·앱복귀를 구분해 검사해 줘.\n개발용 해금·테스트콘솔·무한재료가 배포에 포함되지 않게 해 줘.\n서명키를 읽어 보고서에 넣거나 승인 없이 게시·업로드하지 마.\n하네스 REVIEW_REQUIRED를 실제 출시 완료라고 부르지 마.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "Windows 실행 파일과 APK가 실제 생성되어 있으며 빌드·소스·콘텐츠 식별이 연결된다.",
+          "개발 전용 기능 없이 새 퀘스트를 실제 진행해서 제작과 동료를 해금한다.",
+          "기존 저장 업그레이드에서 아이템·룬·퀘스트·스킬이 보존된다.",
+          "실제 미검증 기기·콘텐츠 경로와 외부 미게시 상태가 명시된다."
+        ]
+      },
+      {
+        "id": "L159_critic",
+        "role": "critic",
+        "kind": "review",
+        "depends_on": [
+          "L159_prime"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@build_contract",
+          "@content_contract",
+          "@save_contract",
+          "@tests_index",
+          "@out_build_release_engineer",
+          "@out_qa_engineer",
+          "@out_unity_integrator",
+          "@out_prime"
+        ],
+        "write_prefixes": [],
+        "outputs": [],
+        "instruction": "이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n최종 후보는 서로 다른 run의 성공을 모은 목록이 아니라 하나의 실제 소스·설정·콘텐츠 조합이다. Windows와 Android에 대해 appVersion·saveSchema·contentContract·source seal·build hash·content catalog hash를 기록한다. 서명키와 API키 자체는 보고서에 넣지 않는다.\n\n검사 조합은 신규 설치 오프라인, 기존 schema2 저장 업그레이드, 정상 schema3 재접속, 고해상도팩 있음/없음, 캐시 삭제, 앱 중단 복귀다. 배포용 빌드에서 개발 해금 버튼·테스트 콘솔·무한 재료·로컬 민감 로그가 사라졌는지 확인한다.\n\n하네스의 REVIEW_REQUIRED는 자동 게시가 아니다. 통과한 APK와 Windows 폴더를 준비하고 사용자가 최종 검토한다. CDN 업로드·스토어 제출은 별도 명시 승인 작업이다. 되돌리기는 앱과 저장을 무작정 이전 파일로 덮는 일이 아니다. schema3를 못 읽는 이전 앱으로 돌아가는 경로는 금지하거나 별도 호환 정책을 준비한다.\n\n따라 하는 순서:\n모든 기능을 통합한 최종 원본을 동결하고 전체 게이트를 다시 실행한다. 중간 후보 PASS를 복사하지 않는다.\nWindows 배포 폴더와 Android APK를 만들고 출력 파일이 실제 존재하는지·해시가 무엇인지 확인한다.\n동일 기기에 새 설치·업데이트·오프라인·캐시/팩 조건을 나눠 수행하고 저장과 실기기 관찰을 기록한다.\n미검증·알려진 결함·차단 항목을 릴리스 노트에 남기고 외부 게시 없이 검토 자료를 준비한다.\n\n구현 계약:\n봉인된 대장간 2D 확장판의 최종 Windows/Android 후보를 준비해 줘.\n현재 최종 통합 소스에서 필수 회귀를 다시 실행하고 실제 빌드 파일·source/content/build hash를 기록해 줘.\n신규오프라인·schema2업데이트·schema3재접속·팩/캐시·앱복귀를 구분해 검사해 줘.\n개발용 해금·테스트콘솔·무한재료가 배포에 포함되지 않게 해 줘.\n서명키를 읽어 보고서에 넣거나 승인 없이 게시·업로드하지 마.\n하네스 REVIEW_REQUIRED를 실제 출시 완료라고 부르지 마.\n\n원래 요구·실제 인터페이스·모든 제안을 독립적으로 대조하세요. 테스트를 실행한 상태가 아닙니다. 코드와 테스트를 수정하지 마세요. 미해결 결함은 review_fail 또는 blocked이며 시각/기기/재미 검사는 별도입니다.",
+        "acceptance": [
+          "Windows 실행 파일과 APK가 실제 생성되어 있으며 빌드·소스·콘텐츠 식별이 연결된다.",
+          "개발 전용 기능 없이 새 퀘스트를 실제 진행해서 제작과 동료를 해금한다.",
+          "기존 저장 업그레이드에서 아이템·룬·퀘스트·스킬이 보존된다.",
+          "실제 미검증 기기·콘텐츠 경로와 외부 미게시 상태가 명시된다."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "product": "GrayOathRPG3D",
+  "title": "회색 서약: 안개골의 사냥꾼",
+  "existingProjects": "preserve",
+  "regions": 3,
+  "villages": 2,
+  "interiors": 5,
+  "quests": {
+    "main": 10,
+    "side": 8,
+    "contract": 6,
+    "exploration": 4
+  },
+  "endings": [
+    "seal",
+    "coexist",
+    "sever"
+  ],
+  "levels": [
+    1,
+    20
+  ],
+  "skillNodes": 24,
+  "equippedSkills": 6,
+  "skillPoints": 19,
+  "itemDefinitions": 48,
+  "platforms": [
+    "Windows x86_64",
+    "Android ARM64"
+  ],
+  "performanceTargetsNotMeasurements": {
+    "pcFps": 60,
+    "androidFps": 30
+  },
+  "defaultModelRoute": "Unity internal",
+  "optionalModelRoute": "Meshy API",
+  "runtimeLLM": false,
+  "multiplayer": false,
+  "status": "NOT IMPLEMENTED: curriculum and AI-only reference data"
+}

@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "source_roots": [
+    "Assets",
+    "Packages",
+    "ProjectSettings",
+    "Docs"
+  ],
+  "roles": {
+    "prime": {
+      "title": "개발 총괄·작업 배정",
+      "mission": "사용자 목표를 작은 작업과 의존성으로 바꾸고 검증 결과로 다음 작업을 고른다. 게임 품질과 배포의 최종 승인을 스스로 하지 않는다.",
+      "write_prefixes": [
+        "Docs/Plans"
+      ],
+      "deliverable": "작업표·범위·실패 복구 계획",
+      "inputs": "전체 상태, 사용자 승인 범위",
+      "never": "기능 설계·코드·테스트 기준을 마음대로 바꾸거나 하위 위임하지 않음",
+      "delegate": false
+    },
+    "game_designer": {
+      "title": "게임 기획·밸런스",
+      "mission": "게임 규칙, 전투 선택, 보상과 수치를 설계한다. 기본 범위에 없는 직업/멀티플레이를 추가하지 않는다.",
+      "write_prefixes": [
+        "Docs/Design"
+      ],
+      "deliverable": "기능 명세·초기 수치·판정 가능한 예시",
+      "inputs": "GAME_SPEC, COMBAT_DESIGN, PLAYTEST",
+      "never": "구현 파일·검사 결과를 직접 변경하지 않음",
+      "delegate": false
+    },
+    "architect": {
+      "title": "구조·데이터 설계",
+      "mission": "Core와 차원별 어댑터, 저장 DTO와 인터페이스를 설계한다. 필요한 규모보다 복잡한 프레임워크를 만들지 않는다.",
+      "write_prefixes": [
+        "Docs/Architecture"
+      ],
+      "deliverable": "인터페이스 계약·마이그레이션 설계",
+      "inputs": "ARCHITECTURE, COORDINATE_CONTRACT, 기존 저장 예제",
+      "never": "공통 구조 변경은 영향 분석 후 사용자/통합자 검토",
+      "delegate": false
+    },
+    "gameplay_engineer": {
+      "title": "게임플레이 구현",
+      "mission": "피해, 장비, 스킬트리, 성장, 퀘스트의 순수 규칙을 구현한다.",
+      "write_prefixes": [
+        "Assets/_Game/Scripts/Core",
+        "Game"
+      ],
+      "deliverable": "구현 변경안·입출력 예시",
+      "inputs": "확정 명세와 Core 파일",
+      "never": "테스트·씬·프리팹·Packages·ProjectSettings 수정 금지",
+      "delegate": false
+    },
+    "enemy_ai_engineer": {
+      "title": "적 AI 구현",
+      "mission": "감지·기억·행동 전환·공격 권한·보스 판단을 구현한다.",
+      "write_prefixes": [
+        "Assets/_Game/Scripts/AI"
+      ],
+      "deliverable": "적 행동 변경안·상태 전이표",
+      "inputs": "적 설계와 공간 어댑터 계약",
+      "never": "플레이어 능력치나 기존 피해 공식 변경 금지",
+      "delegate": false
+    },
+    "level_designer": {
+      "title": "레벨·무작위 지형",
+      "mission": "방 연결·난수·통로·조우 배치와 실제 이동 검사를 설계/구현한다.",
+      "write_prefixes": [
+        "Assets/_Game/Scripts/World",
+        "Docs/Levels"
+      ],
+      "deliverable": "지도 생성 변경안·시드 검사 조건",
+      "inputs": "DUNGEON_GENERATION, 몸체 반경 계약",
+      "never": "보기 좋은 장식으로 도달 가능성 실패 숨기기 금지",
+      "delegate": false
+    },
+    "uiux_engineer": {
+      "title": "UI·입력·사용성",
+      "mission": "PC 클릭과 Android 터치를 연결하고 스킬트리·가방·다운로드 UI를 구현한다.",
+      "write_prefixes": [
+        "Assets/_Game/Scripts/UI",
+        "Docs/UI"
+      ],
+      "deliverable": "UI 로직 변경안·입력 시나리오",
+      "inputs": "UI 모델 계약·실제 화면 크기",
+      "never": "씬 YAML 직접 수정·모바일 미검증 PASS 금지",
+      "delegate": false
+    },
+    "art_director": {
+      "title": "아트 방향·일관성",
+      "mission": "ART_BIBLE과 실제 원본 기준으로 스타일/실루엣/가독성 요구를 만든다.",
+      "write_prefixes": [
+        "Docs/ArtDirection"
+      ],
+      "deliverable": "아트 기준·실제 관찰과 미검토 범위",
+      "inputs": "ART_BIBLE, 실제 캡처·출처",
+      "never": "미생성 아트 존재 주장·기술 검사를 미술 품질로 대체 금지",
+      "delegate": false
+    },
+    "asset_artist": {
+      "title": "캐릭터·몬스터·타일 제작",
+      "mission": "승인된 경로로 2D 시트·3D 자산의 제작/검수 사양을 만든다.",
+      "write_prefixes": [
+        "Docs/AssetRequests"
+      ],
+      "deliverable": "제작 요청·프레임 명세·출처 기록",
+      "inputs": "공통 PPU·셀·피벗·방향·라이선스",
+      "never": "기본 예제에는 외부 결제/바이너리 생성 권한 없음",
+      "delegate": false
+    },
+    "technical_artist": {
+      "title": "효과·셰이더·아트 통합",
+      "mission": "파티클·셰이더·애니메이션의 표현과 모바일 예산을 관리한다.",
+      "write_prefixes": [
+        "Assets/_Game/Scripts/VFX",
+        "Assets/_Game/Shaders",
+        "Docs/VFX"
+      ],
+      "deliverable": "효과 변경안·성능/가독성 검사표",
+      "inputs": "VFX_BUDGET, 판정 이벤트 계약",
+      "never": "효과에서 피해를 중복 적용하거나 렌더 설정을 무단 변경하지 않음",
+      "delegate": false
+    },
+    "audio_designer": {
+      "title": "소리·믹싱·접근성",
+      "mission": "타격·환경·UI 소리의 재생 규칙, 동시 발음 제한과 접근성 대안을 만든다.",
+      "write_prefixes": [
+        "Assets/_Game/Scripts/Audio",
+        "Docs/Audio"
+      ],
+      "deliverable": "소리 이벤트 표·믹싱·검증 지시",
+      "inputs": "전투 이벤트·소리 출처·볼륨 설정",
+      "never": "라이선스 미확인 음원 구매·업로드 금지",
+      "delegate": false
+    },
+    "unity_integrator": {
+      "title": "Unity 통합 담당",
+      "mission": "Editor API로 실제 씬/프리팹/참조를 연결한다. 기본 예제에서는 통합 스크립트 제안만 하고 실행은 승인된 broker가 한다.",
+      "write_prefixes": [
+        "Assets/_Game/Editor/Integration",
+        "Docs/Integration"
+      ],
+      "deliverable": "반복 실행 가능한 Editor 도구·통합 기록",
+      "inputs": "승인 후보·Editor와 프로젝트 식별 정보",
+      "never": "혼자 Editor를 소유한다는 가정 금지. broker 잠금 필요",
+      "delegate": false
+    },
+    "qa_engineer": {
+      "title": "자동 검사·재현",
+      "mission": "명세에서 독립적인 테스트를 설계하고 누락·중복 피해·저장 손상·경로 반례를 재현한다.",
+      "write_prefixes": [
+        "Assets/_Game/Tests",
+        "Tests",
+        "Docs/QA"
+      ],
+      "deliverable": "테스트 변경안·재현 절차·실제 원본 증거",
+      "inputs": "승인 acceptance·실제 구현·테스트 결과",
+      "never": "실패를 통과로 바꾸기 위한 assertion 약화 금지",
+      "delegate": false
+    },
+    "critic": {
+      "title": "독립 비평·검토",
+      "mission": "구현 설명이 아니라 실제 입력·명세·결과물로 검토한다. 코드 검토와 시각/재미 검토의 범위를 분리한다.",
+      "write_prefixes": [],
+      "deliverable": "문제 위치·재현·심각도·미검증 범위",
+      "inputs": "후보 스냅샷·독립 기준·원본 증거",
+      "never": "코드·테스트·상태 파일 쓰기 금지. 채점만으로 출시 승인 금지",
+      "delegate": false
+    },
+    "build_release_engineer": {
+      "title": "빌드·콘텐츠 배포",
+      "mission": "플랫폼·차원별 빌드/카탈로그/캐시와 저장 호환성을 검증한다. 기본 예제에서 실제 배포는 하지 않는다.",
+      "write_prefixes": [
+        "Docs/Build",
+        "Assets/_Game/Editor/Build"
+      ],
+      "deliverable": "빌드 도구 제안·릴리스 후보 명세",
+      "inputs": "모드·대상 기기·콘텐츠 계약·승인 범위",
+      "never": "키·토큰·서명키 읽기/복사 금지. 앱 게시와 CDN 업로드는 별도 승인",
+      "delegate": false
+    }
+  },
+  "max_attempts_per_task": 2,
+  "max_output_bytes": 250000,
+  "claude": {
+    "executable": null,
+    "auth_mode": "login",
+    "model": "claude-opus-5-5",
+    "effort": "high",
+    "max_turns": 8,
+    "timeout_seconds": 300,
+    "call_budget_usd": 1.0,
+    "run_budget_usd": 6.0
+  },
+  "gates": {
+    "editmode": {
+      "kind": "unity_nunit",
+      "enabled": false,
+      "required": true,
+      "argv": [],
+      "minimum_tests": 1,
+      "required_test_names": [],
+      "timeout_seconds": 600,
+      "setup": "설치된 Unity CLI/Pipeline에서 실제 동기 테스트 명령을 확인하거나 Editor batch runner를 확인해 절대경로 argv로 등록한다."
+    },
+    "playmode": {
+      "kind": "unity_nunit",
+      "enabled": false,
+      "required": true,
+      "argv": [],
+      "minimum_tests": 1,
+      "required_test_names": [],
+      "timeout_seconds": 600
+    },
+    "windows_play": {
+      "kind": "manual",
+      "enabled": true,
+      "required": true
+    },
+    "android_play": {
+      "kind": "manual",
+      "enabled": true,
+      "required": true
+    },
+    "visual_review": {
+      "kind": "manual",
+      "enabled": true,
+      "required": true
+    }
+  },
+  "integration_commands": {
+    "integrate_scene": {
+      "enabled": false,
+      "argv": [],
+      "timeout_seconds": 300,
+      "setup": "Unity CLI/Pipeline 실제 명령 탐색→검토한 argv 등록. 실행 요청 접수와 실제 완료를 구분한다."
+    }
+  }
+}

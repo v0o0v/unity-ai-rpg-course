@@ -1,0 +1,38 @@
+test_01_unique_ordered_lessons (__main__.CourseContractTests.test_01_unique_ordered_lessons) ... ok
+test_02_glossary_331_preserved (__main__.CourseContractTests.test_02_glossary_331_preserved) ... ok
+test_03_four_steps_complete (__main__.CourseContractTests.test_03_four_steps_complete) ... ok
+test_04_no_classroom_contracts_in_work_prompts (__main__.CourseContractTests.test_04_no_classroom_contracts_in_work_prompts) ... ok
+test_05_new_prompt_spans_exact_order_coverage (__main__.CourseContractTests.test_05_new_prompt_spans_exact_order_coverage) ... ok
+test_06_changed_prompt_allowlist (__main__.CourseContractTests.test_06_changed_prompt_allowlist) ... ok
+test_07_individual_message_exports (__main__.CourseContractTests.test_07_individual_message_exports) ... ok
+test_08_no_missing_fake_recipe (__main__.CourseContractTests.test_08_no_missing_fake_recipe) ... ok
+test_09_role_registration_precedes_use (__main__.CourseContractTests.test_09_role_registration_precedes_use) ... ok
+test_10_pickup_before_filter (__main__.CourseContractTests.test_10_pickup_before_filter) ... ok
+test_11_no_premature_slot_ui (__main__.CourseContractTests.test_11_no_premature_slot_ui) ... ok
+test_12_floor_not_wall (__main__.CourseContractTests.test_12_floor_not_wall) ... ok
+test_13_baseline_readonly_before_implementation (__main__.CourseContractTests.test_13_baseline_readonly_before_implementation) ... ok
+test_14_current_harness_capability_not_old_assumption (__main__.CourseContractTests.test_14_current_harness_capability_not_old_assumption) ... ok
+test_15_quest_generation_staged (__main__.CourseContractTests.test_15_quest_generation_staged) ... ok
+test_16_lod_policy_distinct_from_crossfade (__main__.CourseContractTests.test_16_lod_policy_distinct_from_crossfade) ... ok
+test_17_worked_cases_have_input_action_output_explanation (__main__.CourseContractTests.test_17_worked_cases_have_input_action_output_explanation) ... ok
+test_18_all_harness_build_steps_have_cases (__main__.CourseContractTests.test_18_all_harness_build_steps_have_cases) ... ok
+test_19_rules_exposed_not_discarded (__main__.CourseContractTests.test_19_rules_exposed_not_discarded) ... ok
+test_20_independent_transfer_tasks (__main__.CourseContractTests.test_20_independent_transfer_tasks) ... ok
+test_21_browser_data_matches_export (__main__.CourseContractTests.test_21_browser_data_matches_export) ... ok
+test_22_svg_structure_and_paths (__main__.CourseContractTests.test_22_svg_structure_and_paths) ... ok
+test_23_glossary_relations (__main__.CourseContractTests.test_23_glossary_relations) ... ok
+test_24_existing_reference_and_skills_byte_preserved (__main__.CourseContractTests.test_24_existing_reference_and_skills_byte_preserved) ... ok
+test_25_text_fixes_have_audit_trail (__main__.CourseContractTests.test_25_text_fixes_have_audit_trail) ... ok
+test_26_known_wrong_meaning_replaced (__main__.CourseContractTests.test_26_known_wrong_meaning_replaced) ... ok
+test_27_no_automatic_semantic_pass_claim (__main__.CourseContractTests.test_27_no_automatic_semantic_pass_claim) ... ok
+test_28_initial_bootstrap_is_in_page (__main__.CourseContractTests.test_28_initial_bootstrap_is_in_page) ... ok
+test_29_mini_prompt_visible_before_copy (__main__.CourseContractTests.test_29_mini_prompt_visible_before_copy) ... ok
+test_30_variants_identical_except_start_route (__main__.CourseContractTests.test_30_variants_identical_except_start_route) ... ok
+test_31_no_truncated_quest_policy (__main__.CourseContractTests.test_31_no_truncated_quest_policy) ... ok
+test_32_no_walls_between_walkable_cells (__main__.CourseContractTests.test_32_no_walls_between_walkable_cells) ... ok
+test_33_slow_expiry_not_attack_cancellation (__main__.CourseContractTests.test_33_slow_expiry_not_attack_cancellation) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.381s
+
+OK

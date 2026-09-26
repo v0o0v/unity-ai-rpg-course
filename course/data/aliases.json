@@ -1,0 +1,5884 @@
+{
+  "unity와 게임 엔진": [
+    "unity"
+  ],
+  "unity": [
+    "unity"
+  ],
+  "게임 엔진": [
+    "unity"
+  ],
+  "유니티": [
+    "unity"
+  ],
+  "unity hub": [
+    "hub"
+  ],
+  "hub": [
+    "hub"
+  ],
+  "unity editor": [
+    "editor"
+  ],
+  "editor": [
+    "editor"
+  ],
+  "에디터": [
+    "editor"
+  ],
+  "프로젝트와 프로젝트 루트": [
+    "project"
+  ],
+  "프로젝트 루트": [
+    "project"
+  ],
+  "unity 프로젝트": [
+    "project"
+  ],
+  "projectsettings": [
+    "project"
+  ],
+  "assets/packages/projectsettings": [
+    "project"
+  ],
+  "assets": [
+    "project"
+  ],
+  "packages": [
+    "project"
+  ],
+  "library": [
+    "project"
+  ],
+  "파일 경로·절대 경로·상대 경로": [
+    "path"
+  ],
+  "절대 경로": [
+    "path"
+  ],
+  "상대 경로": [
+    "path"
+  ],
+  "파일 경로": [
+    "path"
+  ],
+  "작업 경로": [
+    "path"
+  ],
+  "작업 폴더": [
+    "path"
+  ],
+  "write_prefixes": [
+    "path",
+    "ownership"
+  ],
+  "read_files": [
+    "path",
+    "ownership"
+  ],
+  "버전·패치·lts": [
+    "lts"
+  ],
+  "lts": [
+    "lts"
+  ],
+  "패치": [
+    "lts"
+  ],
+  "editor 버전": [
+    "lts"
+  ],
+  "버전 고정": [
+    "lts"
+  ],
+  "패키지·패키지 관리자": [
+    "package"
+  ],
+  "패키지": [
+    "package"
+  ],
+  "package manager": [
+    "package"
+  ],
+  "upm": [
+    "package"
+  ],
+  "package lock": [
+    "package"
+  ],
+  "packages-lock.json": [
+    "package",
+    "manifest"
+  ],
+  "플랫폼 모듈·sdk·ndk·jdk": [
+    "module"
+  ],
+  "sdk": [
+    "module"
+  ],
+  "ndk": [
+    "module"
+  ],
+  "openjdk": [
+    "module"
+  ],
+  "jdk": [
+    "module"
+  ],
+  "android build support": [
+    "module"
+  ],
+  "플랫폼 모듈": [
+    "module"
+  ],
+  "cli와 gui": [
+    "cli"
+  ],
+  "unity cli": [
+    "cli"
+  ],
+  "cli": [
+    "cli"
+  ],
+  "gui": [
+    "cli"
+  ],
+  "명령줄": [
+    "cli"
+  ],
+  "터미널": [
+    "cli"
+  ],
+  "powershell": [
+    "cli"
+  ],
+  "unity pipeline과 제작 파이프라인": [
+    "pipeline"
+  ],
+  "unity pipeline": [
+    "pipeline"
+  ],
+  "pipeline": [
+    "pipeline"
+  ],
+  "파이프라인": [
+    "pipeline"
+  ],
+  "api와 매개변수": [
+    "api"
+  ],
+  "api": [
+    "api"
+  ],
+  "매개변수": [
+    "api",
+    "method"
+  ],
+  "parameter": [
+    "api",
+    "method"
+  ],
+  "인자": [
+    "api"
+  ],
+  "입력 계약": [
+    "api"
+  ],
+  "에셋과 가져오기": [
+    "asset"
+  ],
+  "에셋": [
+    "asset"
+  ],
+  "자산": [
+    "asset"
+  ],
+  "asset": [
+    "asset"
+  ],
+  "임포트": [
+    "asset"
+  ],
+  "import": [
+    "asset"
+  ],
+  "메타 파일과 guid": [
+    "meta"
+  ],
+  "메타 파일": [
+    "meta"
+  ],
+  ".meta": [
+    "meta"
+  ],
+  "guid": [
+    "meta"
+  ],
+  "씬과 씬 전환": [
+    "scene"
+  ],
+  "씬": [
+    "scene"
+  ],
+  "scene": [
+    "scene"
+  ],
+  "씬 전환": [
+    "scene"
+  ],
+  "boot": [
+    "scene",
+    "bootstrap"
+  ],
+  "mainmenu": [
+    "scene"
+  ],
+  "testarena": [
+    "scene"
+  ],
+  "inspector와 참조 연결": [
+    "inspector"
+  ],
+  "inspector": [
+    "inspector"
+  ],
+  "인스펙터": [
+    "inspector"
+  ],
+  "컴포넌트 부착": [
+    "inspector"
+  ],
+  "참조 연결": [
+    "inspector"
+  ],
+  "hierarchy와 부모·자식": [
+    "hierarchy"
+  ],
+  "hierarchy": [
+    "hierarchy"
+  ],
+  "계층": [
+    "hierarchy"
+  ],
+  "부모·자식": [
+    "hierarchy"
+  ],
+  "부모 자식": [
+    "hierarchy"
+  ],
+  "자식 오브젝트": [
+    "hierarchy"
+  ],
+  "console·로그·스택 추적": [
+    "console"
+  ],
+  "console": [
+    "console"
+  ],
+  "콘솔": [
+    "console"
+  ],
+  "log": [
+    "console",
+    "debug"
+  ],
+  "stack trace": [
+    "console",
+    "debug"
+  ],
+  "오류 전문": [
+    "console"
+  ],
+  "play 모드·편집 모드·런타임": [
+    "play"
+  ],
+  "play": [
+    "play"
+  ],
+  "play 모드": [
+    "play"
+  ],
+  "런타임": [
+    "play"
+  ],
+  "runtime": [
+    "play"
+  ],
+  "editmode": [
+    "play"
+  ],
+  "playmode": [
+    "play"
+  ],
+  "컴파일·어셈블리·도메인 리로드": [
+    "compile"
+  ],
+  "컴파일": [
+    "compile"
+  ],
+  "compile": [
+    "compile"
+  ],
+  "어셈블리": [
+    "compile",
+    "assembly"
+  ],
+  "assembly": [
+    "compile"
+  ],
+  "asmdef": [
+    "compile",
+    "assembly"
+  ],
+  "도메인 리로드": [
+    "compile",
+    "domain-reload"
+  ],
+  "domain reload": [
+    "compile",
+    "domain-reload"
+  ],
+  "gameobject": [
+    "gameobject"
+  ],
+  "게임오브젝트": [
+    "gameobject"
+  ],
+  "게임 오브젝트": [
+    "gameobject"
+  ],
+  "컴포넌트": [
+    "component"
+  ],
+  "component": [
+    "component"
+  ],
+  "transform: 위치·회전·크기": [
+    "transform"
+  ],
+  "transform": [
+    "transform"
+  ],
+  "트랜스폼": [
+    "transform"
+  ],
+  "position": [
+    "transform"
+  ],
+  "rotation": [
+    "transform"
+  ],
+  "scale": [
+    "transform"
+  ],
+  "localscale": [
+    "transform"
+  ],
+  "quaternion": [
+    "transform"
+  ],
+  "회전값": [
+    "transform"
+  ],
+  "월드 좌표와 로컬 좌표": [
+    "local-world"
+  ],
+  "월드 좌표": [
+    "local-world"
+  ],
+  "로컬 좌표": [
+    "local-world"
+  ],
+  "world position": [
+    "local-world"
+  ],
+  "localposition": [
+    "local-world"
+  ],
+  "world": [
+    "local-world"
+  ],
+  "local": [
+    "local-world",
+    "tool"
+  ],
+  "xy·xz 평면과 논리 좌표": [
+    "coordinates"
+  ],
+  "xy": [
+    "coordinates"
+  ],
+  "xz": [
+    "coordinates"
+  ],
+  "논리 좌표": [
+    "coordinates"
+  ],
+  "좌표계": [
+    "coordinates"
+  ],
+  "vector2int": [
+    "coordinates"
+  ],
+  "cell coordinate": [
+    "coordinates"
+  ],
+  "벡터·방향·정규화": [
+    "vector"
+  ],
+  "벡터": [
+    "vector"
+  ],
+  "vector2": [
+    "vector"
+  ],
+  "vector3": [
+    "vector"
+  ],
+  "정규화": [
+    "vector"
+  ],
+  "normalized": [
+    "vector"
+  ],
+  "normalize": [
+    "vector"
+  ],
+  "facing": [
+    "vector"
+  ],
+  "forward": [
+    "vector"
+  ],
+  "이동 모터와 단일 위치 책임": [
+    "motor"
+  ],
+  "모터": [
+    "motor"
+  ],
+  "motor": [
+    "motor"
+  ],
+  "playermotor": [
+    "motor"
+  ],
+  "actormotor3d": [
+    "motor"
+  ],
+  "단일 모터": [
+    "motor"
+  ],
+  "rigidbody2d와 물리 몸체": [
+    "rigidbody"
+  ],
+  "rigidbody2d": [
+    "rigidbody"
+  ],
+  "리지드바디": [
+    "rigidbody"
+  ],
+  "rigidbody": [
+    "rigidbody"
+  ],
+  "dynamic": [
+    "rigidbody"
+  ],
+  "kinematic": [
+    "rigidbody"
+  ],
+  "static": [
+    "rigidbody"
+  ],
+  "moveposition": [
+    "rigidbody"
+  ],
+  "gravityscale": [
+    "rigidbody"
+  ],
+  "body type": [
+    "rigidbody"
+  ],
+  "physics2d와 3d physics": [
+    "physics2d"
+  ],
+  "physics2d": [
+    "physics2d"
+  ],
+  "physics": [
+    "physics2d"
+  ],
+  "2d 물리": [
+    "physics2d"
+  ],
+  "3d 물리": [
+    "physics2d"
+  ],
+  "collider와 몸체 경계": [
+    "collider"
+  ],
+  "collider2d": [
+    "collider"
+  ],
+  "collider": [
+    "collider"
+  ],
+  "콜라이더": [
+    "collider"
+  ],
+  "충돌체": [
+    "collider"
+  ],
+  "circlecollider2d": [
+    "collider"
+  ],
+  "boxcollider2d": [
+    "collider"
+  ],
+  "polygoncollider2d": [
+    "collider"
+  ],
+  "trigger와 충돌 반응": [
+    "trigger"
+  ],
+  "trigger": [
+    "trigger"
+  ],
+  "트리거": [
+    "trigger"
+  ],
+  "is trigger": [
+    "trigger"
+  ],
+  "overlap": [
+    "trigger"
+  ],
+  "hitbox·hurtbox·body": [
+    "hitbox"
+  ],
+  "hitbox": [
+    "hitbox"
+  ],
+  "hurtbox": [
+    "hitbox"
+  ],
+  "body": [
+    "hitbox"
+  ],
+  "피격 영역": [
+    "hitbox"
+  ],
+  "공격 판정": [
+    "hitbox"
+  ],
+  "피격 판정": [
+    "hitbox"
+  ],
+  "layer·layermask·tag": [
+    "layer"
+  ],
+  "layermask": [
+    "layer"
+  ],
+  "layer": [
+    "layer"
+  ],
+  "레이어": [
+    "layer"
+  ],
+  "tag": [
+    "layer"
+  ],
+  "태그": [
+    "layer"
+  ],
+  "충돌 매트릭스": [
+    "layer"
+  ],
+  "raycast·linecast·cast": [
+    "raycast"
+  ],
+  "raycast": [
+    "raycast"
+  ],
+  "linecast": [
+    "raycast"
+  ],
+  "circlecast": [
+    "raycast"
+  ],
+  "spherecast": [
+    "raycast"
+  ],
+  "capsulecast": [
+    "raycast"
+  ],
+  "캐스트": [
+    "raycast"
+  ],
+  "cast": [
+    "raycast"
+  ],
+  "update·fixedupdate·lateupdate": [
+    "fixed-update"
+  ],
+  "update": [
+    "fixed-update"
+  ],
+  "fixedupdate": [
+    "fixed-update"
+  ],
+  "lateupdate": [
+    "fixed-update"
+  ],
+  "고정 틱": [
+    "fixed-update"
+  ],
+  "물리 틱": [
+    "fixed-update"
+  ],
+  "deltatime과 초당 속도": [
+    "delta-time"
+  ],
+  "deltatime": [
+    "delta-time"
+  ],
+  "time.deltatime": [
+    "delta-time"
+  ],
+  "시간 간격": [
+    "delta-time"
+  ],
+  "프레임 독립": [
+    "delta-time"
+  ],
+  "보간·lerp·이동 보정": [
+    "interpolation"
+  ],
+  "보간": [
+    "interpolation"
+  ],
+  "interpolation": [
+    "interpolation"
+  ],
+  "lerp": [
+    "interpolation"
+  ],
+  "slerp": [
+    "interpolation"
+  ],
+  "스무딩": [
+    "interpolation"
+  ],
+  "게임 시간·실시간·일시정지": [
+    "time-scale"
+  ],
+  "timescale": [
+    "time-scale"
+  ],
+  "time.timescale": [
+    "time-scale"
+  ],
+  "unscaledtime": [
+    "time-scale"
+  ],
+  "일시정지": [
+    "time-scale"
+  ],
+  "pause": [
+    "time-scale"
+  ],
+  "히트스톱": [
+    "time-scale"
+  ],
+  "hit stop": [
+    "time-scale"
+  ],
+  "charactercontroller": [
+    "controller"
+  ],
+  "캐릭터 컨트롤러": [
+    "controller"
+  ],
+  "화면 좌표에서 월드 좌표로": [
+    "screen-world"
+  ],
+  "screentoworldpoint": [
+    "screen-world"
+  ],
+  "screenpointtoray": [
+    "screen-world"
+  ],
+  "화면 좌표": [
+    "screen-world"
+  ],
+  "월드 변환": [
+    "screen-world"
+  ],
+  "역투영": [
+    "screen-world"
+  ],
+  "actorroot·visualroot·modelroot": [
+    "actor-root"
+  ],
+  "actorroot": [
+    "actor-root"
+  ],
+  "visualroot": [
+    "actor-root"
+  ],
+  "modelroot": [
+    "actor-root"
+  ],
+  "root": [
+    "actor-root"
+  ],
+  "아트 루트": [
+    "actor-root"
+  ],
+  "수명주기·초기화·정리": [
+    "lifecycle"
+  ],
+  "수명주기": [
+    "lifecycle"
+  ],
+  "초기화": [
+    "lifecycle"
+  ],
+  "onenable": [
+    "lifecycle"
+  ],
+  "ondisable": [
+    "lifecycle"
+  ],
+  "ondestroy": [
+    "lifecycle"
+  ],
+  "awake": [
+    "lifecycle"
+  ],
+  "start": [
+    "lifecycle"
+  ],
+  "dispose": [
+    "lifecycle"
+  ],
+  "grid·셀·격자 좌표": [
+    "grid"
+  ],
+  "grid": [
+    "grid"
+  ],
+  "격자": [
+    "grid"
+  ],
+  "cellsize": [
+    "grid"
+  ],
+  "cell": [
+    "grid"
+  ],
+  "tilemap·tile·타일 팔레트": [
+    "tilemap"
+  ],
+  "tilemap": [
+    "tilemap"
+  ],
+  "타일맵": [
+    "tilemap"
+  ],
+  "tile": [
+    "tilemap"
+  ],
+  "타일": [
+    "tilemap"
+  ],
+  "타일 팔레트": [
+    "tilemap"
+  ],
+  "tilemap collider·composite collider": [
+    "tile-collider"
+  ],
+  "tilemap collider": [
+    "tile-collider"
+  ],
+  "tilemapcollider2d": [
+    "tile-collider"
+  ],
+  "composite collider": [
+    "tile-collider"
+  ],
+  "compositecollider2d": [
+    "tile-collider"
+  ],
+  "wallscollision": [
+    "tile-collider"
+  ],
+  "자동 타일링·rule tile·경계 마스크": [
+    "autotile"
+  ],
+  "rule tile": [
+    "autotile"
+  ],
+  "ruletile": [
+    "autotile"
+  ],
+  "자동 타일링": [
+    "autotile"
+  ],
+  "오토타일": [
+    "autotile"
+  ],
+  "경계 마스크": [
+    "autotile"
+  ],
+  "bitmask": [
+    "autotile"
+  ],
+  "논리 지도·dungeonlayout": [
+    "layout"
+  ],
+  "dungeonlayout": [
+    "layout"
+  ],
+  "layout": [
+    "layout"
+  ],
+  "논리 지도": [
+    "layout"
+  ],
+  "roomid": [
+    "layout"
+  ],
+  "walkable": [
+    "layout"
+  ],
+  "이동 가능 칸": [
+    "layout"
+  ],
+  "절차적·무작위 지형 생성": [
+    "generation"
+  ],
+  "절차적 생성": [
+    "generation"
+  ],
+  "무작위 지형": [
+    "generation"
+  ],
+  "랜덤맵": [
+    "generation"
+  ],
+  "랜덤 지도": [
+    "generation"
+  ],
+  "랜덤 던전": [
+    "generation"
+  ],
+  "procedural generation": [
+    "generation"
+  ],
+  "시드·난수·prng": [
+    "rng"
+  ],
+  "시드": [
+    "rng"
+  ],
+  "seed": [
+    "rng"
+  ],
+  "난수": [
+    "rng"
+  ],
+  "prng": [
+    "rng"
+  ],
+  "rng": [
+    "rng"
+  ],
+  "랜덤 스트림": [
+    "rng"
+  ],
+  "generatorversion": [
+    "rng"
+  ],
+  "a* 길찾기": [
+    "astar"
+  ],
+  "a*": [
+    "astar"
+  ],
+  "a-star": [
+    "astar"
+  ],
+  "a스타": [
+    "astar"
+  ],
+  "격자 길찾기": [
+    "astar"
+  ],
+  "휴리스틱·탐색 비용·예산": [
+    "heuristic"
+  ],
+  "휴리스틱": [
+    "heuristic"
+  ],
+  "heuristic": [
+    "heuristic"
+  ],
+  "탐색 비용": [
+    "heuristic"
+  ],
+  "탐색 예산": [
+    "heuristic"
+  ],
+  "경로 예산": [
+    "heuristic"
+  ],
+  "몸체 여유·모서리 통과": [
+    "clearance"
+  ],
+  "몸체 여유": [
+    "clearance"
+  ],
+  "여유 공간": [
+    "clearance"
+  ],
+  "반경": [
+    "clearance",
+    "bounds"
+  ],
+  "clearance": [
+    "clearance"
+  ],
+  "코너 커팅": [
+    "clearance"
+  ],
+  "corner cutting": [
+    "clearance"
+  ],
+  "경로와 경유점": [
+    "navigation"
+  ],
+  "경유점": [
+    "navigation"
+  ],
+  "waypoint": [
+    "navigation"
+  ],
+  "경로 요청": [
+    "navigation"
+  ],
+  "pathservice": [
+    "navigation"
+  ],
+  "경로": [
+    "navigation"
+  ],
+  "navigation": [
+    "navigation"
+  ],
+  "navmesh·surface·agent": [
+    "navmesh"
+  ],
+  "navmesh": [
+    "navmesh"
+  ],
+  "navmeshsurface": [
+    "navmesh"
+  ],
+  "navmeshagent": [
+    "navmesh"
+  ],
+  "네비메시": [
+    "navmesh"
+  ],
+  "ai navigation": [
+    "navmesh"
+  ],
+  "sampleposition": [
+    "navmesh"
+  ],
+  "calculatepath": [
+    "navmesh"
+  ],
+  "연결성·bfs·도달 가능성": [
+    "connectivity"
+  ],
+  "연결성": [
+    "connectivity"
+  ],
+  "bfs": [
+    "connectivity"
+  ],
+  "flood fill": [
+    "connectivity"
+  ],
+  "도달 가능성": [
+    "connectivity"
+  ],
+  "연결 검사": [
+    "connectivity"
+  ],
+  "스폰·디스폰·안전한 배치": [
+    "spawn"
+  ],
+  "스폰": [
+    "spawn"
+  ],
+  "spawn": [
+    "spawn"
+  ],
+  "spawnpoint": [
+    "spawn"
+  ],
+  "디스폰": [
+    "spawn"
+  ],
+  "despawn": [
+    "spawn"
+  ],
+  "상태 기계·fsm": [
+    "state-machine"
+  ],
+  "상태 기계": [
+    "state-machine"
+  ],
+  "fsm": [
+    "state-machine"
+  ],
+  "상태 전환": [
+    "state-machine"
+  ],
+  "idle": [
+    "state-machine"
+  ],
+  "chase": [
+    "state-machine"
+  ],
+  "windup": [
+    "state-machine"
+  ],
+  "recovery": [
+    "state-machine"
+  ],
+  "dead": [
+    "state-machine"
+  ],
+  "시야·los·마지막 목격 위치": [
+    "los"
+  ],
+  "los": [
+    "los"
+  ],
+  "line of sight": [
+    "los"
+  ],
+  "시야": [
+    "los"
+  ],
+  "마지막 목격": [
+    "los"
+  ],
+  "감지·기억": [
+    "los"
+  ],
+  "감지 거리": [
+    "los"
+  ],
+  "행동 점수·utility ai": [
+    "utility-ai"
+  ],
+  "행동 점수": [
+    "utility-ai"
+  ],
+  "utility ai": [
+    "utility-ai"
+  ],
+  "점수 기반 ai": [
+    "utility-ai"
+  ],
+  "거리 유지": [
+    "utility-ai"
+  ],
+  "측면 이동": [
+    "utility-ai"
+  ],
+  "동시 공격 제한·공격 토큰": [
+    "attack-token"
+  ],
+  "공격 토큰": [
+    "attack-token"
+  ],
+  "동시 공격": [
+    "attack-token"
+  ],
+  "공격 권한": [
+    "attack-token"
+  ],
+  "attack token": [
+    "attack-token"
+  ],
+  "접근 슬롯": [
+    "attack-token"
+  ],
+  "공격 예고·선행동작·회복": [
+    "telegraph"
+  ],
+  "공격 예고": [
+    "telegraph"
+  ],
+  "telegraph": [
+    "telegraph"
+  ],
+  "텔레그래프": [
+    "telegraph"
+  ],
+  "선행동작": [
+    "telegraph"
+  ],
+  "후딜레이": [
+    "telegraph"
+  ],
+  "공격 약속": [
+    "telegraph"
+  ],
+  "피해 계산·스냅샷·피해 사건": [
+    "damage"
+  ],
+  "피해 계산": [
+    "damage"
+  ],
+  "damagecalculator": [
+    "damage"
+  ],
+  "attacksnapshot": [
+    "damage"
+  ],
+  "damagekind": [
+    "damage"
+  ],
+  "피해 사건": [
+    "damage"
+  ],
+  "damageevent": [
+    "damage"
+  ],
+  "쿨다운·마나·자원 소비": [
+    "cooldown"
+  ],
+  "쿨다운": [
+    "cooldown"
+  ],
+  "재사용 대기시간": [
+    "cooldown"
+  ],
+  "cooldown": [
+    "cooldown"
+  ],
+  "마나": [
+    "cooldown",
+    "combat-stats"
+  ],
+  "mp": [
+    "cooldown",
+    "combat-stats"
+  ],
+  "hp": [
+    "cooldown",
+    "combat-stats"
+  ],
+  "체력": [
+    "cooldown",
+    "combat-stats"
+  ],
+  "입력 버퍼·취소·우선순위": [
+    "input-buffer"
+  ],
+  "입력 버퍼": [
+    "input-buffer"
+  ],
+  "버퍼링": [
+    "input-buffer"
+  ],
+  "입력 취소": [
+    "input-buffer"
+  ],
+  "취소 규칙": [
+    "input-buffer"
+  ],
+  "입력 우선순위": [
+    "input-buffer"
+  ],
+  "상태이상·dot·중첩": [
+    "status-effect"
+  ],
+  "상태이상": [
+    "status-effect"
+  ],
+  "dot": [
+    "status-effect"
+  ],
+  "화상": [
+    "status-effect"
+  ],
+  "냉기": [
+    "status-effect"
+  ],
+  "표식": [
+    "status-effect"
+  ],
+  "중첩": [
+    "status-effect"
+  ],
+  "tick": [
+    "status-effect"
+  ],
+  "조우·전투 감독·페이즈": [
+    "encounter"
+  ],
+  "조우": [
+    "encounter"
+  ],
+  "encounter": [
+    "encounter"
+  ],
+  "전투 감독": [
+    "encounter"
+  ],
+  "페이즈": [
+    "encounter",
+    "boss-phase"
+  ],
+  "phase": [
+    "encounter"
+  ],
+  "보스 패턴": [
+    "encounter"
+  ],
+  "밸런스·위험과 보상·플레이테스트": [
+    "balance"
+  ],
+  "밸런스": [
+    "balance"
+  ],
+  "튜닝": [
+    "balance"
+  ],
+  "위험·보상": [
+    "balance"
+  ],
+  "플레이테스트": [
+    "balance"
+  ],
+  "밸런싱": [
+    "balance"
+  ],
+  "손맛": [
+    "balance"
+  ],
+  "난이도·접근성·공정성": [
+    "difficulty"
+  ],
+  "난이도": [
+    "difficulty"
+  ],
+  "공정성": [
+    "difficulty"
+  ],
+  "반응 시간": [
+    "difficulty"
+  ],
+  "무적 시간": [
+    "difficulty"
+  ],
+  "회피 대시": [
+    "difficulty"
+  ],
+  "스프라이트와 spriterenderer": [
+    "sprite"
+  ],
+  "스프라이트": [
+    "sprite"
+  ],
+  "spriterenderer": [
+    "sprite"
+  ],
+  "sprite": [
+    "sprite"
+  ],
+  "스프라이트 렌더러": [
+    "sprite"
+  ],
+  "텍스처·픽셀·해상도": [
+    "texture"
+  ],
+  "텍스처": [
+    "texture"
+  ],
+  "texture": [
+    "texture"
+  ],
+  "픽셀": [
+    "texture"
+  ],
+  "pixel": [
+    "texture"
+  ],
+  "resolution": [
+    "texture"
+  ],
+  "ppu: 픽셀과 월드 크기": [
+    "ppu"
+  ],
+  "ppu": [
+    "ppu"
+  ],
+  "pixels per unit": [
+    "ppu"
+  ],
+  "ppu64": [
+    "ppu"
+  ],
+  "ppu32": [
+    "ppu"
+  ],
+  "pivot과 발 기준점": [
+    "pivot"
+  ],
+  "pivot": [
+    "pivot"
+  ],
+  "피벗": [
+    "pivot"
+  ],
+  "발 기준점": [
+    "pivot"
+  ],
+  "기준점": [
+    "pivot"
+  ],
+  "스프라이트 시트": [
+    "sprite-sheet"
+  ],
+  "spritesheet": [
+    "sprite-sheet"
+  ],
+  "sprite sheet": [
+    "sprite-sheet"
+  ],
+  "시트": [
+    "sprite-sheet"
+  ],
+  "프레임 시트": [
+    "sprite-sheet"
+  ],
+  "슬라이싱·프레임 분리": [
+    "slicing"
+  ],
+  "슬라이싱": [
+    "slicing"
+  ],
+  "슬라이스": [
+    "slicing"
+  ],
+  "slicing": [
+    "slicing"
+  ],
+  "프레임 분리": [
+    "slicing"
+  ],
+  "sprite editor": [
+    "slicing"
+  ],
+  "sprite atlas와 패킹": [
+    "atlas"
+  ],
+  "sprite atlas": [
+    "atlas"
+  ],
+  "아틀라스": [
+    "atlas"
+  ],
+  "atlas": [
+    "atlas"
+  ],
+  "패킹": [
+    "atlas"
+  ],
+  "packing": [
+    "atlas"
+  ],
+  "트리밍·오프셋·고정 셀": [
+    "trimming"
+  ],
+  "트리밍": [
+    "trimming"
+  ],
+  "trim": [
+    "trimming"
+  ],
+  "trimming": [
+    "trimming"
+  ],
+  "오프셋": [
+    "trimming"
+  ],
+  "offset": [
+    "trimming"
+  ],
+  "고정 셀": [
+    "trimming"
+  ],
+  "알파·rgba·투명 배경": [
+    "alpha"
+  ],
+  "알파": [
+    "alpha"
+  ],
+  "alpha": [
+    "alpha"
+  ],
+  "rgba": [
+    "alpha"
+  ],
+  "투명 배경": [
+    "alpha"
+  ],
+  "투명도": [
+    "alpha"
+  ],
+  "png": [
+    "alpha"
+  ],
+  "패딩·여백·필터링 번짐": [
+    "padding"
+  ],
+  "패딩": [
+    "padding"
+  ],
+  "padding": [
+    "padding"
+  ],
+  "extrusion": [
+    "padding"
+  ],
+  "bleeding": [
+    "padding"
+  ],
+  "번짐": [
+    "padding"
+  ],
+  "여백": [
+    "padding"
+  ],
+  "point·bilinear 필터와 픽셀 아트": [
+    "filter"
+  ],
+  "point": [
+    "filter"
+  ],
+  "bilinear": [
+    "filter"
+  ],
+  "trilinear": [
+    "filter"
+  ],
+  "filter mode": [
+    "filter"
+  ],
+  "필터 모드": [
+    "filter"
+  ],
+  "픽셀 아트": [
+    "filter"
+  ],
+  "픽셀 퍼펙트와 화면 배율": [
+    "scale-pixel"
+  ],
+  "pixel perfect": [
+    "scale-pixel"
+  ],
+  "픽셀 퍼펙트": [
+    "scale-pixel"
+  ],
+  "정수 배율": [
+    "scale-pixel"
+  ],
+  "서브픽셀": [
+    "scale-pixel"
+  ],
+  "심리스·타일 반복·스타일 일관성": [
+    "seamless"
+  ],
+  "심리스": [
+    "seamless"
+  ],
+  "seamless": [
+    "seamless"
+  ],
+  "타일링": [
+    "seamless"
+  ],
+  "이음새": [
+    "seamless"
+  ],
+  "스타일 일관성": [
+    "seamless"
+  ],
+  "스타일 참조": [
+    "seamless",
+    "image-service"
+  ],
+  "sorting layer·order·발 정렬": [
+    "sorting"
+  ],
+  "sorting layer": [
+    "sorting"
+  ],
+  "sorting": [
+    "sorting"
+  ],
+  "order in layer": [
+    "sorting"
+  ],
+  "정렬 순서": [
+    "sorting"
+  ],
+  "앞뒤 정렬": [
+    "sorting"
+  ],
+  "y 정렬": [
+    "sorting"
+  ],
+  "sortinggroup과 부위 묶기": [
+    "sorting-group"
+  ],
+  "sortinggroup": [
+    "sorting-group"
+  ],
+  "sorting group": [
+    "sorting-group"
+  ],
+  "정렬 그룹": [
+    "sorting-group"
+  ],
+  "애니메이션 클립·프레임·키프레임": [
+    "animation-clip"
+  ],
+  "animationclip": [
+    "animation-clip"
+  ],
+  "animation clip": [
+    "animation-clip"
+  ],
+  "클립": [
+    "animation-clip"
+  ],
+  "프레임": [
+    "animation-clip"
+  ],
+  "키프레임": [
+    "animation-clip"
+  ],
+  "keyframe": [
+    "animation-clip"
+  ],
+  "루프": [
+    "animation-clip"
+  ],
+  "animator·controller·전이": [
+    "animator"
+  ],
+  "animator": [
+    "animator"
+  ],
+  "animator controller": [
+    "animator"
+  ],
+  "애니메이터": [
+    "animator"
+  ],
+  "전이": [
+    "animator"
+  ],
+  "transition": [
+    "animator"
+  ],
+  "blend tree": [
+    "animator",
+    "blend-tree"
+  ],
+  "animation event와 타격 시점": [
+    "animation-event"
+  ],
+  "animation event": [
+    "animation-event"
+  ],
+  "애니메이션 이벤트": [
+    "animation-event"
+  ],
+  "타격 시점": [
+    "animation-event"
+  ],
+  "타격 프레임": [
+    "animation-event"
+  ],
+  "리그·본·스키닝·avatar": [
+    "rig"
+  ],
+  "리그": [
+    "rig"
+  ],
+  "rig": [
+    "rig"
+  ],
+  "bone": [
+    "rig"
+  ],
+  "스키닝": [
+    "rig"
+  ],
+  "skinning": [
+    "rig",
+    "skinning"
+  ],
+  "avatar": [
+    "rig",
+    "humanoid"
+  ],
+  "humanoid": [
+    "rig",
+    "humanoid"
+  ],
+  "generic": [
+    "rig",
+    "humanoid"
+  ],
+  "루트 모션과 제자리 동작": [
+    "root-motion"
+  ],
+  "root motion": [
+    "root-motion"
+  ],
+  "루트 모션": [
+    "root-motion"
+  ],
+  "in-place": [
+    "root-motion"
+  ],
+  "제자리 애니메이션": [
+    "root-motion"
+  ],
+  "소켓: 무기 부착점과 장비 홈": [
+    "socket"
+  ],
+  "weaponsocket": [
+    "socket"
+  ],
+  "무기 소켓": [
+    "socket"
+  ],
+  "소켓": [
+    "socket"
+  ],
+  "socket": [
+    "socket"
+  ],
+  "메시·정점·삼각형·노멀": [
+    "mesh"
+  ],
+  "mesh": [
+    "mesh"
+  ],
+  "메시": [
+    "mesh"
+  ],
+  "정점": [
+    "mesh"
+  ],
+  "vertex": [
+    "mesh"
+  ],
+  "삼각형": [
+    "mesh"
+  ],
+  "폴리곤": [
+    "mesh"
+  ],
+  "polygon": [
+    "mesh"
+  ],
+  "노멀": [
+    "mesh"
+  ],
+  "normal": [
+    "mesh"
+  ],
+  "로우폴리": [
+    "mesh"
+  ],
+  "uv와 텍스처 좌표": [
+    "uv"
+  ],
+  "uv": [
+    "uv"
+  ],
+  "uv 좌표": [
+    "uv"
+  ],
+  "uv 맵": [
+    "uv"
+  ],
+  "언랩": [
+    "uv"
+  ],
+  "unwrap": [
+    "uv"
+  ],
+  "material과 shader": [
+    "material"
+  ],
+  "material": [
+    "material"
+  ],
+  "머티리얼": [
+    "material"
+  ],
+  "재질": [
+    "material"
+  ],
+  "shader": [
+    "material"
+  ],
+  "셰이더": [
+    "material"
+  ],
+  "렌더링·renderer": [
+    "render"
+  ],
+  "렌더링": [
+    "render"
+  ],
+  "rendering": [
+    "render"
+  ],
+  "renderer": [
+    "render"
+  ],
+  "렌더러": [
+    "render"
+  ],
+  "meshrenderer": [
+    "render"
+  ],
+  "urp·2d renderer·universal renderer": [
+    "render-pipeline"
+  ],
+  "urp": [
+    "render-pipeline"
+  ],
+  "universal render pipeline": [
+    "render-pipeline"
+  ],
+  "2d renderer": [
+    "render-pipeline"
+  ],
+  "universal renderer": [
+    "render-pipeline"
+  ],
+  "렌더 파이프라인": [
+    "render-pipeline"
+  ],
+  "universal 2d": [
+    "render-pipeline"
+  ],
+  "urp2d": [
+    "render-pipeline"
+  ],
+  "universal 3d": [
+    "render-pipeline"
+  ],
+  "카메라·직교·원근": [
+    "camera"
+  ],
+  "카메라": [
+    "camera"
+  ],
+  "camera": [
+    "camera"
+  ],
+  "orthographic": [
+    "camera"
+  ],
+  "perspective": [
+    "camera"
+  ],
+  "직교": [
+    "camera"
+  ],
+  "원근": [
+    "camera"
+  ],
+  "orthographicsize": [
+    "camera"
+  ],
+  "orthographic size": [
+    "camera"
+  ],
+  "탑다운·쿼터뷰·아이소메트릭": [
+    "isometric"
+  ],
+  "탑다운": [
+    "isometric"
+  ],
+  "쿼터뷰": [
+    "isometric"
+  ],
+  "아이소메트릭": [
+    "isometric"
+  ],
+  "isometric": [
+    "isometric"
+  ],
+  "2.5d": [
+    "isometric"
+  ],
+  "조명·lit·unlit·그림자": [
+    "lighting"
+  ],
+  "조명": [
+    "lighting"
+  ],
+  "lighting": [
+    "lighting"
+  ],
+  "light": [
+    "lighting"
+  ],
+  "lit": [
+    "lighting"
+  ],
+  "unlit": [
+    "lighting"
+  ],
+  "그림자": [
+    "lighting",
+    "shadow"
+  ],
+  "shadow": [
+    "lighting",
+    "shadow"
+  ],
+  "directional light": [
+    "lighting"
+  ],
+  "2d light": [
+    "lighting"
+  ],
+  "shader graph·노드·마스크": [
+    "shader-graph"
+  ],
+  "shader graph": [
+    "shader-graph"
+  ],
+  "셰이더 그래프": [
+    "shader-graph"
+  ],
+  "마스크": [
+    "shader-graph"
+  ],
+  "mask": [
+    "shader-graph"
+  ],
+  "노드": [
+    "shader-graph",
+    "skill-tree"
+  ],
+  "dissolve": [
+    "shader-graph"
+  ],
+  "디졸브": [
+    "shader-graph"
+  ],
+  "vfx·particle system·플립북": [
+    "vfx"
+  ],
+  "vfx": [
+    "vfx"
+  ],
+  "이펙트": [
+    "vfx"
+  ],
+  "파티클": [
+    "vfx"
+  ],
+  "particle system": [
+    "vfx"
+  ],
+  "particle": [
+    "vfx"
+  ],
+  "플립북": [
+    "vfx"
+  ],
+  "flipbook": [
+    "vfx"
+  ],
+  "texture sheet animation": [
+    "vfx"
+  ],
+  "베이크·렌더 텍스처·오프라인 제작": [
+    "bake"
+  ],
+  "베이크": [
+    "bake"
+  ],
+  "bake": [
+    "bake"
+  ],
+  "rendertexture": [
+    "bake"
+  ],
+  "렌더 텍스처": [
+    "bake"
+  ],
+  "오프스크린": [
+    "bake"
+  ],
+  "3d→2d": [
+    "bake"
+  ],
+  "아트 규격·레퍼런스·키 포즈": [
+    "art-spec"
+  ],
+  "아트 규격": [
+    "art-spec"
+  ],
+  "레퍼런스": [
+    "art-spec"
+  ],
+  "참조 이미지": [
+    "art-spec",
+    "image-service"
+  ],
+  "reference image": [
+    "art-spec",
+    "image-service"
+  ],
+  "키 포즈": [
+    "art-spec"
+  ],
+  "key pose": [
+    "art-spec"
+  ],
+  "프롬프트 일관성": [
+    "art-spec"
+  ],
+  "input system·action·binding": [
+    "input-system"
+  ],
+  "input system": [
+    "input-system"
+  ],
+  "입력 시스템": [
+    "input-system"
+  ],
+  "inputaction": [
+    "input-system"
+  ],
+  "input action": [
+    "input-system"
+  ],
+  "action map": [
+    "input-system"
+  ],
+  "binding": [
+    "input-system",
+    "binding"
+  ],
+  "바인딩": [
+    "input-system",
+    "binding"
+  ],
+  "wasd": [
+    "input-system"
+  ],
+  "on-screen control": [
+    "input-system",
+    "multitouch"
+  ],
+  "onscreenstick": [
+    "input-system",
+    "multitouch"
+  ],
+  "액션 맵": [
+    "input-system"
+  ],
+  "eventsystem·ui 입력·클릭 차단": [
+    "event-system"
+  ],
+  "eventsystem": [
+    "event-system"
+  ],
+  "inputsystemuiinputmodule": [
+    "event-system"
+  ],
+  "ui 입력 모듈": [
+    "event-system"
+  ],
+  "ui 클릭": [
+    "event-system"
+  ],
+  "graphicraycaster": [
+    "event-system"
+  ],
+  "포인터 id·누름·해제·캡처": [
+    "pointer-id"
+  ],
+  "pointerid": [
+    "pointer-id"
+  ],
+  "pointer": [
+    "pointer-id"
+  ],
+  "포인터 id": [
+    "pointer-id"
+  ],
+  "pointerdown": [
+    "pointer-id"
+  ],
+  "pointerup": [
+    "pointer-id"
+  ],
+  "포인터 캡처": [
+    "pointer-id"
+  ],
+  "눌림": [
+    "pointer-id"
+  ],
+  "held": [
+    "pointer-id"
+  ],
+  "멀티터치·가상 조이스틱": [
+    "multitouch"
+  ],
+  "멀티터치": [
+    "multitouch"
+  ],
+  "두 손가락": [
+    "multitouch"
+  ],
+  "가상 조이스틱": [
+    "multitouch"
+  ],
+  "onscreenbutton": [
+    "multitouch"
+  ],
+  "데드존·입력 강도": [
+    "deadzone"
+  ],
+  "데드존": [
+    "deadzone"
+  ],
+  "deadzone": [
+    "deadzone"
+  ],
+  "dead zone": [
+    "deadzone"
+  ],
+  "입력 강도": [
+    "deadzone"
+  ],
+  "ui·hud·ugui": [
+    "ui"
+  ],
+  "ui": [
+    "ui"
+  ],
+  "hud": [
+    "ui"
+  ],
+  "ugui": [
+    "ui"
+  ],
+  "사용자 인터페이스": [
+    "ui"
+  ],
+  "헤드업 디스플레이": [
+    "ui"
+  ],
+  "canvas·recttransform·앵커": [
+    "canvas"
+  ],
+  "canvas": [
+    "canvas"
+  ],
+  "recttransform": [
+    "canvas"
+  ],
+  "anchor": [
+    "canvas",
+    "binding"
+  ],
+  "앵커": [
+    "canvas"
+  ],
+  "canvasscaler": [
+    "canvas"
+  ],
+  "canvas scaler": [
+    "canvas"
+  ],
+  "안전영역·화면 비율·viewport": [
+    "safe-area"
+  ],
+  "안전영역": [
+    "safe-area"
+  ],
+  "safe area": [
+    "safe-area"
+  ],
+  "safearea": [
+    "safe-area"
+  ],
+  "화면 비율": [
+    "safe-area"
+  ],
+  "aspect": [
+    "safe-area"
+  ],
+  "뷰포트": [
+    "safe-area",
+    "viewport"
+  ],
+  "레터박스": [
+    "safe-area"
+  ],
+  "ui 레이아웃·스크롤·9슬라이스": [
+    "layout-group"
+  ],
+  "layoutgroup": [
+    "layout-group"
+  ],
+  "layout group": [
+    "layout-group"
+  ],
+  "gridlayoutgroup": [
+    "layout-group"
+  ],
+  "scrollrect": [
+    "layout-group"
+  ],
+  "스크롤": [
+    "layout-group"
+  ],
+  "9-slice": [
+    "layout-group"
+  ],
+  "9슬라이스": [
+    "layout-group"
+  ],
+  "레이아웃": [
+    "layout-group"
+  ],
+  "상호작용·npc·퀘스트": [
+    "interaction"
+  ],
+  "상호작용": [
+    "interaction"
+  ],
+  "interact": [
+    "interaction"
+  ],
+  "npc": [
+    "interaction"
+  ],
+  "퀘스트": [
+    "interaction"
+  ],
+  "quest": [
+    "interaction"
+  ],
+  "대화 분기": [
+    "interaction",
+    "quest-machine"
+  ],
+  "audioclip·audiosource·audiolistener": [
+    "audio"
+  ],
+  "audioclip": [
+    "audio"
+  ],
+  "audiosource": [
+    "audio"
+  ],
+  "audiolistener": [
+    "audio"
+  ],
+  "sfx": [
+    "audio"
+  ],
+  "bgm": [
+    "audio"
+  ],
+  "효과음": [
+    "audio"
+  ],
+  "배경음악": [
+    "audio"
+  ],
+  "믹서·볼륨·db·동시 재생": [
+    "audio-mixer"
+  ],
+  "audiomixer": [
+    "audio-mixer"
+  ],
+  "믹서": [
+    "audio-mixer"
+  ],
+  "믹싱": [
+    "audio-mixer"
+  ],
+  "db": [
+    "audio-mixer"
+  ],
+  "데시벨": [
+    "audio-mixer"
+  ],
+  "피치": [
+    "audio-mixer"
+  ],
+  "pitch": [
+    "audio-mixer"
+  ],
+  "음량": [
+    "audio-mixer"
+  ],
+  "동시 재생": [
+    "audio-mixer"
+  ],
+  "접근성·가독성·피드백": [
+    "accessibility"
+  ],
+  "접근성": [
+    "accessibility"
+  ],
+  "가독성": [
+    "accessibility"
+  ],
+  "피드백": [
+    "accessibility"
+  ],
+  "feedback": [
+    "accessibility"
+  ],
+  "색각": [
+    "accessibility"
+  ],
+  "색약": [
+    "accessibility"
+  ],
+  "진동": [
+    "accessibility"
+  ],
+  "fps·프레임 시간·ms": [
+    "frame-time"
+  ],
+  "fps": [
+    "frame-time"
+  ],
+  "프레임 시간": [
+    "frame-time"
+  ],
+  "frame time": [
+    "frame-time"
+  ],
+  "ms": [
+    "frame-time"
+  ],
+  "밀리초": [
+    "frame-time"
+  ],
+  "profiler·병목·실기기 측정": [
+    "profiler"
+  ],
+  "profiler": [
+    "profiler"
+  ],
+  "프로파일러": [
+    "profiler"
+  ],
+  "프로파일링": [
+    "profiler"
+  ],
+  "병목": [
+    "profiler"
+  ],
+  "성능 측정": [
+    "profiler"
+  ],
+  "development build": [
+    "profiler",
+    "build"
+  ],
+  "cpu·gpu·ram·vram": [
+    "cpu-gpu"
+  ],
+  "cpu": [
+    "cpu-gpu"
+  ],
+  "gpu": [
+    "cpu-gpu"
+  ],
+  "ram": [
+    "cpu-gpu"
+  ],
+  "vram": [
+    "cpu-gpu"
+  ],
+  "메모리": [
+    "cpu-gpu"
+  ],
+  "그래픽 메모리": [
+    "cpu-gpu"
+  ],
+  "오버드로·투명 효과 비용": [
+    "overdraw"
+  ],
+  "오버드로": [
+    "overdraw"
+  ],
+  "overdraw": [
+    "overdraw"
+  ],
+  "투명 효과": [
+    "overdraw"
+  ],
+  "알파 블렌딩": [
+    "overdraw"
+  ],
+  "드로우콜·배칭·인스턴싱": [
+    "batching"
+  ],
+  "드로우콜": [
+    "batching"
+  ],
+  "draw call": [
+    "batching"
+  ],
+  "배칭": [
+    "batching"
+  ],
+  "batching": [
+    "batching"
+  ],
+  "인스턴싱": [
+    "batching"
+  ],
+  "instancing": [
+    "batching"
+  ],
+  "컬링·카메라 가림·lod": [
+    "culling"
+  ],
+  "컬링": [
+    "culling"
+  ],
+  "culling": [
+    "culling"
+  ],
+  "occlusion": [
+    "culling",
+    "shadow"
+  ],
+  "가림 처리": [
+    "culling"
+  ],
+  "lod": [
+    "culling",
+    "lod"
+  ],
+  "시야 밖": [
+    "culling"
+  ],
+  "오브젝트 풀링": [
+    "pool"
+  ],
+  "오브젝트 풀": [
+    "pool"
+  ],
+  "풀링": [
+    "pool"
+  ],
+  "pooling": [
+    "pool"
+  ],
+  "pool": [
+    "pool"
+  ],
+  "gc·할당·메모리 누수": [
+    "garbage"
+  ],
+  "gc": [
+    "garbage"
+  ],
+  "garbage collection": [
+    "garbage"
+  ],
+  "가비지": [
+    "garbage"
+  ],
+  "할당": [
+    "garbage"
+  ],
+  "allocation": [
+    "garbage"
+  ],
+  "메모리 누수": [
+    "garbage"
+  ],
+  "누수": [
+    "garbage"
+  ],
+  "밉맵·텍스처 압축": [
+    "mipmap"
+  ],
+  "밉맵": [
+    "mipmap"
+  ],
+  "mipmap": [
+    "mipmap"
+  ],
+  "astc": [
+    "mipmap"
+  ],
+  "etc2": [
+    "mipmap"
+  ],
+  "텍스처 압축": [
+    "mipmap"
+  ],
+  "압축 포맷": [
+    "mipmap"
+  ],
+  "texture compression": [
+    "mipmap"
+  ],
+  "파일 용량과 실행 메모리": [
+    "texture-compression"
+  ],
+  "파일 용량": [
+    "texture-compression"
+  ],
+  "gpu 메모리": [
+    "texture-compression"
+  ],
+  "텍스처 메모리": [
+    "texture-compression"
+  ],
+  "해상도 예산": [
+    "texture-compression"
+  ],
+  "c#·python·스크립트": [
+    "csharp"
+  ],
+  "c#": [
+    "csharp"
+  ],
+  "csharp": [
+    "csharp"
+  ],
+  "c sharp": [
+    "csharp"
+  ],
+  "python": [
+    "csharp"
+  ],
+  "파이썬": [
+    "csharp"
+  ],
+  "스크립트": [
+    "csharp"
+  ],
+  "script": [
+    "csharp"
+  ],
+  "monobehaviour와 컴포넌트 스크립트": [
+    "mono"
+  ],
+  "monobehaviour": [
+    "mono"
+  ],
+  "모노비헤이비어": [
+    "mono"
+  ],
+  "참조·null·missing reference": [
+    "reference"
+  ],
+  "reference": [
+    "reference"
+  ],
+  "nullreferenceexception": [
+    "reference",
+    "exception"
+  ],
+  "missing reference": [
+    "reference"
+  ],
+  "scriptableobject와 정의 데이터": [
+    "scriptable"
+  ],
+  "scriptableobject": [
+    "scriptable"
+  ],
+  "so": [
+    "scriptable"
+  ],
+  "스크립터블 오브젝트": [
+    "scriptable"
+  ],
+  "정의 데이터": [
+    "scriptable"
+  ],
+  "아이템 정의와 콘텐츠 id": [
+    "item-definition"
+  ],
+  "itemdefinition": [
+    "item-definition"
+  ],
+  "definition": [
+    "item-definition"
+  ],
+  "아이템 원형": [
+    "item-definition"
+  ],
+  "아이템 정의": [
+    "item-definition"
+  ],
+  "contentid": [
+    "item-definition",
+    "identifier"
+  ],
+  "definitionid": [
+    "item-definition",
+    "identifier"
+  ],
+  "아이템 인스턴스와 소유권": [
+    "item-instance"
+  ],
+  "iteminstance": [
+    "item-instance"
+  ],
+  "instanceid": [
+    "item-instance",
+    "identifier"
+  ],
+  "instance": [
+    "item-instance"
+  ],
+  "인스턴스": [
+    "item-instance"
+  ],
+  "소유권": [
+    "item-instance"
+  ],
+  "고유 아이템": [
+    "item-instance"
+  ],
+  "인벤토리·슬롯·스택·창고": [
+    "inventory"
+  ],
+  "인벤토리": [
+    "inventory"
+  ],
+  "inventory": [
+    "inventory"
+  ],
+  "가방": [
+    "inventory"
+  ],
+  "슬롯": [
+    "inventory"
+  ],
+  "슬롯 인덱스": [
+    "inventory"
+  ],
+  "stack": [
+    "inventory"
+  ],
+  "스택": [
+    "inventory"
+  ],
+  "창고": [
+    "inventory"
+  ],
+  "장비·슬롯·재계산": [
+    "equipment"
+  ],
+  "장착": [
+    "equipment"
+  ],
+  "장비 슬롯": [
+    "equipment"
+  ],
+  "equipment": [
+    "equipment"
+  ],
+  "재계산": [
+    "equipment"
+  ],
+  "능력치 재계산": [
+    "equipment"
+  ],
+  "룬": [
+    "equipment",
+    "loot-economy"
+  ],
+  "능력치·클램프·정수·부동소수점": [
+    "stats"
+  ],
+  "능력치": [
+    "stats"
+  ],
+  "stat": [
+    "stats"
+  ],
+  "stats": [
+    "stats"
+  ],
+  "clamp": [
+    "stats"
+  ],
+  "클램프": [
+    "stats"
+  ],
+  "부동소수점": [
+    "stats"
+  ],
+  "반올림": [
+    "stats"
+  ],
+  "최소 피해": [
+    "stats"
+  ],
+  "전리품·가중치·드롭 확률": [
+    "loot"
+  ],
+  "전리품": [
+    "loot"
+  ],
+  "드롭": [
+    "loot"
+  ],
+  "drop": [
+    "loot"
+  ],
+  "loot": [
+    "loot"
+  ],
+  "가중치": [
+    "loot"
+  ],
+  "확률표": [
+    "loot"
+  ],
+  "랜덤 옵션": [
+    "loot"
+  ],
+  "스킬트리·노드·선행 조건": [
+    "skill-tree"
+  ],
+  "스킬트리": [
+    "skill-tree"
+  ],
+  "스킬 트리": [
+    "skill-tree"
+  ],
+  "선행 조건": [
+    "skill-tree"
+  ],
+  "스킬 포인트": [
+    "skill-tree"
+  ],
+  "rank": [
+    "skill-tree"
+  ],
+  "랭크": [
+    "skill-tree"
+  ],
+  "캐릭터 빌드·로드아웃": [
+    "build-loadout"
+  ],
+  "캐릭터 빌드": [
+    "build-loadout"
+  ],
+  "장비 빌드": [
+    "build-loadout"
+  ],
+  "빌드를 바꾸": [
+    "build-loadout"
+  ],
+  "로드아웃": [
+    "build-loadout"
+  ],
+  "loadout": [
+    "build-loadout"
+  ],
+  "특성": [
+    "build-loadout"
+  ],
+  "스킬 변형": [
+    "build-loadout"
+  ],
+  "id·고유 식별자·버전": [
+    "identifier"
+  ],
+  "id": [
+    "identifier"
+  ],
+  "고유 id": [
+    "identifier"
+  ],
+  "식별자": [
+    "identifier"
+  ],
+  "actorid": [
+    "identifier"
+  ],
+  "runid": [
+    "identifier"
+  ],
+  "requestid": [
+    "identifier",
+    "request-id"
+  ],
+  "eventid": [
+    "identifier",
+    "event-id"
+  ],
+  "uuid": [
+    "identifier"
+  ],
+  "json·객체·배열·필드": [
+    "json"
+  ],
+  "json": [
+    "json"
+  ],
+  "필드": [
+    "json"
+  ],
+  "객체": [
+    "json",
+    "class"
+  ],
+  "배열": [
+    "json",
+    "collection"
+  ],
+  "dictionary": [
+    "json",
+    "collection"
+  ],
+  "딕셔너리": [
+    "json",
+    "collection"
+  ],
+  "key-value": [
+    "json"
+  ],
+  "스키마·json schema·계약": [
+    "schema"
+  ],
+  "스키마": [
+    "schema"
+  ],
+  "schema": [
+    "schema"
+  ],
+  "json schema": [
+    "schema"
+  ],
+  "schemaversion": [
+    "schema"
+  ],
+  "schema1": [
+    "schema"
+  ],
+  "schema2": [
+    "schema"
+  ],
+  "schema3": [
+    "schema"
+  ],
+  "데이터 계약": [
+    "schema"
+  ],
+  "schema 3": [
+    "schema"
+  ],
+  "schema 2": [
+    "schema"
+  ],
+  "직렬화·역직렬화": [
+    "serialization"
+  ],
+  "직렬화": [
+    "serialization"
+  ],
+  "역직렬화": [
+    "serialization"
+  ],
+  "serialization": [
+    "serialization"
+  ],
+  "serialize": [
+    "serialization"
+  ],
+  "deserialize": [
+    "serialization"
+  ],
+  "dto·저장 데이터와 런타임 상태": [
+    "dto"
+  ],
+  "dto": [
+    "dto"
+  ],
+  "data transfer object": [
+    "dto"
+  ],
+  "savedata": [
+    "dto"
+  ],
+  "저장 dto": [
+    "dto"
+  ],
+  "저장·persistentdatapath·백업": [
+    "save"
+  ],
+  "저장": [
+    "save"
+  ],
+  "세이브": [
+    "save"
+  ],
+  "save": [
+    "save"
+  ],
+  "persistentdatapath": [
+    "save"
+  ],
+  "백업": [
+    "save"
+  ],
+  "backup": [
+    "save"
+  ],
+  "원자적 저장·임시 파일·교체": [
+    "atomic-save"
+  ],
+  "원자적 저장": [
+    "atomic-save"
+  ],
+  "atomic write": [
+    "atomic-save"
+  ],
+  "원자 저장": [
+    "atomic-save"
+  ],
+  "임시 파일": [
+    "atomic-save"
+  ],
+  "원자적 교체": [
+    "atomic-save"
+  ],
+  "저장 이전·마이그레이션": [
+    "migration"
+  ],
+  "마이그레이션": [
+    "migration"
+  ],
+  "migration": [
+    "migration"
+  ],
+  "저장 이전": [
+    "migration"
+  ],
+  "업그레이드": [
+    "migration"
+  ],
+  "스키마 이전": [
+    "migration"
+  ],
+  "영구 진행·탐험 세션·런타임 상태": [
+    "session"
+  ],
+  "탐험 세션": [
+    "session"
+  ],
+  "이번 탐험": [
+    "session"
+  ],
+  "영구 진행": [
+    "session"
+  ],
+  "영구 데이터": [
+    "session"
+  ],
+  "세션 상태": [
+    "session"
+  ],
+  "run-local": [
+    "session"
+  ],
+  "유물": [
+    "session",
+    "loot-economy"
+  ],
+  "트랜잭션·거래의 한 번 적용": [
+    "transaction"
+  ],
+  "트랜잭션": [
+    "transaction"
+  ],
+  "transaction": [
+    "transaction"
+  ],
+  "거래": [
+    "transaction"
+  ],
+  "원자적 처리": [
+    "transaction"
+  ],
+  "commit": [
+    "transaction",
+    "git"
+  ],
+  "커밋": [
+    "transaction",
+    "git"
+  ],
+  "멱등성·재시도해도 한 번": [
+    "idempotency"
+  ],
+  "멱등성": [
+    "idempotency"
+  ],
+  "idempotency": [
+    "idempotency"
+  ],
+  "idempotent": [
+    "idempotency"
+  ],
+  "중복 실행": [
+    "idempotency"
+  ],
+  "중복 지급": [
+    "idempotency"
+  ],
+  "이벤트·콜백·구독·이벤트 버스": [
+    "event"
+  ],
+  "이벤트": [
+    "event"
+  ],
+  "event": [
+    "event"
+  ],
+  "callback": [
+    "event",
+    "async"
+  ],
+  "콜백": [
+    "event"
+  ],
+  "구독": [
+    "event"
+  ],
+  "event bus": [
+    "event"
+  ],
+  "이벤트 버스": [
+    "event"
+  ],
+  "공격 id·사건 id·중복 피해 방지": [
+    "event-id"
+  ],
+  "공격 id": [
+    "event-id"
+  ],
+  "사건 id": [
+    "event-id"
+  ],
+  "이벤트 id": [
+    "event-id"
+  ],
+  "attackid": [
+    "event-id"
+  ],
+  "히트 중복": [
+    "event-id"
+  ],
+  "요청 id·세대 id·오래된 응답": [
+    "request-id"
+  ],
+  "요청 id": [
+    "request-id"
+  ],
+  "generationid": [
+    "request-id"
+  ],
+  "세대 id": [
+    "request-id"
+  ],
+  "오래된 응답": [
+    "request-id"
+  ],
+  "stale response": [
+    "request-id"
+  ],
+  "순수 함수·불변 조건·결정적 계산": [
+    "pure-function"
+  ],
+  "순수 함수": [
+    "pure-function"
+  ],
+  "pure function": [
+    "pure-function"
+  ],
+  "core": [
+    "pure-function"
+  ],
+  "순수 규칙": [
+    "pure-function"
+  ],
+  "결정적 계산": [
+    "pure-function"
+  ],
+  "어댑터·인터페이스·의존성 분리": [
+    "adapter"
+  ],
+  "어댑터": [
+    "adapter"
+  ],
+  "adapter": [
+    "adapter"
+  ],
+  "인터페이스": [
+    "adapter"
+  ],
+  "interface": [
+    "adapter"
+  ],
+  "의존성 주입": [
+    "adapter"
+  ],
+  "di": [
+    "adapter"
+  ],
+  "불변 조건·경계값·속성 검사": [
+    "invariant"
+  ],
+  "불변 조건": [
+    "invariant"
+  ],
+  "invariant": [
+    "invariant"
+  ],
+  "경계값": [
+    "invariant"
+  ],
+  "속성 검사": [
+    "invariant"
+  ],
+  "property test": [
+    "invariant"
+  ],
+  "소유권 불변": [
+    "invariant"
+  ],
+  "단위·통합·회귀 테스트": [
+    "test"
+  ],
+  "단위 테스트": [
+    "test"
+  ],
+  "통합 테스트": [
+    "test"
+  ],
+  "회귀 테스트": [
+    "test"
+  ],
+  "unit test": [
+    "test"
+  ],
+  "nunit": [
+    "test"
+  ],
+  "unittest": [
+    "test"
+  ],
+  "자동 테스트": [
+    "test"
+  ],
+  "픽스처·mock·stub·테스트 더블": [
+    "fixture"
+  ],
+  "fixture": [
+    "fixture"
+  ],
+  "픽스처": [
+    "fixture"
+  ],
+  "mock": [
+    "fixture"
+  ],
+  "stub": [
+    "fixture"
+  ],
+  "스텁": [
+    "fixture"
+  ],
+  "모의 응답": [
+    "fixture"
+  ],
+  "테스트 더블": [
+    "fixture"
+  ],
+  "버그 재현·최소 재현·디버깅": [
+    "repro"
+  ],
+  "재현": [
+    "repro"
+  ],
+  "repro": [
+    "repro"
+  ],
+  "재현 순서": [
+    "repro"
+  ],
+  "최소 재현": [
+    "repro"
+  ],
+  "debug": [
+    "repro",
+    "debug"
+  ],
+  "회귀·기준선·수정 전후 비교": [
+    "regression"
+  ],
+  "회귀": [
+    "regression"
+  ],
+  "회귀 검사": [
+    "regression"
+  ],
+  "regression": [
+    "regression"
+  ],
+  "기준선": [
+    "regression",
+    "snapshot"
+  ],
+  "baseline": [
+    "regression",
+    "snapshot"
+  ],
+  "재현성·결정성·동등성": [
+    "deterministic"
+  ],
+  "결정성": [
+    "deterministic"
+  ],
+  "재현성": [
+    "deterministic"
+  ],
+  "동등성": [
+    "deterministic"
+  ],
+  "deterministic": [
+    "deterministic"
+  ],
+  "parity": [
+    "deterministic"
+  ],
+  "허용 오차": [
+    "deterministic"
+  ],
+  "ai 모델·llm·모델 선택": [
+    "llm"
+  ],
+  "llm": [
+    "llm"
+  ],
+  "언어 모델": [
+    "llm"
+  ],
+  "ai 모델": [
+    "llm"
+  ],
+  "모델 선택": [
+    "llm"
+  ],
+  "opus": [
+    "llm"
+  ],
+  "claude opus": [
+    "llm"
+  ],
+  "claude-opus-5-5": [
+    "llm"
+  ],
+  "에이전트·서브에이전트·역할": [
+    "agent"
+  ],
+  "에이전트": [
+    "agent"
+  ],
+  "agent": [
+    "agent"
+  ],
+  "서브에이전트": [
+    "agent"
+  ],
+  "subagent": [
+    "agent"
+  ],
+  "sub-agent": [
+    "agent"
+  ],
+  "role": [
+    "agent"
+  ],
+  "역할": [
+    "agent"
+  ],
+  "도구 호출·로컬·클라우드": [
+    "tool"
+  ],
+  "도구 호출": [
+    "tool"
+  ],
+  "tool call": [
+    "tool"
+  ],
+  "로컬": [
+    "tool"
+  ],
+  "클라우드": [
+    "tool"
+  ],
+  "로컬 연결": [
+    "tool"
+  ],
+  "컨텍스트·세션·작업 기록": [
+    "context"
+  ],
+  "컨텍스트": [
+    "context"
+  ],
+  "context": [
+    "context"
+  ],
+  "문맥": [
+    "context"
+  ],
+  "세션": [
+    "context"
+  ],
+  "작업 기록": [
+    "context"
+  ],
+  "claude.md": [
+    "context"
+  ],
+  "컨텍스트 윈도우": [
+    "context"
+  ],
+  "ai 토큰·입출력·비용": [
+    "llm-token"
+  ],
+  "토큰": [
+    "llm-token"
+  ],
+  "token": [
+    "llm-token"
+  ],
+  "tokens": [
+    "llm-token"
+  ],
+  "입력 토큰": [
+    "llm-token"
+  ],
+  "출력 토큰": [
+    "llm-token"
+  ],
+  "사용량": [
+    "llm-token"
+  ],
+  "환각·프롬프트 인젝션·신뢰 경계": [
+    "hallucination"
+  ],
+  "환각": [
+    "hallucination"
+  ],
+  "hallucination": [
+    "hallucination"
+  ],
+  "프롬프트 인젝션": [
+    "hallucination"
+  ],
+  "prompt injection": [
+    "hallucination"
+  ],
+  "비신뢰 입력": [
+    "hallucination"
+  ],
+  "ai 스킬과 skill.md": [
+    "skill-agent"
+  ],
+  "ai 스킬": [
+    "skill-agent"
+  ],
+  "개발 스킬": [
+    "skill-agent"
+  ],
+  "skill.md": [
+    "skill-agent"
+  ],
+  "game-work": [
+    "skill-agent"
+  ],
+  "game-feature": [
+    "skill-agent"
+  ],
+  "game-plan": [
+    "skill-agent"
+  ],
+  "game-verify": [
+    "skill-agent"
+  ],
+  "game-fix": [
+    "skill-agent"
+  ],
+  "game-resume": [
+    "skill-agent"
+  ],
+  "game-status": [
+    "skill-agent"
+  ],
+  "훅·사전/사후 이벤트": [
+    "hook"
+  ],
+  "훅": [
+    "hook"
+  ],
+  "hook": [
+    "hook"
+  ],
+  "hooks": [
+    "hook"
+  ],
+  "pretooluse": [
+    "hook"
+  ],
+  "posttooluse": [
+    "hook"
+  ],
+  "sessionstart": [
+    "hook"
+  ],
+  "stop hook": [
+    "hook"
+  ],
+  "개발 하네스": [
+    "harness"
+  ],
+  "하네스": [
+    "harness"
+  ],
+  "harness": [
+    "harness"
+  ],
+  "mygameharness": [
+    "harness"
+  ],
+  "개발 도구": [
+    "harness"
+  ],
+  "작업표·완료 조건·계획": [
+    "task"
+  ],
+  "작업표": [
+    "task"
+  ],
+  "task json": [
+    "task"
+  ],
+  "acceptance": [
+    "task"
+  ],
+  "완료 조건": [
+    "task"
+  ],
+  "작업 계획": [
+    "task"
+  ],
+  "planner": [
+    "task"
+  ],
+  "완료 계약": [
+    "task"
+  ],
+  "의존성·dag·위상 정렬": [
+    "dependency"
+  ],
+  "의존성": [
+    "dependency"
+  ],
+  "dag": [
+    "dependency"
+  ],
+  "depends_on": [
+    "dependency"
+  ],
+  "위상 정렬": [
+    "dependency"
+  ],
+  "선행 작업": [
+    "dependency"
+  ],
+  "의존 그래프": [
+    "dependency"
+  ],
+  "파일 소유권·읽기 범위·쓰기 범위": [
+    "ownership"
+  ],
+  "파일 소유권": [
+    "ownership"
+  ],
+  "수정 경로": [
+    "ownership"
+  ],
+  "쓰기 범위": [
+    "ownership"
+  ],
+  "읽기 범위": [
+    "ownership"
+  ],
+  "read-only": [
+    "ownership"
+  ],
+  "읽기 전용": [
+    "ownership"
+  ],
+  "수정 범위": [
+    "ownership"
+  ],
+  "권한·승인·최소 권한": [
+    "permission"
+  ],
+  "권한": [
+    "permission"
+  ],
+  "승인": [
+    "permission"
+  ],
+  "permission": [
+    "permission"
+  ],
+  "최소 권한": [
+    "permission"
+  ],
+  "allowlist": [
+    "permission"
+  ],
+  "허용 목록": [
+    "permission"
+  ],
+  "유료 승인": [
+    "permission"
+  ],
+  "샌드박스·후보 폴더·격리": [
+    "sandbox"
+  ],
+  "샌드박스": [
+    "sandbox"
+  ],
+  "sandbox": [
+    "sandbox"
+  ],
+  "격리": [
+    "sandbox"
+  ],
+  "보안 경계": [
+    "sandbox"
+  ],
+  "격리 실행": [
+    "sandbox"
+  ],
+  "공급자·어댑터·실제 호출": [
+    "provider"
+  ],
+  "provider": [
+    "provider"
+  ],
+  "공급자": [
+    "provider"
+  ],
+  "claude code": [
+    "provider"
+  ],
+  "claude cli": [
+    "provider"
+  ],
+  "공급자 어댑터": [
+    "provider"
+  ],
+  "구조화 응답·변경안 계약": [
+    "structured-output"
+  ],
+  "구조화 응답": [
+    "structured-output"
+  ],
+  "structured_output": [
+    "structured-output"
+  ],
+  "structured output": [
+    "structured-output"
+  ],
+  "응답 스키마": [
+    "structured-output"
+  ],
+  "변경안": [
+    "structured-output"
+  ],
+  "후보·스테이징·변경 적용": [
+    "candidate"
+  ],
+  "후보": [
+    "candidate"
+  ],
+  "candidate": [
+    "candidate"
+  ],
+  "staging": [
+    "candidate",
+    "staging"
+  ],
+  "stage": [
+    "candidate"
+  ],
+  "후보 적용": [
+    "candidate"
+  ],
+  "승격": [
+    "candidate"
+  ],
+  "diff·패치·변경 검토": [
+    "diff"
+  ],
+  "diff": [
+    "diff"
+  ],
+  "패치 제안": [
+    "diff"
+  ],
+  "변경 내역": [
+    "diff"
+  ],
+  "소스 차이": [
+    "diff"
+  ],
+  "patch": [
+    "diff"
+  ],
+  "해시·sha-256·체크섬": [
+    "hash"
+  ],
+  "해시": [
+    "hash"
+  ],
+  "hash": [
+    "hash"
+  ],
+  "sha256": [
+    "hash"
+  ],
+  "sha-256": [
+    "hash"
+  ],
+  "체크섬": [
+    "hash"
+  ],
+  "checksum": [
+    "hash"
+  ],
+  "소스 고정·seal·증거 결속": [
+    "seal"
+  ],
+  "seal": [
+    "seal"
+  ],
+  "소스 고정": [
+    "seal"
+  ],
+  "소스 동결": [
+    "seal"
+  ],
+  "source seal": [
+    "seal"
+  ],
+  "sourcestable": [
+    "seal"
+  ],
+  "증거·검사 상태·미실행": [
+    "evidence"
+  ],
+  "증거": [
+    "evidence"
+  ],
+  "evidence": [
+    "evidence"
+  ],
+  "pass": [
+    "evidence"
+  ],
+  "fail": [
+    "evidence"
+  ],
+  "blocked": [
+    "evidence"
+  ],
+  "not run": [
+    "evidence"
+  ],
+  "demo_only": [
+    "evidence"
+  ],
+  "검사 결과": [
+    "evidence"
+  ],
+  "검증 게이트·필수 검사": [
+    "gate"
+  ],
+  "게이트": [
+    "gate"
+  ],
+  "gate": [
+    "gate"
+  ],
+  "필수 검사": [
+    "gate"
+  ],
+  "acceptance gate": [
+    "gate"
+  ],
+  "attest": [
+    "gate"
+  ],
+  "seal/gate": [
+    "gate"
+  ],
+  "qa·비평·독립 검토": [
+    "review"
+  ],
+  "qa": [
+    "review"
+  ],
+  "critic": [
+    "review"
+  ],
+  "비평": [
+    "review"
+  ],
+  "독립 검토": [
+    "review"
+  ],
+  "검토자": [
+    "review"
+  ],
+  "review": [
+    "review"
+  ],
+  "run·attempt·revision·인수인계": [
+    "run"
+  ],
+  "run": [
+    "run"
+  ],
+  "attempt": [
+    "run"
+  ],
+  "revision": [
+    "run"
+  ],
+  "작업 실행": [
+    "run"
+  ],
+  "실행 이력": [
+    "run"
+  ],
+  "인수인계": [
+    "run"
+  ],
+  "대시보드": [
+    "run"
+  ],
+  "attempts": [
+    "run"
+  ],
+  "스케줄러·순차·병렬": [
+    "scheduler"
+  ],
+  "스케줄러": [
+    "scheduler"
+  ],
+  "scheduler": [
+    "scheduler"
+  ],
+  "스케줄링": [
+    "scheduler"
+  ],
+  "순차 실행": [
+    "scheduler"
+  ],
+  "병렬": [
+    "scheduler"
+  ],
+  "parallel": [
+    "scheduler"
+  ],
+  "워커": [
+    "scheduler"
+  ],
+  "worker": [
+    "scheduler"
+  ],
+  "잠금·경합·경쟁 상태": [
+    "lock"
+  ],
+  "잠금": [
+    "lock"
+  ],
+  "lock": [
+    "lock"
+  ],
+  "경합": [
+    "lock"
+  ],
+  "경쟁 상태": [
+    "lock"
+  ],
+  "race condition": [
+    "lock"
+  ],
+  "뮤텍스": [
+    "lock"
+  ],
+  "프로세스·종료 코드·표준 출력": [
+    "process"
+  ],
+  "프로세스": [
+    "process"
+  ],
+  "process": [
+    "process"
+  ],
+  "pid": [
+    "process"
+  ],
+  "exit code": [
+    "process"
+  ],
+  "종료 코드": [
+    "process"
+  ],
+  "stdout": [
+    "process"
+  ],
+  "stderr": [
+    "process"
+  ],
+  "표준 출력": [
+    "process"
+  ],
+  "표준 오류": [
+    "process"
+  ],
+  "exit0": [
+    "process"
+  ],
+  "exit1": [
+    "process"
+  ],
+  "exit 0": [
+    "process"
+  ],
+  "파서·xml·결과 판정": [
+    "parser"
+  ],
+  "파서": [
+    "parser"
+  ],
+  "parser": [
+    "parser"
+  ],
+  "파싱": [
+    "parser"
+  ],
+  "xml": [
+    "parser"
+  ],
+  "nunit xml": [
+    "parser"
+  ],
+  "결과 파서": [
+    "parser"
+  ],
+  "타임아웃·중단·취소": [
+    "timeout"
+  ],
+  "타임아웃": [
+    "timeout"
+  ],
+  "timeout": [
+    "timeout"
+  ],
+  "시간 제한": [
+    "timeout"
+  ],
+  "cancel": [
+    "timeout"
+  ],
+  "재시도·백오프·복구": [
+    "retry"
+  ],
+  "재시도": [
+    "retry"
+  ],
+  "retry": [
+    "retry"
+  ],
+  "백오프": [
+    "retry"
+  ],
+  "backoff": [
+    "retry"
+  ],
+  "resume": [
+    "retry"
+  ],
+  "재개": [
+    "retry"
+  ],
+  "비용 한도·예약·실사용량": [
+    "budget"
+  ],
+  "비용": [
+    "budget"
+  ],
+  "예산": [
+    "budget"
+  ],
+  "budget": [
+    "budget"
+  ],
+  "유료 호출": [
+    "budget"
+  ],
+  "사용량 한도": [
+    "budget"
+  ],
+  "비용 예약": [
+    "budget"
+  ],
+  "실제 파일 바인딩·앵커·심볼": [
+    "binding"
+  ],
+  "파일 바인딩": [
+    "binding"
+  ],
+  "바인딩된 파일": [
+    "binding"
+  ],
+  "symbol": [
+    "binding"
+  ],
+  "심볼": [
+    "binding"
+  ],
+  "anchor 문자열": [
+    "binding"
+  ],
+  "unbound": [
+    "binding"
+  ],
+  "symbol_map": [
+    "binding"
+  ],
+  "비동기·await·콜백": [
+    "async"
+  ],
+  "비동기": [
+    "async"
+  ],
+  "async": [
+    "async"
+  ],
+  "await": [
+    "async"
+  ],
+  "unitask": [
+    "async"
+  ],
+  "task": [
+    "async"
+  ],
+  "취소 신호·늦은 완료·정리": [
+    "cancellation"
+  ],
+  "cancellationtoken": [
+    "cancellation"
+  ],
+  "취소 토큰": [
+    "cancellation"
+  ],
+  "늦은 완료": [
+    "cancellation"
+  ],
+  "late callback": [
+    "cancellation"
+  ],
+  "취소 신호": [
+    "cancellation"
+  ],
+  "addressables·주소로 에셋 불러오기": [
+    "addressables"
+  ],
+  "addressables": [
+    "addressables"
+  ],
+  "addressable": [
+    "addressables"
+  ],
+  "어드레서블": [
+    "addressables"
+  ],
+  "assetreference": [
+    "addressables"
+  ],
+  "assetbundle·그룹·레이블": [
+    "bundle"
+  ],
+  "assetbundle": [
+    "bundle"
+  ],
+  "에셋 번들": [
+    "bundle"
+  ],
+  "번들": [
+    "bundle"
+  ],
+  "bundle": [
+    "bundle"
+  ],
+  "addressables 그룹": [
+    "bundle"
+  ],
+  "레이블": [
+    "bundle"
+  ],
+  "label": [
+    "bundle"
+  ],
+  "핸들·참조 계수·release": [
+    "handle"
+  ],
+  "핸들": [
+    "handle"
+  ],
+  "handle": [
+    "handle"
+  ],
+  "asyncoperationhandle": [
+    "handle"
+  ],
+  "참조 계수": [
+    "handle"
+  ],
+  "release": [
+    "handle"
+  ],
+  "ref count": [
+    "handle"
+  ],
+  "releaseinstance": [
+    "handle"
+  ],
+  "loadassetasync": [
+    "handle"
+  ],
+  "instantiateasync": [
+    "handle"
+  ],
+  "카탈로그·주소 목록·콘텐츠 버전": [
+    "catalog"
+  ],
+  "카탈로그": [
+    "catalog"
+  ],
+  "catalog": [
+    "catalog"
+  ],
+  "콘텐츠 버전": [
+    "catalog"
+  ],
+  "캐시·적중·무효화": [
+    "cache"
+  ],
+  "캐시": [
+    "cache"
+  ],
+  "cache": [
+    "cache"
+  ],
+  "캐시 적중": [
+    "cache"
+  ],
+  "cache hit": [
+    "cache"
+  ],
+  "무효화": [
+    "cache"
+  ],
+  "cdn·원본 서버·https": [
+    "cdn"
+  ],
+  "cdn": [
+    "cdn"
+  ],
+  "콘텐츠 전송": [
+    "cdn"
+  ],
+  "원본 서버": [
+    "cdn"
+  ],
+  "https": [
+    "cdn"
+  ],
+  "http": [
+    "cdn"
+  ],
+  "url": [
+    "cdn"
+  ],
+  "404": [
+    "cdn"
+  ],
+  "네트워크": [
+    "cdn"
+  ],
+  "unity ccd·콘텐츠 배포 서비스": [
+    "ccd"
+  ],
+  "ccd": [
+    "ccd"
+  ],
+  "cloud content delivery": [
+    "ccd"
+  ],
+  "클라우드 콘텐츠 배포": [
+    "ccd"
+  ],
+  "play asset delivery·전달 시점": [
+    "pad"
+  ],
+  "pad": [
+    "pad"
+  ],
+  "play asset delivery": [
+    "pad"
+  ],
+  "install-time": [
+    "pad"
+  ],
+  "fast-follow": [
+    "pad"
+  ],
+  "on-demand": [
+    "pad"
+  ],
+  "다운로드 진행률·바이트·준비 상태": [
+    "progress-download"
+  ],
+  "진행률": [
+    "progress-download"
+  ],
+  "getdownloadsizeasync": [
+    "progress-download"
+  ],
+  "getdownloadstatus": [
+    "progress-download"
+  ],
+  "percentcomplete": [
+    "progress-download"
+  ],
+  "전송량": [
+    "progress-download"
+  ],
+  "다운로드 용량": [
+    "progress-download"
+  ],
+  "오프라인·기본 자산·선택 팩": [
+    "offline"
+  ],
+  "오프라인": [
+    "offline"
+  ],
+  "offline": [
+    "offline"
+  ],
+  "선택팩": [
+    "offline"
+  ],
+  "선택 팩": [
+    "offline"
+  ],
+  "고해상도팩": [
+    "offline"
+  ],
+  "폴백·안전한 대체 경로": [
+    "fallback"
+  ],
+  "폴백": [
+    "fallback"
+  ],
+  "fallback": [
+    "fallback"
+  ],
+  "고정맵 복구": [
+    "fallback"
+  ],
+  "대체 자산": [
+    "fallback"
+  ],
+  "기본 외형": [
+    "fallback"
+  ],
+  "호환성·코드와 콘텐츠 계약": [
+    "compatibility"
+  ],
+  "호환성": [
+    "compatibility"
+  ],
+  "compatibility": [
+    "compatibility"
+  ],
+  "앱 호환": [
+    "compatibility"
+  ],
+  "콘텐츠 호환": [
+    "compatibility"
+  ],
+  "호환 표": [
+    "compatibility"
+  ],
+  "롤백·핫픽스·이전 버전": [
+    "rollback"
+  ],
+  "롤백": [
+    "rollback"
+  ],
+  "rollback": [
+    "rollback"
+  ],
+  "핫픽스": [
+    "rollback",
+    "hotfix"
+  ],
+  "hotfix": [
+    "rollback",
+    "hotfix"
+  ],
+  "되돌리기": [
+    "rollback",
+    "undo"
+  ],
+  "게임 빌드·개발 빌드·배포": [
+    "build"
+  ],
+  "빌드": [
+    "build"
+  ],
+  "build": [
+    "build"
+  ],
+  "release build": [
+    "build"
+  ],
+  "배포물": [
+    "build"
+  ],
+  "배포": [
+    "build"
+  ],
+  "build profile·플랫폼 설정": [
+    "build-profile"
+  ],
+  "build profile": [
+    "build-profile"
+  ],
+  "build profiles": [
+    "build-profile"
+  ],
+  "빌드 프로필": [
+    "build-profile"
+  ],
+  "빌드 설정": [
+    "build-profile"
+  ],
+  "씬 목록": [
+    "build-profile"
+  ],
+  "apk·android 설치 파일": [
+    "apk"
+  ],
+  "apk": [
+    "apk"
+  ],
+  "테스트 apk": [
+    "apk"
+  ],
+  "aab·스토어 배포 묶음": [
+    "aab"
+  ],
+  "aab": [
+    "aab"
+  ],
+  "android app bundle": [
+    "aab"
+  ],
+  "abi·arm64·x86_64": [
+    "abi"
+  ],
+  "abi": [
+    "abi"
+  ],
+  "arm64": [
+    "abi"
+  ],
+  "arm64-v8a": [
+    "abi"
+  ],
+  "x86_64": [
+    "abi"
+  ],
+  "아키텍처": [
+    "abi"
+  ],
+  "mono·il2cpp·aot": [
+    "il2cpp"
+  ],
+  "il2cpp": [
+    "il2cpp"
+  ],
+  "mono": [
+    "il2cpp"
+  ],
+  "aot": [
+    "il2cpp"
+  ],
+  "스크립팅 백엔드": [
+    "il2cpp"
+  ],
+  "stripping": [
+    "il2cpp"
+  ],
+  "코드 스트리핑": [
+    "il2cpp"
+  ],
+  "앱 서명·키·자격 증명": [
+    "signature"
+  ],
+  "서명": [
+    "signature"
+  ],
+  "signature": [
+    "signature"
+  ],
+  "keystore": [
+    "signature"
+  ],
+  "키스토어": [
+    "signature"
+  ],
+  "인증": [
+    "signature"
+  ],
+  "자격 증명": [
+    "signature"
+  ],
+  "api 키": [
+    "signature"
+  ],
+  "비밀키": [
+    "signature"
+  ],
+  "매니페스트·패키지 목록·빌드 기록": [
+    "manifest"
+  ],
+  "매니페스트": [
+    "manifest"
+  ],
+  "manifest": [
+    "manifest"
+  ],
+  "manifest.json": [
+    "manifest"
+  ],
+  "git·저장소·커밋": [
+    "git"
+  ],
+  "git": [
+    "git"
+  ],
+  "저장소": [
+    "git"
+  ],
+  "repository": [
+    "git"
+  ],
+  "repo": [
+    "git"
+  ],
+  "체크포인트": [
+    "git",
+    "checkpoint"
+  ],
+  "브랜치·병합·충돌·worktree": [
+    "branch"
+  ],
+  "브랜치": [
+    "branch"
+  ],
+  "branch": [
+    "branch"
+  ],
+  "merge": [
+    "branch"
+  ],
+  "병합": [
+    "branch"
+  ],
+  "충돌 해결": [
+    "branch"
+  ],
+  "worktree": [
+    "branch"
+  ],
+  "git worktree": [
+    "branch"
+  ],
+  "스냅샷·기준선·baseline": [
+    "snapshot"
+  ],
+  "스냅샷": [
+    "snapshot"
+  ],
+  "snapshot": [
+    "snapshot"
+  ],
+  "기준판": [
+    "snapshot"
+  ],
+  "디버깅·로그·중단점": [
+    "debug"
+  ],
+  "디버깅": [
+    "debug"
+  ],
+  "로그": [
+    "debug"
+  ],
+  "로그 수집": [
+    "debug"
+  ],
+  "중단점": [
+    "debug"
+  ],
+  "breakpoint": [
+    "debug"
+  ],
+  "스택 추적": [
+    "debug"
+  ],
+  "예외·null·오류 처리": [
+    "exception"
+  ],
+  "예외": [
+    "exception"
+  ],
+  "exception": [
+    "exception"
+  ],
+  "null": [
+    "exception"
+  ],
+  "null reference": [
+    "exception"
+  ],
+  "오류 처리": [
+    "exception"
+  ],
+  "로컬 전투 기록·텔레메트리": [
+    "telemetry"
+  ],
+  "텔레메트리": [
+    "telemetry"
+  ],
+  "telemetry": [
+    "telemetry"
+  ],
+  "전투 기록": [
+    "telemetry"
+  ],
+  "측정 기록": [
+    "telemetry"
+  ],
+  "플레이 로그": [
+    "telemetry"
+  ],
+  "프리팹·인스턴스·variant": [
+    "prefab"
+  ],
+  "프리팹": [
+    "prefab"
+  ],
+  "prefab": [
+    "prefab"
+  ],
+  "prefab variant": [
+    "prefab"
+  ],
+  "프리팹 인스턴스": [
+    "prefab"
+  ],
+  "그림자·가림·가시성": [
+    "shadow"
+  ],
+  "가림": [
+    "shadow"
+  ],
+  "가시성": [
+    "shadow"
+  ],
+  "블렌딩·알파 혼합·가산 합성": [
+    "blending"
+  ],
+  "블렌딩": [
+    "blending"
+  ],
+  "blending": [
+    "blending"
+  ],
+  "blend": [
+    "blending"
+  ],
+  "가산 합성": [
+    "blending"
+  ],
+  "additive": [
+    "blending",
+    "additive-scene"
+  ],
+  "알파 블렌드": [
+    "blending"
+  ],
+  "뷰포트·해상도·종횡비": [
+    "viewport"
+  ],
+  "viewport": [
+    "viewport"
+  ],
+  "해상도": [
+    "viewport"
+  ],
+  "종횡비": [
+    "viewport"
+  ],
+  "aspect ratio": [
+    "viewport"
+  ],
+  "screen space": [
+    "viewport"
+  ],
+  "렌더 타깃": [
+    "viewport"
+  ],
+  "bufferviewport": [
+    "viewport"
+  ],
+  "cssviewport": [
+    "viewport"
+  ],
+  "생성형 아트·참조 이미지·후처리": [
+    "image-service"
+  ],
+  "이미지 생성": [
+    "image-service"
+  ],
+  "이미지생성": [
+    "image-service"
+  ],
+  "생성형 아트": [
+    "image-service"
+  ],
+  "후처리": [
+    "image-service"
+  ],
+  "인페인팅": [
+    "image-service"
+  ],
+  "outpainting": [
+    "image-service"
+  ],
+  "unity ai·스프라이트 제작 경로": [
+    "unity-ai"
+  ],
+  "unity ai": [
+    "unity-ai"
+  ],
+  "unityai": [
+    "unity-ai"
+  ],
+  "unity의 ai": [
+    "unity-ai"
+  ],
+  "sprite assistant": [
+    "unity-ai"
+  ],
+  "pixellab·픽셀 자산 제작": [
+    "pixellab"
+  ],
+  "pixellab": [
+    "pixellab"
+  ],
+  "픽셀랩": [
+    "pixellab"
+  ],
+  "retro diffusion·픽셀 모델·프리셋": [
+    "retro"
+  ],
+  "retro diffusion": [
+    "retro"
+  ],
+  "retrodiffusion": [
+    "retro"
+  ],
+  "레트로 디퓨전": [
+    "retro"
+  ],
+  "scenario·스타일 유지·영상 프레임": [
+    "scenario"
+  ],
+  "scenario": [
+    "scenario"
+  ],
+  "시나리오 ai": [
+    "scenario"
+  ],
+  "ludo.ai·동작 지정·시트 출력": [
+    "ludo"
+  ],
+  "ludo.ai": [
+    "ludo"
+  ],
+  "ludo": [
+    "ludo"
+  ],
+  "루도": [
+    "ludo"
+  ],
+  "chatgpt·openai 이미지 api": [
+    "openai"
+  ],
+  "openai": [
+    "openai"
+  ],
+  "chatgpt": [
+    "openai"
+  ],
+  "gpt image": [
+    "openai"
+  ],
+  "이미지 api": [
+    "openai"
+  ],
+  "grok·xai 이미지 생성·편집": [
+    "grok"
+  ],
+  "grok": [
+    "grok"
+  ],
+  "xai": [
+    "grok"
+  ],
+  "그록": [
+    "grok"
+  ],
+  "2d 편집기·aseprite·부위 분리": [
+    "aseprite"
+  ],
+  "aseprite": [
+    "aseprite"
+  ],
+  "pixelorama": [
+    "aseprite"
+  ],
+  "2d 편집": [
+    "aseprite"
+  ],
+  "부위 분리": [
+    "aseprite"
+  ],
+  "트레이싱": [
+    "aseprite"
+  ],
+  "리터칭": [
+    "aseprite"
+  ],
+  "라이선스·출처·사용 조건": [
+    "license"
+  ],
+  "라이선스": [
+    "license"
+  ],
+  "license": [
+    "license"
+  ],
+  "출처": [
+    "license"
+  ],
+  "상업 이용": [
+    "license"
+  ],
+  "저작권": [
+    "license"
+  ],
+  "에셋 라이선스": [
+    "license"
+  ],
+  "알고리즘·입력·출력": [
+    "algorithm"
+  ],
+  "알고리즘": [
+    "algorithm"
+  ],
+  "algorithm": [
+    "algorithm"
+  ],
+  "알고리듬": [
+    "algorithm"
+  ],
+  "클래스·객체·인스턴스": [
+    "class"
+  ],
+  "클래스": [
+    "class"
+  ],
+  "class": [
+    "class"
+  ],
+  "object": [
+    "class"
+  ],
+  "객체 지향": [
+    "class"
+  ],
+  "함수·메서드·매개변수·반환값": [
+    "method"
+  ],
+  "함수": [
+    "method"
+  ],
+  "function": [
+    "method"
+  ],
+  "메서드": [
+    "method"
+  ],
+  "method": [
+    "method"
+  ],
+  "반환값": [
+    "method"
+  ],
+  "return value": [
+    "method"
+  ],
+  "변수·자료형·리스트·딕셔너리": [
+    "collection"
+  ],
+  "변수": [
+    "collection"
+  ],
+  "variable": [
+    "collection"
+  ],
+  "자료형": [
+    "collection"
+  ],
+  "자료 구조": [
+    "collection"
+  ],
+  "리스트": [
+    "collection"
+  ],
+  "list": [
+    "collection"
+  ],
+  "hashset": [
+    "collection"
+  ],
+  "array": [
+    "collection"
+  ],
+  "문자열": [
+    "collection"
+  ],
+  "string": [
+    "collection"
+  ],
+  "boolean": [
+    "collection"
+  ],
+  "컬렉션": [
+    "collection"
+  ],
+  "조건·반복·분기·경계값": [
+    "condition-loop"
+  ],
+  "조건문": [
+    "condition-loop"
+  ],
+  "반복문": [
+    "condition-loop"
+  ],
+  "분기": [
+    "condition-loop"
+  ],
+  "loop": [
+    "condition-loop"
+  ],
+  "if 문": [
+    "condition-loop"
+  ],
+  "for 문": [
+    "condition-loop"
+  ],
+  "while 문": [
+    "condition-loop"
+  ],
+  "코루틴·여러 프레임에 걸친 작업": [
+    "coroutine"
+  ],
+  "코루틴": [
+    "coroutine"
+  ],
+  "coroutine": [
+    "coroutine"
+  ],
+  "yield": [
+    "coroutine"
+  ],
+  "waitforseconds": [
+    "coroutine"
+  ],
+  "메인 스레드·작업 스레드": [
+    "thread"
+  ],
+  "스레드": [
+    "thread"
+  ],
+  "thread": [
+    "thread"
+  ],
+  "메인 스레드": [
+    "thread"
+  ],
+  "작업 스레드": [
+    "thread"
+  ],
+  "task.run": [
+    "thread"
+  ],
+  "어셈블리 정의·asmdef·editor 전용": [
+    "assembly"
+  ],
+  "assembly definition": [
+    "assembly"
+  ],
+  "어셈블리 정의": [
+    "assembly"
+  ],
+  "editor 전용": [
+    "assembly"
+  ],
+  "테스트 어셈블리": [
+    "assembly"
+  ],
+  "초기 진입점·bootstrap·approot": [
+    "bootstrap"
+  ],
+  "bootstrap": [
+    "bootstrap"
+  ],
+  "부트스트랩": [
+    "bootstrap"
+  ],
+  "approot": [
+    "bootstrap"
+  ],
+  "gamemanager": [
+    "bootstrap"
+  ],
+  "싱글턴": [
+    "bootstrap"
+  ],
+  "singleton": [
+    "bootstrap"
+  ],
+  "dontdestroyonload": [
+    "bootstrap"
+  ],
+  "연속 충돌·터널링·빠른 투사체": [
+    "continuous-collision"
+  ],
+  "연속 충돌": [
+    "continuous-collision"
+  ],
+  "continuous collision detection": [
+    "continuous-collision"
+  ],
+  "터널링": [
+    "continuous-collision"
+  ],
+  "tunneling": [
+    "continuous-collision"
+  ],
+  "discrete collision": [
+    "continuous-collision"
+  ],
+  "경계 상자·aabb·반경": [
+    "bounds"
+  ],
+  "bounds": [
+    "bounds"
+  ],
+  "aabb": [
+    "bounds"
+  ],
+  "경계 상자": [
+    "bounds"
+  ],
+  "radius": [
+    "bounds"
+  ],
+  "bodyradius": [
+    "bounds"
+  ],
+  "hp·mp·atk·def·xp": [
+    "combat-stats"
+  ],
+  "atk": [
+    "combat-stats"
+  ],
+  "def": [
+    "combat-stats"
+  ],
+  "xp": [
+    "combat-stats"
+  ],
+  "경험치": [
+    "combat-stats"
+  ],
+  "방어력": [
+    "combat-stats"
+  ],
+  "공격력": [
+    "combat-stats"
+  ],
+  "표적·팀·공격 주체·넉백": [
+    "targeting"
+  ],
+  "표적": [
+    "targeting"
+  ],
+  "target": [
+    "targeting"
+  ],
+  "targeting": [
+    "targeting"
+  ],
+  "team": [
+    "targeting"
+  ],
+  "ownerid": [
+    "targeting"
+  ],
+  "넉백": [
+    "targeting"
+  ],
+  "knockback": [
+    "targeting"
+  ],
+  "경직": [
+    "targeting"
+  ],
+  "우호 피해": [
+    "targeting"
+  ],
+  "제작 경제·재료·소켓·유물": [
+    "loot-economy"
+  ],
+  "제작": [
+    "loot-economy"
+  ],
+  "분해": [
+    "loot-economy",
+    "crafting"
+  ],
+  "레시피": [
+    "loot-economy"
+  ],
+  "recipe": [
+    "loot-economy"
+  ],
+  "재료 지갑": [
+    "loot-economy"
+  ],
+  "rune": [
+    "loot-economy"
+  ],
+  "relic": [
+    "loot-economy"
+  ],
+  "재화": [
+    "loot-economy"
+  ],
+  "경제": [
+    "loot-economy"
+  ],
+  "퀘스트 상태·대화 분기·보상 지급": [
+    "quest-machine"
+  ],
+  "퀘스트 상태": [
+    "quest-machine"
+  ],
+  "quest state": [
+    "quest-machine"
+  ],
+  "퀘스트 보상": [
+    "quest-machine"
+  ],
+  "보상 지급": [
+    "quest-machine"
+  ],
+  "claimed": [
+    "quest-machine"
+  ],
+  "플랫폼·editor·실기기": [
+    "platform"
+  ],
+  "플랫폼": [
+    "platform"
+  ],
+  "platform": [
+    "platform"
+  ],
+  "windows": [
+    "platform"
+  ],
+  "android": [
+    "platform"
+  ],
+  "pc": [
+    "platform"
+  ],
+  "실기기": [
+    "platform"
+  ],
+  "에뮬레이터": [
+    "platform"
+  ],
+  "시뮬레이터": [
+    "platform"
+  ],
+  "브라우저 기록·localstorage·내보내기": [
+    "local-storage"
+  ],
+  "localstorage": [
+    "local-storage"
+  ],
+  "브라우저 저장": [
+    "local-storage"
+  ],
+  "진행 기록": [
+    "local-storage"
+  ],
+  "내 기록": [
+    "local-storage"
+  ],
+  "기록 내보내기": [
+    "local-storage"
+  ],
+  "브라우저 기록": [
+    "local-storage"
+  ],
+  "설정·기본값·검증·환경 변수": [
+    "config"
+  ],
+  "설정 파일": [
+    "config"
+  ],
+  "config": [
+    "config"
+  ],
+  "기본값": [
+    "config"
+  ],
+  "default": [
+    "config"
+  ],
+  "환경 변수": [
+    "config"
+  ],
+  "environment variable": [
+    "config"
+  ],
+  "설정값": [
+    "config"
+  ],
+  "완주 가능한 작은 범위": [
+    "scope-slice"
+  ],
+  "버티컬 슬라이스": [
+    "scope-slice"
+  ],
+  "vertical slice": [
+    "scope-slice"
+  ],
+  "콘텐츠 등록부": [
+    "content-registry"
+  ],
+  "content registry": [
+    "content-registry"
+  ],
+  "registry": [
+    "content-registry"
+  ],
+  "등록부": [
+    "content-registry"
+  ],
+  "unity 편집기 창": [
+    "editor-window"
+  ],
+  "editorwindow": [
+    "editor-window"
+  ],
+  "에디터 창": [
+    "editor-window"
+  ],
+  "편집기 창": [
+    "editor-window"
+  ],
+  "ui toolkit": [
+    "ui-toolkit"
+  ],
+  "uitoolkit": [
+    "ui-toolkit"
+  ],
+  "visualelement": [
+    "ui-toolkit"
+  ],
+  "listview": [
+    "ui-toolkit"
+  ],
+  "serializedobject": [
+    "serialized-object"
+  ],
+  "serializedproperty": [
+    "serialized-object"
+  ],
+  "편집 되돌리기": [
+    "undo"
+  ],
+  "undo": [
+    "undo"
+  ],
+  "redo": [
+    "undo"
+  ],
+  "assetdatabase": [
+    "assetdatabase"
+  ],
+  "자산 데이터베이스": [
+    "assetdatabase"
+  ],
+  "규칙으로 만드는 3d 모델": [
+    "procedural-model"
+  ],
+  "procedural mesh": [
+    "procedural-model"
+  ],
+  "procedural model": [
+    "procedural-model"
+  ],
+  "절차적 모델": [
+    "procedural-model"
+  ],
+  "probuilder": [
+    "probuilder"
+  ],
+  "프로빌더": [
+    "probuilder"
+  ],
+  "모듈식 월드 자산": [
+    "modular-kit"
+  ],
+  "모듈 키트": [
+    "modular-kit"
+  ],
+  "modular kit": [
+    "modular-kit"
+  ],
+  "모듈식": [
+    "modular-kit"
+  ],
+  "meshy ai": [
+    "meshy"
+  ],
+  "meshy": [
+    "meshy"
+  ],
+  "meshyai": [
+    "meshy"
+  ],
+  "editor의 외부 작업": [
+    "editor-job"
+  ],
+  "editor job": [
+    "editor-job"
+  ],
+  "asset job": [
+    "editor-job"
+  ],
+  "작업 큐": [
+    "editor-job"
+  ],
+  "humanoid와 generic 리그": [
+    "humanoid"
+  ],
+  "바인드 포즈": [
+    "bindpose"
+  ],
+  "bind pose": [
+    "bindpose"
+  ],
+  "bindpose": [
+    "bindpose"
+  ],
+  "스키닝과 본 가중치": [
+    "skinning"
+  ],
+  "skinnedmeshrenderer": [
+    "skinning"
+  ],
+  "본 가중치": [
+    "skinning"
+  ],
+  "애니메이션 리타기팅": [
+    "retarget"
+  ],
+  "retargeting": [
+    "retarget"
+  ],
+  "리타기팅": [
+    "retarget"
+  ],
+  "리토폴로지와 리메시": [
+    "retopology"
+  ],
+  "retopology": [
+    "retopology"
+  ],
+  "remesh": [
+    "retopology"
+  ],
+  "리메시": [
+    "retopology"
+  ],
+  "토폴로지": [
+    "retopology"
+  ],
+  "pbr 재질": [
+    "pbr"
+  ],
+  "pbr": [
+    "pbr"
+  ],
+  "physically based rendering": [
+    "pbr"
+  ],
+  "물리 기반 재질": [
+    "pbr"
+  ],
+  "거칠기와 매끄러움": [
+    "roughness"
+  ],
+  "roughness": [
+    "roughness"
+  ],
+  "smoothness": [
+    "roughness"
+  ],
+  "거칠기": [
+    "roughness"
+  ],
+  "매끄러움": [
+    "roughness"
+  ],
+  "lod: 거리에 따른 모델 단계": [
+    "lod"
+  ],
+  "lodgroup": [
+    "lod"
+  ],
+  "level of detail": [
+    "lod"
+  ],
+  "cinemachine": [
+    "cinemachine"
+  ],
+  "시네머신": [
+    "cinemachine"
+  ],
+  "blendtree": [
+    "blend-tree"
+  ],
+  "블렌드 트리": [
+    "blend-tree"
+  ],
+  "역운동학과 발 접지": [
+    "ik"
+  ],
+  "ik": [
+    "ik"
+  ],
+  "inverse kinematics": [
+    "ik"
+  ],
+  "역운동학": [
+    "ik"
+  ],
+  "발 접지": [
+    "ik"
+  ],
+  "탑승 상태 전환": [
+    "mount-state"
+  ],
+  "mount": [
+    "mount-state"
+  ],
+  "unmount": [
+    "mount-state"
+  ],
+  "탑승": [
+    "mount-state"
+  ],
+  "하차": [
+    "mount-state"
+  ],
+  "물 영역과 이동 상태": [
+    "water-volume"
+  ],
+  "water volume": [
+    "water-volume"
+  ],
+  "물 영역": [
+    "water-volume"
+  ],
+  "수영 상태": [
+    "water-volume"
+  ],
+  "가산 씬 로드": [
+    "additive-scene"
+  ],
+  "additive scene": [
+    "additive-scene"
+  ],
+  "가산 씬": [
+    "additive-scene"
+  ],
+  "월드 스트리밍 셀": [
+    "streaming-cell"
+  ],
+  "world streaming": [
+    "streaming-cell"
+  ],
+  "streaming cell": [
+    "streaming-cell"
+  ],
+  "월드 스트리밍": [
+    "streaming-cell"
+  ],
+  "스트리밍 셀": [
+    "streaming-cell"
+  ],
+  "navmeshlink": [
+    "navmesh-link"
+  ],
+  "내비메시 링크": [
+    "navmesh-link"
+  ],
+  "월드 시간": [
+    "world-clock"
+  ],
+  "world clock": [
+    "world-clock"
+  ],
+  "월드 시계": [
+    "world-clock"
+  ],
+  "게임 시간": [
+    "world-clock"
+  ],
+  "날씨와 환경 상태": [
+    "weather"
+  ],
+  "weather": [
+    "weather"
+  ],
+  "날씨 상태": [
+    "weather"
+  ],
+  "환경 상태": [
+    "weather"
+  ],
+  "세계의 지속 상태": [
+    "world-state"
+  ],
+  "worldstate": [
+    "world-state"
+  ],
+  "world state": [
+    "world-state"
+  ],
+  "월드 상태": [
+    "world-state"
+  ],
+  "퀘스트 편집기": [
+    "quest-editor"
+  ],
+  "quest editor": [
+    "quest-editor"
+  ],
+  "퀘스트 에디터": [
+    "quest-editor"
+  ],
+  "퀘스트 그래프": [
+    "quest-graph"
+  ],
+  "quest graph": [
+    "quest-graph"
+  ],
+  "노드 그래프": [
+    "quest-graph"
+  ],
+  "타입이 있는 연결 포트": [
+    "typed-port"
+  ],
+  "typed port": [
+    "typed-port"
+  ],
+  "타입 포트": [
+    "typed-port"
+  ],
+  "포트 타입": [
+    "typed-port"
+  ],
+  "허용된 조건과 행동 문법": [
+    "predicate-dsl"
+  ],
+  "predicate dsl": [
+    "predicate-dsl"
+  ],
+  "조건식 dsl": [
+    "predicate-dsl"
+  ],
+  "허용 행동": [
+    "predicate-dsl"
+  ],
+  "목표 사건": [
+    "objective-event"
+  ],
+  "objective event": [
+    "objective-event"
+  ],
+  "퀘스트 이벤트": [
+    "objective-event"
+  ],
+  "퀘스트 시뮬레이션": [
+    "quest-simulation"
+  ],
+  "quest simulator": [
+    "quest-simulation"
+  ],
+  "그래프 검증": [
+    "graph-validation"
+  ],
+  "graph validation": [
+    "graph-validation"
+  ],
+  "editor의 ai 자동 작성": [
+    "editor-ai"
+  ],
+  "editor ai": [
+    "editor-ai"
+  ],
+  "ai 퀘스트 생성": [
+    "editor-ai"
+  ],
+  "ai 자동 작성": [
+    "editor-ai"
+  ],
+  "적용 전 임시 영역": [
+    "staging"
+  ],
+  "스테이징": [
+    "staging"
+  ],
+  "임시 영역": [
+    "staging"
+  ],
+  "기준 버전 충돌 검사": [
+    "optimistic-revision"
+  ],
+  "optimistic concurrency": [
+    "optimistic-revision"
+  ],
+  "baserevision": [
+    "optimistic-revision"
+  ],
+  "낙관적 동시성": [
+    "optimistic-revision"
+  ],
+  "콘텐츠 개정 번호": [
+    "content-revision"
+  ],
+  "content revision": [
+    "content-revision"
+  ],
+  "contentrevision": [
+    "content-revision"
+  ],
+  "콘텐츠 revision": [
+    "content-revision"
+  ],
+  "보상 수령 장부": [
+    "reward-ledger"
+  ],
+  "reward ledger": [
+    "reward-ledger"
+  ],
+  "보상 receipt": [
+    "reward-ledger"
+  ],
+  "보상 영수증": [
+    "reward-ledger"
+  ],
+  "퀘스트 지도 표식": [
+    "quest-marker"
+  ],
+  "quest marker": [
+    "quest-marker"
+  ],
+  "퀘스트 마커": [
+    "quest-marker"
+  ],
+  "퀘스트 핀": [
+    "quest-marker"
+  ],
+  "월드 좌표를 지도에 옮기기": [
+    "map-projection"
+  ],
+  "map projection": [
+    "map-projection"
+  ],
+  "지도 투영": [
+    "map-projection"
+  ],
+  "world-to-map": [
+    "map-projection"
+  ],
+  "퀘스트 실행 추적기": [
+    "quest-debugger"
+  ],
+  "quest debugger": [
+    "quest-debugger"
+  ],
+  "퀘스트 디버거": [
+    "quest-debugger"
+  ],
+  "분기 대화 노드": [
+    "dialogue-node"
+  ],
+  "dialogue node": [
+    "dialogue-node"
+  ],
+  "분기 대화": [
+    "dialogue-node"
+  ],
+  "대화 노드": [
+    "dialogue-node"
+  ],
+  "상황 대사": [
+    "bark"
+  ],
+  "bark": [
+    "bark"
+  ],
+  "바크": [
+    "bark"
+  ],
+  "npc 생활 일정": [
+    "npc-schedule"
+  ],
+  "npc schedule": [
+    "npc-schedule"
+  ],
+  "생활 일정": [
+    "npc-schedule"
+  ],
+  "일정": [
+    "npc-schedule"
+  ],
+  "평판과 세력 관계": [
+    "reputation"
+  ],
+  "reputation": [
+    "reputation"
+  ],
+  "faction": [
+    "reputation"
+  ],
+  "평판": [
+    "reputation"
+  ],
+  "세력": [
+    "reputation"
+  ],
+  "조사와 추적 단서": [
+    "investigation"
+  ],
+  "investigation": [
+    "investigation"
+  ],
+  "사냥꾼 감각": [
+    "investigation"
+  ],
+  "단서 추적": [
+    "investigation"
+  ],
+  "몬스터 도감과 사전 준비": [
+    "bestiary"
+  ],
+  "bestiary": [
+    "bestiary"
+  ],
+  "베스티어리": [
+    "bestiary"
+  ],
+  "몬스터 도감": [
+    "bestiary"
+  ],
+  "동료의 행동과 생명주기": [
+    "companion"
+  ],
+  "companion": [
+    "companion"
+  ],
+  "동료 시스템": [
+    "companion"
+  ],
+  "timeline": [
+    "timeline"
+  ],
+  "타임라인": [
+    "timeline"
+  ],
+  "컷신의 한 번뿐인 결과 확정": [
+    "cutscene-commit"
+  ],
+  "cutscene commit": [
+    "cutscene-commit"
+  ],
+  "컷신 커밋": [
+    "cutscene-commit"
+  ],
+  "공격 동작 데이터": [
+    "combat-moves"
+  ],
+  "move set": [
+    "combat-moves"
+  ],
+  "combat move": [
+    "combat-moves"
+  ],
+  "공격 동작": [
+    "combat-moves"
+  ],
+  "막기와 받아치기": [
+    "parry"
+  ],
+  "parry": [
+    "parry"
+  ],
+  "패리": [
+    "parry"
+  ],
+  "받아치기": [
+    "parry"
+  ],
+  "가드": [
+    "parry"
+  ],
+  "보스 단계 전환": [
+    "boss-phase"
+  ],
+  "boss phase": [
+    "boss-phase"
+  ],
+  "보스 페이즈": [
+    "boss-phase"
+  ],
+  "레벨 성장 곡선": [
+    "growth-curve"
+  ],
+  "growth curve": [
+    "growth-curve"
+  ],
+  "경험치 곡선": [
+    "growth-curve"
+  ],
+  "성장 곡선": [
+    "growth-curve"
+  ],
+  "분해·제작 거래": [
+    "crafting"
+  ],
+  "crafting": [
+    "crafting"
+  ],
+  "제작 레시피": [
+    "crafting"
+  ],
+  "연금술과 준비형 소비품": [
+    "alchemy"
+  ],
+  "alchemy": [
+    "alchemy"
+  ],
+  "연금술": [
+    "alchemy"
+  ],
+  "기름 도포": [
+    "alchemy"
+  ],
+  "독성 자원": [
+    "toxicity"
+  ],
+  "toxicity": [
+    "toxicity"
+  ],
+  "독성 게이지": [
+    "toxicity"
+  ],
+  "checkpoint": [
+    "checkpoint"
+  ],
+  "분기 엔딩 상태": [
+    "ending-state"
+  ],
+  "ending state": [
+    "ending-state"
+  ],
+  "분기 엔딩": [
+    "ending-state"
+  ],
+  "엔딩 분기": [
+    "ending-state"
+  ],
+  "현지화와 문자열 키": [
+    "localization"
+  ],
+  "localization": [
+    "localization"
+  ],
+  "string key": [
+    "localization"
+  ],
+  "현지화": [
+    "localization"
+  ],
+  "번역 키": [
+    "localization"
+  ],
+  "느린 프레임의 백분위": [
+    "percentile"
+  ],
+  "percentile": [
+    "percentile"
+  ],
+  "p95": [
+    "percentile"
+  ],
+  "p99": [
+    "percentile"
+  ],
+  "백분위": [
+    "percentile"
+  ],
+  "profiler 구간 표식": [
+    "profiler-marker"
+  ],
+  "profilermarker": [
+    "profiler-marker"
+  ],
+  "profiler marker": [
+    "profiler-marker"
+  ],
+  "프로파일러 마커": [
+    "profiler-marker"
+  ],
+  "여러 프레임 비교 분석": [
+    "profile-analyzer"
+  ],
+  "profile analyzer": [
+    "profile-analyzer"
+  ],
+  "프로파일 분석기": [
+    "profile-analyzer"
+  ],
+  "프레임 디버거": [
+    "frame-debugger"
+  ],
+  "frame debugger": [
+    "frame-debugger"
+  ],
+  "렌더 해상도 비율": [
+    "render-scale"
+  ],
+  "render scale": [
+    "render-scale"
+  ],
+  "렌더 스케일": [
+    "render-scale"
+  ],
+  "메모리 스냅샷": [
+    "memory-snapshot"
+  ],
+  "memory snapshot": [
+    "memory-snapshot"
+  ],
+  "셰이더 변형": [
+    "shader-variant"
+  ],
+  "shader variant": [
+    "shader-variant"
+  ],
+  "목록 가상화": [
+    "virtualization"
+  ],
+  "virtualization": [
+    "virtualization"
+  ],
+  "ui 가상화": [
+    "virtualization"
+  ],
+  "입력 잠깐 모아 처리하기": [
+    "debounce"
+  ],
+  "debounce": [
+    "debounce"
+  ],
+  "디바운스": [
+    "debounce"
+  ],
+  "모바일 발열과 지속 성능": [
+    "thermal-budget"
+  ],
+  "thermal budget": [
+    "thermal-budget"
+  ],
+  "발열 제한": [
+    "thermal-budget"
+  ],
+  "지속 성능": [
+    "thermal-budget"
+  ],
+  "사건 재생과 회귀 실행": [
+    "replay"
+  ],
+  "replay": [
+    "replay"
+  ],
+  "playtest runner": [
+    "replay"
+  ],
+  "사건 리플레이": [
+    "replay"
+  ],
+  "의도적인 실패 시험": [
+    "failure-injection"
+  ],
+  "failure injection": [
+    "failure-injection"
+  ],
+  "실패 주입": [
+    "failure-injection"
+  ],
+  "장애 주입": [
+    "failure-injection"
+  ],
+  "출시 후보와 출시 관문": [
+    "release-candidate"
+  ],
+  "release candidate": [
+    "release-candidate"
+  ],
+  "release desk": [
+    "release-candidate"
+  ],
+  "출시 후보": [
+    "release-candidate"
+  ],
+  "릴리스 게이트": [
+    "release-candidate"
+  ],
+  "분기 경로 검사 범위": [
+    "branch-coverage"
+  ],
+  "branch coverage": [
+    "branch-coverage"
+  ],
+  "분기 검사": [
+    "branch-coverage"
+  ],
+  "분기 커버리지": [
+    "branch-coverage"
+  ],
+  "작은 긴급 수정": [
+    "hotfix"
+  ]
+}

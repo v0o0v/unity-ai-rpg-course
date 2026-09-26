@@ -1,0 +1,1 @@
+현재 GrayOathRPG3D 프로젝트에서 Windows build profile·앱 identity·설정/세이브 위치·release manifest을 읽기 전용으로 확인해 줘. 지금 하려는 일은 “Windows 출시 후보를 깨끗한 환경에서 실행하기”이야. 실제 대상·미완료 준비·재사용할 부분을 구분해 줘. 아직 파일 수정·설치·유료 요청은 하지 마.

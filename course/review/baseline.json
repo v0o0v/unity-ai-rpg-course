@@ -1,0 +1,14 @@
+{
+  "source": "/mnt/data/ashfall_rpg_student_v12_bundle.zip",
+  "sha256": "c93f251d9ae7cff777bb1d72cda497da139ccd192c0019a3e3711007a8ce558d",
+  "independent_review": {
+    "status": "BLOCKED",
+    "attempts": 3,
+    "error": "HTTP 404 tunnel_client_not_seen",
+    "workers_started": 0,
+    "message": "Tunnel-client has not been seen for 300 seconds. Ensure tunnel-client is running and connected.",
+    "action": "agents.status",
+    "live_review_outcome": "NOT STARTED"
+  },
+  "scope": "Self review of source course plus current local data and browser tests; no Unity, Claude live, device or novice end-to-end execution"
+}

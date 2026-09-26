@@ -1,0 +1,277 @@
+{
+  "checks": [
+    {
+      "check": "unchanged embedded data courseData",
+      "result": "PASS"
+    },
+    {
+      "check": "unchanged embedded data termData",
+      "result": "PASS"
+    },
+    {
+      "check": "unchanged embedded data sourceData",
+      "result": "PASS"
+    },
+    {
+      "check": "unchanged embedded data visualData",
+      "result": "PASS"
+    },
+    {
+      "check": "unchanged embedded data lessonTermData",
+      "result": "PASS"
+    },
+    {
+      "check": "unchanged embedded data aliasData",
+      "result": "PASS"
+    },
+    {
+      "check": "unchanged embedded data aliasPriorityData",
+      "result": "PASS"
+    },
+    {
+      "check": "unchanged embedded data promptGuideData",
+      "result": "PASS"
+    },
+    {
+      "check": "unchanged embedded data lessonVisualData",
+      "result": "PASS"
+    },
+    {
+      "check": "unchanged embedded data darkVisualData",
+      "result": "PASS"
+    },
+    {
+      "check": "256 original lessons",
+      "result": "PASS"
+    },
+    {
+      "check": "8 unique official references",
+      "result": "PASS"
+    },
+    {
+      "check": "editor-layout source metadata",
+      "result": "PASS"
+    },
+    {
+      "check": "editor-layout lesson targets valid",
+      "result": "PASS"
+    },
+    {
+      "check": "editor-layout no class-dependent prompt",
+      "result": "PASS"
+    },
+    {
+      "check": "console source metadata",
+      "result": "PASS"
+    },
+    {
+      "check": "console lesson targets valid",
+      "result": "PASS"
+    },
+    {
+      "check": "console no class-dependent prompt",
+      "result": "PASS"
+    },
+    {
+      "check": "sprite-editor source metadata",
+      "result": "PASS"
+    },
+    {
+      "check": "sprite-editor lesson targets valid",
+      "result": "PASS"
+    },
+    {
+      "check": "sprite-editor no class-dependent prompt",
+      "result": "PASS"
+    },
+    {
+      "check": "input-actions source metadata",
+      "result": "PASS"
+    },
+    {
+      "check": "input-actions lesson targets valid",
+      "result": "PASS"
+    },
+    {
+      "check": "input-actions no class-dependent prompt",
+      "result": "PASS"
+    },
+    {
+      "check": "animator source metadata",
+      "result": "PASS"
+    },
+    {
+      "check": "animator lesson targets valid",
+      "result": "PASS"
+    },
+    {
+      "check": "animator no class-dependent prompt",
+      "result": "PASS"
+    },
+    {
+      "check": "ui-builder source metadata",
+      "result": "PASS"
+    },
+    {
+      "check": "ui-builder lesson targets valid",
+      "result": "PASS"
+    },
+    {
+      "check": "ui-builder no class-dependent prompt",
+      "result": "PASS"
+    },
+    {
+      "check": "profiler source metadata",
+      "result": "PASS"
+    },
+    {
+      "check": "profiler lesson targets valid",
+      "result": "PASS"
+    },
+    {
+      "check": "profiler no class-dependent prompt",
+      "result": "PASS"
+    },
+    {
+      "check": "build-profiles source metadata",
+      "result": "PASS"
+    },
+    {
+      "check": "build-profiles lesson targets valid",
+      "result": "PASS"
+    },
+    {
+      "check": "build-profiles no class-dependent prompt",
+      "result": "PASS"
+    },
+    {
+      "check": "reader boots",
+      "result": "PASS"
+    },
+    {
+      "check": "no network on load",
+      "result": "PASS"
+    },
+    {
+      "check": "no initial JS exceptions",
+      "result": "PASS"
+    },
+    {
+      "check": "all 256 panels attach only to relevant lessons",
+      "result": "PASS"
+    },
+    {
+      "check": "no photo requests from changing lessons",
+      "result": "PASS"
+    },
+    {
+      "check": "lesson9 has Input Actions card",
+      "result": "PASS"
+    },
+    {
+      "check": "opening guidance does not request photos",
+      "result": "PASS"
+    },
+    {
+      "check": "load is explicit and requests official URL",
+      "result": "PASS"
+    },
+    {
+      "check": "network failure is visible",
+      "result": "PASS"
+    },
+    {
+      "check": "no fake replacement after failure",
+      "result": "PASS"
+    },
+    {
+      "check": "reference interaction preserves progress",
+      "result": "PASS"
+    },
+    {
+      "check": "success handler (test pixel only)",
+      "result": "PASS"
+    },
+    {
+      "check": "image colors not inverted in dark theme",
+      "result": "PASS"
+    },
+    {
+      "check": "zoom opens",
+      "result": "PASS"
+    },
+    {
+      "check": "native size control",
+      "result": "PASS"
+    },
+    {
+      "check": "Escape closes zoom",
+      "result": "PASS"
+    },
+    {
+      "check": "zoom preserves step and progress",
+      "result": "PASS"
+    },
+    {
+      "check": "original copied prompt unchanged",
+      "result": "PASS"
+    },
+    {
+      "check": "reference request copy excludes commentary",
+      "result": "PASS"
+    },
+    {
+      "check": "gallery has 8 screens",
+      "result": "PASS"
+    },
+    {
+      "check": "quest search does not pretend finished custom tool",
+      "result": "PASS"
+    },
+    {
+      "check": "empty search state",
+      "result": "PASS"
+    },
+    {
+      "check": "all image load controls settle with test fixture",
+      "result": "PASS"
+    },
+    {
+      "check": "gallery closes to same step",
+      "result": "PASS"
+    },
+    {
+      "check": "gallery preserves learning data",
+      "result": "PASS"
+    },
+    {
+      "check": "no horizontal document overflow 1440/dark",
+      "result": "PASS"
+    },
+    {
+      "check": "correct custom tool distinction 1440/dark",
+      "result": "PASS"
+    },
+    {
+      "check": "no horizontal document overflow 390/dark",
+      "result": "PASS"
+    },
+    {
+      "check": "correct custom tool distinction 390/dark",
+      "result": "PASS"
+    },
+    {
+      "check": "no horizontal document overflow 390/light",
+      "result": "PASS"
+    },
+    {
+      "check": "correct custom tool distinction 390/light",
+      "result": "PASS"
+    },
+    {
+      "check": "no runtime JS exceptions",
+      "result": "PASS"
+    }
+  ],
+  "note": "Network success handlers used a 1x1 synthetic test pixel. No actual official screenshots downloaded or visually rendered by local Chromium. Original image pixels separately opened in web tool."
+}

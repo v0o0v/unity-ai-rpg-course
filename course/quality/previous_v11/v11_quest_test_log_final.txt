@@ -1,0 +1,51 @@
+test_bad_request_id (test_quest_reference.QuestReferenceTests.test_bad_request_id) ... ok
+test_blank_title (test_quest_reference.QuestReferenceTests.test_blank_title) ... ok
+test_cancelled_apply (test_quest_reference.QuestReferenceTests.test_cancelled_apply) ... ok
+test_cycle (test_quest_reference.QuestReferenceTests.test_cycle) ... ok
+test_duplicate_choice (test_quest_reference.QuestReferenceTests.test_duplicate_choice) ... ok
+test_duplicate_declared (test_quest_reference.QuestReferenceTests.test_duplicate_declared) ... ok
+test_duplicate_nodes (test_quest_reference.QuestReferenceTests.test_duplicate_nodes) ... ok
+test_duplicate_port_edge (test_quest_reference.QuestReferenceTests.test_duplicate_port_edge) ... ok
+test_end_with_edges (test_quest_reference.QuestReferenceTests.test_end_with_edges) ... ok
+test_fake_declared_ref (test_quest_reference.QuestReferenceTests.test_fake_declared_ref) ... ok
+test_false_count (test_quest_reference.QuestReferenceTests.test_false_count) ... ok
+test_hidden_xp (test_quest_reference.QuestReferenceTests.test_hidden_xp) ... ok
+test_input_unchanged (test_quest_reference.QuestReferenceTests.test_input_unchanged) ... ok
+test_invalid_edge_type (test_quest_reference.QuestReferenceTests.test_invalid_edge_type) ... ok
+test_limit_zero (test_quest_reference.QuestReferenceTests.test_limit_zero) ... ok
+test_missing_approval (test_quest_reference.QuestReferenceTests.test_missing_approval) ... ok
+test_missing_content (test_quest_reference.QuestReferenceTests.test_missing_content) ... ok
+test_missing_declared_ref (test_quest_reference.QuestReferenceTests.test_missing_declared_ref) ... ok
+test_missing_port (test_quest_reference.QuestReferenceTests.test_missing_port) ... ok
+test_missing_start (test_quest_reference.QuestReferenceTests.test_missing_start) ... ok
+test_negative_reward (test_quest_reference.QuestReferenceTests.test_negative_reward) ... ok
+test_nested_depth (test_quest_reference.QuestReferenceTests.test_nested_depth) ... ok
+test_oversized_reward (test_quest_reference.QuestReferenceTests.test_oversized_reward) ... ok
+test_repeated_apply (test_quest_reference.QuestReferenceTests.test_repeated_apply) ... ok
+test_retrokill_without_proof (test_quest_reference.QuestReferenceTests.test_retrokill_without_proof) ... ok
+test_reward_ineligible (test_quest_reference.QuestReferenceTests.test_reward_ineligible) ... ok
+test_reward_new_instance (test_quest_reference.QuestReferenceTests.test_reward_new_instance) ... ok
+test_reward_once (test_quest_reference.QuestReferenceTests.test_reward_once) ... ok
+test_reward_scope (test_quest_reference.QuestReferenceTests.test_reward_scope) ... ok
+test_schema_bool (test_quest_reference.QuestReferenceTests.test_schema_bool) ... ok
+test_schema_future (test_quest_reference.QuestReferenceTests.test_schema_future) ... ok
+test_stale_apply (test_quest_reference.QuestReferenceTests.test_stale_apply) ... ok
+test_unknown_action (test_quest_reference.QuestReferenceTests.test_unknown_action) ... ok
+test_unknown_node_key (test_quest_reference.QuestReferenceTests.test_unknown_node_key) ... ok
+test_unknown_npc (test_quest_reference.QuestReferenceTests.test_unknown_npc) ... ok
+test_unknown_objective (test_quest_reference.QuestReferenceTests.test_unknown_objective) ... ok
+test_unknown_predicate (test_quest_reference.QuestReferenceTests.test_unknown_predicate) ... ok
+test_unknown_top_key (test_quest_reference.QuestReferenceTests.test_unknown_top_key) ... ok
+test_unreachable_extra_node (test_quest_reference.QuestReferenceTests.test_unreachable_extra_node) ... ok
+test_unsupported_node (test_quest_reference.QuestReferenceTests.test_unsupported_node) ... ok
+test_valid_apply_copy (test_quest_reference.QuestReferenceTests.test_valid_apply_copy) ... ok
+test_valid_structure_not_gameplay (test_quest_reference.QuestReferenceTests.test_valid_structure_not_gameplay) ... ok
+test_wrong_edge (test_quest_reference.QuestReferenceTests.test_wrong_edge) ... ok
+test_wrong_port (test_quest_reference.QuestReferenceTests.test_wrong_port) ... ok
+test_wrong_project (test_quest_reference.QuestReferenceTests.test_wrong_project) ... ok
+test_wrong_quest (test_quest_reference.QuestReferenceTests.test_wrong_quest) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.011s
+
+OK

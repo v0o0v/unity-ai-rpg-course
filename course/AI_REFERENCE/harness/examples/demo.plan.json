@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "title": "피해 규칙 수정: 기획 → 구현 → 테스트 작성 → 독립 검토",
+  "tasks": [
+    {
+      "id": "design",
+      "role": "game_designer",
+      "kind": "proposal",
+      "depends_on": [],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Docs/Design"
+      ],
+      "instruction": "명세를 판정 예시로 나누세요.",
+      "acceptance": [
+        "max(1, attack-defense)를 보존한다",
+        "음수 입력은 거부한다",
+        "원본 파일은 변하지 않는다"
+      ],
+      "mock_response": {
+        "outcome": "proposal",
+        "summary": "MOCK: 하네스 배선 실습용 고정 응답. 실제 모델 검토가 아님.",
+        "files": [
+          {
+            "path": "Docs/Design/damage.md",
+            "expected_sha256": "$CURRENT",
+            "content": "# 피해 규칙 예시\n12-4=8, 3-7=1, 0-0=1. 음수 두 입력은 각각 ValueError.\n"
+          }
+        ],
+        "findings": []
+      }
+    },
+    {
+      "id": "implement",
+      "role": "gameplay_engineer",
+      "kind": "proposal",
+      "depends_on": [
+        "design"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md",
+        "Docs/Design/damage.md",
+        "Game/rules.py"
+      ],
+      "write_prefixes": [
+        "Game"
+      ],
+      "instruction": "피해 계산만 수정하세요.",
+      "acceptance": [
+        "max(1, attack-defense)를 보존한다",
+        "음수 입력은 거부한다",
+        "원본 파일은 변하지 않는다"
+      ],
+      "mock_response": {
+        "outcome": "proposal",
+        "summary": "MOCK: 하네스 배선 실습용 고정 응답. 실제 모델 검토가 아님.",
+        "files": [
+          {
+            "path": "Game/rules.py",
+            "expected_sha256": "$CURRENT",
+            "content": "\"\"\"Damage rule demonstration, independent of Unity.\"\"\"\n\ndef damage(attack: int, defense: int) -> int:\n    if attack < 0 or defense < 0:\n        raise ValueError(\"attack and defense must be non-negative\")\n    return max(1, attack - defense)\n"
+          }
+        ],
+        "findings": []
+      }
+    },
+    {
+      "id": "test",
+      "role": "qa_engineer",
+      "kind": "proposal",
+      "depends_on": [
+        "implement"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md",
+        "Docs/Design/damage.md",
+        "Game/rules.py"
+      ],
+      "write_prefixes": [
+        "Tests"
+      ],
+      "instruction": "unittest로 5개 독립 사례를 작성하세요. 구현이 틀리면 테스트를 약화하지 마세요.",
+      "acceptance": [
+        "max(1, attack-defense)를 보존한다",
+        "음수 입력은 거부한다",
+        "원본 파일은 변하지 않는다"
+      ],
+      "mock_response": {
+        "outcome": "proposal",
+        "summary": "MOCK: 하네스 배선 실습용 고정 응답. 실제 모델 검토가 아님.",
+        "files": [
+          {
+            "path": "Tests/test_rules.py",
+            "expected_sha256": "$CURRENT",
+            "content": "import unittest\nfrom Game.rules import damage\n\nclass DamageTests(unittest.TestCase):\n    def test_normal(self): self.assertEqual(damage(12, 4), 8)\n    def test_minimum(self): self.assertEqual(damage(3, 7), 1)\n    def test_zero(self): self.assertEqual(damage(0, 0), 1)\n    def test_negative_attack(self):\n        with self.assertRaises(ValueError): damage(-1, 0)\n    def test_negative_defense(self):\n        with self.assertRaises(ValueError): damage(0, -1)\n"
+          }
+        ],
+        "findings": []
+      }
+    },
+    {
+      "id": "review",
+      "role": "critic",
+      "kind": "review",
+      "depends_on": [
+        "test"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md",
+        "Docs/Design/damage.md",
+        "Game/rules.py",
+        "Tests/test_rules.py"
+      ],
+      "write_prefixes": [],
+      "instruction": "승인 기준과 구현/검사를 대조하세요. 직접 실행은 하지 않은 상태임을 명시하세요.",
+      "acceptance": [
+        "max(1, attack-defense)를 보존한다",
+        "음수 입력은 거부한다",
+        "원본 파일은 변하지 않는다"
+      ],
+      "mock_response": {
+        "outcome": "review_pass",
+        "summary": "MOCK: 하네스 배선 실습용 고정 응답. 실제 모델 검토가 아님.",
+        "files": [],
+        "findings": []
+      }
+    }
+  ]
+}

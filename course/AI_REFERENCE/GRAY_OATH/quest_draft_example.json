@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "projectId": "GrayOathRPG3D",
+  "questId": "H01",
+  "requestId": "quest-demo-001",
+  "baseRevision": 0,
+  "title": "돌다리의 등불",
+  "startNode": "start",
+  "nodes": [
+    {
+      "id": "start",
+      "type": "Start",
+      "data": {}
+    },
+    {
+      "id": "talk",
+      "type": "Talk",
+      "data": {
+        "npc": "npc_nara",
+        "dialogue": "dialogue_nara_h01"
+      }
+    },
+    {
+      "id": "clues",
+      "type": "Objective",
+      "data": {
+        "policy": "all",
+        "objectives": [
+          {
+            "kind": "Inspect",
+            "target": "clue_fabric",
+            "count": 1,
+            "retroactive": true
+          },
+          {
+            "kind": "Inspect",
+            "target": "clue_lantern",
+            "count": 1,
+            "retroactive": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "path",
+      "type": "Choice",
+      "data": {
+        "options": [
+          "repair",
+          "banish"
+        ]
+      }
+    },
+    {
+      "id": "part",
+      "type": "Condition",
+      "data": {
+        "predicate": {
+          "op": "HasItem",
+          "id": "item_lantern_part",
+          "count": 1
+        }
+      }
+    },
+    {
+      "id": "collect",
+      "type": "Objective",
+      "data": {
+        "policy": "all",
+        "objectives": [
+          {
+            "kind": "Collect",
+            "target": "item_lantern_part",
+            "count": 1,
+            "retroactive": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "repair",
+      "type": "Action",
+      "data": {
+        "actions": [
+          {
+            "op": "RemoveItem",
+            "id": "item_lantern_part",
+            "count": 1
+          },
+          {
+            "op": "SetFact",
+            "id": "fact_bridge_repaired",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "kill",
+      "type": "Objective",
+      "data": {
+        "policy": "all",
+        "objectives": [
+          {
+            "kind": "Kill",
+            "target": "ghost_bridge",
+            "count": 1,
+            "retroactive": true,
+            "proofFact": "fact_ghost_defeated"
+          }
+        ]
+      }
+    },
+    {
+      "id": "banish",
+      "type": "Action",
+      "data": {
+        "actions": [
+          {
+            "op": "SetFact",
+            "id": "fact_bridge_banished",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "truth",
+      "type": "Choice",
+      "data": {
+        "options": [
+          "reveal",
+          "conceal"
+        ]
+      }
+    },
+    {
+      "id": "reveal",
+      "type": "Action",
+      "data": {
+        "actions": [
+          {
+            "op": "SetFact",
+            "id": "fact_truth_public",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "conceal",
+      "type": "Action",
+      "data": {
+        "actions": [
+          {
+            "op": "SetFact",
+            "id": "fact_truth_public",
+            "value": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "reward",
+      "type": "Reward",
+      "data": {
+        "rewardKey": "H01.completion",
+        "gold": 80,
+        "xp": 120
+      }
+    },
+    {
+      "id": "end",
+      "type": "End",
+      "data": {
+        "result": "Completed"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "port": "next",
+      "to": "talk"
+    },
+    {
+      "from": "talk",
+      "port": "next",
+      "to": "clues"
+    },
+    {
+      "from": "clues",
+      "port": "completed",
+      "to": "path"
+    },
+    {
+      "from": "path",
+      "port": "repair",
+      "to": "part"
+    },
+    {
+      "from": "path",
+      "port": "banish",
+      "to": "kill"
+    },
+    {
+      "from": "part",
+      "port": "true",
+      "to": "repair"
+    },
+    {
+      "from": "part",
+      "port": "false",
+      "to": "collect"
+    },
+    {
+      "from": "collect",
+      "port": "completed",
+      "to": "repair"
+    },
+    {
+      "from": "repair",
+      "port": "next",
+      "to": "truth"
+    },
+    {
+      "from": "kill",
+      "port": "completed",
+      "to": "banish"
+    },
+    {
+      "from": "banish",
+      "port": "next",
+      "to": "truth"
+    },
+    {
+      "from": "truth",
+      "port": "reveal",
+      "to": "reveal"
+    },
+    {
+      "from": "truth",
+      "port": "conceal",
+      "to": "conceal"
+    },
+    {
+      "from": "reveal",
+      "port": "next",
+      "to": "reward"
+    },
+    {
+      "from": "conceal",
+      "port": "next",
+      "to": "reward"
+    },
+    {
+      "from": "reward",
+      "port": "next",
+      "to": "end"
+    }
+  ],
+  "declaredRefs": {
+    "npc": [
+      "npc_nara",
+      "npc_daon",
+      "npc_seorin",
+      "npc_hyeono",
+      "npc_rua"
+    ],
+    "item": [
+      "item_lantern_part"
+    ],
+    "region": [
+      "region_reeds"
+    ],
+    "target": [
+      "clue_fabric",
+      "clue_lantern",
+      "ghost_bridge"
+    ],
+    "dialogue": [
+      "dialogue_nara_h01"
+    ],
+    "fact": [
+      "fact_bridge_repaired",
+      "fact_bridge_banished",
+      "fact_truth_public",
+      "fact_ghost_defeated"
+    ],
+    "marker": [
+      "marker_bridge_area",
+      "marker_bridge_exact",
+      "marker_nara"
+    ],
+    "quest": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M08",
+      "M09",
+      "M10",
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "H01",
+      "H02",
+      "H03",
+      "H04",
+      "H05",
+      "H06",
+      "X01",
+      "X02",
+      "X03",
+      "X04"
+    ]
+  },
+  "needsContent": [],
+  "note": "읽기·검사 예시입니다. 실제 Unity 자산은 AI가 현재 프로젝트에 생성·바인딩해야 합니다."
+}

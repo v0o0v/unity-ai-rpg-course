@@ -1,0 +1,157 @@
+{
+  "checks": [
+    {
+      "name": "Hide and show explanations",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Show caution overlay",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Reading actions leave learning checks unchanged",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Enlarge lesson figure",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Close enlarged figure via Escape",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Open technical explanation from sentence",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Return to same instruction step",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Return to original scroll position",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Raw view excludes explanations",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Requirement jump does not change lesson route",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Real progress JSON download",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Real v11 progress file import",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Progress v9 accepted",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Progress v10 accepted",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Progress v12 accepted",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "1440 light: no viewport overflow",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "1440 light: sentence explanations rendered",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "1440 dark: no viewport overflow",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "1440 dark: sentence explanations rendered",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "390 light: no viewport overflow",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "390 light: sentence explanations rendered",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "390 dark: no viewport overflow",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "390 dark: sentence explanations rendered",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Theme persistence logic writes simulated storage",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Saved theme restored into fresh document (simulation)",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Dark glossary figure enlarged",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Open glossary image updates on theme change",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "No runtime JavaScript errors",
+      "detail": null,
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "final_1440_light_diagram.png",
+    "final_1440_light_prompt.png",
+    "final_1440_dark_diagram.png",
+    "final_1440_dark_prompt.png",
+    "final_390_light_diagram.png",
+    "final_390_light_prompt.png",
+    "final_390_dark_diagram.png",
+    "final_390_dark_prompt.png",
+    "final_glossary_dark.png"
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,46 @@
+/mnt/data/course_v13_work/test_browser_v13.py:58: SyntaxWarning: invalid escape sequence '\s'
+  result=q.evaluate('''start=>{let count=0;const bad=[];for(let n=start;n<Math.min(start+32,257);n++)for(let s=0;s<4;s++){showLesson(n,s,false);if(document.querySelector('h1').textContent!==byId.get(n).title)bad.push([n,s,'title']);const parts=[...document.querySelectorAll('[data-prompt=current] .req-sentence')].map(e=>e.textContent).join('');if(parts.replace(/\s/g,'')!==byId.get(n).steps[s].prompt.replace(/\s/g,''))bad.push([n,s,'spans']);const p=document.querySelector('[data-prompt=current]');if(!p||!document.querySelector('#diagnosticCard'))bad.push([n,s,'elements']);count++;}return {count,bad};}''',start)
+PASS In-page local AI startup guide
+PASS Version and lesson registry
+PASS Current prompt starts sooner than v12 1517px
+PASS Large diagram no longer blocks every step
+PASS Previously hidden specification table is readable
+PASS Jump directly to current request
+PASS Project rationale is not a download explanation
+PASS Copy carries current prompt only
+PASS Raw prompt view
+PASS Preserved boundary diagram
+PASS Figure enlargement
+PASS Worked result comparison visible
+PASS Distinct unreachable and budget status
+PASS Reading does not set completion
+PASS Glossary from annotated request
+PASS Return to same step
+PASS Return to original reading scroll
+PASS Keyboard tab movement and focus
+PASS Tab keys do not mark completed
+PASS All steps rendered 1–32
+PASS All steps rendered 33–64
+PASS All steps rendered 65–96
+PASS All steps rendered 97–128
+PASS All steps rendered 129–160
+PASS All steps rendered 161–192
+PASS All steps rendered 193–224
+PASS All steps rendered 225–256
+PASS 1440/light/L1: no page overflow
+PASS 1440/dark/L9: no page overflow
+PASS 390/dark/L194: no page overflow
+PASS 390/light/L125: no page overflow
+PASS 1440/dark/L240: no page overflow
+PASS Import version 9
+PASS Import version 10
+PASS Import version 11
+PASS Import version 12
+PASS Import version 13
+PASS Reject malformed progress
+PASS Actual progress JSON download
+PASS Actual old-progress file import preserves notes
+PASS Theme restore from explicit simulated storage
+PASS Progress restore from explicit simulated storage
+PASS No uncaught browser errors
+PASS 43

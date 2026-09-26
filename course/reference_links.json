@@ -1,0 +1,612 @@
+[
+  {
+    "id": "V8-01",
+    "url": "https://docs.unity.com/en-us/unity-cli/unity-cli-reference",
+    "title": "Unity CLI reference"
+  },
+  {
+    "id": "V8-02",
+    "url": "https://unity.com/blog/meet-the-unity-cli",
+    "title": "Meet the Unity CLI"
+  },
+  {
+    "id": "V8-03",
+    "url": "https://code.claude.com/docs/en/desktop",
+    "title": "Claude Code Desktop"
+  },
+  {
+    "id": "V8-04",
+    "url": "https://code.claude.com/docs/en/skills",
+    "title": "Claude Code Skills"
+  },
+  {
+    "id": "V8-05",
+    "url": "https://code.claude.com/docs/en/hooks",
+    "title": "Claude Code Hooks"
+  },
+  {
+    "id": "A01",
+    "url": "https://code.claude.com/docs/en/desktop-quickstart",
+    "title": "Claude Code Desktop Quickstart"
+  },
+  {
+    "id": "A02",
+    "url": "https://code.claude.com/docs/en/desktop",
+    "title": "Claude Code Desktop"
+  },
+  {
+    "id": "A03",
+    "url": "https://code.claude.com/docs/en/skills",
+    "title": "Claude Code Skills"
+  },
+  {
+    "id": "A04",
+    "url": "https://code.claude.com/docs/en/hooks-guide",
+    "title": "Claude Code Hooks Guide"
+  },
+  {
+    "id": "A05",
+    "url": "https://code.claude.com/docs/en/hooks",
+    "title": "Claude Code Hooks Reference"
+  },
+  {
+    "id": "A06",
+    "url": "https://code.claude.com/docs/en/settings",
+    "title": "Claude Code Settings"
+  },
+  {
+    "id": "A07",
+    "url": "https://code.claude.com/docs/en/sub-agents",
+    "title": "Claude Code Subagents"
+  },
+  {
+    "id": "A08",
+    "url": "https://code.claude.com/docs/en/model-config",
+    "title": "Claude Code Model Configuration"
+  },
+  {
+    "id": "A09",
+    "url": "https://developers.openai.com/api/docs/guides/image-generation",
+    "title": "OpenAI Image Generation"
+  },
+  {
+    "id": "A10",
+    "url": "https://docs.unity.com/en-us/unity-cli/use-unity-cli",
+    "title": "Unity CLI"
+  },
+  {
+    "id": "S01",
+    "url": "https://unity.com/releases/unity-6",
+    "title": "Unity 6 release overview"
+  },
+  {
+    "id": "S02",
+    "url": "https://docs.unity.com/en-us/unity-cli/use-unity-cli",
+    "title": "Use the Unity CLI"
+  },
+  {
+    "id": "S03",
+    "url": "https://docs.unity.com/en-us/unity-cli/unity-cli-reference",
+    "title": "Unity CLI reference"
+  },
+  {
+    "id": "S04",
+    "url": "https://unity.com/resources/unity-pipeline-cli-technical-walkthrough",
+    "title": "Unity Pipeline and Unity CLI"
+  },
+  {
+    "id": "S05",
+    "url": "https://docs.unity.com/en-us/unity-cli/unity-pipeline/unity-pipeline-package",
+    "title": "Unity Pipeline package installation"
+  },
+  {
+    "id": "S06",
+    "url": "https://www.anthropic.com/claude-opus-5-5",
+    "title": "Introducing Claude Opus 5.5"
+  },
+  {
+    "id": "S07",
+    "url": "https://code.claude.com/docs/en/model-config",
+    "title": "Claude Code model configuration"
+  },
+  {
+    "id": "S08",
+    "url": "https://code.claude.com/docs/en/setup",
+    "title": "Claude Code setup"
+  },
+  {
+    "id": "S09",
+    "url": "https://code.claude.com/docs/en/memory",
+    "title": "Claude Code project memory / CLAUDE.md"
+  },
+  {
+    "id": "S10",
+    "url": "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.17/manual/OnScreen.html",
+    "title": "Unity Input System: On-screen controls"
+  },
+  {
+    "id": "S11",
+    "url": "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.17/manual/UISupport.html",
+    "title": "Unity Input System: UI support"
+  },
+  {
+    "id": "S12",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/index.html",
+    "title": "Unity AI Navigation package"
+  },
+  {
+    "id": "S13",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/AI.NavMeshAgent.Move.html",
+    "title": "NavMeshAgent.Move"
+  },
+  {
+    "id": "S14",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/android-sdksetup.html",
+    "title": "Unity Android environment setup"
+  },
+  {
+    "id": "S15",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/android-BuildProcess.html",
+    "title": "Unity Android build process"
+  },
+  {
+    "id": "S16",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/build-profiles.html",
+    "title": "Unity Build Profiles"
+  },
+  {
+    "id": "S17",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Application-persistentDataPath.html",
+    "title": "Application.persistentDataPath"
+  },
+  {
+    "id": "S18",
+    "url": "https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/reference-command-line.html",
+    "title": "Unity Test Framework command line"
+  },
+  {
+    "id": "S19",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/profiling-target-device.html",
+    "title": "Unity profiling on target devices"
+  },
+  {
+    "id": "S20",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/class-ScriptableObject.html",
+    "title": "Unity ScriptableObject"
+  },
+  {
+    "id": "S21",
+    "url": "https://developer.android.com/guide/practices/page-sizes",
+    "title": "Android 16 KB page-size support"
+  },
+  {
+    "id": "S22",
+    "url": "https://support.google.com/googleplay/android-developer/answer/11926878",
+    "title": "Google Play target API requirements"
+  },
+  {
+    "id": "N01",
+    "url": "https://unity.com/features/ai",
+    "title": "Unity AI"
+  },
+  {
+    "id": "N02",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.1/manual/Sprite/spritesheet-assistant.html",
+    "title": "Unity Assistant"
+  },
+  {
+    "id": "N03",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.9/manual/Sprite/generate-sprite.html",
+    "title": "Unity Assistant"
+  },
+  {
+    "id": "N04",
+    "url": "https://www.pixellab.ai/",
+    "title": "PixelLab"
+  },
+  {
+    "id": "N05",
+    "url": "https://www.pixellab.ai/docs/tools/animate-with-text-pro",
+    "title": "PixelLab"
+  },
+  {
+    "id": "N06",
+    "url": "https://www.pixellab.ai/pixellab-api",
+    "title": "PixelLab API"
+  },
+  {
+    "id": "N07",
+    "url": "https://retrodiffusion.ai/styles/",
+    "title": "Retro Diffusion"
+  },
+  {
+    "id": "N08",
+    "url": "https://retrodiffusion.ai/styles/small-sprites/",
+    "title": "Retro Diffusion"
+  },
+  {
+    "id": "N09",
+    "url": "https://help.scenario.com/articles/9088582240-create-spritesheets-with-scenario",
+    "title": "Scenario"
+  },
+  {
+    "id": "N10",
+    "url": "https://help.scenario.com/articles/2974691727-scenario-apps-for-gaming",
+    "title": "Scenario"
+  },
+  {
+    "id": "N11",
+    "url": "https://www.scenario.com/pricing",
+    "title": "Scenario"
+  },
+  {
+    "id": "N12",
+    "url": "https://ludo.ai/features/sprite-generator",
+    "title": "Ludo.ai"
+  },
+  {
+    "id": "N13",
+    "url": "https://ludo.ai/pricing",
+    "title": "Ludo.ai"
+  },
+  {
+    "id": "N14",
+    "url": "https://developers.openai.com/api/docs/guides/image-generation",
+    "title": "OpenAI"
+  },
+  {
+    "id": "N15",
+    "url": "https://developers.openai.com/api/docs/pricing",
+    "title": "OpenAI API"
+  },
+  {
+    "id": "N16",
+    "url": "https://docs.x.ai/developers/model-capabilities/images/generation",
+    "title": "xAI"
+  },
+  {
+    "id": "N17",
+    "url": "https://docs.x.ai/developers/pricing",
+    "title": "xAI"
+  },
+  {
+    "id": "N18",
+    "url": "https://www.aseprite.org/docs/cli/",
+    "title": "Aseprite"
+  },
+  {
+    "id": "N20",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/PartSysTexSheetAnimModule.html",
+    "title": "Unity Particle System"
+  },
+  {
+    "id": "N21",
+    "url": "https://docs.unity3d.com/Packages/com.unity.shadergraph@17.3/manual/Getting-Started.html",
+    "title": "Shader Graph 17.3"
+  },
+  {
+    "id": "N22",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshSurface.html",
+    "title": "AI Navigation"
+  },
+  {
+    "id": "N23",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/MemoryManagement.html",
+    "title": "Addressables"
+  },
+  {
+    "id": "N24",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/remote-content-enable.html",
+    "title": "Addressables"
+  },
+  {
+    "id": "N25",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/remote-content-predownload.html",
+    "title": "Addressables"
+  },
+  {
+    "id": "N26",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/api/UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle.GetDownloadStatus.html",
+    "title": "Addressables"
+  },
+  {
+    "id": "N27",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/remote-content-assetbundle-cache.html",
+    "title": "Addressables"
+  },
+  {
+    "id": "N28",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/builds-update-build.html",
+    "title": "Addressables"
+  },
+  {
+    "id": "N29",
+    "url": "https://docs.unity.com/en-us/ccd/cli-walkthrough",
+    "title": "Unity CCD"
+  },
+  {
+    "id": "N30",
+    "url": "https://developer.android.com/guide/playcore/asset-delivery/integrate-unity",
+    "title": "Google Play Asset Delivery"
+  },
+  {
+    "id": "N32",
+    "url": "https://unity.com/blog/unity-ai-material-generator",
+    "title": "Unity"
+  },
+  {
+    "id": "N33",
+    "url": "https://help.scenario.com/articles/4202673551-retro-diffusion-models-the-essentials",
+    "title": "Scenario"
+  },
+  {
+    "id": "N34",
+    "url": "https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform",
+    "title": "OpenAI"
+  },
+  {
+    "id": "N35",
+    "url": "https://www.pixellab.ai/docs/introduction-pixelorama",
+    "title": "PixelLab"
+  },
+  {
+    "id": "D01",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/2d-game-creation-wokflow.html",
+    "title": "Unity 2D game creation workflow"
+  },
+  {
+    "id": "D02",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/setup-project-2d-game.html",
+    "title": "Set up a project for 2D games"
+  },
+  {
+    "id": "D03",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/urp/2DRendererData-overview.html",
+    "title": "URP 2D Renderer Data"
+  },
+  {
+    "id": "D04",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Rigidbody2D.MovePosition.html",
+    "title": "Rigidbody2D.MovePosition"
+  },
+  {
+    "id": "D05",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/sprite/sort-sprites/sort-sprites.html",
+    "title": "Sort sprites"
+  },
+  {
+    "id": "D06",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Physics2D.CircleCast.html",
+    "title": "Physics2D.CircleCast"
+  },
+  {
+    "id": "D07",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/urp/Lights-2D-intro.html",
+    "title": "URP 2D lights"
+  },
+  {
+    "id": "D08",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/tilemaps/work-with-tilemaps/tilemap-collider-2d.html",
+    "title": "Tilemap Collider 2D and pending tile changes"
+  },
+  {
+    "id": "D09",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/2d-physics/collider/composite-collider/composite-collider-2d-reference.html",
+    "title": "Composite Collider 2D reference"
+  },
+  {
+    "id": "D10",
+    "url": "https://docs.unity3d.com/Packages/com.unity.2d.animation@10.1/manual/index.html",
+    "title": "Unity 2D Animation package"
+  },
+  {
+    "id": "D11",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/urp/urp-universal-renderer.html",
+    "title": "URP Universal Renderer"
+  },
+  {
+    "id": "D12",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/class-CharacterController.html",
+    "title": "Character Controller component"
+  },
+  {
+    "id": "D13",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/CharacterController.Move.html",
+    "title": "CharacterController.Move"
+  },
+  {
+    "id": "D14",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshSurface.html",
+    "title": "AI Navigation NavMeshSurface"
+  },
+  {
+    "id": "D15",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/AI.NavMesh.CalculatePath.html",
+    "title": "NavMesh.CalculatePath"
+  },
+  {
+    "id": "D16",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/RootMotion.html",
+    "title": "Root Motion, Generic and Humanoid behavior"
+  },
+  {
+    "id": "D17",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/AnimationOverview.html",
+    "title": "Introduction to Mecanim animation"
+  },
+  {
+    "id": "H01",
+    "url": "https://code.claude.com/docs/en/headless",
+    "title": "Claude Code: programmatic CLI, JSON and authentication modes"
+  },
+  {
+    "id": "H02",
+    "url": "https://code.claude.com/docs/en/cli-reference",
+    "title": "Claude Code CLI reference: tools, safe/restricted/bare modes and limits"
+  },
+  {
+    "id": "H03",
+    "url": "https://code.claude.com/docs/en/permissions",
+    "title": "Claude Code permission configuration"
+  },
+  {
+    "id": "H04",
+    "url": "https://code.claude.com/docs/en/model-config",
+    "title": "Claude model configuration and full model IDs"
+  },
+  {
+    "id": "H05",
+    "url": "https://code.claude.com/docs/en/sub-agents",
+    "title": "Claude Code custom subagents"
+  },
+  {
+    "id": "H06",
+    "url": "https://code.claude.com/docs/en/agent-teams",
+    "title": "Claude Code Agent Teams and limitations"
+  },
+  {
+    "id": "H07",
+    "url": "https://code.claude.com/docs/en/skills",
+    "title": "Claude Code Skills"
+  },
+  {
+    "id": "H08",
+    "url": "https://git-scm.com/docs/git-worktree",
+    "title": "Git worktree documentation"
+  },
+  {
+    "id": "H09",
+    "url": "https://docs.unity.com/en-us/unity-cli/use-unity-cli",
+    "title": "Unity CLI use and experimental status"
+  },
+  {
+    "id": "H10",
+    "url": "https://docs.unity.com/en-us/unity-cli/unity-pipeline/unity-pipeline-package",
+    "title": "Unity Pipeline package"
+  },
+  {
+    "id": "H11",
+    "url": "https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/reference-command-line.html",
+    "title": "Unity Test Framework command-line testing and NUnit results"
+  },
+  {
+    "id": "H12",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/Versioncontrolintegration.html",
+    "title": "Unity version control integration"
+  },
+  {
+    "id": "H13",
+    "url": "https://code.claude.com/docs/en/hooks",
+    "title": "Claude Code Hooks reference; optional enforcement extension"
+  },
+  {
+    "id": "H14",
+    "url": "https://docs.python.org/3/library/subprocess.html",
+    "title": "Python subprocess reference; shell and process management"
+  },
+  {
+    "id": "H15",
+    "url": "https://docs.python.org/3/library/pathlib.html",
+    "title": "Python pathlib reference"
+  },
+  {
+    "id": "H16",
+    "url": "https://docs.python.org/3/library/sqlite3.html",
+    "title": "Python sqlite3 reference; optional parallel scheduler extension"
+  },
+  {
+    "id": "H17",
+    "url": "https://code.claude.com/docs/en/agent-sdk/overview",
+    "title": "Claude Agent SDK overview"
+  },
+  {
+    "id": "P01",
+    "url": "https://code.claude.com/docs/en/headless",
+    "title": "Claude Code"
+  },
+  {
+    "id": "P02",
+    "url": "https://docs.unity.com/en-us/unity-cli/use-unity-cli",
+    "title": "Unity CLI"
+  },
+  {
+    "id": "P03",
+    "url": "https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/reference-command-line.html",
+    "title": "Unity Test Framework"
+  },
+  {
+    "id": "P04",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Rigidbody2D.MovePosition.html",
+    "title": "Rigidbody2D.MovePosition"
+  },
+  {
+    "id": "P05",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/builds-update-build.html",
+    "title": "Addressables"
+  },
+  {
+    "id": "P06",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/profiling-target-device.html",
+    "title": "Unity Profiler"
+  },
+  {
+    "id": "P07",
+    "url": "https://code.claude.com/docs/en/cli-reference",
+    "title": "Claude Code"
+  },
+  {
+    "id": "B01",
+    "url": "https://docs.python.org/3/library/argparse.html",
+    "title": "Python argparse"
+  },
+  {
+    "id": "B02",
+    "url": "https://docs.python.org/3/library/pathlib.html",
+    "title": "Python pathlib"
+  },
+  {
+    "id": "B03",
+    "url": "https://docs.python.org/3/library/subprocess.html",
+    "title": "Python subprocess"
+  },
+  {
+    "id": "B04",
+    "url": "https://code.claude.com/docs/en/headless",
+    "title": "Claude Code programmatic/headless execution"
+  },
+  {
+    "id": "B05",
+    "url": "https://code.claude.com/docs/en/cli-reference",
+    "title": "Claude Code CLI reference"
+  },
+  {
+    "id": "B06",
+    "url": "https://docs.unity.com/en-us/unity-cli/use-unity-cli",
+    "title": "Unity CLI"
+  },
+  {
+    "id": "B07",
+    "url": "https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/reference-command-line.html",
+    "title": "Unity Test Framework command-line testing"
+  },
+  {
+    "id": "B08",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/EditorCommandLineArguments.html",
+    "title": "Unity Editor command-line arguments"
+  },
+  {
+    "id": "B09",
+    "url": "https://docs.python.org/3/library/unittest.html",
+    "title": "Python unittest"
+  },
+  {
+    "id": "B10",
+    "url": "https://docs.python.org/3/using/windows.html",
+    "title": "Python Windows 설치"
+  },
+  {
+    "id": "B11",
+    "url": "https://docs.python.org/3/library/venv.html",
+    "title": "Python venv"
+  }
+]

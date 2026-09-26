@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "lesson": 152,
+  "feature": "E06 저장 강화",
+  "input_aliases": [
+    "game_spec",
+    "save_contract",
+    "save_service",
+    "transactions",
+    "inventory"
+  ],
+  "output_aliases": [
+    "out_architect",
+    "out_gameplay_engineer",
+    "out_qa_engineer",
+    "out_build_release_engineer"
+  ],
+  "plan": {
+    "schema_version": 1,
+    "binding_required": true,
+    "id": "forge-l152-r1",
+    "title": "schema 3를 완성하고 이전 저장·손상·중복 거래 복구하기",
+    "tasks": [
+      {
+        "id": "L152_architect",
+        "role": "architect",
+        "kind": "proposal",
+        "depends_on": [],
+        "read_files": [
+          "@game_spec",
+          "@save_contract",
+          "@save_service",
+          "@transactions",
+          "@inventory"
+        ],
+        "write_prefixes": [
+          "@out_architect"
+        ],
+        "outputs": [
+          "@out_architect"
+        ],
+        "instruction": "schema 3를 완성하고 이전 저장·손상·중복 거래 복구하기 — 담당: 버전·이전·내구 커밋\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n영구 상태는 materialWallet·runeWallet·stash·favoriteIds·socketData·skillVariants·forgeQuest·droneUnlocked·codex를 저장한다. 유물·전투 상태·바닥 드롭·동료 위치·열린 UI는 저장하지 않는다. 기존 장비 ID·옵션·레벨·퀘스트·스킬트리는 보존한다.\n\nschema2→3 변환은 명시적 기본값을 넣고 원본 백업을 유지한다. 미래 버전 저장을 오래된 앱이 읽으면 알 수 없는 필드를 버린 채 다시 저장하지 말고 안전하게 중단한다. 파일 파싱이 성공했다고 전체 소유 ID·수량 한도·룬 호환성까지 유효한 것은 아니므로 검증 단계를 둔다.\n\n마을 거래의 저장 커밋은 잔액·아이템·revision·request 영수증을 같은 상태에 포함한다. 이전 영수증은 정한 보존 창까지 유지한다. 저장 완료와 UI 표시 사이에 앱이 종료되어도 재시작 후 동일 request의 결과를 확인할 수 있어야 한다. 사용자에게 내구 저장을 약속하려면 실제 Android 저장·강제 종료 상황에서 확인해야 한다. 교재의 파일 교체 설계는 기기별 내구성 보장을 대신하지 않는다.\n\n따라 하는 순서:\n정상 schema2 3종, 정상 schema3, 미래 버전, 중복ID, 잘린 파일, 잘못된 룬·재료 수량 fixture를 만든다.\n기존 loader에서 파싱→버전 변환→불변 조건 검사→복원 순서를 확인한다. fallback 백업도 같은 검증을 거친다.\n거래의 저장 직전·교체 직후·UI 반영 직전 종료를 분리해 시험한다. 실제 종료 실험은 사본만 사용한다.\n복구 후 마을에서 재개하고 유물·상태·열린 UI가 남지 않는지 검사한다.\n\n구현 계약:\nschema3 통합 저장과 schema2 이전·손상 복구를 완성해 줘.\n영구 필드와 run/UI 임시 상태를 명시적으로 분리해 줘.\n정상 옛 저장의 ID·옵션·진행을 보존하고 미래 버전을 조용히 덮어쓰지 마.\n중복ID·음수/한도초과 재료·호환 불가 룬을 검증하고 유효한 백업만 복원해 줘.\n거래 저장 전후 종료를 사본에서 주입하고 request영수증·revision과 아이템/재료가 같이 복원되는지 검사해 줘.\n실제 Android 내구 검사 미실행은 NOT RUN으로 남겨 줘.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "schema2→3 변환에서 기존 ID 집합과 옵션·퀘스트·트리가 보존된다.",
+          "손상 원본 대신 유효한 백업을 복원하며 둘 다 손상이면 원본을 보존한 채 안내한다.",
+          "미래 버전 파일을 불러온 이전 앱은 진행을 초기화해 덮어쓰지 않는다.",
+          "저장 교체 후 UI 전 앱 종료에서도 거래 결과가 복제·분실되지 않는다."
+        ]
+      },
+      {
+        "id": "L152_gameplay_engineer",
+        "role": "gameplay_engineer",
+        "kind": "proposal",
+        "depends_on": [
+          "L152_architect"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@save_contract",
+          "@save_service",
+          "@transactions",
+          "@inventory",
+          "@out_architect"
+        ],
+        "write_prefixes": [
+          "@out_gameplay_engineer"
+        ],
+        "outputs": [
+          "@out_gameplay_engineer"
+        ],
+        "instruction": "schema 3를 완성하고 이전 저장·손상·중복 거래 복구하기 — 담당: 영구/일시 상태 분리\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n영구 상태는 materialWallet·runeWallet·stash·favoriteIds·socketData·skillVariants·forgeQuest·droneUnlocked·codex를 저장한다. 유물·전투 상태·바닥 드롭·동료 위치·열린 UI는 저장하지 않는다. 기존 장비 ID·옵션·레벨·퀘스트·스킬트리는 보존한다.\n\nschema2→3 변환은 명시적 기본값을 넣고 원본 백업을 유지한다. 미래 버전 저장을 오래된 앱이 읽으면 알 수 없는 필드를 버린 채 다시 저장하지 말고 안전하게 중단한다. 파일 파싱이 성공했다고 전체 소유 ID·수량 한도·룬 호환성까지 유효한 것은 아니므로 검증 단계를 둔다.\n\n마을 거래의 저장 커밋은 잔액·아이템·revision·request 영수증을 같은 상태에 포함한다. 이전 영수증은 정한 보존 창까지 유지한다. 저장 완료와 UI 표시 사이에 앱이 종료되어도 재시작 후 동일 request의 결과를 확인할 수 있어야 한다. 사용자에게 내구 저장을 약속하려면 실제 Android 저장·강제 종료 상황에서 확인해야 한다. 교재의 파일 교체 설계는 기기별 내구성 보장을 대신하지 않는다.\n\n따라 하는 순서:\n정상 schema2 3종, 정상 schema3, 미래 버전, 중복ID, 잘린 파일, 잘못된 룬·재료 수량 fixture를 만든다.\n기존 loader에서 파싱→버전 변환→불변 조건 검사→복원 순서를 확인한다. fallback 백업도 같은 검증을 거친다.\n거래의 저장 직전·교체 직후·UI 반영 직전 종료를 분리해 시험한다. 실제 종료 실험은 사본만 사용한다.\n복구 후 마을에서 재개하고 유물·상태·열린 UI가 남지 않는지 검사한다.\n\n구현 계약:\nschema3 통합 저장과 schema2 이전·손상 복구를 완성해 줘.\n영구 필드와 run/UI 임시 상태를 명시적으로 분리해 줘.\n정상 옛 저장의 ID·옵션·진행을 보존하고 미래 버전을 조용히 덮어쓰지 마.\n중복ID·음수/한도초과 재료·호환 불가 룬을 검증하고 유효한 백업만 복원해 줘.\n거래 저장 전후 종료를 사본에서 주입하고 request영수증·revision과 아이템/재료가 같이 복원되는지 검사해 줘.\n실제 Android 내구 검사 미실행은 NOT RUN으로 남겨 줘.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "schema2→3 변환에서 기존 ID 집합과 옵션·퀘스트·트리가 보존된다.",
+          "손상 원본 대신 유효한 백업을 복원하며 둘 다 손상이면 원본을 보존한 채 안내한다.",
+          "미래 버전 파일을 불러온 이전 앱은 진행을 초기화해 덮어쓰지 않는다.",
+          "저장 교체 후 UI 전 앱 종료에서도 거래 결과가 복제·분실되지 않는다."
+        ]
+      },
+      {
+        "id": "L152_qa_engineer",
+        "role": "qa_engineer",
+        "kind": "proposal",
+        "depends_on": [
+          "L152_gameplay_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@save_contract",
+          "@save_service",
+          "@transactions",
+          "@inventory",
+          "@out_architect",
+          "@out_gameplay_engineer"
+        ],
+        "write_prefixes": [
+          "@out_qa_engineer"
+        ],
+        "outputs": [
+          "@out_qa_engineer"
+        ],
+        "instruction": "schema 3를 완성하고 이전 저장·손상·중복 거래 복구하기 — 담당: 이전 fixture와 장애 주입\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n영구 상태는 materialWallet·runeWallet·stash·favoriteIds·socketData·skillVariants·forgeQuest·droneUnlocked·codex를 저장한다. 유물·전투 상태·바닥 드롭·동료 위치·열린 UI는 저장하지 않는다. 기존 장비 ID·옵션·레벨·퀘스트·스킬트리는 보존한다.\n\nschema2→3 변환은 명시적 기본값을 넣고 원본 백업을 유지한다. 미래 버전 저장을 오래된 앱이 읽으면 알 수 없는 필드를 버린 채 다시 저장하지 말고 안전하게 중단한다. 파일 파싱이 성공했다고 전체 소유 ID·수량 한도·룬 호환성까지 유효한 것은 아니므로 검증 단계를 둔다.\n\n마을 거래의 저장 커밋은 잔액·아이템·revision·request 영수증을 같은 상태에 포함한다. 이전 영수증은 정한 보존 창까지 유지한다. 저장 완료와 UI 표시 사이에 앱이 종료되어도 재시작 후 동일 request의 결과를 확인할 수 있어야 한다. 사용자에게 내구 저장을 약속하려면 실제 Android 저장·강제 종료 상황에서 확인해야 한다. 교재의 파일 교체 설계는 기기별 내구성 보장을 대신하지 않는다.\n\n따라 하는 순서:\n정상 schema2 3종, 정상 schema3, 미래 버전, 중복ID, 잘린 파일, 잘못된 룬·재료 수량 fixture를 만든다.\n기존 loader에서 파싱→버전 변환→불변 조건 검사→복원 순서를 확인한다. fallback 백업도 같은 검증을 거친다.\n거래의 저장 직전·교체 직후·UI 반영 직전 종료를 분리해 시험한다. 실제 종료 실험은 사본만 사용한다.\n복구 후 마을에서 재개하고 유물·상태·열린 UI가 남지 않는지 검사한다.\n\n구현 계약:\nschema3 통합 저장과 schema2 이전·손상 복구를 완성해 줘.\n영구 필드와 run/UI 임시 상태를 명시적으로 분리해 줘.\n정상 옛 저장의 ID·옵션·진행을 보존하고 미래 버전을 조용히 덮어쓰지 마.\n중복ID·음수/한도초과 재료·호환 불가 룬을 검증하고 유효한 백업만 복원해 줘.\n거래 저장 전후 종료를 사본에서 주입하고 request영수증·revision과 아이템/재료가 같이 복원되는지 검사해 줘.\n실제 Android 내구 검사 미실행은 NOT RUN으로 남겨 줘.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "schema2→3 변환에서 기존 ID 집합과 옵션·퀘스트·트리가 보존된다.",
+          "손상 원본 대신 유효한 백업을 복원하며 둘 다 손상이면 원본을 보존한 채 안내한다.",
+          "미래 버전 파일을 불러온 이전 앱은 진행을 초기화해 덮어쓰지 않는다.",
+          "저장 교체 후 UI 전 앱 종료에서도 거래 결과가 복제·분실되지 않는다."
+        ]
+      },
+      {
+        "id": "L152_build_release_engineer",
+        "role": "build_release_engineer",
+        "kind": "proposal",
+        "depends_on": [
+          "L152_qa_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@save_contract",
+          "@save_service",
+          "@transactions",
+          "@inventory",
+          "@out_architect",
+          "@out_gameplay_engineer",
+          "@out_qa_engineer"
+        ],
+        "write_prefixes": [
+          "@out_build_release_engineer"
+        ],
+        "outputs": [
+          "@out_build_release_engineer"
+        ],
+        "instruction": "schema 3를 완성하고 이전 저장·손상·중복 거래 복구하기 — 담당: 앱 호환 정책\n이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n영구 상태는 materialWallet·runeWallet·stash·favoriteIds·socketData·skillVariants·forgeQuest·droneUnlocked·codex를 저장한다. 유물·전투 상태·바닥 드롭·동료 위치·열린 UI는 저장하지 않는다. 기존 장비 ID·옵션·레벨·퀘스트·스킬트리는 보존한다.\n\nschema2→3 변환은 명시적 기본값을 넣고 원본 백업을 유지한다. 미래 버전 저장을 오래된 앱이 읽으면 알 수 없는 필드를 버린 채 다시 저장하지 말고 안전하게 중단한다. 파일 파싱이 성공했다고 전체 소유 ID·수량 한도·룬 호환성까지 유효한 것은 아니므로 검증 단계를 둔다.\n\n마을 거래의 저장 커밋은 잔액·아이템·revision·request 영수증을 같은 상태에 포함한다. 이전 영수증은 정한 보존 창까지 유지한다. 저장 완료와 UI 표시 사이에 앱이 종료되어도 재시작 후 동일 request의 결과를 확인할 수 있어야 한다. 사용자에게 내구 저장을 약속하려면 실제 Android 저장·강제 종료 상황에서 확인해야 한다. 교재의 파일 교체 설계는 기기별 내구성 보장을 대신하지 않는다.\n\n따라 하는 순서:\n정상 schema2 3종, 정상 schema3, 미래 버전, 중복ID, 잘린 파일, 잘못된 룬·재료 수량 fixture를 만든다.\n기존 loader에서 파싱→버전 변환→불변 조건 검사→복원 순서를 확인한다. fallback 백업도 같은 검증을 거친다.\n거래의 저장 직전·교체 직후·UI 반영 직전 종료를 분리해 시험한다. 실제 종료 실험은 사본만 사용한다.\n복구 후 마을에서 재개하고 유물·상태·열린 UI가 남지 않는지 검사한다.\n\n구현 계약:\nschema3 통합 저장과 schema2 이전·손상 복구를 완성해 줘.\n영구 필드와 run/UI 임시 상태를 명시적으로 분리해 줘.\n정상 옛 저장의 ID·옵션·진행을 보존하고 미래 버전을 조용히 덮어쓰지 마.\n중복ID·음수/한도초과 재료·호환 불가 룬을 검증하고 유효한 백업만 복원해 줘.\n거래 저장 전후 종료를 사본에서 주입하고 request영수증·revision과 아이템/재료가 같이 복원되는지 검사해 줘.\n실제 Android 내구 검사 미실행은 NOT RUN으로 남겨 줘.\n이번 역할은 선언한 출력 파일만 전체내용 변경안으로 제출하세요. 기존 진입점·네임스페이스를 확인하세요. 다른 역할·Unity·외부서비스를 직접 실행하지 마세요. 없는 입력은 BLOCKED로 보고하세요. 실제 실행은 통합·게이트 단계이며 생성만으로 완료가 아닙니다.",
+        "acceptance": [
+          "schema2→3 변환에서 기존 ID 집합과 옵션·퀘스트·트리가 보존된다.",
+          "손상 원본 대신 유효한 백업을 복원하며 둘 다 손상이면 원본을 보존한 채 안내한다.",
+          "미래 버전 파일을 불러온 이전 앱은 진행을 초기화해 덮어쓰지 않는다.",
+          "저장 교체 후 UI 전 앱 종료에서도 거래 결과가 복제·분실되지 않는다."
+        ]
+      },
+      {
+        "id": "L152_critic",
+        "role": "critic",
+        "kind": "review",
+        "depends_on": [
+          "L152_build_release_engineer"
+        ],
+        "read_files": [
+          "@game_spec",
+          "@save_contract",
+          "@save_service",
+          "@transactions",
+          "@inventory",
+          "@out_architect",
+          "@out_gameplay_engineer",
+          "@out_qa_engineer",
+          "@out_build_release_engineer"
+        ],
+        "write_prefixes": [],
+        "outputs": [],
+        "instruction": "이번 강의의 승인 대상 설계와 범위(실측 결과 아님):\n영구 상태는 materialWallet·runeWallet·stash·favoriteIds·socketData·skillVariants·forgeQuest·droneUnlocked·codex를 저장한다. 유물·전투 상태·바닥 드롭·동료 위치·열린 UI는 저장하지 않는다. 기존 장비 ID·옵션·레벨·퀘스트·스킬트리는 보존한다.\n\nschema2→3 변환은 명시적 기본값을 넣고 원본 백업을 유지한다. 미래 버전 저장을 오래된 앱이 읽으면 알 수 없는 필드를 버린 채 다시 저장하지 말고 안전하게 중단한다. 파일 파싱이 성공했다고 전체 소유 ID·수량 한도·룬 호환성까지 유효한 것은 아니므로 검증 단계를 둔다.\n\n마을 거래의 저장 커밋은 잔액·아이템·revision·request 영수증을 같은 상태에 포함한다. 이전 영수증은 정한 보존 창까지 유지한다. 저장 완료와 UI 표시 사이에 앱이 종료되어도 재시작 후 동일 request의 결과를 확인할 수 있어야 한다. 사용자에게 내구 저장을 약속하려면 실제 Android 저장·강제 종료 상황에서 확인해야 한다. 교재의 파일 교체 설계는 기기별 내구성 보장을 대신하지 않는다.\n\n따라 하는 순서:\n정상 schema2 3종, 정상 schema3, 미래 버전, 중복ID, 잘린 파일, 잘못된 룬·재료 수량 fixture를 만든다.\n기존 loader에서 파싱→버전 변환→불변 조건 검사→복원 순서를 확인한다. fallback 백업도 같은 검증을 거친다.\n거래의 저장 직전·교체 직후·UI 반영 직전 종료를 분리해 시험한다. 실제 종료 실험은 사본만 사용한다.\n복구 후 마을에서 재개하고 유물·상태·열린 UI가 남지 않는지 검사한다.\n\n구현 계약:\nschema3 통합 저장과 schema2 이전·손상 복구를 완성해 줘.\n영구 필드와 run/UI 임시 상태를 명시적으로 분리해 줘.\n정상 옛 저장의 ID·옵션·진행을 보존하고 미래 버전을 조용히 덮어쓰지 마.\n중복ID·음수/한도초과 재료·호환 불가 룬을 검증하고 유효한 백업만 복원해 줘.\n거래 저장 전후 종료를 사본에서 주입하고 request영수증·revision과 아이템/재료가 같이 복원되는지 검사해 줘.\n실제 Android 내구 검사 미실행은 NOT RUN으로 남겨 줘.\n\n원래 요구·실제 인터페이스·모든 제안을 독립적으로 대조하세요. 테스트를 실행한 상태가 아닙니다. 코드와 테스트를 수정하지 마세요. 미해결 결함은 review_fail 또는 blocked이며 시각/기기/재미 검사는 별도입니다.",
+        "acceptance": [
+          "schema2→3 변환에서 기존 ID 집합과 옵션·퀘스트·트리가 보존된다.",
+          "손상 원본 대신 유효한 백업을 복원하며 둘 다 손상이면 원본을 보존한 채 안내한다.",
+          "미래 버전 파일을 불러온 이전 앱은 진행을 초기화해 덮어쓰지 않는다.",
+          "저장 교체 후 UI 전 앱 종료에서도 거래 결과가 복제·분실되지 않는다."
+        ]
+      }
+    ]
+  }
+}

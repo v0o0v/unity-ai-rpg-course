@@ -1,0 +1,1 @@
+기존 AshfallRPG2D와 AshfallRPG3D, 내 하네스의 실제 위치와 정상 저장·빌드 기록을 읽기 전용으로 확인해 줘. 새 GrayOathRPG3D를 둘 위치와 현재 로컬 AI·Unity CLI 연결을 확인하되, 기존 프로젝트와 세이브를 수정하지 마.

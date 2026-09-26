@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "title": "스킬트리 상태 표시와 마을 초기화",
+  "binding_required": true,
+  "dimension": "BIND_2D_OR_3D",
+  "tasks": [
+    {
+      "id": "skill_tree_01",
+      "role": "game_designer",
+      "kind": "proposal",
+      "depends_on": [],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Docs/Design"
+      ],
+      "instruction": "스킬트리 상태 표시와 마을 초기화. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: 게임 규칙, 전투 선택, 보상과 수치를 설계한다. 기본 범위에 없는 직업/멀티플레이를 추가하지 않는다.",
+      "acceptance": [
+        "포인트/랭크 보존",
+        "자원 회복 편법 없음",
+        "PC/Android 입력",
+        "저장 재개"
+      ]
+    },
+    {
+      "id": "skill_tree_02",
+      "role": "architect",
+      "kind": "proposal",
+      "depends_on": [
+        "skill_tree_01"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Docs/Architecture"
+      ],
+      "instruction": "스킬트리 상태 표시와 마을 초기화. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: Core와 차원별 어댑터, 저장 DTO와 인터페이스를 설계한다. 필요한 규모보다 복잡한 프레임워크를 만들지 않는다.",
+      "acceptance": [
+        "포인트/랭크 보존",
+        "자원 회복 편법 없음",
+        "PC/Android 입력",
+        "저장 재개"
+      ]
+    },
+    {
+      "id": "skill_tree_03",
+      "role": "gameplay_engineer",
+      "kind": "proposal",
+      "depends_on": [
+        "skill_tree_02"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Assets/_Game/Scripts/Core"
+      ],
+      "instruction": "스킬트리 상태 표시와 마을 초기화. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: 피해, 장비, 스킬트리, 성장, 퀘스트의 순수 규칙을 구현한다.",
+      "acceptance": [
+        "포인트/랭크 보존",
+        "자원 회복 편법 없음",
+        "PC/Android 입력",
+        "저장 재개"
+      ]
+    },
+    {
+      "id": "skill_tree_04",
+      "role": "uiux_engineer",
+      "kind": "proposal",
+      "depends_on": [
+        "skill_tree_03"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Assets/_Game/Scripts/UI"
+      ],
+      "instruction": "스킬트리 상태 표시와 마을 초기화. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: PC 클릭과 Android 터치를 연결하고 스킬트리·가방·다운로드 UI를 구현한다.",
+      "acceptance": [
+        "포인트/랭크 보존",
+        "자원 회복 편법 없음",
+        "PC/Android 입력",
+        "저장 재개"
+      ]
+    },
+    {
+      "id": "skill_tree_05",
+      "role": "unity_integrator",
+      "kind": "proposal",
+      "depends_on": [
+        "skill_tree_04"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Assets/_Game/Editor/Integration"
+      ],
+      "instruction": "스킬트리 상태 표시와 마을 초기화. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: Editor API로 실제 씬/프리팹/참조를 연결한다. 기본 예제에서는 통합 스크립트 제안만 하고 실행은 승인된 broker가 한다.",
+      "acceptance": [
+        "포인트/랭크 보존",
+        "자원 회복 편법 없음",
+        "PC/Android 입력",
+        "저장 재개"
+      ]
+    },
+    {
+      "id": "skill_tree_06",
+      "role": "qa_engineer",
+      "kind": "proposal",
+      "depends_on": [
+        "skill_tree_05"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Assets/_Game/Tests"
+      ],
+      "instruction": "스킬트리 상태 표시와 마을 초기화. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: 명세에서 독립적인 테스트를 설계하고 누락·중복 피해·저장 손상·경로 반례를 재현한다.",
+      "acceptance": [
+        "포인트/랭크 보존",
+        "자원 회복 편법 없음",
+        "PC/Android 입력",
+        "저장 재개"
+      ]
+    },
+    {
+      "id": "skill_tree_07",
+      "role": "critic",
+      "kind": "review",
+      "depends_on": [
+        "skill_tree_06"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [],
+      "instruction": "스킬트리 상태 표시와 마을 초기화. 실제 파일 경로와 현재 구현/계약을 먼저 바인딩해야 한다. 현재 템플릿은 실행 금지. 역할 책임: 구현 설명이 아니라 실제 입력·명세·결과물로 검토한다. 코드 검토와 시각/재미 검토의 범위를 분리한다.",
+      "acceptance": [
+        "포인트/랭크 보존",
+        "자원 회복 편법 없음",
+        "PC/Android 입력",
+        "저장 재개"
+      ]
+    }
+  ]
+}

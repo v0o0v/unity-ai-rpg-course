@@ -1,0 +1,20 @@
+현재 프로젝트의 실제 파일과 이미 결정한 규칙을 먼저 확인해 줘. 이름이 다른 기존 구현이 있으면 새로 중복 제작하지 말고 그 구현에 연결해 줘.
+
+ActorMotor2D를 실제 Player2D에 연결해 줘.
+Input System Move를 공통 Vector2로 받아 FixedUpdate에서4.5units/s로 이동해 줘.
+단일 Kinematic Rigidbody2D와 CircleCollider2D를 쓰고 MovePosition 전에
+실제 몸체 Cast로 Environment 충돌을 계산해 skin0.02와 제한된 slide를 적용해 줘.
+Kinematic이라 벽에서 자동 정지한다고 가정하지 마. 자기 collider와 trigger는 걸러 줘.
+Transform,NavMeshAgent,3D Rigidbody 등 다른 위치 작성자를 추가하지 마.
+대각선 속도 제한, focus/disable/pause 입력 초기화, 잘못된 스폰 검증을 넣어 줘.
+직선/대각선 5초 거리, 벽20회, 얇은벽, 모서리, 통로,30/60fps를 실제 검사해 줘.
+입력→희망이동→Cast결과→실제이동을 디버그 화면에서 볼 수 있게 해 줘.
+
+적용할 세부 규칙:
+속도는 초당4.5유닛이다. 입력 벡터 길이를 최대1로 제한한다. desired = input * speed * fixedDeltaTime을 만든 뒤 Environment만 대상으로 몸체 Cast를 수행한다. 가장 가까운 충돌 직전에서 skin0.02만큼 여유를 둔다. 남은 이동을 벽의 접선 방향에 투영하고 최대2~3회까지만 재검사한다.
+
+경로 추종·AI 입력·넉백이 같은 프레임에 Transform을 각각 쓰지 않는다. 모터가 이동 사유의 우선순위를 정한다. 자기 Body와 Hurtbox, 아이템 trigger는 벽 필터에서 제외한다. 배우끼리는 초기 단계에서 강체로 서로 밀지 않고, AI 접근 위치 분산과 제한된 분리 보정으로 겹침을 줄인다. 배우의 피격 검사는 독립적으로 유지한다.
+
+처음부터 겹친 위치에서 시작한 경우는 정상 이동으로 해결할 수 없다. 스폰 검증 실패를 기록하고 미리 검사한 SpawnPoint를 사용한다. 매 프레임 순간이동으로 겹침을 숨기지 않는다.
+
+코드·설정·파일 생성·실행은 네가 맡고, 필요한 화면과 결과를 보여 줘. 수행하지 못한 작업과 필요한 승인·도구 연결은 구분해서 알려 줘.

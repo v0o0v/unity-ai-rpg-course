@@ -1,0 +1,38 @@
+{
+  "status": "NOT RUN",
+  "purpose": "실제 DTO로 변환할 검사 명세이며 직접 넣을 save 파일이 아님",
+  "cases": [
+    {
+      "case": "schema2_normal",
+      "expected": "preserve_old_ids_add_defaults"
+    },
+    {
+      "case": "schema2_tree",
+      "expected": "preserve_ranks_and_unspent_points"
+    },
+    {
+      "case": "schema3_forge",
+      "expected": "preserve_wallet_stash_runes_flags"
+    },
+    {
+      "case": "future_version",
+      "expected": "refuse_without_overwrite"
+    },
+    {
+      "case": "truncated_primary_valid_backup",
+      "expected": "restore_valid_backup_keep_original"
+    },
+    {
+      "case": "duplicate_owned_id",
+      "expected": "reject_or_explicit_repair_not_silent_drop"
+    },
+    {
+      "case": "crash_after_commit",
+      "expected": "receipt_and_owned_state_atomic"
+    },
+    {
+      "case": "temporary_run_state",
+      "expected": "not_persisted_resume_town"
+    }
+  ]
+}

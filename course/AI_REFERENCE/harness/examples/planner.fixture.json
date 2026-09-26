@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "title": "피해 규칙 수정: 기획 → 구현 → 테스트 작성 → 독립 검토",
+  "tasks": [
+    {
+      "id": "design",
+      "role": "game_designer",
+      "kind": "proposal",
+      "depends_on": [],
+      "read_files": [
+        "Docs/GAME_SPEC.md"
+      ],
+      "write_prefixes": [
+        "Docs/Design/damage.md"
+      ],
+      "instruction": "명세를 판정 예시로 나누세요.",
+      "acceptance": [
+        "max(1, attack-defense)를 보존한다",
+        "음수 입력은 거부한다",
+        "원본 파일은 변하지 않는다"
+      ]
+    },
+    {
+      "id": "implement",
+      "role": "gameplay_engineer",
+      "kind": "proposal",
+      "depends_on": [
+        "design"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md",
+        "Docs/Design/damage.md",
+        "Game/rules.py"
+      ],
+      "write_prefixes": [
+        "Game/rules.py"
+      ],
+      "instruction": "피해 계산만 수정하세요.",
+      "acceptance": [
+        "max(1, attack-defense)를 보존한다",
+        "음수 입력은 거부한다",
+        "원본 파일은 변하지 않는다"
+      ]
+    },
+    {
+      "id": "test",
+      "role": "qa_engineer",
+      "kind": "proposal",
+      "depends_on": [
+        "implement"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md",
+        "Docs/Design/damage.md",
+        "Game/rules.py"
+      ],
+      "write_prefixes": [
+        "Tests/test_rules.py"
+      ],
+      "instruction": "unittest로 5개 독립 사례를 작성하세요. 구현이 틀리면 테스트를 약화하지 마세요.",
+      "acceptance": [
+        "max(1, attack-defense)를 보존한다",
+        "음수 입력은 거부한다",
+        "원본 파일은 변하지 않는다"
+      ]
+    },
+    {
+      "id": "review",
+      "role": "critic",
+      "kind": "review",
+      "depends_on": [
+        "test"
+      ],
+      "read_files": [
+        "Docs/GAME_SPEC.md",
+        "Docs/Design/damage.md",
+        "Game/rules.py",
+        "Tests/test_rules.py"
+      ],
+      "write_prefixes": [],
+      "instruction": "승인 기준과 구현/검사를 대조하세요. 직접 실행은 하지 않은 상태임을 명시하세요.",
+      "acceptance": [
+        "max(1, attack-defense)를 보존한다",
+        "음수 입력은 거부한다",
+        "원본 파일은 변하지 않는다"
+      ]
+    }
+  ]
+}

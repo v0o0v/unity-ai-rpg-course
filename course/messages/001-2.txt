@@ -1,0 +1,7 @@
+Windows 와 Android 용 오프라인 2D 액션 RPG를 만들 새 프로젝트를 준비해 줘. 이름은 AshfallRPG2D, 기본 위치는 C:\AIProjects\AshfallRPG2D로 하되 기존 파일이 있으면 덮어쓰지 말고 새 위치를 확인해 줘.
+로컬 파일·프로세스를 실제로 다룰 수 있는지, Unity Hub·Editor·Android 모듈이 설치되어 있는지 먼저 조사해 줘. 설치가 필요하면 공식 출처·버전·대상 폴더를 보여 주고 승인받아 실행해 줘.
+Unity 6.3 LTS에서 사용할 한 패치를 정해 고정하고, Universal 2D 템플릿과 Android Build Support·대응 SDK/NDK/OpenJDK를 준비해 줘. 설치본의 지원 환경이 다르면 먼저 차이를 설명해 줘.
+프로젝트 생성·실행·패키지 확인은 네가 맡아 줘. 현재 프로젝트 경로와 Assets/Packages/ProjectSettings, 실제 Editor 버전과 생성 결과를 확인해 줘.
+아직 Editor 자동화 연결을 확인하지 못했다면 Renderer·카메라까지 검사했다고 하지 마. 연결 후 확인할 항목으로 남겨 줘. 게임 기능은 만들지 마.
+
+코드·설정·파일 생성·실행은 네가 맡고, 필요한 화면과 결과를 보여 줘. 수행하지 못한 작업과 필요한 승인·도구 연결은 구분해서 알려 줘.

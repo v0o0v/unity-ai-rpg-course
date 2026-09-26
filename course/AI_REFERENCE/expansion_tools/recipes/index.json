@@ -1,0 +1,387 @@
+[
+  {
+    "lesson": 129,
+    "recipe": "recipes/L129.recipe.json",
+    "binding": "bindings/L129.example.json",
+    "roles": [
+      "prime",
+      "architect",
+      "qa_engineer",
+      "build_release_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 130,
+    "recipe": "recipes/L130.recipe.json",
+    "binding": "bindings/L130.example.json",
+    "roles": [
+      "prime",
+      "architect",
+      "unity_integrator",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 131,
+    "recipe": "recipes/L131.recipe.json",
+    "binding": "bindings/L131.example.json",
+    "roles": [
+      "game_designer",
+      "gameplay_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 132,
+    "recipe": "recipes/L132.recipe.json",
+    "binding": "bindings/L132.example.json",
+    "roles": [
+      "uiux_engineer",
+      "unity_integrator",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 133,
+    "recipe": "recipes/L133.recipe.json",
+    "binding": "bindings/L133.example.json",
+    "roles": [
+      "qa_engineer",
+      "gameplay_engineer",
+      "prime",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 134,
+    "recipe": "recipes/L134.recipe.json",
+    "binding": "bindings/L134.example.json",
+    "roles": [
+      "game_designer",
+      "architect",
+      "gameplay_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 135,
+    "recipe": "recipes/L135.recipe.json",
+    "binding": "bindings/L135.example.json",
+    "roles": [
+      "game_designer",
+      "gameplay_engineer",
+      "uiux_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 136,
+    "recipe": "recipes/L136.recipe.json",
+    "binding": "bindings/L136.example.json",
+    "roles": [
+      "enemy_ai_engineer",
+      "game_designer",
+      "technical_artist",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 137,
+    "recipe": "recipes/L137.recipe.json",
+    "binding": "bindings/L137.example.json",
+    "roles": [
+      "level_designer",
+      "gameplay_engineer",
+      "technical_artist",
+      "audio_designer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 138,
+    "recipe": "recipes/L138.recipe.json",
+    "binding": "bindings/L138.example.json",
+    "roles": [
+      "game_designer",
+      "architect",
+      "gameplay_engineer",
+      "uiux_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 139,
+    "recipe": "recipes/L139.recipe.json",
+    "binding": "bindings/L139.example.json",
+    "roles": [
+      "game_designer",
+      "gameplay_engineer",
+      "uiux_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 140,
+    "recipe": "recipes/L140.recipe.json",
+    "binding": "bindings/L140.example.json",
+    "roles": [
+      "gameplay_engineer",
+      "uiux_engineer",
+      "architect",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 141,
+    "recipe": "recipes/L141.recipe.json",
+    "binding": "bindings/L141.example.json",
+    "roles": [
+      "game_designer",
+      "gameplay_engineer",
+      "uiux_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 142,
+    "recipe": "recipes/L142.recipe.json",
+    "binding": "bindings/L142.example.json",
+    "roles": [
+      "game_designer",
+      "gameplay_engineer",
+      "uiux_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 143,
+    "recipe": "recipes/L143.recipe.json",
+    "binding": "bindings/L143.example.json",
+    "roles": [
+      "level_designer",
+      "architect",
+      "enemy_ai_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 144,
+    "recipe": "recipes/L144.recipe.json",
+    "binding": "bindings/L144.example.json",
+    "roles": [
+      "game_designer",
+      "gameplay_engineer",
+      "uiux_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 145,
+    "recipe": "recipes/L145.recipe.json",
+    "binding": "bindings/L145.example.json",
+    "roles": [
+      "enemy_ai_engineer",
+      "gameplay_engineer",
+      "level_designer",
+      "technical_artist",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 146,
+    "recipe": "recipes/L146.recipe.json",
+    "binding": "bindings/L146.example.json",
+    "roles": [
+      "game_designer",
+      "gameplay_engineer",
+      "uiux_engineer",
+      "unity_integrator",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 147,
+    "recipe": "recipes/L147.recipe.json",
+    "binding": "bindings/L147.example.json",
+    "roles": [
+      "game_designer",
+      "enemy_ai_engineer",
+      "level_designer",
+      "technical_artist",
+      "audio_designer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 148,
+    "recipe": "recipes/L148.recipe.json",
+    "binding": "bindings/L148.example.json",
+    "roles": [
+      "art_director",
+      "asset_artist",
+      "technical_artist",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 149,
+    "recipe": "recipes/L149.recipe.json",
+    "binding": "bindings/L149.example.json",
+    "roles": [
+      "technical_artist",
+      "gameplay_engineer",
+      "unity_integrator",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 150,
+    "recipe": "recipes/L150.recipe.json",
+    "binding": "bindings/L150.example.json",
+    "roles": [
+      "audio_designer",
+      "uiux_engineer",
+      "technical_artist",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 151,
+    "recipe": "recipes/L151.recipe.json",
+    "binding": "bindings/L151.example.json",
+    "roles": [
+      "uiux_engineer",
+      "game_designer",
+      "gameplay_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 152,
+    "recipe": "recipes/L152.recipe.json",
+    "binding": "bindings/L152.example.json",
+    "roles": [
+      "architect",
+      "gameplay_engineer",
+      "qa_engineer",
+      "build_release_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 153,
+    "recipe": "recipes/L153.recipe.json",
+    "binding": "bindings/L153.example.json",
+    "roles": [
+      "build_release_engineer",
+      "technical_artist",
+      "uiux_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 154,
+    "recipe": "recipes/L154.recipe.json",
+    "binding": "bindings/L154.example.json",
+    "roles": [
+      "build_release_engineer",
+      "technical_artist",
+      "enemy_ai_engineer",
+      "gameplay_engineer",
+      "qa_engineer",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 155,
+    "recipe": "recipes/L155.recipe.json",
+    "binding": "bindings/L155.example.json",
+    "roles": [
+      "game_designer",
+      "qa_engineer",
+      "uiux_engineer",
+      "prime",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 156,
+    "recipe": "recipes/L156.recipe.json",
+    "binding": "bindings/L156.example.json",
+    "roles": [
+      "qa_engineer",
+      "level_designer",
+      "architect",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 157,
+    "recipe": "recipes/L157.recipe.json",
+    "binding": "bindings/L157.example.json",
+    "roles": [
+      "prime",
+      "qa_engineer",
+      "architect",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 158,
+    "recipe": "recipes/L158.recipe.json",
+    "binding": "bindings/L158.example.json",
+    "roles": [
+      "qa_engineer",
+      "architect",
+      "gameplay_engineer",
+      "prime",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 159,
+    "recipe": "recipes/L159.recipe.json",
+    "binding": "bindings/L159.example.json",
+    "roles": [
+      "build_release_engineer",
+      "qa_engineer",
+      "unity_integrator",
+      "prime",
+      "critic"
+    ]
+  },
+  {
+    "lesson": 160,
+    "recipe": "recipes/L160.recipe.json",
+    "binding": "bindings/L160.example.json",
+    "roles": [
+      "prime",
+      "qa_engineer",
+      "game_designer",
+      "build_release_engineer",
+      "critic"
+    ]
+  }
+]

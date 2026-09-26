@@ -1,0 +1,1298 @@
+{
+  "testEnvironment": "Chromium /usr/bin/chromium; exact HTML bytes via set_content; file:// blocked by environment policy",
+  "checks": 322,
+  "algorithmCases": 1224,
+  "promptCases": 960,
+  "chapterRenders": 250,
+  "errors": [],
+  "results": [
+    {
+      "name": "Initial app counts",
+      "pass": true
+    },
+    {
+      "name": "Storage unavailable warning is visible",
+      "pass": true
+    },
+    {
+      "name": "Render chapter unity",
+      "pass": true
+    },
+    {
+      "name": "Render chapter hub",
+      "pass": true
+    },
+    {
+      "name": "Render chapter editor",
+      "pass": true
+    },
+    {
+      "name": "Render chapter project",
+      "pass": true
+    },
+    {
+      "name": "Render chapter path",
+      "pass": true
+    },
+    {
+      "name": "Render chapter lts",
+      "pass": true
+    },
+    {
+      "name": "Render chapter package",
+      "pass": true
+    },
+    {
+      "name": "Render chapter module",
+      "pass": true
+    },
+    {
+      "name": "Render chapter cli",
+      "pass": true
+    },
+    {
+      "name": "Render chapter pipeline",
+      "pass": true
+    },
+    {
+      "name": "Render chapter api",
+      "pass": true
+    },
+    {
+      "name": "Render chapter asset",
+      "pass": true
+    },
+    {
+      "name": "Render chapter meta",
+      "pass": true
+    },
+    {
+      "name": "Render chapter scene",
+      "pass": true
+    },
+    {
+      "name": "Render chapter inspector",
+      "pass": true
+    },
+    {
+      "name": "Render chapter hierarchy",
+      "pass": true
+    },
+    {
+      "name": "Render chapter console",
+      "pass": true
+    },
+    {
+      "name": "Render chapter play",
+      "pass": true
+    },
+    {
+      "name": "Render chapter compile",
+      "pass": true
+    },
+    {
+      "name": "Render chapter gameobject",
+      "pass": true
+    },
+    {
+      "name": "Render chapter component",
+      "pass": true
+    },
+    {
+      "name": "Render chapter transform",
+      "pass": true
+    },
+    {
+      "name": "Render chapter local-world",
+      "pass": true
+    },
+    {
+      "name": "Render chapter coordinates",
+      "pass": true
+    },
+    {
+      "name": "Render chapter vector",
+      "pass": true
+    },
+    {
+      "name": "Render chapter motor",
+      "pass": true
+    },
+    {
+      "name": "Render chapter rigidbody",
+      "pass": true
+    },
+    {
+      "name": "Render chapter physics2d",
+      "pass": true
+    },
+    {
+      "name": "Render chapter collider",
+      "pass": true
+    },
+    {
+      "name": "Render chapter trigger",
+      "pass": true
+    },
+    {
+      "name": "Render chapter hitbox",
+      "pass": true
+    },
+    {
+      "name": "Render chapter layer",
+      "pass": true
+    },
+    {
+      "name": "Render chapter raycast",
+      "pass": true
+    },
+    {
+      "name": "Render chapter fixed-update",
+      "pass": true
+    },
+    {
+      "name": "Render chapter delta-time",
+      "pass": true
+    },
+    {
+      "name": "Render chapter interpolation",
+      "pass": true
+    },
+    {
+      "name": "Render chapter time-scale",
+      "pass": true
+    },
+    {
+      "name": "Render chapter controller",
+      "pass": true
+    },
+    {
+      "name": "Render chapter screen-world",
+      "pass": true
+    },
+    {
+      "name": "Render chapter actor-root",
+      "pass": true
+    },
+    {
+      "name": "Render chapter lifecycle",
+      "pass": true
+    },
+    {
+      "name": "Render chapter grid",
+      "pass": true
+    },
+    {
+      "name": "Render chapter tilemap",
+      "pass": true
+    },
+    {
+      "name": "Render chapter tile-collider",
+      "pass": true
+    },
+    {
+      "name": "Render chapter autotile",
+      "pass": true
+    },
+    {
+      "name": "Render chapter layout",
+      "pass": true
+    },
+    {
+      "name": "Render chapter generation",
+      "pass": true
+    },
+    {
+      "name": "Render chapter rng",
+      "pass": true
+    },
+    {
+      "name": "Render chapter astar",
+      "pass": true
+    },
+    {
+      "name": "Render chapter heuristic",
+      "pass": true
+    },
+    {
+      "name": "Render chapter clearance",
+      "pass": true
+    },
+    {
+      "name": "Render chapter navigation",
+      "pass": true
+    },
+    {
+      "name": "Render chapter navmesh",
+      "pass": true
+    },
+    {
+      "name": "Render chapter connectivity",
+      "pass": true
+    },
+    {
+      "name": "Render chapter spawn",
+      "pass": true
+    },
+    {
+      "name": "Render chapter state-machine",
+      "pass": true
+    },
+    {
+      "name": "Render chapter los",
+      "pass": true
+    },
+    {
+      "name": "Render chapter utility-ai",
+      "pass": true
+    },
+    {
+      "name": "Render chapter attack-token",
+      "pass": true
+    },
+    {
+      "name": "Render chapter telegraph",
+      "pass": true
+    },
+    {
+      "name": "Render chapter damage",
+      "pass": true
+    },
+    {
+      "name": "Render chapter cooldown",
+      "pass": true
+    },
+    {
+      "name": "Render chapter input-buffer",
+      "pass": true
+    },
+    {
+      "name": "Render chapter status-effect",
+      "pass": true
+    },
+    {
+      "name": "Render chapter encounter",
+      "pass": true
+    },
+    {
+      "name": "Render chapter balance",
+      "pass": true
+    },
+    {
+      "name": "Render chapter difficulty",
+      "pass": true
+    },
+    {
+      "name": "Render chapter sprite",
+      "pass": true
+    },
+    {
+      "name": "Render chapter texture",
+      "pass": true
+    },
+    {
+      "name": "Render chapter ppu",
+      "pass": true
+    },
+    {
+      "name": "Render chapter pivot",
+      "pass": true
+    },
+    {
+      "name": "Render chapter sprite-sheet",
+      "pass": true
+    },
+    {
+      "name": "Render chapter slicing",
+      "pass": true
+    },
+    {
+      "name": "Render chapter atlas",
+      "pass": true
+    },
+    {
+      "name": "Render chapter trimming",
+      "pass": true
+    },
+    {
+      "name": "Render chapter alpha",
+      "pass": true
+    },
+    {
+      "name": "Render chapter padding",
+      "pass": true
+    },
+    {
+      "name": "Render chapter filter",
+      "pass": true
+    },
+    {
+      "name": "Render chapter scale-pixel",
+      "pass": true
+    },
+    {
+      "name": "Render chapter seamless",
+      "pass": true
+    },
+    {
+      "name": "Render chapter sorting",
+      "pass": true
+    },
+    {
+      "name": "Render chapter sorting-group",
+      "pass": true
+    },
+    {
+      "name": "Render chapter animation-clip",
+      "pass": true
+    },
+    {
+      "name": "Render chapter animator",
+      "pass": true
+    },
+    {
+      "name": "Render chapter animation-event",
+      "pass": true
+    },
+    {
+      "name": "Render chapter rig",
+      "pass": true
+    },
+    {
+      "name": "Render chapter root-motion",
+      "pass": true
+    },
+    {
+      "name": "Render chapter socket",
+      "pass": true
+    },
+    {
+      "name": "Render chapter mesh",
+      "pass": true
+    },
+    {
+      "name": "Render chapter uv",
+      "pass": true
+    },
+    {
+      "name": "Render chapter material",
+      "pass": true
+    },
+    {
+      "name": "Render chapter render",
+      "pass": true
+    },
+    {
+      "name": "Render chapter render-pipeline",
+      "pass": true
+    },
+    {
+      "name": "Render chapter camera",
+      "pass": true
+    },
+    {
+      "name": "Render chapter isometric",
+      "pass": true
+    },
+    {
+      "name": "Render chapter lighting",
+      "pass": true
+    },
+    {
+      "name": "Render chapter shader-graph",
+      "pass": true
+    },
+    {
+      "name": "Render chapter vfx",
+      "pass": true
+    },
+    {
+      "name": "Render chapter bake",
+      "pass": true
+    },
+    {
+      "name": "Render chapter art-spec",
+      "pass": true
+    },
+    {
+      "name": "Render chapter input-system",
+      "pass": true
+    },
+    {
+      "name": "Render chapter event-system",
+      "pass": true
+    },
+    {
+      "name": "Render chapter pointer-id",
+      "pass": true
+    },
+    {
+      "name": "Render chapter multitouch",
+      "pass": true
+    },
+    {
+      "name": "Render chapter deadzone",
+      "pass": true
+    },
+    {
+      "name": "Render chapter ui",
+      "pass": true
+    },
+    {
+      "name": "Render chapter canvas",
+      "pass": true
+    },
+    {
+      "name": "Render chapter safe-area",
+      "pass": true
+    },
+    {
+      "name": "Render chapter layout-group",
+      "pass": true
+    },
+    {
+      "name": "Render chapter interaction",
+      "pass": true
+    },
+    {
+      "name": "Render chapter audio",
+      "pass": true
+    },
+    {
+      "name": "Render chapter audio-mixer",
+      "pass": true
+    },
+    {
+      "name": "Render chapter accessibility",
+      "pass": true
+    },
+    {
+      "name": "Render chapter frame-time",
+      "pass": true
+    },
+    {
+      "name": "Render chapter profiler",
+      "pass": true
+    },
+    {
+      "name": "Render chapter cpu-gpu",
+      "pass": true
+    },
+    {
+      "name": "Render chapter overdraw",
+      "pass": true
+    },
+    {
+      "name": "Render chapter batching",
+      "pass": true
+    },
+    {
+      "name": "Render chapter culling",
+      "pass": true
+    },
+    {
+      "name": "Render chapter pool",
+      "pass": true
+    },
+    {
+      "name": "Render chapter garbage",
+      "pass": true
+    },
+    {
+      "name": "Render chapter mipmap",
+      "pass": true
+    },
+    {
+      "name": "Render chapter texture-compression",
+      "pass": true
+    },
+    {
+      "name": "Render chapter csharp",
+      "pass": true
+    },
+    {
+      "name": "Render chapter mono",
+      "pass": true
+    },
+    {
+      "name": "Render chapter reference",
+      "pass": true
+    },
+    {
+      "name": "Render chapter scriptable",
+      "pass": true
+    },
+    {
+      "name": "Render chapter item-definition",
+      "pass": true
+    },
+    {
+      "name": "Render chapter item-instance",
+      "pass": true
+    },
+    {
+      "name": "Render chapter inventory",
+      "pass": true
+    },
+    {
+      "name": "Render chapter equipment",
+      "pass": true
+    },
+    {
+      "name": "Render chapter stats",
+      "pass": true
+    },
+    {
+      "name": "Render chapter loot",
+      "pass": true
+    },
+    {
+      "name": "Render chapter skill-tree",
+      "pass": true
+    },
+    {
+      "name": "Render chapter build-loadout",
+      "pass": true
+    },
+    {
+      "name": "Render chapter identifier",
+      "pass": true
+    },
+    {
+      "name": "Render chapter json",
+      "pass": true
+    },
+    {
+      "name": "Render chapter schema",
+      "pass": true
+    },
+    {
+      "name": "Render chapter serialization",
+      "pass": true
+    },
+    {
+      "name": "Render chapter dto",
+      "pass": true
+    },
+    {
+      "name": "Render chapter save",
+      "pass": true
+    },
+    {
+      "name": "Render chapter atomic-save",
+      "pass": true
+    },
+    {
+      "name": "Render chapter migration",
+      "pass": true
+    },
+    {
+      "name": "Render chapter session",
+      "pass": true
+    },
+    {
+      "name": "Render chapter transaction",
+      "pass": true
+    },
+    {
+      "name": "Render chapter idempotency",
+      "pass": true
+    },
+    {
+      "name": "Render chapter event",
+      "pass": true
+    },
+    {
+      "name": "Render chapter event-id",
+      "pass": true
+    },
+    {
+      "name": "Render chapter request-id",
+      "pass": true
+    },
+    {
+      "name": "Render chapter pure-function",
+      "pass": true
+    },
+    {
+      "name": "Render chapter adapter",
+      "pass": true
+    },
+    {
+      "name": "Render chapter invariant",
+      "pass": true
+    },
+    {
+      "name": "Render chapter test",
+      "pass": true
+    },
+    {
+      "name": "Render chapter fixture",
+      "pass": true
+    },
+    {
+      "name": "Render chapter repro",
+      "pass": true
+    },
+    {
+      "name": "Render chapter regression",
+      "pass": true
+    },
+    {
+      "name": "Render chapter deterministic",
+      "pass": true
+    },
+    {
+      "name": "Render chapter llm",
+      "pass": true
+    },
+    {
+      "name": "Render chapter agent",
+      "pass": true
+    },
+    {
+      "name": "Render chapter tool",
+      "pass": true
+    },
+    {
+      "name": "Render chapter context",
+      "pass": true
+    },
+    {
+      "name": "Render chapter llm-token",
+      "pass": true
+    },
+    {
+      "name": "Render chapter hallucination",
+      "pass": true
+    },
+    {
+      "name": "Render chapter skill-agent",
+      "pass": true
+    },
+    {
+      "name": "Render chapter hook",
+      "pass": true
+    },
+    {
+      "name": "Render chapter harness",
+      "pass": true
+    },
+    {
+      "name": "Render chapter task",
+      "pass": true
+    },
+    {
+      "name": "Render chapter dependency",
+      "pass": true
+    },
+    {
+      "name": "Render chapter ownership",
+      "pass": true
+    },
+    {
+      "name": "Render chapter permission",
+      "pass": true
+    },
+    {
+      "name": "Render chapter sandbox",
+      "pass": true
+    },
+    {
+      "name": "Render chapter provider",
+      "pass": true
+    },
+    {
+      "name": "Render chapter structured-output",
+      "pass": true
+    },
+    {
+      "name": "Render chapter candidate",
+      "pass": true
+    },
+    {
+      "name": "Render chapter diff",
+      "pass": true
+    },
+    {
+      "name": "Render chapter hash",
+      "pass": true
+    },
+    {
+      "name": "Render chapter seal",
+      "pass": true
+    },
+    {
+      "name": "Render chapter evidence",
+      "pass": true
+    },
+    {
+      "name": "Render chapter gate",
+      "pass": true
+    },
+    {
+      "name": "Render chapter review",
+      "pass": true
+    },
+    {
+      "name": "Render chapter run",
+      "pass": true
+    },
+    {
+      "name": "Render chapter scheduler",
+      "pass": true
+    },
+    {
+      "name": "Render chapter lock",
+      "pass": true
+    },
+    {
+      "name": "Render chapter process",
+      "pass": true
+    },
+    {
+      "name": "Render chapter parser",
+      "pass": true
+    },
+    {
+      "name": "Render chapter timeout",
+      "pass": true
+    },
+    {
+      "name": "Render chapter retry",
+      "pass": true
+    },
+    {
+      "name": "Render chapter budget",
+      "pass": true
+    },
+    {
+      "name": "Render chapter binding",
+      "pass": true
+    },
+    {
+      "name": "Render chapter async",
+      "pass": true
+    },
+    {
+      "name": "Render chapter cancellation",
+      "pass": true
+    },
+    {
+      "name": "Render chapter addressables",
+      "pass": true
+    },
+    {
+      "name": "Render chapter bundle",
+      "pass": true
+    },
+    {
+      "name": "Render chapter handle",
+      "pass": true
+    },
+    {
+      "name": "Render chapter catalog",
+      "pass": true
+    },
+    {
+      "name": "Render chapter cache",
+      "pass": true
+    },
+    {
+      "name": "Render chapter cdn",
+      "pass": true
+    },
+    {
+      "name": "Render chapter ccd",
+      "pass": true
+    },
+    {
+      "name": "Render chapter pad",
+      "pass": true
+    },
+    {
+      "name": "Render chapter progress-download",
+      "pass": true
+    },
+    {
+      "name": "Render chapter offline",
+      "pass": true
+    },
+    {
+      "name": "Render chapter fallback",
+      "pass": true
+    },
+    {
+      "name": "Render chapter compatibility",
+      "pass": true
+    },
+    {
+      "name": "Render chapter rollback",
+      "pass": true
+    },
+    {
+      "name": "Render chapter build",
+      "pass": true
+    },
+    {
+      "name": "Render chapter build-profile",
+      "pass": true
+    },
+    {
+      "name": "Render chapter apk",
+      "pass": true
+    },
+    {
+      "name": "Render chapter aab",
+      "pass": true
+    },
+    {
+      "name": "Render chapter abi",
+      "pass": true
+    },
+    {
+      "name": "Render chapter il2cpp",
+      "pass": true
+    },
+    {
+      "name": "Render chapter signature",
+      "pass": true
+    },
+    {
+      "name": "Render chapter manifest",
+      "pass": true
+    },
+    {
+      "name": "Render chapter git",
+      "pass": true
+    },
+    {
+      "name": "Render chapter branch",
+      "pass": true
+    },
+    {
+      "name": "Render chapter snapshot",
+      "pass": true
+    },
+    {
+      "name": "Render chapter debug",
+      "pass": true
+    },
+    {
+      "name": "Render chapter exception",
+      "pass": true
+    },
+    {
+      "name": "Render chapter telemetry",
+      "pass": true
+    },
+    {
+      "name": "Render chapter prefab",
+      "pass": true
+    },
+    {
+      "name": "Render chapter shadow",
+      "pass": true
+    },
+    {
+      "name": "Render chapter blending",
+      "pass": true
+    },
+    {
+      "name": "Render chapter viewport",
+      "pass": true
+    },
+    {
+      "name": "Render chapter image-service",
+      "pass": true
+    },
+    {
+      "name": "Render chapter unity-ai",
+      "pass": true
+    },
+    {
+      "name": "Render chapter pixellab",
+      "pass": true
+    },
+    {
+      "name": "Render chapter retro",
+      "pass": true
+    },
+    {
+      "name": "Render chapter scenario",
+      "pass": true
+    },
+    {
+      "name": "Render chapter ludo",
+      "pass": true
+    },
+    {
+      "name": "Render chapter openai",
+      "pass": true
+    },
+    {
+      "name": "Render chapter grok",
+      "pass": true
+    },
+    {
+      "name": "Render chapter aseprite",
+      "pass": true
+    },
+    {
+      "name": "Render chapter license",
+      "pass": true
+    },
+    {
+      "name": "Render chapter algorithm",
+      "pass": true
+    },
+    {
+      "name": "Render chapter class",
+      "pass": true
+    },
+    {
+      "name": "Render chapter method",
+      "pass": true
+    },
+    {
+      "name": "Render chapter collection",
+      "pass": true
+    },
+    {
+      "name": "Render chapter condition-loop",
+      "pass": true
+    },
+    {
+      "name": "Render chapter coroutine",
+      "pass": true
+    },
+    {
+      "name": "Render chapter thread",
+      "pass": true
+    },
+    {
+      "name": "Render chapter assembly",
+      "pass": true
+    },
+    {
+      "name": "Render chapter bootstrap",
+      "pass": true
+    },
+    {
+      "name": "Render chapter continuous-collision",
+      "pass": true
+    },
+    {
+      "name": "Render chapter bounds",
+      "pass": true
+    },
+    {
+      "name": "Render chapter combat-stats",
+      "pass": true
+    },
+    {
+      "name": "Render chapter targeting",
+      "pass": true
+    },
+    {
+      "name": "Render chapter loot-economy",
+      "pass": true
+    },
+    {
+      "name": "Render chapter quest-machine",
+      "pass": true
+    },
+    {
+      "name": "Render chapter platform",
+      "pass": true
+    },
+    {
+      "name": "Render chapter local-storage",
+      "pass": true
+    },
+    {
+      "name": "Render chapter config",
+      "pass": true
+    },
+    {
+      "name": "All 960 source prompts survive DOM linking and copy handler",
+      "pass": true
+    },
+    {
+      "name": "Message does not become Mesh",
+      "pass": true
+    },
+    {
+      "name": "One-letter Scene/Hook link without 훨씬 false match",
+      "pass": true
+    },
+    {
+      "name": "File paths not rewritten",
+      "pass": true
+    },
+    {
+      "name": "First definition remembers step",
+      "pass": true
+    },
+    {
+      "name": "Nested term retains originating lesson",
+      "pass": true
+    },
+    {
+      "name": "Returns to same lesson and step",
+      "pass": true
+    },
+    {
+      "name": "Return restores scroll",
+      "pass": true
+    },
+    {
+      "name": "Reading does not change confirmation state",
+      "pass": true
+    },
+    {
+      "name": "Manual confirmation remains functional",
+      "pass": true
+    },
+    {
+      "name": "v9 progress upgrade",
+      "pass": true
+    },
+    {
+      "name": "Invalid progress rejected",
+      "pass": true
+    },
+    {
+      "name": "Actual record file export",
+      "pass": true
+    },
+    {
+      "name": "Actual v9 file import keeps observation",
+      "pass": true
+    },
+    {
+      "name": "Korean glossary search",
+      "pass": true
+    },
+    {
+      "name": "API spelling search",
+      "pass": true
+    },
+    {
+      "name": "Model chapter filter",
+      "pass": true
+    },
+    {
+      "name": "Category filter",
+      "pass": true
+    },
+    {
+      "name": "Empty query result is explicit",
+      "pass": true
+    },
+    {
+      "name": "PPU inverse scale",
+      "pass": true
+    },
+    {
+      "name": "PPU 128 is half unit",
+      "pass": true
+    },
+    {
+      "name": "SVG zoom opens",
+      "pass": true
+    },
+    {
+      "name": "Zoom fit",
+      "pass": true
+    },
+    {
+      "name": "Zoom Escape closes",
+      "pass": true
+    },
+    {
+      "name": "Pivot misalignment explained",
+      "pass": true
+    },
+    {
+      "name": "Frame index advances",
+      "pass": true
+    },
+    {
+      "name": "Frame cycle duration",
+      "pass": true
+    },
+    {
+      "name": "Body stops at wall",
+      "pass": true
+    },
+    {
+      "name": "Image width does not move body boundary",
+      "pass": true
+    },
+    {
+      "name": "Delta-time comparison",
+      "pass": true
+    },
+    {
+      "name": "Front/back sorting",
+      "pass": true
+    },
+    {
+      "name": "Astar direct route seven steps",
+      "pass": true
+    },
+    {
+      "name": "Astar disconnected graph",
+      "pass": true
+    },
+    {
+      "name": "Exact fit not accepted",
+      "pass": true
+    },
+    {
+      "name": "Clearance margin passes",
+      "pass": true
+    },
+    {
+      "name": "Same seed identical visual values",
+      "pass": true
+    },
+    {
+      "name": "Separate loot stream stable",
+      "pass": true
+    },
+    {
+      "name": "Shared stream changes output",
+      "pass": true
+    },
+    {
+      "name": "Attack phase at 0.60",
+      "pass": true
+    },
+    {
+      "name": "Recovery at 0.75",
+      "pass": true
+    },
+    {
+      "name": "Both input states preserved",
+      "pass": true
+    },
+    {
+      "name": "Release one preserves other",
+      "pass": true
+    },
+    {
+      "name": "Focus clears both",
+      "pass": true
+    },
+    {
+      "name": "Zero alpha supported",
+      "pass": true
+    },
+    {
+      "name": "Portrait camera width",
+      "pass": true
+    },
+    {
+      "name": "Inventory keeps instance",
+      "pass": true
+    },
+    {
+      "name": "Repeated transaction no mutation",
+      "pass": true
+    },
+    {
+      "name": "Insufficient material refuses transaction",
+      "pass": true
+    },
+    {
+      "name": "Cached bytes no division by zero",
+      "pass": true
+    },
+    {
+      "name": "0download still requires load",
+      "pass": true
+    },
+    {
+      "name": "Separate load reaches ready",
+      "pass": true
+    },
+    {
+      "name": "Model evidence current",
+      "pass": true
+    },
+    {
+      "name": "Stale test not pass",
+      "pass": true
+    },
+    {
+      "name": "Zero tests rejected",
+      "pass": true
+    },
+    {
+      "name": "Configuration changes need new test",
+      "pass": true
+    },
+    {
+      "name": "Post hook not prior block",
+      "pass": true
+    },
+    {
+      "name": "120fps budget",
+      "pass": true
+    },
+    {
+      "name": "DAG cycle rejection",
+      "pass": true
+    },
+    {
+      "name": "200 Astar maps vs BFS and 1024 DAG orderings",
+      "pass": true
+    },
+    {
+      "name": "Mobile width lesson-001",
+      "pass": true
+    },
+    {
+      "name": "Mobile width lesson-009",
+      "pass": true
+    },
+    {
+      "name": "Mobile width lesson-143",
+      "pass": true
+    },
+    {
+      "name": "Mobile width tech-ppu",
+      "pass": true
+    },
+    {
+      "name": "Mobile width tech-astar",
+      "pass": true
+    },
+    {
+      "name": "Mobile width tech-addressables",
+      "pass": true
+    },
+    {
+      "name": "Mobile width tech-harness",
+      "pass": true
+    },
+    {
+      "name": "Mobile width tech-dependency",
+      "pass": true
+    },
+    {
+      "name": "Mobile width glossary",
+      "pass": true
+    },
+    {
+      "name": "Standalone guide opens index",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript runtime errors",
+      "pass": true
+    }
+  ]
+}

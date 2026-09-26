@@ -1,0 +1,13 @@
+{
+  "prepared_date_kst": "2026-09-27",
+  "target_repository": "v0o0v/unity-ai-rpg-course",
+  "visibility": "public",
+  "local_package": "READY",
+  "remote_upload": "NOT_UPLOADED",
+  "commit_sha": null,
+  "attempted_action": "create README.md through GitHub contents API",
+  "response_status": 403,
+  "response_message": "Resource not accessible by integration",
+  "local_pc_access": "BLOCKED: tunnel_client_not_seen",
+  "notes": "Preparation snapshot only. Verify remote state afresh; do not interpret local readiness as upload success."
+}

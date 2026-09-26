@@ -1,0 +1,37 @@
+{
+  "note": "배치 명령 argv 예시는 공식 Test Framework 기준. 실제 Editor 경로와 설치 패키지·test FullName을 확인한 뒤 기존 config에 수동 반영. 같은 후보 Editor를 중복 열지 않음.",
+  "editmode": {
+    "kind": "unity_nunit",
+    "enabled": false,
+    "required": true,
+    "argv": [
+      "REPLACE_WITH_ABSOLUTE_UNITY_EXE",
+      "-batchmode",
+      "-projectPath",
+      "{project}",
+      "-runTests",
+      "-testPlatform",
+      "EditMode",
+      "-testResults",
+      "{result_xml}",
+      "-logFile",
+      "{log_file}"
+    ],
+    "minimum_tests": 12,
+    "required_test_names": [
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.AllShowsNormal",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.MagicHidesNormal",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.MagicShowsMagic",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.RareHidesMagic",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.RareShowsRare",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.RevealOverridesFilter",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.QuestAlwaysVisible",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.MaterialsAlwaysVisible",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.GoldAlwaysVisible",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.UnknownKindVisible",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.UnknownRarityVisible",
+      "Ashfall.Expansion.Tests.LootFilterPolicyTests.UnknownModeVisible"
+    ],
+    "timeout_seconds": 600
+  }
+}

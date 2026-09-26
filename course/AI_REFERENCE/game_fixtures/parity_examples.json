@@ -1,0 +1,98 @@
+{
+  "exampleOnly": true,
+  "status": "NOT RUN IN UNITY",
+  "coordinateCases": [
+    {
+      "logical": [
+        0,
+        0
+      ],
+      "world2D": [
+        0,
+        0,
+        0
+      ],
+      "world3D": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "logical": [
+        3,
+        5
+      ],
+      "world2D": [
+        3,
+        5,
+        0
+      ],
+      "world3D": [
+        3,
+        0,
+        5
+      ]
+    },
+    {
+      "logical": [
+        -2,
+        7
+      ],
+      "world2D": [
+        -2,
+        7,
+        0
+      ],
+      "world3D": [
+        -2,
+        0,
+        7
+      ]
+    }
+  ],
+  "damageCases": [
+    {
+      "raw": 12,
+      "armor": 0,
+      "expected": 12
+    },
+    {
+      "raw": 12,
+      "armor": 20,
+      "expected": 10
+    },
+    {
+      "raw": 0,
+      "armor": 0,
+      "expected": 0
+    },
+    {
+      "raw": 5,
+      "armor": 100,
+      "expected": 3
+    }
+  ],
+  "progressionCases": [
+    {
+      "totalXp": 40,
+      "level": 2,
+      "remainder": 0
+    },
+    {
+      "totalXp": 105,
+      "level": 3,
+      "remainder": 0
+    }
+  ],
+  "spinTickTimes": [
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.25,
+    1.5,
+    1.75,
+    2
+  ]
+}

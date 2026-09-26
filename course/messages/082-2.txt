@@ -1,0 +1,22 @@
+현재 프로젝트의 실제 파일과 이미 결정한 규칙을 먼저 확인해 줘. 이름이 다른 기존 구현이 있으면 새로 중복 제작하지 말고 그 구현에 연결해 줘.
+
+공통 Core와 3D 연결부를 정리해 줘.
+피해, 아이템, 스킬트리, 퀘스트, 저장 DTO, PRNG, 논리 Layout은 재사용해 줘.
+논리 (u,v) → 2D (u,v,0), 3D (u,0,v)의 변환, 셀 중심 계산, 역변환을 한 곳에 구현해 줘.
+ActorMotor, WorldQuery, PathService, ActorView 중 필요한 경계만 만들고 빈 프레임워크를 늘리지 마.
+Physics2D 호출을 전역 검색 치환으로 Physics로 바꾸지 말고, 의미별 어댑터로 분리해 줘.
+좌표 왕복, 음수, 경계와 기존 순수 규칙 테스트를 실행해 줘.
+3D 화면을 만들기 위해 전리품이나 스킬 수치를 바꾸지 마.
+
+적용할 세부 규칙:
+• 재사용하는 규칙·데이터: DamageCalculator·Health 규칙 / 교체하는 연결부: WorldQuery2D → WorldQuery3D
+• 재사용하는 규칙·데이터: 스킬 효과·쿨다운·AttackSnapshot / 교체하는 연결부: 논리 평면 좌표 → 3D 공간 조회
+• 재사용하는 규칙·데이터: ItemDefinition·ItemInstance·Inventory / 교체하는 연결부: 장비와 전리품 외형
+• 재사용하는 규칙·데이터: SkillTree·Quest·Save DTO / 교체하는 연결부: 화면 표시와 저장 경로 공급자
+• 재사용하는 규칙·데이터: DungeonLayout·PRNG·SpawnPlan / 교체하는 연결부: TilemapBuilder → MeshDungeonBuilder
+
+좌표는 논리 평면 (u,v)로 생각한다. 2D는 (u,v,0), 3D는 (u,0,v)로 변환한다. 셀 중심 (column+0.5,row+0.5)에 원점과 cellSize를 적용하는 규칙은 같다. 3D의 Y는 높이이므로, 기본 공격 거리와 원형 반경은 XZ 평면에 투영해서 계산한다.
+
+작은 연결부의 예시는 ActorMotor(이동 요청과 현재 논리 위치), WorldQuery(시야와 피격 후보), PathService(경로), ActorView(표시)다. 여기에 수십 개의 미구현 인터페이스를 추가하지 않는다. Unity에 의존하지 않는 Core 좌표와 Unity Vector2/Vector3 사이의 변환은 연결 경계에서만 수행한다.
+
+코드·설정·파일 생성·실행은 네가 맡고, 필요한 화면과 결과를 보여 줘. 수행하지 못한 작업과 필요한 승인·도구 연결은 구분해서 알려 줘.

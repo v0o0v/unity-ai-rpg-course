@@ -1,0 +1,188 @@
+{
+  "method": "Chromium injected HTML; file navigation blocked by environment; simulated storage tests explicitly separate",
+  "checks": [
+    {
+      "name": "Initial page and content counts",
+      "result": true
+    },
+    {
+      "name": "Native storage denied warning remains visible",
+      "result": true
+    },
+    {
+      "name": "System dark preference",
+      "result": true
+    },
+    {
+      "name": "Explicit light overrides system dark",
+      "result": true
+    },
+    {
+      "name": "Explicit dark overrides system light",
+      "result": true
+    },
+    {
+      "name": "Return to automatic light",
+      "result": true
+    },
+    {
+      "name": "Lessons 1-16: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 17-32: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 33-48: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 49-64: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 65-80: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 81-96: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 97-112: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 113-128: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 129-144: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 145-160: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 161-176: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 177-192: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 193-208: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 209-224: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 225-240: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Lessons 241-256: all four steps, bold spans, exact original copy, visual",
+      "result": {
+        "lessons": 16,
+        "prompts": 96
+      }
+    },
+    {
+      "name": "Dark glossary figures 1-35 decoded",
+      "result": 35
+    },
+    {
+      "name": "Dark glossary figures 36-70 decoded",
+      "result": 35
+    },
+    {
+      "name": "Dark glossary figures 71-105 decoded",
+      "result": 35
+    },
+    {
+      "name": "Dark glossary figures 106-140 decoded",
+      "result": 35
+    },
+    {
+      "name": "Dark glossary figures 141-175 decoded",
+      "result": 35
+    },
+    {
+      "name": "Dark glossary figures 176-210 decoded",
+      "result": 35
+    },
+    {
+      "name": "Dark glossary figures 211-245 decoded",
+      "result": 35
+    },
+    {
+      "name": "Dark glossary figures 246-280 decoded",
+      "result": 35
+    },
+    {
+      "name": "Dark glossary figures 281-315 decoded",
+      "result": 35
+    },
+    {
+      "name": "Dark glossary figures 316-331 decoded",
+      "result": 16
+    },
+    {
+      "name": "No JavaScript exceptions in all content render checks",
+      "result": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [],
+  "status": "PASS"
+}

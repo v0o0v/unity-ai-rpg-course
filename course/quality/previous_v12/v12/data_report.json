@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "name": "courseData preserved",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "termData preserved",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "sourceData preserved",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "visualData preserved",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "lessonTermData preserved",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "aliasData preserved",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "aliasPriorityData preserved",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Every non-whitespace source character covered in order",
+      "detail": {
+        "messages": 1870,
+        "lesson_messages": 1536,
+        "sentences_and_list_items": 12370,
+        "lesson_items": 10928
+      },
+      "pass": true
+    },
+    {
+      "name": "All lessons have visual metadata",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "256 distinct lesson SVG documents; 24 reusable visual mechanisms",
+      "detail": 24,
+      "pass": true
+    },
+    {
+      "name": "Dark variants cover all 331 glossary figures",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "AI execution materials preserved byte-for-byte",
+      "detail": {
+        "AI_REFERENCE": 194,
+        "WORK_SKILLS": 16,
+        "messages": 1216
+      },
+      "pass": true
+    },
+    {
+      "name": "All 3 HTML entry points contain new reading layer",
+      "detail": null,
+      "pass": true
+    },
+    {
+      "name": "Annotated Markdown local links resolve",
+      "detail": [],
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}

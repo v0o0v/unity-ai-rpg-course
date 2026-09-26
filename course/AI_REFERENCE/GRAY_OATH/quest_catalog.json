@@ -1,0 +1,778 @@
+[
+  {
+    "questId": "M01",
+    "title": "등불 수락",
+    "category": "main",
+    "region": "갈대늪",
+    "giver": "나래",
+    "prerequisites": [],
+    "objectiveBrief": "사라진 등불 의뢰를 받는다. 게시판과 나래 대화 두 진입을 같은 quest instance로 합친다.",
+    "paths": [
+      "게시판을 먼저 읽음",
+      "나래에게 먼저 들음"
+    ],
+    "completion": "첫 조사 장소와 추적 목표가 열린다.",
+    "reward": {
+      "gold": 40,
+      "xp": 80
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "M02",
+    "title": "다리의 흔적",
+    "category": "main",
+    "region": "갈대늪",
+    "giver": "다온",
+    "prerequisites": [
+      "M01"
+    ],
+    "objectiveBrief": "발자국과 금간 금속을 조사하고 다온에게 증거를 보여 준다.",
+    "paths": [
+      "단서를 미리 발견함",
+      "수락 후 두 순서로 발견"
+    ],
+    "completion": "안개가 자연 현상이 아니라는 사실을 얻는다.",
+    "reward": {
+      "gold": 50,
+      "xp": 100
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "M03",
+    "title": "사라진 길잡이",
+    "category": "main",
+    "region": "갈대늪",
+    "giver": "루아",
+    "prerequisites": [
+      "M02"
+    ],
+    "objectiveBrief": "갈대길에서 루아를 찾고 위협을 제거하거나 안전한 우회로로 유도한다.",
+    "paths": [
+      "함께 호위",
+      "지름길을 알려 주고 합류"
+    ],
+    "completion": "루아 생존 및 위치 fact가 정리된다.",
+    "reward": {
+      "gold": 70,
+      "xp": 140
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "M04",
+    "title": "늪의 서약",
+    "category": "main",
+    "region": "갈대늪",
+    "giver": "나래",
+    "prerequisites": [
+      "M03"
+    ],
+    "objectiveBrief": "늪 의식 흔적과 주민의 증언을 맞추고 마을에 어떤 사실을 공개할지 고른다.",
+    "paths": [
+      "사실 공개",
+      "기록 보류"
+    ],
+    "completion": "철문으로 가는 길이 열리고 첫 신뢰 결과를 저장한다.",
+    "reward": {
+      "gold": 90,
+      "xp": 180
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "M05",
+    "title": "철문 기록",
+    "category": "main",
+    "region": "철문 고개",
+    "giver": "현오",
+    "prerequisites": [
+      "M04"
+    ],
+    "objectiveBrief": "기록보관소에서 사냥 계약 원본을 찾는다. 낮은 평판에서도 야간 조사 대안을 제공한다.",
+    "paths": [
+      "허가받아 열람",
+      "빠진 사본 수색"
+    ],
+    "completion": "보존한 기록의 ID가 후반 협상 조건에 남는다.",
+    "reward": {
+      "gold": 90,
+      "xp": 200
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "M06",
+    "title": "빛의 재료",
+    "category": "main",
+    "region": "철문 고개",
+    "giver": "현오",
+    "prerequisites": [
+      "M05"
+    ],
+    "objectiveBrief": "안개 방호 장치에 필요한 광석과 수지를 준비한다. 제작·구매·탐험 중 두 경로를 제공한다.",
+    "paths": [
+      "재료 채집해 제작",
+      "정당한 비용으로 완성품 구매"
+    ],
+    "completion": "필수 장치가 인벤토리와 진행에 한 번 등록된다.",
+    "reward": {
+      "gold": 110,
+      "xp": 230
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "M07",
+    "title": "부서진 계약",
+    "category": "main",
+    "region": "철문 고개",
+    "giver": "루아",
+    "prerequisites": [
+      "M06"
+    ],
+    "objectiveBrief": "계약을 이용한 주민 갈등을 조사하고 관련 인물과 대화한다.",
+    "paths": [
+      "사실 중재",
+      "손실을 감수해 통행 확보"
+    ],
+    "completion": "성채 접근 정보와 협력 fact가 남는다.",
+    "reward": {
+      "gold": 120,
+      "xp": 260
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "M08",
+    "title": "성채 진입",
+    "category": "main",
+    "region": "잿빛 성채",
+    "giver": "루아",
+    "prerequisites": [
+      "M07"
+    ],
+    "objectiveBrief": "성문 제어 장치를 조작하거나 배수로로 들어가 안전 재개 위치를 얻는다.",
+    "paths": [
+      "정문 장치",
+      "배수로 탐색"
+    ],
+    "completion": "진입 수단과 무관하게 M09 시작 조건이 같다.",
+    "reward": {
+      "gold": 140,
+      "xp": 300
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "M09",
+    "title": "근원의 증언",
+    "category": "main",
+    "region": "잿빛 성채",
+    "giver": "다온",
+    "prerequisites": [
+      "M08"
+    ],
+    "objectiveBrief": "세 기록과 핵심 증언을 읽고 안개 연결의 대가를 알아낸다.",
+    "paths": [
+      "기록 보존",
+      "파괴된 기록은 다른 증언으로 최소 정보 확보"
+    ],
+    "completion": "봉인/단절은 가능, 공존은 완전한 증거·협력 조건을 따로 평가한다.",
+    "reward": {
+      "gold": 160,
+      "xp": 360
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "M10",
+    "title": "회색 서약",
+    "category": "main",
+    "region": "잿빛 성채",
+    "giver": "서린",
+    "prerequisites": [
+      "M09"
+    ],
+    "objectiveBrief": "근원 보스에 대응하고 자격이 있는 결말을 선택한다.",
+    "paths": [
+      "봉인",
+      "공존",
+      "단절"
+    ],
+    "completion": "endingId와 보상·후일담을 한 번 커밋한다.",
+    "reward": {
+      "gold": 250,
+      "xp": 500
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "S01",
+    "title": "빈 약초 바구니",
+    "category": "side",
+    "region": "갈대늪",
+    "giver": "다온",
+    "prerequisites": [],
+    "objectiveBrief": "습지 약초를 찾되 이미 가진 약초도 현재 소유 정책으로 인정한다.",
+    "paths": [
+      "직접 채집",
+      "합법적인 상점 구매"
+    ],
+    "completion": "약초 반환 시 재료를 한 번 소비한다.",
+    "reward": {
+      "gold": 35,
+      "xp": 70
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "S02",
+    "title": "물레방아의 이",
+    "category": "side",
+    "region": "갈대늪",
+    "giver": "현오",
+    "prerequisites": [],
+    "objectiveBrief": "빠진 톱니를 찾아 수리하고 물길의 위험을 없앤다.",
+    "paths": [
+      "부품 회수",
+      "필요한 재료로 대체 제작"
+    ],
+    "completion": "물레방아 작동 fact와 통로의 상태가 저장된다.",
+    "reward": {
+      "gold": 45,
+      "xp": 90
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "S03",
+    "title": "밤의 망루",
+    "category": "side",
+    "region": "갈대늪",
+    "giver": "나래",
+    "prerequisites": [],
+    "objectiveBrief": "야간 침입 흔적을 조사해 소동의 원인을 밝힌다.",
+    "paths": [
+      "밤까지 기다려 관찰",
+      "낮에 남은 증거 추적"
+    ],
+    "completion": "단순히 시간을 넘긴 것으로 관찰 성공을 세지 않는다.",
+    "reward": {
+      "gold": 50,
+      "xp": 95
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "S04",
+    "title": "남겨진 편지",
+    "category": "side",
+    "region": "갈대늪",
+    "giver": "루아",
+    "prerequisites": [],
+    "objectiveBrief": "두 주민의 편지와 대화를 확인해 진실을 전할지 선택한다.",
+    "paths": [
+      "편지 전달",
+      "사실을 직접 설명"
+    ],
+    "completion": "선택된 후속 대사만 해금한다.",
+    "reward": {
+      "gold": 35,
+      "xp": 80
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "S05",
+    "title": "장터의 저울",
+    "category": "side",
+    "region": "철문 고개",
+    "giver": "현오",
+    "prerequisites": [],
+    "objectiveBrief": "상점 계량 문제를 증거로 밝히고 원상복구한다.",
+    "paths": [
+      "증거 공개",
+      "거래 기록으로 배상 합의"
+    ],
+    "completion": "세력별 평판 변화와 보상은 한 번만 반영한다.",
+    "reward": {
+      "gold": 80,
+      "xp": 140
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "S06",
+    "title": "외딴 종지기",
+    "category": "side",
+    "region": "철문 고개",
+    "giver": "다온",
+    "prerequisites": [],
+    "objectiveBrief": "위험한 종탑에서 종지기를 구하고 안전하게 돌려보낸다.",
+    "paths": [
+      "호위",
+      "길을 먼저 정리해 안전 귀환"
+    ],
+    "completion": "로드 해제를 사망으로 처리하지 않는다.",
+    "reward": {
+      "gold": 90,
+      "xp": 160
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "S07",
+    "title": "병든 숲",
+    "category": "side",
+    "region": "철문 고개",
+    "giver": "다온",
+    "prerequisites": [],
+    "objectiveBrief": "오염 샘의 표본을 조사하고 약품으로 정화하거나 흐름을 차단한다.",
+    "paths": [
+      "정화",
+      "차단"
+    ],
+    "completion": "지역 변화와 후일담을 다른 fact로 남긴다.",
+    "reward": {
+      "gold": 100,
+      "xp": 180
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "S08",
+    "title": "돌아갈 집",
+    "category": "side",
+    "region": "잿빛 성채",
+    "giver": "루아",
+    "prerequisites": [],
+    "objectiveBrief": "피난민에게 통행로와 필요한 자원을 마련한다.",
+    "paths": [
+      "빠른길 경비 제거",
+      "안전 우회로 안내"
+    ],
+    "completion": "엔딩 후에도 사람의 위치와 대사가 조건대로 유지된다.",
+    "reward": {
+      "gold": 110,
+      "xp": 210
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "H01",
+    "title": "돌다리의 등불",
+    "category": "contract",
+    "region": "갈대늪",
+    "giver": "나래",
+    "prerequisites": [],
+    "objectiveBrief": "등불 균열 단서 두 개를 조사하고 수리/퇴치 후 진실 공개 여부를 정한다.",
+    "paths": [
+      "수리",
+      "처치, 이후 공개",
+      "은폐"
+    ],
+    "completion": "고유 계약1회 보상80골드120XP, 대화 선택은 같은 지급 key를 쓴다.",
+    "reward": {
+      "gold": 80,
+      "xp": 120
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "H02",
+    "title": "갈대의 울음",
+    "category": "contract",
+    "region": "갈대늪",
+    "giver": "다온",
+    "prerequisites": [],
+    "objectiveBrief": "갈대 사이 울음의 패턴으로 포식자의 둥지를 찾는다.",
+    "paths": [
+      "정면 사냥",
+      "미끼로 위험지대 밖에 유도"
+    ],
+    "completion": "일반 개체와 계약 target의 ID를 구분한다.",
+    "reward": {
+      "gold": 100,
+      "xp": 180
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "H03",
+    "title": "철광의 굶주림",
+    "category": "contract",
+    "region": "철문 고개",
+    "giver": "현오",
+    "prerequisites": [],
+    "objectiveBrief": "광산 입구의 거구를 조사하고 갑옷 틈이나 환경 장치를 활용한다.",
+    "paths": [
+      "약점 공략",
+      "낙석 장치 활용"
+    ],
+    "completion": "플레이어·환경 피해 모두 허용된 credit 정책으로 한 번 처리한다.",
+    "reward": {
+      "gold": 130,
+      "xp": 240
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "H04",
+    "title": "낡은 종의 망령",
+    "category": "contract",
+    "region": "철문 고개",
+    "giver": "다온",
+    "prerequisites": [],
+    "objectiveBrief": "망령의 반복 동작과 문양을 읽고 봉인하거나 해제한다.",
+    "paths": [
+      "마법 전투",
+      "단서 기반 해제"
+    ],
+    "completion": "전투 없이도 정상 완료 경로가 있으며 보상 중복이 없다.",
+    "reward": {
+      "gold": 140,
+      "xp": 260
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "H05",
+    "title": "하얀 재의 짐승",
+    "category": "contract",
+    "region": "잿빛 성채",
+    "giver": "루아",
+    "prerequisites": [],
+    "objectiveBrief": "재 바람 속 흔적을 쫓고 시야를 확보해 짐승을 상대한다.",
+    "paths": [
+      "준비한 기름으로 사냥",
+      "조명 장치를 켜 약점 노출"
+    ],
+    "completion": "Low 화질에도 흔적·공격 예고는 남는다.",
+    "reward": {
+      "gold": 170,
+      "xp": 320
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "H06",
+    "title": "성벽 아래의 날개",
+    "category": "contract",
+    "region": "잿빛 성채",
+    "giver": "나래",
+    "prerequisites": [],
+    "objectiveBrief": "비행 짐승의 착지 패턴을 파악해 석궁으로 견제하고 지상 교전한다.",
+    "paths": [
+      "석궁 견제",
+      "착지 구간 대기"
+    ],
+    "completion": "무제한 비행 추적 대신 실제 구현한 착지/공격 공간을 사용한다.",
+    "reward": {
+      "gold": 180,
+      "xp": 340
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "X01",
+    "title": "잠긴 제방",
+    "category": "exploration",
+    "region": "갈대늪",
+    "giver": "서린",
+    "prerequisites": [],
+    "objectiveBrief": "세 밸브 순서를 관찰해 제방을 열고 숨은 상자를 찾는다.",
+    "paths": [
+      "정상 순서",
+      "실수 후 초기화"
+    ],
+    "completion": "밸브 중간 상태와 보상 상태를 저장한다.",
+    "reward": {
+      "gold": 35,
+      "xp": 80
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "X02",
+    "title": "잊힌 묘비",
+    "category": "exploration",
+    "region": "갈대늪",
+    "giver": "서린",
+    "prerequisites": [],
+    "objectiveBrief": "비문 두 개를 읽고 기억 장소를 찾아 기록을 복구한다.",
+    "paths": [
+      "발견 순서 A→B",
+      "B→A"
+    ],
+    "completion": "사전 발견을 소급 인식한다.",
+    "reward": {
+      "gold": 40,
+      "xp": 90
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "X03",
+    "title": "광부의 지름길",
+    "category": "exploration",
+    "region": "철문 고개",
+    "giver": "서린",
+    "prerequisites": [],
+    "objectiveBrief": "계단과 문을 열어 반복 이동을 줄이는 통로를 복구한다.",
+    "paths": [
+      "안쪽 장치",
+      "바깥 열쇠"
+    ],
+    "completion": "door fact와 NavMeshLink 사용 가능 상태가 일치한다.",
+    "reward": {
+      "gold": 60,
+      "xp": 120
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  },
+  {
+    "questId": "X04",
+    "title": "봉인된 관측소",
+    "category": "exploration",
+    "region": "잿빛 성채",
+    "giver": "서린",
+    "prerequisites": [],
+    "objectiveBrief": "별 관측 장치와 기록의 단서를 맞춰 선택 유물을 찾는다.",
+    "paths": [
+      "렌즈 정렬",
+      "미리 찾은 해석 기록 활용"
+    ],
+    "completion": "필수 메인 진행을 막지 않는 선택 보상을 한 번 지급한다.",
+    "reward": {
+      "gold": 70,
+      "xp": 150
+    },
+    "status": "NOT IMPLEMENTED",
+    "mustTest": [
+      "정상 완료",
+      "사전 사건/소유",
+      "중간 저장·복원",
+      "지역 언로드",
+      "중복 보상 거부"
+    ],
+    "editor": "Quest Editor"
+  }
+]

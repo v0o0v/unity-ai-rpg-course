@@ -1,0 +1,496 @@
+{
+  "unity-start": {
+    "title": "Unity · 2D 게임 제작 흐름",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/2d-game-creation-wokflow.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "objects": {
+    "title": "Unity · GameObject와 컴포넌트",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/GameObjects.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "components": {
+    "title": "Unity · 컴포넌트",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/Components.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "transform": {
+    "title": "Unity · Transform",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/class-Transform.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "prefabs": {
+    "title": "Unity · Prefab",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/Prefabs.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "physics2d": {
+    "title": "Unity · Rigidbody2D",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/2d-physics/rigidbody/introduction-to-rigidbody-2d.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "cast": {
+    "title": "Unity · Physics2D.CircleCast",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Physics2D.CircleCast.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "move": {
+    "title": "Unity · Rigidbody2D.MovePosition",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Rigidbody2D.MovePosition.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "controller": {
+    "title": "Unity · CharacterController",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/class-CharacterController.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "time": {
+    "title": "Unity · 프레임별 시간 처리",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/time-per-frame-updates.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "coroutine": {
+    "title": "Unity · 코루틴",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/Coroutines.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "sprite": {
+    "title": "Unity · Sprite",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/sprite/sprite-landing.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "ppu": {
+    "title": "Unity · Pixels Per Unit",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/TextureImporter-spritePixelsPerUnit.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "sorting": {
+    "title": "Unity · 스프라이트 정렬",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/sprite/sort-sprites/sort-sprites.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "renderer": {
+    "title": "Unity · 2D Renderer",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/urp/2DRendererData-overview.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "tilemap": {
+    "title": "Unity · Tilemap Collider 2D",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/tilemaps/work-with-tilemaps/tilemap-collider-2d.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "animation": {
+    "title": "Unity · 애니메이션 개요",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/AnimationOverview.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "rootmotion": {
+    "title": "Unity · 루트 모션",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/RootMotion.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "particle": {
+    "title": "Unity · Texture Sheet Animation",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/PartSysTexSheetAnimModule.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "scriptable": {
+    "title": "Unity · ScriptableObject",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/class-ScriptableObject.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "save": {
+    "title": "Unity · persistentDataPath",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Application-persistentDataPath.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "profiler": {
+    "title": "Unity · 타깃 기기 프로파일링",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/profiling-target-device.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "audio": {
+    "title": "Unity · 오디오",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/Audio.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "android-build": {
+    "title": "Unity · Android 빌드",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/android-BuildProcess.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "android-sdk": {
+    "title": "Unity · Android SDK·NDK·JDK 준비",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/android-sdksetup.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "build-profile": {
+    "title": "Unity · Build Profiles",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/build-profiles.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "il2cpp": {
+    "title": "Unity · IL2CPP",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/scripting-backends-il2cpp.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "cli": {
+    "title": "Unity · Pipeline과 CLI 연결",
+    "url": "https://docs.unity.com/en-us/unity-cli/unity-pipeline/unity-pipeline-package",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "navmesh": {
+    "title": "Unity AI Navigation · NavMeshSurface",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshSurface.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "input": {
+    "title": "Unity Input System · UI 지원",
+    "url": "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.17/manual/UISupport.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "onscreen": {
+    "title": "Unity Input System · 화면 위 입력",
+    "url": "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.17/manual/OnScreen.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "shader": {
+    "title": "Unity Shader Graph · 시작",
+    "url": "https://docs.unity3d.com/Packages/com.unity.shadergraph@17.3/manual/Getting-Started.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "addressables": {
+    "title": "Unity · Addressables 개요",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/index.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "memory": {
+    "title": "Unity Addressables · 메모리 관리",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/MemoryManagement.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "download": {
+    "title": "Unity Addressables · 사전 다운로드",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/remote-content-predownload.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "update": {
+    "title": "Unity Addressables · 콘텐츠 업데이트",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/builds-update-build.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "ccd": {
+    "title": "Unity CCD · CLI 작업 흐름",
+    "url": "https://docs.unity.com/en-us/ccd/cli-walkthrough",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "pad": {
+    "title": "Google · Unity용 Play Asset Delivery",
+    "url": "https://developer.android.com/guide/playcore/asset-delivery/integrate-unity",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "test-framework": {
+    "title": "Unity · 테스트 실행과 결과",
+    "url": "https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/reference-command-line.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "claude-overview": {
+    "title": "Claude Code · 비대화형 실행",
+    "url": "https://code.claude.com/docs/en/headless",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "skills": {
+    "title": "Claude Code · Skills",
+    "url": "https://code.claude.com/docs/en/skills",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "hooks": {
+    "title": "Claude Code · Hooks",
+    "url": "https://code.claude.com/docs/en/hooks",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "claude-agents": {
+    "title": "Claude Code · Subagents",
+    "url": "https://code.claude.com/docs/en/sub-agents",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "claude-cli": {
+    "title": "Claude Code · CLI 명령 옵션",
+    "url": "https://code.claude.com/docs/en/cli-reference",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "python-json": {
+    "title": "Python · JSON",
+    "url": "https://docs.python.org/3/library/json.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "python-process": {
+    "title": "Python · subprocess",
+    "url": "https://docs.python.org/3/library/subprocess.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "python-hash": {
+    "title": "Python · hashlib",
+    "url": "https://docs.python.org/3/library/hashlib.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "python-test": {
+    "title": "Python · unittest",
+    "url": "https://docs.python.org/3/library/unittest.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "pathlib": {
+    "title": "Python · 파일 경로",
+    "url": "https://docs.python.org/3/library/pathlib.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "csharp": {
+    "title": "Microsoft · C# 클래스",
+    "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "methods": {
+    "title": "Microsoft · C# 메서드",
+    "url": "https://learn.microsoft.com/en-us/dotnet/csharp/methods",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "collections": {
+    "title": "Microsoft · C# 컬렉션",
+    "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/collections",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "git": {
+    "title": "Git · worktree",
+    "url": "https://git-scm.com/docs/git-worktree",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "storage": {
+    "title": "MDN · localStorage",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "astar-paper": {
+    "title": "Hart·Nilsson·Raphael · A* 원 논문(1968)",
+    "url": "https://ieeexplore.ieee.org/document/4082128/",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "unity-ai": {
+    "title": "Unity AI · 스프라이트 시트 생성과 연결",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.assistant@2.1/manual/Sprite/spritesheet-assistant.html",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "pixellab": {
+    "title": "PixelLab · Pixelorama 통합과 제작",
+    "url": "https://www.pixellab.ai/docs/introduction-pixelorama",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "retro": {
+    "title": "Retro Diffusion · 스타일·작업 프리셋",
+    "url": "https://retrodiffusion.ai/styles/",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "scenario": {
+    "title": "Scenario · 스프라이트 시트 제작",
+    "url": "https://help.scenario.com/articles/9088582240-create-spritesheets-with-scenario",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "ludo": {
+    "title": "Ludo.ai · Sprite Generator",
+    "url": "https://ludo.ai/features/sprite-generator",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "openai": {
+    "title": "OpenAI · 이미지 생성·편집",
+    "url": "https://developers.openai.com/api/docs/guides/image-generation",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "grok": {
+    "title": "xAI · 이미지 생성·편집",
+    "url": "https://docs.x.ai/developers/model-capabilities/images/generation",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "aseprite": {
+    "title": "Aseprite · CLI와 자동화",
+    "url": "https://www.aseprite.org/docs/cli/",
+    "checked": "2026-09-26",
+    "note": ""
+  },
+  "W-edui": {
+    "title": "Unity · UI Toolkit EditorWindow",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/UIE-HowTo-CreateEditorWindow.html"
+  },
+  "W-undo": {
+    "title": "Unity · Undo",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Undo.html"
+  },
+  "W-serialized": {
+    "title": "Unity · SerializedObject",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/SerializedObject.html"
+  },
+  "W-assetdb": {
+    "title": "Unity · AssetDatabase",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/ScriptReference/AssetDatabase.html"
+  },
+  "W-probuilder": {
+    "title": "Unity · ProBuilder 6",
+    "url": "https://docs.unity3d.com/Packages/com.unity.probuilder@6.0/manual/index.html"
+  },
+  "W-mtxt": {
+    "title": "Meshy · Text to 3D",
+    "url": "https://docs.meshy.ai/en/api/text-to-3d"
+  },
+  "W-mimg": {
+    "title": "Meshy · Image to 3D",
+    "url": "https://docs.meshy.ai/en/api/image-to-3d"
+  },
+  "W-mrig": {
+    "title": "Meshy · Rigging",
+    "url": "https://docs.meshy.ai/en/api/rigging"
+  },
+  "W-manim": {
+    "title": "Meshy · Animation",
+    "url": "https://docs.meshy.ai/en/api/animation"
+  },
+  "W-mremesh": {
+    "title": "Meshy · Remesh",
+    "url": "https://docs.meshy.ai/en/api/remesh"
+  },
+  "W-mtex": {
+    "title": "Meshy · Retexture",
+    "url": "https://docs.meshy.ai/en/api/retexture"
+  },
+  "W-mcost": {
+    "title": "Meshy · API Pricing",
+    "url": "https://docs.meshy.ai/en/api/pricing"
+  },
+  "W-mretain": {
+    "title": "Meshy · Asset Retention",
+    "url": "https://docs.meshy.ai/en/api/asset-retention"
+  },
+  "W-cinemachine": {
+    "title": "Unity · Cinemachine 3",
+    "url": "https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html"
+  },
+  "W-timeline": {
+    "title": "Unity · Timeline",
+    "url": "https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html"
+  },
+  "W-rigging": {
+    "title": "Unity · Animation Rigging",
+    "url": "https://docs.unity3d.com/Packages/com.unity.animation.rigging@1.3/manual/index.html"
+  },
+  "W-navlink": {
+    "title": "Unity · NavMeshLink",
+    "url": "https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshLink.html"
+  },
+  "W-profiler": {
+    "title": "Unity · 실제 대상 기기 프로파일링",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/profiling-target-device.html"
+  },
+  "W-markers": {
+    "title": "Unity · Profiler markers",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/profiler-markers.html"
+  },
+  "W-frame": {
+    "title": "Unity · Frame Debugger",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/FrameDebugger.html"
+  },
+  "W-memory": {
+    "title": "Unity · Memory Profiler",
+    "url": "https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.1/manual/index.html"
+  },
+  "W-addr": {
+    "title": "Unity · Addressables memory management",
+    "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/MemoryManagement.html"
+  },
+  "W-urp": {
+    "title": "Unity · URP performance",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/urp/understand-performance.html"
+  },
+  "W-cli": {
+    "title": "Unity · CLI reference",
+    "url": "https://docs.unity.com/en-us/unity-cli/unity-cli-reference"
+  },
+  "W-claude": {
+    "title": "Claude Code · Programmatic use",
+    "url": "https://code.claude.com/docs/en/headless"
+  },
+  "W-skills": {
+    "title": "Claude Code · Skills",
+    "url": "https://code.claude.com/docs/en/skills"
+  },
+  "W-hooks": {
+    "title": "Claude Code · Hooks",
+    "url": "https://code.claude.com/docs/en/hooks"
+  },
+  "W-analyzer": {
+    "title": "Unity · Profile Analyzer",
+    "url": "https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.2/manual/index.html"
+  },
+  "W-android": {
+    "title": "Unity · Android Build Process",
+    "url": "https://docs.unity3d.com/6000.3/Documentation/Manual/android-BuildProcess.html"
+  }
+}

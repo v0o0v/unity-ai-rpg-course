@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "source_roots": [
+    "Game",
+    "Tests",
+    "Docs"
+  ],
+  "roles": {
+    "game_designer": {
+      "title": "게임 기획·밸런스",
+      "mission": "게임 규칙, 전투 선택, 보상과 수치를 설계한다. 기본 범위에 없는 직업/멀티플레이를 추가하지 않는다.",
+      "write_prefixes": [
+        "Docs/Design"
+      ],
+      "deliverable": "기능 명세·초기 수치·판정 가능한 예시",
+      "inputs": "GAME_SPEC, COMBAT_DESIGN, PLAYTEST",
+      "never": "구현 파일·검사 결과를 직접 변경하지 않음",
+      "delegate": false
+    },
+    "gameplay_engineer": {
+      "title": "게임플레이 구현",
+      "mission": "피해, 장비, 스킬트리, 성장, 퀘스트의 순수 규칙을 구현한다.",
+      "write_prefixes": [
+        "Assets/_Game/Scripts/Core",
+        "Game"
+      ],
+      "deliverable": "구현 변경안·입출력 예시",
+      "inputs": "확정 명세와 Core 파일",
+      "never": "테스트·씬·프리팹·Packages·ProjectSettings 수정 금지",
+      "delegate": false
+    },
+    "qa_engineer": {
+      "title": "자동 검사·재현",
+      "mission": "명세에서 독립적인 테스트를 설계하고 누락·중복 피해·저장 손상·경로 반례를 재현한다.",
+      "write_prefixes": [
+        "Assets/_Game/Tests",
+        "Tests",
+        "Docs/QA"
+      ],
+      "deliverable": "테스트 변경안·재현 절차·실제 원본 증거",
+      "inputs": "승인 acceptance·실제 구현·테스트 결과",
+      "never": "실패를 통과로 바꾸기 위한 assertion 약화 금지",
+      "delegate": false
+    },
+    "critic": {
+      "title": "독립 비평·검토",
+      "mission": "구현 설명이 아니라 실제 입력·명세·결과물로 검토한다. 코드 검토와 시각/재미 검토의 범위를 분리한다.",
+      "write_prefixes": [],
+      "deliverable": "문제 위치·재현·심각도·미검증 범위",
+      "inputs": "후보 스냅샷·독립 기준·원본 증거",
+      "never": "코드·테스트·상태 파일 쓰기 금지. 채점만으로 출시 승인 금지",
+      "delegate": false
+    }
+  },
+  "max_attempts_per_task": 2,
+  "max_output_bytes": 250000,
+  "claude": {
+    "executable": null,
+    "auth_mode": "login",
+    "model": "claude-opus-5-5",
+    "effort": "high",
+    "max_turns": 8,
+    "timeout_seconds": 300,
+    "call_budget_usd": 1.0,
+    "run_budget_usd": 6.0
+  },
+  "gates": {
+    "demo_rules": {
+      "kind": "python_unittest",
+      "enabled": true,
+      "required": true,
+      "argv": [
+        "{python}",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "minimum_tests": 5,
+      "timeout_seconds": 30
+    }
+  },
+  "integration_commands": {}
+}
